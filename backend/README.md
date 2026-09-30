@@ -22,6 +22,30 @@ Swagger em http://localhost:8000/docs
 
 ## Testes
 
+Inicie o PostgreSQL e aplique as migrações antes de rodar os testes de integridade.
+
 ```bash
 pytest
 ```
+
+## Migrações do banco
+
+Com o PostgreSQL iniciado pelo `compose.yaml` da raiz e o `.env` criado a partir
+de `.env.example`, execute em `backend/` com o ambiente virtual ativo:
+
+```bash
+alembic upgrade head
+alembic current
+```
+
+A primeira migração cria as seis tabelas do desenho.
+
+Para alterar o esquema depois, crie outra revisão, preencha `upgrade()` e
+`downgrade()` e aplique-a:
+
+```bash
+alembic revision -m "descricao"
+alembic upgrade head
+```
+
+Não edite uma migração já aplicada em bancos compartilhados.
