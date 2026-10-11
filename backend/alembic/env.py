@@ -1,22 +1,9 @@
-import os
-from pathlib import Path
-
 from alembic import context
-from dotenv import load_dotenv
 from sqlalchemy import create_engine
-from sqlalchemy.engine import URL
+from app.core.database import get_database_url
 
 
-load_dotenv(Path(__file__).resolve().parents[2] / ".env")
-
-database_url = URL.create(
-    "postgresql+psycopg",
-    username=os.environ["POSTGRES_USER"],
-    password=os.environ["POSTGRES_PASSWORD"],
-    host="localhost",
-    port=int(os.getenv("POSTGRES_PORT", "5432")),
-    database=os.environ["POSTGRES_DB"],
-)
+database_url = get_database_url()
 
 
 def run_migrations_offline() -> None:
@@ -31,11 +18,13 @@ def run_migrations_offline() -> None:
 
 def run_migrations_online() -> None:
     engine = create_engine(database_url)
-    with engine.connect() as connection:
-        context.configure(connection=connection)
-        with context.begin_transaction():
-            context.run_migrations()
-    engine.dispose()
+    try:
+        with engine.connect() as connection:
+            context.configure(connection=connection)
+            with context.begin_transaction():
+                context.run_migrations()
+    finally:
+        engine.dispose()
 
 
 if context.is_offline_mode():

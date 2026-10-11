@@ -1,5 +1,12 @@
 # C317
 
+## Requisitos e demonstração
+
+- [Requisitos da próxima entrega](docs/requisitos-entrega.md): indicadores, CNAEs, rotas, fontes e definições pendentes.
+- [Modelo de dados](docs/modelo-dados.md): migração, catálogos e contrato proposto para as APIs.
+- [Dados e validação](docs/validacao-entrega.md): carga fictícia reproduzível e cenários de aceitação.
+- [Backend](backend/README.md): ambiente Python, migrações e testes.
+
 ## Banco de dados local
 
 O PostgreSQL de desenvolvimento é definido no `compose.yaml` da raiz. Para iniciar:
