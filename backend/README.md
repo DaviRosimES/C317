@@ -86,3 +86,27 @@ no ambiente têm precedência sobre o arquivo.
 Valores esperados e conferências da interface estão em
 [validação da entrega](../docs/validacao-entrega.md). Os cenários integrados
 dependem das futuras APIs e telas; o roteiro não comprova sua execução.
+
+## Autenticação administrativa
+
+As operações administrativas (cadastro e publicação de indicadores) exigem um
+token JWT; as consultas públicas continuam abertas. Defina `AUTH_SECRET_KEY`
+no `.env` da raiz (veja `.env.example`) e crie a conta de desenvolvimento,
+dentro de `backend/` com o banco migrado:
+
+```bash
+python -m scripts.criar_admin --email admin@c317.local --nome "Administrador"
+```
+
+A senha é pedida no terminal (ou lida de `ADMIN_SENHA`) e armazenada somente
+como hash Argon2. Repetir o comando redefine a senha da mesma conta.
+
+| Rota | Uso |
+| --- | --- |
+| `POST /api/v1/auth/login` | Recebe `{"email", "senha"}` e devolve `access_token` e `expires_in` (segundos) |
+| `GET /api/v1/auth/me` | Dados do usuário do token |
+
+Envie o token em `Authorization: Bearer <token>`. No Swagger, use o botão
+**Authorize**. Rotas administrativas usam a dependência `AdminUser` de
+`app/api/deps.py`: sem token válido respondem 401; com usuário fora do papel
+`admin`, 403.
