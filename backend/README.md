@@ -132,3 +132,29 @@ negativa; percentual de 0 a 100), a fonte e a existência do tipo e do CNAE.
 Erros de regra de negócio respondem `{"detail": "mensagem"}` com 422, 404 ou
 409 (lançamento já existente para o mesmo tipo, período e CNAE). Erros de
 formato do corpo seguem o padrão do FastAPI, com `detail` como lista.
+
+## Consulta pública
+
+Rotas sem autenticação; retornam somente lançamentos publicados e agregados
+(municipais ou por CNAE), nunca dados de estabelecimentos individuais:
+
+| Rota | Uso |
+| --- | --- |
+| `GET /api/v1/indicadores` | Valores publicados, com filtros combináveis |
+| `GET /api/v1/cnaes` | Catálogo de CNAEs e rotas associadas; novos cadastros aparecem automaticamente |
+| `GET /api/v1/tipos-indicadores` | Catálogo com unidade, escopo e fonte de referência |
+| `GET /api/v1/rotas` | Rotas, seus CNAEs e `composicao_pendente` |
+| `GET /api/v1/periodos` | Referências (ano/mês ou ano) com dados publicados |
+
+Filtros de `/indicadores`: `tipo`, `cnae` e `rota` (repetíveis), `escopo`
+(`municipal` ou `cnae`), `periodicidade` (`mensal` ou `anual`), `ano`, `mes`
+(exige `ano`) e o intervalo mensal `inicio`/`fim` no formato `AAAA-MM`.
+
+- A API não soma valores: cada registro mantém seu escopo, e totais municipais
+  nunca são combinados aos valores por CNAE.
+- O filtro `cnae` retorna apenas lançamentos por CNAE; os totais municipais
+  não recebem um CNAE e ficam fora dessa consulta.
+- Uma combinação sem registros devolve `[]` ("sem dados"); um zero informado
+  pela fonte é devolvido como `"0"`.
+- `inicio`/`fim` selecionam referências mensais; períodos anuais exigem `ano`
+  ou `periodicidade=anual`.

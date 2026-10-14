@@ -89,3 +89,76 @@ class IndicadorRepository:
             ),
             {"id": indicador_id, "admin": admin_id},
         )
+
+
+class ConsultaPublicaRepository:
+    """Leitura pública: somente agregados (municipais e por CNAE) publicados."""
+
+    def __init__(self, connection: Connection):
+        self.connection = connection
+
+    def listar_periodos(self) -> list[Row]:
+        return list(
+            self.connection.execute(
+                text(
+                    """
+                    SELECT DISTINCT p.ano, p.mes
+                    FROM periodos p
+                    JOIN indicadores i ON i.periodo_id = p.id
+                    WHERE i.status = 'publicado' AND i.estabelecimento_id IS NULL
+                    ORDER BY p.ano DESC, p.mes DESC NULLS FIRST
+                    """
+                )
+            )
+        )
+
+    def listar_indicadores(self, filtros: dict) -> list[Row]:
+        condicoes = ["i.status = 'publicado'", "i.estabelecimento_id IS NULL"]
+        if filtros.get("tipos"):
+            condicoes.append("i.tipo = ANY(:tipos)")
+        if filtros.get("cnaes"):
+            condicoes.append("s.codigo_cnae = ANY(:cnaes)")
+        if filtros.get("rotas"):
+            condicoes.append(
+                "EXISTS (SELECT 1 FROM setores_rotas sr "
+                "WHERE sr.setor_id = i.setor_id AND sr.rota_codigo = ANY(:rotas))"
+            )
+        if filtros.get("escopo") == "municipal":
+            condicoes.append("i.setor_id IS NULL")
+        elif filtros.get("escopo") == "cnae":
+            condicoes.append("i.setor_id IS NOT NULL")
+        if filtros.get("periodicidade") == "mensal":
+            condicoes.append("p.mes IS NOT NULL")
+        elif filtros.get("periodicidade") == "anual":
+            condicoes.append("p.mes IS NULL")
+        if filtros.get("ano") is not None:
+            condicoes.append("p.ano = :ano")
+        if filtros.get("mes") is not None:
+            condicoes.append("p.mes = :mes")
+        # Intervalo mensal comparado como ano * 12 + mês; referências anuais ficam fora.
+        if filtros.get("inicio") is not None:
+            condicoes.append("p.mes IS NOT NULL AND p.ano * 12 + p.mes >= :inicio")
+        if filtros.get("fim") is not None:
+            condicoes.append("p.mes IS NOT NULL AND p.ano * 12 + p.mes <= :fim")
+
+        return list(
+            self.connection.execute(
+                text(
+                    f"""
+                    SELECT i.id, i.tipo, t.nome, t.unidade, t.escopo, i.valor, p.ano, p.mes,
+                           s.codigo_cnae, s.nome AS nome_cnae,
+                           COALESCE((SELECT array_agg(sr.rota_codigo ORDER BY sr.rota_codigo)
+                                     FROM setores_rotas sr WHERE sr.setor_id = i.setor_id),
+                                    '{{}}') AS rotas,
+                           i.origem AS fonte, i.demonstracao
+                    FROM indicadores i
+                    JOIN tipos_indicadores t ON t.codigo = i.tipo
+                    JOIN periodos p ON p.id = i.periodo_id
+                    LEFT JOIN setores s ON s.id = i.setor_id
+                    WHERE {" AND ".join(condicoes)}
+                    ORDER BY i.tipo, s.codigo_cnae NULLS FIRST, p.ano, p.mes NULLS FIRST
+                    """
+                ),
+                filtros,
+            )
+        )
