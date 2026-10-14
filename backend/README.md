@@ -110,3 +110,25 @@ Envie o token em `Authorization: Bearer <token>`. No Swagger, use o botão
 **Authorize**. Rotas administrativas usam a dependência `AdminUser` de
 `app/api/deps.py`: sem token válido respondem 401; com usuário fora do papel
 `admin`, 403.
+
+## Cadastro e publicação de indicadores
+
+Rotas administrativas (exigem token de admin) para lançar valores prontos:
+
+| Rota | Uso |
+| --- | --- |
+| `POST /api/v1/admin/indicadores` | Cria o lançamento como `rascunho` |
+| `GET /api/v1/admin/indicadores?status=` | Lista lançamentos, inclusive rascunhos |
+| `GET /api/v1/admin/indicadores/{id}` | Detalha um lançamento |
+| `PATCH /api/v1/admin/indicadores/{id}` | Corrige somente os campos enviados |
+| `POST /api/v1/admin/indicadores/{id}/publicar` | Publica e registra o responsável em `validado_por` |
+
+O corpo usa `tipo`, `valor`, `ano`, `mes` (nulo para período anual), `fonte`,
+`codigo_cnae` e `estabelecimento_id`, conforme o escopo do tipo, e `demonstracao`.
+`valor` é aceito e devolvido como string decimal. A API valida o escopo do tipo
+(municipal, CNAE ou estabelecimento), a unidade (quantidade inteira e não
+negativa; percentual de 0 a 100), a fonte e a existência do tipo e do CNAE.
+
+Erros de regra de negócio respondem `{"detail": "mensagem"}` com 422, 404 ou
+409 (lançamento já existente para o mesmo tipo, período e CNAE). Erros de
+formato do corpo seguem o padrão do FastAPI, com `detail` como lista.

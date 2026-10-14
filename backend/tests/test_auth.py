@@ -4,42 +4,13 @@ import jwt
 import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
-from sqlalchemy import create_engine, text
+from sqlalchemy import text
 
 from app.api.deps import AdminUser
 from app.core.config import settings
-from app.core.database import get_connection, get_database_url
+from app.core.database import get_connection
 from app.core.security import ALGORITHM, create_access_token, hash_password
-from app.main import app
-from app.repositories.usuario_repository import UsuarioRepository
-
-SENHA = "senha-de-teste-123"
-
-
-@pytest.fixture
-def db():
-    engine = create_engine(get_database_url())
-    with engine.connect() as connection:
-        transaction = connection.begin()
-        app.dependency_overrides[get_connection] = lambda: connection
-        try:
-            yield connection
-        finally:
-            app.dependency_overrides.clear()
-            transaction.rollback()
-    engine.dispose()
-
-
-@pytest.fixture
-def client():
-    return TestClient(app)
-
-
-@pytest.fixture
-def admin(db):
-    return UsuarioRepository(db).salvar_admin(
-        "Admin de teste", "admin.teste@c317.local", hash_password(SENHA)
-    )
+from tests.conftest import SENHA, auth
 
 
 def usuario(db, email, papel, senha_hash=None):
@@ -56,10 +27,6 @@ def usuario(db, email, papel, senha_hash=None):
 
 def login(client, email, senha):
     return client.post("/api/v1/auth/login", json={"email": email, "senha": senha})
-
-
-def auth(token):
-    return {"Authorization": f"Bearer {token}"}
 
 
 def test_senha_armazenada_somente_como_hash(db, admin):
