@@ -13,6 +13,7 @@ jobs:
       POSTGRES_USER: c317_test
       POSTGRES_PASSWORD: test_password
       POSTGRES_PORT: 5432
+      AUTH_SECRET_KEY: segredo-do-ci-somente-para-testes-automatizados
     services:
       postgres:
         image: postgres:17

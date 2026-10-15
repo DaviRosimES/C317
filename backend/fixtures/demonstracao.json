@@ -1,0 +1,290 @@
+{
+  "fonte": "Dados fictícios de demonstração — C317; não representam Santa Rita do Sapucaí.",
+  "tipos_indicadores": [
+    {
+      "codigo": "empregos_formais",
+      "nome": "Empregos formais",
+      "descricao": "Estoque de vínculos formais no município; conceito a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "municipal",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "numero_hoteis",
+      "nome": "Número de hotéis",
+      "descricao": "Quantidade de meios de hospedagem abrangidos pela fonte; abrangência a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "municipal",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "numero_leitos",
+      "nome": "Número de leitos",
+      "descricao": "Quantidade de leitos disponíveis no recorte da fonte; capacidade a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "municipal",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "empresas_ativas",
+      "nome": "Empresas ativas",
+      "descricao": "Quantidade de empresas ativas no município; critério de atividade a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "municipal",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "ocupacao_media_hoteis",
+      "nome": "Ocupação média de hotéis",
+      "descricao": "Percentual consolidado informado pela fonte; fórmula e ponderação a confirmar.",
+      "unidade": "percentual",
+      "escopo": "municipal",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "empregos_por_setor",
+      "nome": "Empregos por setor",
+      "descricao": "Vínculos formais discriminados por CNAE; compatibilidade com o total a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "cnae",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "empresas_por_setor",
+      "nome": "Empresas por setor",
+      "descricao": "Empresas ativas discriminadas por CNAE; critério de contagem a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "cnae",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    },
+    {
+      "codigo": "numero_patentes",
+      "nome": "Número de patentes",
+      "descricao": "Quantidade informada pela fonte; depósitos, concessões e vínculo municipal a confirmar.",
+      "unidade": "quantidade",
+      "escopo": "municipal",
+      "fonte_referencia": "Pendente de confirmação pela Prefeitura."
+    }
+  ],
+  "cnaes": [
+    {
+      "codigo_cnae": "5510-8/01",
+      "nome": "Hotéis",
+      "slug": "cnae-5510801",
+      "fonte_cnae": "https://ftp.ibge.gov.br/Informacoes_Gerais_e_Referencia/Classificacoes/CNAE/cnae2_2/cnae2_2_subclasses_20150609.pdf"
+    },
+    {
+      "codigo_cnae": "5611-2/01",
+      "nome": "Restaurantes e similares",
+      "slug": "cnae-5611201",
+      "fonte_cnae": "https://ftp.ibge.gov.br/Informacoes_Gerais_e_Referencia/Classificacoes/CNAE/cnae2_2/cnae2_2_subclasses_20150609.pdf"
+    },
+    {
+      "codigo_cnae": "6201-5/01",
+      "nome": "Desenvolvimento de programas de computador sob encomenda",
+      "slug": "cnae-6201501",
+      "fonte_cnae": "https://ftp.ibge.gov.br/Informacoes_Gerais_e_Referencia/Classificacoes/CNAE/cnae2_2/cnae2_2_subclasses_20150609.pdf"
+    }
+  ],
+  "rotas": [
+    {
+      "codigo": "tecnologica",
+      "nome": "Rota tecnológica",
+      "descricao": "Rota solicitada pela Prefeitura; critérios e CNAEs integrantes pendentes."
+    },
+    {
+      "codigo": "cultural",
+      "nome": "Rota cultural",
+      "descricao": "Rota solicitada pela Prefeitura; critérios e CNAEs integrantes pendentes."
+    }
+  ],
+  "indicadores": [
+    {
+      "tipo": "empregos_formais",
+      "ano": 2026,
+      "mes": 8,
+      "valor": 1000,
+      "status": "publicado"
+    },
+    {
+      "tipo": "numero_hoteis",
+      "ano": 2026,
+      "mes": 8,
+      "valor": 15,
+      "status": "publicado"
+    },
+    {
+      "tipo": "numero_leitos",
+      "ano": 2026,
+      "mes": 8,
+      "valor": 450,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_ativas",
+      "ano": 2026,
+      "mes": 8,
+      "valor": 150,
+      "status": "publicado"
+    },
+    {
+      "tipo": "ocupacao_media_hoteis",
+      "ano": 2026,
+      "mes": 8,
+      "valor": 60.5,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_por_setor",
+      "ano": 2026,
+      "mes": 8,
+      "codigo_cnae": "5510-8/01",
+      "valor": 80,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_por_setor",
+      "ano": 2026,
+      "mes": 8,
+      "codigo_cnae": "5510-8/01",
+      "valor": 12,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_por_setor",
+      "ano": 2026,
+      "mes": 8,
+      "codigo_cnae": "5611-2/01",
+      "valor": 120,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_por_setor",
+      "ano": 2026,
+      "mes": 8,
+      "codigo_cnae": "5611-2/01",
+      "valor": 30,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_por_setor",
+      "ano": 2026,
+      "mes": 8,
+      "codigo_cnae": "6201-5/01",
+      "valor": 500,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_por_setor",
+      "ano": 2026,
+      "mes": 8,
+      "codigo_cnae": "6201-5/01",
+      "valor": 40,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_formais",
+      "ano": 2026,
+      "mes": 9,
+      "valor": 1100,
+      "status": "publicado"
+    },
+    {
+      "tipo": "numero_hoteis",
+      "ano": 2026,
+      "mes": 9,
+      "valor": 16,
+      "status": "publicado"
+    },
+    {
+      "tipo": "numero_leitos",
+      "ano": 2026,
+      "mes": 9,
+      "valor": 480,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_ativas",
+      "ano": 2026,
+      "mes": 9,
+      "valor": 160,
+      "status": "publicado"
+    },
+    {
+      "tipo": "ocupacao_media_hoteis",
+      "ano": 2026,
+      "mes": 9,
+      "valor": 68.25,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_por_setor",
+      "ano": 2026,
+      "mes": 9,
+      "codigo_cnae": "5510-8/01",
+      "valor": 90,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_por_setor",
+      "ano": 2026,
+      "mes": 9,
+      "codigo_cnae": "5510-8/01",
+      "valor": 14,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_por_setor",
+      "ano": 2026,
+      "mes": 9,
+      "codigo_cnae": "5611-2/01",
+      "valor": 130,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_por_setor",
+      "ano": 2026,
+      "mes": 9,
+      "codigo_cnae": "5611-2/01",
+      "valor": 32,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_por_setor",
+      "ano": 2026,
+      "mes": 9,
+      "codigo_cnae": "6201-5/01",
+      "valor": 550,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empresas_por_setor",
+      "ano": 2026,
+      "mes": 9,
+      "codigo_cnae": "6201-5/01",
+      "valor": 44,
+      "status": "publicado"
+    },
+    {
+      "tipo": "numero_patentes",
+      "ano": 2024,
+      "mes": null,
+      "valor": 0,
+      "status": "publicado"
+    },
+    {
+      "tipo": "numero_patentes",
+      "ano": 2025,
+      "mes": null,
+      "valor": 9,
+      "status": "publicado"
+    },
+    {
+      "tipo": "empregos_formais",
+      "ano": 2026,
+      "mes": 10,
+      "valor": 1200,
+      "status": "rascunho"
+    }
+  ]
+}
