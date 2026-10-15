@@ -1,23 +1,19 @@
 import { z } from 'zod'
 
-/** Eixos de indicadores disponíveis nos filtros (chips do Figma). */
-export const indicatorCategories = ['hospedagem', 'empregos', 'empresas'] as const
-export const indicatorCategorySchema = z.enum(indicatorCategories)
-export type IndicatorCategory = z.infer<typeof indicatorCategorySchema>
-
-export const indicatorCategoryLabels: Record<IndicatorCategory, string> = {
-  hospedagem: 'Hospedagem',
-  empregos: 'Empregos',
-  empresas: 'Empresas',
-}
-
-/**
- * Filtros compartilhados pelas telas de indicadores.
- * Pensado para `validateSearch` do TanStack Router: a URL vira estado tipado.
- */
-export const indicatorFiltersSchema = z.object({
-  categoria: indicatorCategorySchema.catch('hospedagem'),
-  ano: z.coerce.number().int().min(2000).max(2100).catch(new Date().getFullYear()),
+export const dashboardSearchSchema = z.object({
+  ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
+  cnae: z.string().optional().catch(undefined),
 })
+export type DashboardSearch = z.infer<typeof dashboardSearchSchema>
 
-export type IndicatorFilters = z.infer<typeof indicatorFiltersSchema>
+export const temasIndicadores = ['visao-geral', 'hospedagem', 'empresas', 'empregos', 'visitantes'] as const
+export type TemaIndicador = (typeof temasIndicadores)[number]
+
+export const indicadoresSearchSchema = z.object({
+  tema: z.enum(temasIndicadores).catch('visao-geral'),
+  de: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
+  ate: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
+  cnae: z.string().optional().catch(undefined),
+})
+export type IndicadoresSearch = z.infer<typeof indicadoresSearchSchema>
+
