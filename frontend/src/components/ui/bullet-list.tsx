@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 function BulletList({ className, ...props }: React.ComponentProps<'ul'>) {
   return (
     <ul
-      className={cn('list-disc space-y-0.5 pl-4 text-xs text-ink-muted marker:text-ink-subtle', className)}
+      className={cn('list-disc space-y-0.5 pl-5 text-sm text-ink-muted marker:text-ink-muted', className)}
       {...props}
     />
   )

@@ -33,8 +33,12 @@ npm run build      # typecheck + build de produção
 | Lilás       | `#B986ED` | `bg-brand-lilac`        |
 | Amarelo     | `#FADA77` | `bg-brand-yellow`       |
 
-Neutros: `canvas`, `surface`, `surface-muted`, `ink`, `ink-muted`, `ink-subtle`, `line`.
-Feedback: `success`, `danger`, `warning`. Destaque: `bg-brand-gradient` (usar com parcimônia).
+Neutros (extraídos do Figma): `canvas` #F7F8FC, `surface` #FFF, `ink` #171A2B, `ink-muted` #667085,
+`line` #E7EAF0, `surface-muted`/`line-accent` (chip ativo), `on-brand` (texto sobre gradiente).
+Sidebar admin: `sidebar` #11152A, `sidebar-active` #272C48, `sidebar-ink` #B6BCD0.
+Status: `success` #22B573, `warning` #F59E0B (+ `*-soft` para fundos de badge), `info-soft` #F1EEFF.
+Raios: `rounded-sm` 8 · `md` 10 · `lg` 12 · `xl` 14 · `2xl` 16. Sombra: `shadow-card`.
+Destaque: `bg-brand-gradient` (azul → roxo 52% → magenta), usar com parcimônia.
 Para gráficos, use `chartPalette` de `src/lib/brand.ts`.
 
 ## Componentes-base (`src/components/ui`)
@@ -43,11 +47,12 @@ Para gráficos, use `chartPalette` de `src/lib/brand.ts`.
 | ---------------------------------- | ---------------------------------------------- |
 | `Button` (`primary`, `secondary`…) | "Explorar indicadores", "Baixar relatório"     |
 | `Select*`                          | Seletor de período "Jan — Dez 2026"            |
-| `Label` / `FormField`              | Rótulo "PERÍODO", campos com erro do zod       |
+| `Label` / `FormField`              | "PERÍODO" (`eyebrow`) / "Competência" (`field`) |
 | `FilterChips` / `FilterChip`       | Hospedagem · Empregos · Empresas               |
 | `StatCard`                         | "Empresas do setor", "Leitos disponíveis"      |
 | `Card*`                            | Card "Princípios de interface"                 |
 | `PageHero`                         | Faixa com gradiente do topo                    |
+| `Badge` (`info`, `warning`…)       | "Aguardando", "Com observação" (admin)     |
 | `SectionTitle`, `BulletList`, `Input` | Apoio                                       |
 
 Importe tudo de `@/components/ui`.

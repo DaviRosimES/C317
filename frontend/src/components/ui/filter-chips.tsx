@@ -31,9 +31,9 @@ function FilterChip({ className, ...props }: React.ComponentProps<typeof ToggleG
     <ToggleGroupPrimitive.Item
       data-slot="filter-chip"
       className={cn(
-        'inline-flex h-8 items-center rounded-md border border-line bg-surface px-3 text-xs font-medium text-ink-muted transition-colors',
+        'inline-flex h-9 items-center rounded-md border border-line bg-surface px-3 text-[13px] font-medium text-ink-muted transition-colors',
         'hover:bg-canvas hover:text-ink focus-visible:shadow-focus disabled:pointer-events-none disabled:opacity-50',
-        'data-[state=on]:border-brand-purple/20 data-[state=on]:bg-surface-muted data-[state=on]:text-brand-purple',
+        'data-[state=on]:border-line-accent data-[state=on]:bg-surface-muted data-[state=on]:text-brand-purple',
         className,
       )}
       {...props}
