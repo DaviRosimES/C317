@@ -20,7 +20,7 @@ function ListRow({ leading, title, subtitle, meta, aside, actions, className, ..
       <div className="flex min-w-0 flex-1 items-start gap-4">
         {leading}
         <div className="min-w-0 flex-1">
-          <p className="truncate text-base font-semibold text-ink">{title}</p>
+          <p className="break-words text-base font-semibold text-ink sm:truncate">{title}</p>
           {subtitle ? <p className="mt-1 text-[13px] text-ink-muted">{subtitle}</p> : null}
           {meta ? <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-ink-muted">{meta}</div> : null}
         </div>
