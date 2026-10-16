@@ -13,7 +13,14 @@ import { Route as PublicRouteImport } from './routes/_public'
 import { Route as PublicIndexRouteImport } from './routes/_public/index'
 import { Route as PublicIndicadoresRouteImport } from './routes/_public/indicadores'
 import { Route as PublicInventarioRouteImport } from './routes/_public/inventario'
+import { Route as PublicRelatoriosRouteImport } from './routes/_public/relatorios'
 import { Route as PublicSobreRouteImport } from './routes/_public/sobre'
+import { Route as AdminAutenticadoRouteImport } from './routes/admin/_autenticado'
+import { Route as AdminLoginRouteImport } from './routes/admin/login'
+import { Route as AdminAutenticadoIndexRouteImport } from './routes/admin/_autenticado/index'
+import { Route as AdminAutenticadoLancamentosIndexRouteImport } from './routes/admin/_autenticado/lancamentos/index'
+import { Route as AdminAutenticadoLancamentosLancamentoIdRouteImport } from './routes/admin/_autenticado/lancamentos/$lancamentoId'
+import { Route as AdminAutenticadoLancamentosNovoRouteImport } from './routes/admin/_autenticado/lancamentos/novo'
 
 const PublicRoute = PublicRouteImport.update({
   id: '/_public',
@@ -34,48 +41,136 @@ const PublicInventarioRoute = PublicInventarioRouteImport.update({
   path: '/inventario',
   getParentRoute: () => PublicRoute,
 } as any)
+const PublicRelatoriosRoute = PublicRelatoriosRouteImport.update({
+  id: '/relatorios',
+  path: '/relatorios',
+  getParentRoute: () => PublicRoute,
+} as any)
 const PublicSobreRoute = PublicSobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
   getParentRoute: () => PublicRoute,
 } as any)
+const AdminAutenticadoRoute = AdminAutenticadoRouteImport.update({
+  id: '/admin/_autenticado',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin/login',
+  path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminAutenticadoIndexRoute = AdminAutenticadoIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminAutenticadoRoute,
+} as any)
+const AdminAutenticadoLancamentosIndexRoute =
+  AdminAutenticadoLancamentosIndexRouteImport.update({
+    id: '/lancamentos/',
+    path: '/lancamentos/',
+    getParentRoute: () => AdminAutenticadoRoute,
+  } as any)
+const AdminAutenticadoLancamentosLancamentoIdRoute =
+  AdminAutenticadoLancamentosLancamentoIdRouteImport.update({
+    id: '/lancamentos/$lancamentoId',
+    path: '/lancamentos/$lancamentoId',
+    getParentRoute: () => AdminAutenticadoRoute,
+  } as any)
+const AdminAutenticadoLancamentosNovoRoute =
+  AdminAutenticadoLancamentosNovoRouteImport.update({
+    id: '/lancamentos/novo',
+    path: '/lancamentos/novo',
+    getParentRoute: () => AdminAutenticadoRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof PublicIndexRoute
   '/indicadores': typeof PublicIndicadoresRoute
   '/inventario': typeof PublicInventarioRoute
+  '/relatorios': typeof PublicRelatoriosRoute
   '/sobre': typeof PublicSobreRoute
+  '/admin': typeof AdminAutenticadoRouteWithChildren
+  '/admin/login': typeof AdminLoginRoute
+  '/admin/': typeof AdminAutenticadoIndexRoute
+  '/admin/lancamentos/$lancamentoId': typeof AdminAutenticadoLancamentosLancamentoIdRoute
+  '/admin/lancamentos/novo': typeof AdminAutenticadoLancamentosNovoRoute
+  '/admin/lancamentos/': typeof AdminAutenticadoLancamentosIndexRoute
 }
 export interface FileRoutesByTo {
   '/indicadores': typeof PublicIndicadoresRoute
   '/inventario': typeof PublicInventarioRoute
+  '/relatorios': typeof PublicRelatoriosRoute
   '/sobre': typeof PublicSobreRoute
+  '/admin/login': typeof AdminLoginRoute
   '/': typeof PublicIndexRoute
+  '/admin': typeof AdminAutenticadoIndexRoute
+  '/admin/lancamentos/$lancamentoId': typeof AdminAutenticadoLancamentosLancamentoIdRoute
+  '/admin/lancamentos/novo': typeof AdminAutenticadoLancamentosNovoRoute
+  '/admin/lancamentos': typeof AdminAutenticadoLancamentosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_public': typeof PublicRouteWithChildren
   '/_public/indicadores': typeof PublicIndicadoresRoute
   '/_public/inventario': typeof PublicInventarioRoute
+  '/_public/relatorios': typeof PublicRelatoriosRoute
   '/_public/sobre': typeof PublicSobreRoute
+  '/admin/_autenticado': typeof AdminAutenticadoRouteWithChildren
+  '/admin/login': typeof AdminLoginRoute
   '/_public/': typeof PublicIndexRoute
+  '/admin/_autenticado/': typeof AdminAutenticadoIndexRoute
+  '/admin/_autenticado/lancamentos/$lancamentoId': typeof AdminAutenticadoLancamentosLancamentoIdRoute
+  '/admin/_autenticado/lancamentos/novo': typeof AdminAutenticadoLancamentosNovoRoute
+  '/admin/_autenticado/lancamentos/': typeof AdminAutenticadoLancamentosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/indicadores' | '/inventario' | '/sobre'
+  fullPaths:
+    | '/'
+    | '/indicadores'
+    | '/inventario'
+    | '/relatorios'
+    | '/sobre'
+    | '/admin'
+    | '/admin/login'
+    | '/admin/'
+    | '/admin/lancamentos/$lancamentoId'
+    | '/admin/lancamentos/novo'
+    | '/admin/lancamentos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/indicadores' | '/inventario' | '/sobre' | '/'
+  to:
+    | '/indicadores'
+    | '/inventario'
+    | '/relatorios'
+    | '/sobre'
+    | '/admin/login'
+    | '/'
+    | '/admin'
+    | '/admin/lancamentos/$lancamentoId'
+    | '/admin/lancamentos/novo'
+    | '/admin/lancamentos'
   id:
     | '__root__'
     | '/_public'
     | '/_public/indicadores'
     | '/_public/inventario'
+    | '/_public/relatorios'
     | '/_public/sobre'
+    | '/admin/_autenticado'
+    | '/admin/login'
     | '/_public/'
+    | '/admin/_autenticado/'
+    | '/admin/_autenticado/lancamentos/$lancamentoId'
+    | '/admin/_autenticado/lancamentos/novo'
+    | '/admin/_autenticado/lancamentos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   PublicRoute: typeof PublicRouteWithChildren
+  AdminAutenticadoRoute: typeof AdminAutenticadoRouteWithChildren
+  AdminLoginRoute: typeof AdminLoginRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -108,6 +203,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PublicInventarioRouteImport
       parentRoute: typeof PublicRoute
     }
+    '/_public/relatorios': {
+      id: '/_public/relatorios'
+      path: '/relatorios'
+      fullPath: '/relatorios'
+      preLoaderRoute: typeof PublicRelatoriosRouteImport
+      parentRoute: typeof PublicRoute
+    }
     '/_public/sobre': {
       id: '/_public/sobre'
       path: '/sobre'
@@ -115,12 +217,55 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PublicSobreRouteImport
       parentRoute: typeof PublicRoute
     }
+    '/admin/_autenticado': {
+      id: '/admin/_autenticado'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminAutenticadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/login': {
+      id: '/admin/login'
+      path: '/admin/login'
+      fullPath: '/admin/login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/_autenticado/': {
+      id: '/admin/_autenticado/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminAutenticadoIndexRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
+    '/admin/_autenticado/lancamentos/': {
+      id: '/admin/_autenticado/lancamentos/'
+      path: '/lancamentos'
+      fullPath: '/admin/lancamentos/'
+      preLoaderRoute: typeof AdminAutenticadoLancamentosIndexRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
+    '/admin/_autenticado/lancamentos/$lancamentoId': {
+      id: '/admin/_autenticado/lancamentos/$lancamentoId'
+      path: '/lancamentos/$lancamentoId'
+      fullPath: '/admin/lancamentos/$lancamentoId'
+      preLoaderRoute: typeof AdminAutenticadoLancamentosLancamentoIdRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
+    '/admin/_autenticado/lancamentos/novo': {
+      id: '/admin/_autenticado/lancamentos/novo'
+      path: '/lancamentos/novo'
+      fullPath: '/admin/lancamentos/novo'
+      preLoaderRoute: typeof AdminAutenticadoLancamentosNovoRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
   }
 }
 
 interface PublicRouteChildren {
   PublicIndicadoresRoute: typeof PublicIndicadoresRoute
   PublicInventarioRoute: typeof PublicInventarioRoute
+  PublicRelatoriosRoute: typeof PublicRelatoriosRoute
   PublicSobreRoute: typeof PublicSobreRoute
   PublicIndexRoute: typeof PublicIndexRoute
 }
@@ -128,6 +273,7 @@ interface PublicRouteChildren {
 const PublicRouteChildren: PublicRouteChildren = {
   PublicIndicadoresRoute: PublicIndicadoresRoute,
   PublicInventarioRoute: PublicInventarioRoute,
+  PublicRelatoriosRoute: PublicRelatoriosRoute,
   PublicSobreRoute: PublicSobreRoute,
   PublicIndexRoute: PublicIndexRoute,
 }
@@ -135,8 +281,28 @@ const PublicRouteChildren: PublicRouteChildren = {
 const PublicRouteWithChildren =
   PublicRoute._addFileChildren(PublicRouteChildren)
 
+interface AdminAutenticadoRouteChildren {
+  AdminAutenticadoIndexRoute: typeof AdminAutenticadoIndexRoute
+  AdminAutenticadoLancamentosLancamentoIdRoute: typeof AdminAutenticadoLancamentosLancamentoIdRoute
+  AdminAutenticadoLancamentosNovoRoute: typeof AdminAutenticadoLancamentosNovoRoute
+  AdminAutenticadoLancamentosIndexRoute: typeof AdminAutenticadoLancamentosIndexRoute
+}
+
+const AdminAutenticadoRouteChildren: AdminAutenticadoRouteChildren = {
+  AdminAutenticadoIndexRoute: AdminAutenticadoIndexRoute,
+  AdminAutenticadoLancamentosLancamentoIdRoute:
+    AdminAutenticadoLancamentosLancamentoIdRoute,
+  AdminAutenticadoLancamentosNovoRoute: AdminAutenticadoLancamentosNovoRoute,
+  AdminAutenticadoLancamentosIndexRoute: AdminAutenticadoLancamentosIndexRoute,
+}
+
+const AdminAutenticadoRouteWithChildren =
+  AdminAutenticadoRoute._addFileChildren(AdminAutenticadoRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   PublicRoute: PublicRouteWithChildren,
+  AdminAutenticadoRoute: AdminAutenticadoRouteWithChildren,
+  AdminLoginRoute: AdminLoginRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

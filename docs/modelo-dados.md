@@ -115,6 +115,20 @@ Exemplo de registro de resposta, usando string decimal para evitar perda de prec
 
 `fonte` no contrato pode mapear para `indicadores.origem`. O filtro público deve exigir `status = 'publicado'`; a API deve preservar fonte e `demonstracao` na resposta. O catálogo de tipos/rotas pode ser exposto mesmo quando ainda não houver valores publicados.
 
+## Relatórios públicos
+
+A revisão `c5e1f7a3b902` (tarefa D3) completa a tabela `relatorios`, criada na migração inicial:
+
+| Campo | Uso |
+| --- | --- |
+| `fonte` | Fonte do conteúdo; obrigatória para publicar e nunca vazia |
+| `status` | `rascunho` (padrão, inclusive para relatórios já existentes) ou `publicado`; só publicados são listados e baixados |
+| `demonstracao` | Identifica relatórios fictícios |
+| `arquivo_url` | Nome do PDF dentro da pasta de relatórios da API; único por relatório |
+| `autor_id` | Passa a ser opcional: relatórios carregados por script não têm autor na equipe |
+
+O downgrade é recusado se houver relatório sem autor, pois o esquema anterior o exige.
+
 ## Reversão
 
 ```bash

@@ -2,12 +2,14 @@
 
 import argparse
 import json
+from datetime import date
 from decimal import Decimal
 from pathlib import Path
 
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Connection
 
+from app.core.config import settings
 from app.core.database import get_database_url
 
 
@@ -48,6 +50,14 @@ def _seed_demo(connection: Connection, dataset: dict) -> int:
             raise ValueError("Mês inválido.")
         if registro["status"] not in {"publicado", "rascunho"}:
             raise ValueError("Status inválido na carga de demonstração.")
+    for relatorio in dataset.get("relatorios", []):
+        if relatorio["status"] not in {"publicado", "rascunho"}:
+            raise ValueError("Status inválido na carga de demonstração.")
+        if not relatorio["titulo"].strip():
+            raise ValueError("Relatórios precisam de título.")
+        date.fromisoformat(relatorio["data_publicacao"])
+        if not (settings.relatorios_dir / relatorio["arquivo"]).is_file():
+            raise ValueError(f"PDF de demonstração ausente: {relatorio['arquivo']}.")
 
     for tipo in tipos.values():
         connection.execute(
@@ -100,20 +110,7 @@ def _seed_demo(connection: Connection, dataset: dict) -> int:
     # Nenhum CNAE é associado a uma rota sem uma definição da Prefeitura.
     periodos = {}
     for registro in dataset["indicadores"]:
-        chave = (registro["ano"], registro.get("mes"))
-        if chave not in periodos:
-            conflito = "(ano) WHERE mes IS NULL" if chave[1] is None else "(ano, mes)"
-            periodos[chave] = connection.execute(
-                text(
-                    f"""
-                    INSERT INTO periodos (ano, mes) VALUES (:ano, :mes)
-                    ON CONFLICT {conflito} DO UPDATE SET ano = EXCLUDED.ano
-                    RETURNING id
-                    """
-                ),
-                {"ano": chave[0], "mes": chave[1]},
-            ).scalar_one()
-
+        periodo_id = _periodo(connection, periodos, registro["ano"], registro.get("mes"))
         setor_id = setores.get(registro.get("codigo_cnae"))
         alvo = (
             "(tipo, periodo_id) WHERE estabelecimento_id IS NULL AND setor_id IS NULL"
@@ -134,7 +131,7 @@ def _seed_demo(connection: Connection, dataset: dict) -> int:
                 """
             ),
             {
-                "periodo_id": periodos[chave],
+                "periodo_id": periodo_id,
                 "tipo": registro["tipo"],
                 "valor": Decimal(str(registro["valor"])),
                 "origem": fonte,
@@ -147,7 +144,58 @@ def _seed_demo(connection: Connection, dataset: dict) -> int:
                 "Há um lançamento existente fora desta carga no mesmo tipo, período "
                 "e CNAE. A transação deve ser revertida; nenhum dado real será substituído."
             )
+
+    for relatorio in dataset.get("relatorios", []):
+        inserido = connection.execute(
+            text(
+                """
+                INSERT INTO relatorios
+                    (periodo_id, titulo, arquivo_url, data_publicacao, fonte, status,
+                     demonstracao)
+                VALUES (:periodo_id, :titulo, :arquivo, :data_publicacao, :fonte, :status, true)
+                ON CONFLICT (arquivo_url)
+                DO UPDATE SET periodo_id = EXCLUDED.periodo_id, titulo = EXCLUDED.titulo,
+                              data_publicacao = EXCLUDED.data_publicacao,
+                              status = EXCLUDED.status
+                WHERE relatorios.demonstracao AND relatorios.fonte = EXCLUDED.fonte
+                RETURNING id
+                """
+            ),
+            {
+                "periodo_id": _periodo(
+                    connection, periodos, relatorio["ano"], relatorio.get("mes")
+                ),
+                "titulo": relatorio["titulo"],
+                "arquivo": relatorio["arquivo"],
+                "data_publicacao": date.fromisoformat(relatorio["data_publicacao"]),
+                "fonte": fonte,
+                "status": relatorio["status"],
+            },
+        ).scalar_one_or_none()
+        if inserido is None:
+            raise ValueError(
+                "Há um relatório existente fora desta carga com o mesmo arquivo. A "
+                "transação deve ser revertida; nenhum relatório real será substituído."
+            )
     return len(dataset["indicadores"])
+
+
+def _periodo(connection: Connection, periodos: dict, ano: int, mes: int | None) -> int:
+    """Retorna o período existente ou o cria; mês nulo representa o ano completo."""
+    chave = (ano, mes)
+    if chave not in periodos:
+        conflito = "(ano) WHERE mes IS NULL" if mes is None else "(ano, mes)"
+        periodos[chave] = connection.execute(
+            text(
+                f"""
+                INSERT INTO periodos (ano, mes) VALUES (:ano, :mes)
+                ON CONFLICT {conflito} DO UPDATE SET ano = EXCLUDED.ano
+                RETURNING id
+                """
+            ),
+            {"ano": ano, "mes": mes},
+        ).scalar_one()
+    return periodos[chave]
 
 
 def main() -> None:
@@ -164,8 +212,12 @@ def main() -> None:
     engine = create_engine(get_database_url())
     try:
         with engine.begin() as connection:
-            quantidade = seed_demo(connection, load_dataset(args.arquivo))
-        print(f"Carga concluída: {quantidade} lançamentos fictícios; três CNAEs provisórios.")
+            dataset = load_dataset(args.arquivo)
+            quantidade = seed_demo(connection, dataset)
+        print(
+            f"Carga concluída: {quantidade} lançamentos fictícios; três CNAEs provisórios; "
+            f"{len(dataset.get('relatorios', []))} relatórios de demonstração."
+        )
     finally:
         engine.dispose()
 

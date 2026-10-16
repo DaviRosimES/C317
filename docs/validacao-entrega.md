@@ -41,6 +41,9 @@ Arquivos: [`demonstracao.json`](../backend/fixtures/demonstracao.json), [`seed_d
 | Publicados | 24 |
 | Rascunhos | 1: empregos formais de outubro/2026, valor 1200 |
 | Estabelecimentos criados pela carga | 0 |
+| Relatórios | 3, com `demonstracao = true` e PDFs em `backend/arquivos/relatorios/` |
+| Relatórios publicados | 2: boletins de agosto/2026 (publicado em 10/09/2026) e setembro/2026 (08/10/2026) |
+| Relatórios em rascunho | 1: prévia de outubro/2026, fora da listagem pública |
 
 ### Valores municipais
 
@@ -114,6 +117,9 @@ Os cenários abaixo são critérios de aceitação, **não resultados já obtido
 | Rotas | Interface distingue tecnológica/cultural e informa composição pendente, sem classificar CNAEs automaticamente | J1/J3/V3 | Pendente |
 | Ampliação do catálogo | Inserir o quarto CNAE pelo exemplo do modelo de dados, recarregar o catálogo. Deve aparecer no formulário/filtro sem editar frontend ou criar migração | V3/J3/D2 | Pendente |
 | Persistência | Reiniciar API e banco após criar/publicar; o lançamento e os catálogos continuam presentes | V2/V3/D2 | Pendente |
+| Sessão | Sair da conta ou deixar o token vencer (`AUTH_TOKEN_EXPIRE_MINUTES`): a tela administrativa volta ao login com aviso; o acesso direto a `/admin/lancamentos` sem sessão também | V1/D1 | Pendente |
+| Relatórios | Em `/relatorios`, sem login: aparecem os dois boletins publicados, com fonte, data e referência; a prévia de outubro não aparece. Cada "Baixar PDF" entrega o arquivo do boletim escolhido | G2/D3 | Pendente |
+| Novo relatório | Copiar um PDF para a pasta de relatórios e inserir a linha do exemplo do `backend/README.md`: aparece na listagem sem alterar o frontend | D3 | Pendente |
 | Validação | Fonte vazia, contagem negativa/fracionária, percentual >100, CNAE desconhecido, recorte incompatível e publicação não autorizada são recusados com mensagens compreensíveis | V1/V2/D2 | Pendente |
 
 O quarto CNAE deve aparecer no catálogo mesmo sem observações; a consulta dos seus indicadores deve indicar ausência de dados, não inventar um valor. Remova somente os registros criados pelo teste quando precisar restaurar a fixture.

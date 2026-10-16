@@ -8,12 +8,10 @@ import { Brand } from './brand'
 const NAV = [
   { to: '/', label: 'Dashboard' },
   { to: '/indicadores', label: 'Indicadores' },
-  { href: '/relatorios', label: 'Relatórios' },
+  { to: '/relatorios', label: 'Relatórios' },
   { to: '/inventario', label: 'Inventário' },
   { to: '/sobre', label: 'Sobre' },
 ] as const
-
-const ADMIN_HREF = '/admin/login'
 
 const navLinkClass =
   'relative px-3 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink focus-visible:shadow-focus data-[status=active]:text-brand-purple'
@@ -21,30 +19,24 @@ const navLinkClass =
 function NavLinks({ onNavigate, className }: { onNavigate?: () => void; className?: string }) {
   return (
     <nav aria-label="Navegação principal" className={className}>
-      {NAV.map((item) =>
-        'href' in item ? (
-          <a key={item.href} href={item.href} onClick={onNavigate} className={navLinkClass}>
-            {item.label}
-          </a>
-        ) : (
-          <Link
-            key={item.to}
-            to={item.to}
-            onClick={onNavigate}
-            activeOptions={{ exact: item.to === '/' }}
-            className={navLinkClass}
-          >
-            {({ isActive }) => (
-              <>
-                {item.label}
-                {isActive ? (
-                  <span aria-hidden className="absolute inset-x-3 -bottom-[17px] hidden h-[3px] rounded-full bg-brand-purple md:block" />
-                ) : null}
-              </>
-            )}
-          </Link>
-        ),
-      )}
+      {NAV.map((item) => (
+        <Link
+          key={item.to}
+          to={item.to}
+          onClick={onNavigate}
+          activeOptions={{ exact: item.to === '/' }}
+          className={navLinkClass}
+        >
+          {({ isActive }) => (
+            <>
+              {item.label}
+              {isActive ? (
+                <span aria-hidden className="absolute inset-x-3 -bottom-[17px] hidden h-[3px] rounded-full bg-brand-purple md:block" />
+              ) : null}
+            </>
+          )}
+        </Link>
+      ))}
     </nav>
   )
 }
@@ -58,7 +50,7 @@ function PublicHeader() {
         <NavLinks className="hidden items-center gap-4 md:flex" />
         <div className="flex items-center gap-2">
           <Button asChild variant="secondary" className="hidden sm:inline-flex">
-            <a href={ADMIN_HREF}>Área administrativa</a>
+            <Link to="/admin/login">Área administrativa</Link>
           </Button>
           <Button
             variant="ghost"
@@ -76,9 +68,9 @@ function PublicHeader() {
         <div className="border-t border-line px-4 pb-4 md:hidden">
           <NavLinks onNavigate={() => setOpen(false)} className="flex flex-col py-2" />
           <Button asChild variant="secondary" className="w-full">
-            <a href={ADMIN_HREF} onClick={() => setOpen(false)}>
+            <Link to="/admin/login" onClick={() => setOpen(false)}>
               Área administrativa
-            </a>
+            </Link>
           </Button>
         </div>
       ) : null}

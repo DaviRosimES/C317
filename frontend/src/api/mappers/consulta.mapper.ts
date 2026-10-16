@@ -5,10 +5,21 @@ import type {
   RotaResponseDto,
   TipoIndicadorResponseDto,
 } from '@/api/dtos'
-import type { Cnae, IndicadoresFiltro, Periodo, Rota, TipoIndicador, UnidadeIndicador } from '@/models'
+import type {
+  Cnae,
+  EscopoIndicador,
+  IndicadoresFiltro,
+  Periodo,
+  Rota,
+  TipoIndicador,
+  UnidadeIndicador,
+} from '@/models'
 
 export const toUnidade = (unidade: string): UnidadeIndicador =>
   unidade === 'quantidade' || unidade === 'percentual' ? unidade : 'outra'
+
+export const toEscopo = (escopo: string): EscopoIndicador =>
+  escopo === 'cnae' || escopo === 'estabelecimento' ? escopo : 'municipal'
 
 export const toCnae = (dto: CnaeResponseDto): Cnae => ({ ...dto })
 
@@ -17,7 +28,7 @@ export const toTipoIndicador = (dto: TipoIndicadorResponseDto): TipoIndicador =>
   nome: dto.nome,
   descricao: dto.descricao,
   unidade: toUnidade(dto.unidade),
-  escopo: dto.escopo === 'cnae' || dto.escopo === 'estabelecimento' ? dto.escopo : 'municipal',
+  escopo: toEscopo(dto.escopo),
   fonteReferencia: dto.fonte_referencia,
   provisorio: dto.provisorio,
 })
