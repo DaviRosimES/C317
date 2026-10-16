@@ -3,7 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 import { Card } from './card'
 
-const dotVariants = cva('size-2 rounded-full', {
+const dotVariants = cva('size-3 rounded-full', {
   variants: {
     color: {
       blue: 'bg-brand-blue',
@@ -18,7 +18,7 @@ const dotVariants = cva('size-2 rounded-full', {
   defaultVariants: { color: 'sky' },
 })
 
-const trendVariants = cva('text-xs font-medium', {
+const trendVariants = cva('text-xs font-semibold', {
   variants: {
     tone: { positive: 'text-success', negative: 'text-danger', neutral: 'text-ink-muted' },
   },
@@ -40,11 +40,11 @@ export interface StatCardProps
 /** Card de indicador (KPI) — "Empresas do setor", "Leitos disponíveis". */
 function StatCard({ label, value, helper, color, tone, className, ...props }: StatCardProps) {
   return (
-    <Card data-slot="stat-card" className={cn('flex flex-col gap-2 p-4', className)} {...props}>
+    <Card data-slot="stat-card" className={cn('flex flex-col p-5 shadow-card', className)} {...props}>
       <span aria-hidden className={dotVariants({ color })} />
-      <p className="mt-1 text-xs text-ink-muted">{label}</p>
-      <p className="text-3xl font-bold leading-none tracking-tight text-ink tabular-nums">{value}</p>
-      {helper ? <p className={trendVariants({ tone })}>{helper}</p> : null}
+      <p className="mt-[18px] text-[13px] font-medium text-ink-muted">{label}</p>
+      <p className="mt-2 text-[28px] font-bold leading-tight tracking-tight text-ink tabular-nums">{value}</p>
+      {helper ? <p className={cn('mt-2', trendVariants({ tone }))}>{helper}</p> : null}
     </Card>
   )
 }

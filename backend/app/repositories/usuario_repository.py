@@ -25,15 +25,18 @@ class UsuarioRepository:
 
     def salvar_admin(self, nome: str, email: str, senha_hash: str) -> int:
         """Cria a conta administrativa ou redefine nome, papel e senha de uma existente."""
+        return self.salvar(nome, email, senha_hash, "admin")
+
+    def salvar(self, nome: str, email: str, senha_hash: str, papel: str) -> int:
         return self.connection.execute(
             text(
                 """
                 INSERT INTO usuarios (nome, email, papel, senha_hash)
-                VALUES (:nome, lower(:email), 'admin', :senha_hash)
+                VALUES (:nome, lower(:email), :papel, :senha_hash)
                 ON CONFLICT (email) DO UPDATE
-                SET nome = EXCLUDED.nome, papel = 'admin', senha_hash = EXCLUDED.senha_hash
+                SET nome = EXCLUDED.nome, papel = EXCLUDED.papel, senha_hash = EXCLUDED.senha_hash
                 RETURNING id
                 """
             ),
-            {"nome": nome, "email": email, "senha_hash": senha_hash},
+            {"nome": nome, "email": email, "papel": papel, "senha_hash": senha_hash},
         ).scalar_one()

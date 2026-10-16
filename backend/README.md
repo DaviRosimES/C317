@@ -111,6 +111,16 @@ Envie o token em `Authorization: Bearer <token>`. No Swagger, use o botão
 `app/api/deps.py`: sem token válido respondem 401; com usuário fora do papel
 `admin`, 403.
 
+Para testar o portal do parceiro no front, crie uma conta sem papel `admin`
+(senha pedida no terminal ou lida de `USUARIO_SENHA`):
+
+```bash
+python -m scripts.criar_usuario --email hotel@c317.local --nome "Hotel Serra Azul" --papel parceiro
+```
+
+O navegador só chama a API a partir das origens em `CORS_ORIGINS` (padrão
+`http://localhost:5173`, o servidor do Vite); separe várias por vírgula.
+
 ## Cadastro e publicação de indicadores
 
 Rotas administrativas (exigem token de admin) para lançar valores prontos:
