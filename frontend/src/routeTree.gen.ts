@@ -14,6 +14,8 @@ import { Route as PublicIndexRouteImport } from './routes/_public/index'
 import { Route as PublicIndicadoresRouteImport } from './routes/_public/indicadores'
 import { Route as PublicInventarioRouteImport } from './routes/_public/inventario'
 import { Route as PublicSobreRouteImport } from './routes/_public/sobre'
+import { Route as AdminAutenticadoRouteImport } from './routes/admin/_autenticado'
+import { Route as AdminLoginRouteImport } from './routes/admin/login'
 
 const PublicRoute = PublicRouteImport.update({
   id: '/_public',
@@ -39,17 +41,31 @@ const PublicSobreRoute = PublicSobreRouteImport.update({
   path: '/sobre',
   getParentRoute: () => PublicRoute,
 } as any)
+const AdminAutenticadoRoute = AdminAutenticadoRouteImport.update({
+  id: '/admin/_autenticado',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin/login',
+  path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof PublicIndexRoute
   '/indicadores': typeof PublicIndicadoresRoute
   '/inventario': typeof PublicInventarioRoute
   '/sobre': typeof PublicSobreRoute
+  '/admin': typeof AdminAutenticadoRoute
+  '/admin/login': typeof AdminLoginRoute
 }
 export interface FileRoutesByTo {
   '/indicadores': typeof PublicIndicadoresRoute
   '/inventario': typeof PublicInventarioRoute
   '/sobre': typeof PublicSobreRoute
+  '/admin': typeof AdminAutenticadoRoute
+  '/admin/login': typeof AdminLoginRoute
   '/': typeof PublicIndexRoute
 }
 export interface FileRoutesById {
@@ -58,24 +74,32 @@ export interface FileRoutesById {
   '/_public/indicadores': typeof PublicIndicadoresRoute
   '/_public/inventario': typeof PublicInventarioRoute
   '/_public/sobre': typeof PublicSobreRoute
+  '/admin/_autenticado': typeof AdminAutenticadoRoute
+  '/admin/login': typeof AdminLoginRoute
   '/_public/': typeof PublicIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/indicadores' | '/inventario' | '/sobre'
+  fullPaths:
+    '/' | '/indicadores' | '/inventario' | '/sobre' | '/admin' | '/admin/login'
   fileRoutesByTo: FileRoutesByTo
-  to: '/indicadores' | '/inventario' | '/sobre' | '/'
+  to:
+    '/indicadores' | '/inventario' | '/sobre' | '/admin' | '/admin/login' | '/'
   id:
     | '__root__'
     | '/_public'
     | '/_public/indicadores'
     | '/_public/inventario'
     | '/_public/sobre'
+    | '/admin/_autenticado'
+    | '/admin/login'
     | '/_public/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   PublicRoute: typeof PublicRouteWithChildren
+  AdminAutenticadoRoute: typeof AdminAutenticadoRoute
+  AdminLoginRoute: typeof AdminLoginRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -115,6 +139,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PublicSobreRouteImport
       parentRoute: typeof PublicRoute
     }
+    '/admin/_autenticado': {
+      id: '/admin/_autenticado'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminAutenticadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/login': {
+      id: '/admin/login'
+      path: '/admin/login'
+      fullPath: '/admin/login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -137,6 +175,8 @@ const PublicRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   PublicRoute: PublicRouteWithChildren,
+  AdminAutenticadoRoute: AdminAutenticadoRoute,
+  AdminLoginRoute: AdminLoginRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

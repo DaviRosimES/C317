@@ -13,8 +13,6 @@ const NAV = [
   { to: '/sobre', label: 'Sobre' },
 ] as const
 
-const ADMIN_HREF = '/admin/login'
-
 const navLinkClass =
   'relative px-3 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-ink focus-visible:shadow-focus data-[status=active]:text-brand-purple'
 
@@ -58,7 +56,7 @@ function PublicHeader() {
         <NavLinks className="hidden items-center gap-4 md:flex" />
         <div className="flex items-center gap-2">
           <Button asChild variant="secondary" className="hidden sm:inline-flex">
-            <a href={ADMIN_HREF}>Área administrativa</a>
+            <Link to="/admin/login">Área administrativa</Link>
           </Button>
           <Button
             variant="ghost"
@@ -76,9 +74,9 @@ function PublicHeader() {
         <div className="border-t border-line px-4 pb-4 md:hidden">
           <NavLinks onNavigate={() => setOpen(false)} className="flex flex-col py-2" />
           <Button asChild variant="secondary" className="w-full">
-            <a href={ADMIN_HREF} onClick={() => setOpen(false)}>
+            <Link to="/admin/login" onClick={() => setOpen(false)}>
               Área administrativa
-            </a>
+            </Link>
           </Button>
         </div>
       ) : null}

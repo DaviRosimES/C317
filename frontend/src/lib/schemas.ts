@@ -17,3 +17,17 @@ export const indicadoresSearchSchema = z.object({
 })
 export type IndicadoresSearch = z.infer<typeof indicadoresSearchSchema>
 
+export const motivosLogin = ['expirada', 'saiu', 'sem-permissao'] as const
+export type MotivoLogin = (typeof motivosLogin)[number]
+
+export const loginSearchSchema = z.object({
+  /** Tela administrativa a abrir após o login; aceita somente caminhos internos de /admin. */
+  redirect: z
+    .string()
+    .regex(/^\/admin(?:[/?#]|$)/)
+    .refine((caminho) => !caminho.startsWith('/admin/login'))
+    .optional()
+    .catch(undefined),
+  motivo: z.enum(motivosLogin).optional().catch(undefined),
+})
+export type LoginSearch = z.infer<typeof loginSearchSchema>
