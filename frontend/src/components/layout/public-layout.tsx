@@ -8,7 +8,7 @@ import { Brand } from './brand'
 const NAV = [
   { to: '/', label: 'Dashboard' },
   { to: '/indicadores', label: 'Indicadores' },
-  { href: '/relatorios', label: 'Relatórios' },
+  { to: '/relatorios', label: 'Relatórios' },
   { to: '/inventario', label: 'Inventário' },
   { to: '/sobre', label: 'Sobre' },
 ] as const
@@ -19,30 +19,24 @@ const navLinkClass =
 function NavLinks({ onNavigate, className }: { onNavigate?: () => void; className?: string }) {
   return (
     <nav aria-label="Navegação principal" className={className}>
-      {NAV.map((item) =>
-        'href' in item ? (
-          <a key={item.href} href={item.href} onClick={onNavigate} className={navLinkClass}>
-            {item.label}
-          </a>
-        ) : (
-          <Link
-            key={item.to}
-            to={item.to}
-            onClick={onNavigate}
-            activeOptions={{ exact: item.to === '/' }}
-            className={navLinkClass}
-          >
-            {({ isActive }) => (
-              <>
-                {item.label}
-                {isActive ? (
-                  <span aria-hidden className="absolute inset-x-3 -bottom-[17px] hidden h-[3px] rounded-full bg-brand-purple md:block" />
-                ) : null}
-              </>
-            )}
-          </Link>
-        ),
-      )}
+      {NAV.map((item) => (
+        <Link
+          key={item.to}
+          to={item.to}
+          onClick={onNavigate}
+          activeOptions={{ exact: item.to === '/' }}
+          className={navLinkClass}
+        >
+          {({ isActive }) => (
+            <>
+              {item.label}
+              {isActive ? (
+                <span aria-hidden className="absolute inset-x-3 -bottom-[17px] hidden h-[3px] rounded-full bg-brand-purple md:block" />
+              ) : null}
+            </>
+          )}
+        </Link>
+      ))}
     </nav>
   )
 }

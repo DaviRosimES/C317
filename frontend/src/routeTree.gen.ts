@@ -13,6 +13,7 @@ import { Route as PublicRouteImport } from './routes/_public'
 import { Route as PublicIndexRouteImport } from './routes/_public/index'
 import { Route as PublicIndicadoresRouteImport } from './routes/_public/indicadores'
 import { Route as PublicInventarioRouteImport } from './routes/_public/inventario'
+import { Route as PublicRelatoriosRouteImport } from './routes/_public/relatorios'
 import { Route as PublicSobreRouteImport } from './routes/_public/sobre'
 import { Route as AdminAutenticadoRouteImport } from './routes/admin/_autenticado'
 import { Route as AdminLoginRouteImport } from './routes/admin/login'
@@ -38,6 +39,11 @@ const PublicIndicadoresRoute = PublicIndicadoresRouteImport.update({
 const PublicInventarioRoute = PublicInventarioRouteImport.update({
   id: '/inventario',
   path: '/inventario',
+  getParentRoute: () => PublicRoute,
+} as any)
+const PublicRelatoriosRoute = PublicRelatoriosRouteImport.update({
+  id: '/relatorios',
+  path: '/relatorios',
   getParentRoute: () => PublicRoute,
 } as any)
 const PublicSobreRoute = PublicSobreRouteImport.update({
@@ -83,6 +89,7 @@ export interface FileRoutesByFullPath {
   '/': typeof PublicIndexRoute
   '/indicadores': typeof PublicIndicadoresRoute
   '/inventario': typeof PublicInventarioRoute
+  '/relatorios': typeof PublicRelatoriosRoute
   '/sobre': typeof PublicSobreRoute
   '/admin': typeof AdminAutenticadoRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/indicadores': typeof PublicIndicadoresRoute
   '/inventario': typeof PublicInventarioRoute
+  '/relatorios': typeof PublicRelatoriosRoute
   '/sobre': typeof PublicSobreRoute
   '/admin/login': typeof AdminLoginRoute
   '/': typeof PublicIndexRoute
@@ -107,6 +115,7 @@ export interface FileRoutesById {
   '/_public': typeof PublicRouteWithChildren
   '/_public/indicadores': typeof PublicIndicadoresRoute
   '/_public/inventario': typeof PublicInventarioRoute
+  '/_public/relatorios': typeof PublicRelatoriosRoute
   '/_public/sobre': typeof PublicSobreRoute
   '/admin/_autenticado': typeof AdminAutenticadoRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
@@ -122,6 +131,7 @@ export interface FileRouteTypes {
     | '/'
     | '/indicadores'
     | '/inventario'
+    | '/relatorios'
     | '/sobre'
     | '/admin'
     | '/admin/login'
@@ -133,6 +143,7 @@ export interface FileRouteTypes {
   to:
     | '/indicadores'
     | '/inventario'
+    | '/relatorios'
     | '/sobre'
     | '/admin/login'
     | '/'
@@ -145,6 +156,7 @@ export interface FileRouteTypes {
     | '/_public'
     | '/_public/indicadores'
     | '/_public/inventario'
+    | '/_public/relatorios'
     | '/_public/sobre'
     | '/admin/_autenticado'
     | '/admin/login'
@@ -189,6 +201,13 @@ declare module '@tanstack/react-router' {
       path: '/inventario'
       fullPath: '/inventario'
       preLoaderRoute: typeof PublicInventarioRouteImport
+      parentRoute: typeof PublicRoute
+    }
+    '/_public/relatorios': {
+      id: '/_public/relatorios'
+      path: '/relatorios'
+      fullPath: '/relatorios'
+      preLoaderRoute: typeof PublicRelatoriosRouteImport
       parentRoute: typeof PublicRoute
     }
     '/_public/sobre': {
@@ -246,6 +265,7 @@ declare module '@tanstack/react-router' {
 interface PublicRouteChildren {
   PublicIndicadoresRoute: typeof PublicIndicadoresRoute
   PublicInventarioRoute: typeof PublicInventarioRoute
+  PublicRelatoriosRoute: typeof PublicRelatoriosRoute
   PublicSobreRoute: typeof PublicSobreRoute
   PublicIndexRoute: typeof PublicIndexRoute
 }
@@ -253,6 +273,7 @@ interface PublicRouteChildren {
 const PublicRouteChildren: PublicRouteChildren = {
   PublicIndicadoresRoute: PublicIndicadoresRoute,
   PublicInventarioRoute: PublicInventarioRoute,
+  PublicRelatoriosRoute: PublicRelatoriosRoute,
   PublicSobreRoute: PublicSobreRoute,
   PublicIndexRoute: PublicIndexRoute,
 }
