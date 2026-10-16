@@ -286,5 +286,31 @@
       "valor": 1200,
       "status": "rascunho"
     }
+  ],
+  "relatorios": [
+    {
+      "titulo": "Boletim do turismo — agosto de 2026",
+      "ano": 2026,
+      "mes": 8,
+      "data_publicacao": "2026-09-10",
+      "arquivo": "boletim-demonstracao-2026-08.pdf",
+      "status": "publicado"
+    },
+    {
+      "titulo": "Boletim do turismo — setembro de 2026",
+      "ano": 2026,
+      "mes": 9,
+      "data_publicacao": "2026-10-08",
+      "arquivo": "boletim-demonstracao-2026-09.pdf",
+      "status": "publicado"
+    },
+    {
+      "titulo": "Boletim do turismo — outubro de 2026 (prévia)",
+      "ano": 2026,
+      "mes": 10,
+      "data_publicacao": "2026-10-15",
+      "arquivo": "boletim-demonstracao-2026-10.pdf",
+      "status": "rascunho"
+    }
   ]
 }

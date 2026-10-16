@@ -5,6 +5,7 @@ from sqlalchemy import text
 from sqlalchemy.exc import IntegrityError
 
 from app.core.config import settings
+from scripts.seed_demo import load_dataset, seed_demo
 
 URL = "/api/v1/relatorios"
 FONTE = "Dados fictícios de teste"
@@ -156,3 +157,32 @@ def test_mesmo_arquivo_nao_pertence_a_dois_relatorios(db, cadastrar):
     with pytest.raises(IntegrityError, match="uq_relatorios_arquivo_url"):
         cadastrar("teste-a.pdf")
 
+
+def test_seed_cadastra_relatorios_de_demonstracao_sem_duplicar(client, db):
+    dataset = load_dataset()
+    seed_demo(db, dataset)
+    seed_demo(db, dataset)
+    linhas = db.execute(
+        text(
+            "SELECT arquivo_url, status FROM relatorios "
+            "WHERE demonstracao AND fonte = :fonte ORDER BY arquivo_url"
+        ),
+        {"fonte": dataset["fonte"]},
+    ).all()
+    assert [tuple(linha) for linha in linhas] == [
+        ("boletim-demonstracao-2026-08.pdf", "publicado"),
+        ("boletim-demonstracao-2026-09.pdf", "publicado"),
+        ("boletim-demonstracao-2026-10.pdf", "rascunho"),
+    ]
+
+    publicados = [item for item in listar(client) if item["fonte"] == dataset["fonte"]]
+    assert [item["titulo"] for item in publicados] == [
+        "Boletim do turismo — setembro de 2026",
+        "Boletim do turismo — agosto de 2026",
+    ]
+    resposta = client.get(f"{URL}/{publicados[0]['id']}/arquivo")
+    assert resposta.status_code == 200
+    assert resposta.content.startswith(b"%PDF-")
+    assert resposta.content == (
+        settings.relatorios_dir / "boletim-demonstracao-2026-09.pdf"
+    ).read_bytes()
