@@ -31,3 +31,8 @@ export const loginSearchSchema = z.object({
   motivo: z.enum(motivosLogin).optional().catch(undefined),
 })
 export type LoginSearch = z.infer<typeof loginSearchSchema>
+
+export const lancamentosSearchSchema = z.object({
+  status: z.enum(['rascunho', 'publicado']).optional().catch(undefined),
+})
+export type LancamentosSearch = z.infer<typeof lancamentosSearchSchema>
