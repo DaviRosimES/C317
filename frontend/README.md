@@ -56,6 +56,8 @@ Para gráficos, use `chartPalette` de `src/lib/brand.ts`.
 | `PageHero`                         | Faixa com gradiente do topo                    |
 | `Badge` (`info`, `warning`…)       | "Aguardando", "Com observação" (admin)     |
 | `SectionTitle`, `BulletList`, `Input` | Apoio                                       |
+| `Textarea`, `Checkbox`             | Formulário de lançamentos (fonte, demonstração) |
+| `Alert` (`info`, `success`…)       | Retorno de operações: login, salvar, publicar  |
 | `Dialog*`                          | "Ver detalhes" do inventário                   |
 | `ListRow` / `ListRowThumb`         | Linhas do inventário                           |
 | `EmptyState`                       | "Sem dados para o período" (nunca exibir 0)    |
@@ -76,7 +78,7 @@ src/
     mocks/       adapter do axios para rotas que o back ainda não tem
   models/        tipos de domínio usados pela UI
   queries/       TanStack Query: query keys e hooks por domínio
-  features/      telas públicas — usam só hooks de queries/
+  features/      telas públicas (public/) e administrativas (admin/) — usam só hooks de queries/
   components/    ui/ (base), layout/ (cabeçalho e rodapé públicos), charts/
   lib/           format (pt-BR), periodo, indicadores, schemas, env, brand, utils
   routes/        rotas do TanStack Router (só composição)
@@ -90,11 +92,26 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
 | --- | --- | --- |
 | `/` | Public / Dashboard | API: `/periodos`, `/cnaes`, `/tipos-indicadores`, `/indicadores` |
 | `/indicadores` | Public / Indicators | API: catálogos + `/indicadores` + `/rotas` |
+| `/relatorios` | Relatórios (D3) | API: `/relatorios`; download em `/relatorios/{id}/arquivo` |
 | `/inventario` | Public / Inventário Turístico | simulado |
 | `/sobre` | Public / Cadastur & FNRH | estático |
+| `/admin/login` | Login da área administrativa (D1) | API: `/auth/login`, `/auth/me` |
+| `/admin/lancamentos` | Lançamentos, filtro por situação e publicação (D2) | API: `/admin/indicadores` |
+| `/admin/lancamentos/novo` | Cadastro de lançamento (D2) | API: catálogos + `POST /admin/indicadores` |
+| `/admin/lancamentos/$lancamentoId` | Correção de lançamento (D2) | API: `PATCH /admin/indicadores/{id}` |
 
-O cabeçalho já aponta para `/relatorios` (D3, #24) e `/admin/login` (D1, #22), que ainda não existem. Esses dois
-links usam `<a>` em `components/layout/public-layout.tsx`; troque por `<Link>` quando as rotas forem criadas.
+## Área administrativa
+
+- As rotas em `src/routes/admin/_autenticado/` passam pelo `beforeLoad` de `_autenticado.tsx`: sem sessão válida, o
+  acesso direto redireciona para `/admin/login`, que volta à tela pedida após o login. Contas sem papel `admin` são
+  recusadas.
+- O token fica no `localStorage` (`src/api/http/sessao.ts`) com o prazo informado pela API (`expires_in`). A sessão
+  termina ao sair, quando o prazo vence (inclusive com a tela aberta), quando a API recusa o token (401) ou quando
+  outra aba sai da conta; nesses casos a interface volta ao login com um aviso.
+- O formulário valida tipo, período, valor (inteiro não negativo para quantidades; 0 a 100 para percentuais), fonte e
+  CNAE (só para tipos por setor) antes de enviar; erros da API aparecem no topo e nos campos. Tipos e CNAEs vêm dos
+  catálogos da API.
+- Para testar localmente, crie a conta com `python -m scripts.criar_admin` (veja `backend/README.md`).
 
 ## Rotas simuladas (mocks)
 

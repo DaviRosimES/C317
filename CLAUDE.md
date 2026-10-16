@@ -84,6 +84,14 @@ O fluxo é sempre `routes` → `features` → `queries` → `services` → `api/
   `/periodos`); nunca crie enum/array fixo deles no front.
 - Rotas sem CNAEs mostram "Classificação dos CNAEs por rota em definição".
 
+### Área administrativa
+
+- Telas em `routes/admin/_autenticado/` (prefixo `/admin`); o `beforeLoad` do layout `_autenticado.tsx` exige
+  sessão ativa e papel `admin`, senão redireciona para `/admin/login?redirect=…&motivo=…`.
+- O token fica em `api/http/sessao.ts` (localStorage, com prazo de `expires_in`). O cliente HTTP anexa o
+  `Authorization` e, em um 401 com token, encerra a sessão; `useFimDaSessao` leva ao login e limpa o cache.
+- Mutations administrativas invalidam também `consultaKeys.all`, pois publicar muda a consulta pública.
+
 ## Back-end
 
 Camadas em `backend/app`: `api/routes` (HTTP) → `services` (regras) → `repositories` (SQL com `text()`) e

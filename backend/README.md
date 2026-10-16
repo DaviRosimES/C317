@@ -52,7 +52,9 @@ alembic current
 
 A primeira migração cria as seis tabelas do desenho.
 A revisão seguinte permite indicadores municipais sem estabelecimento, CNAEs
-extensíveis, períodos anuais e associação configurável de rotas. Consulte o
+extensíveis, períodos anuais e associação configurável de rotas. As revisões
+posteriores acrescentam o hash de senha dos usuários e a publicação de
+relatórios (fonte, status e marca de demonstração). Consulte o
 [modelo de dados](../docs/modelo-dados.md), inclusive antes de um downgrade.
 
 Para alterar o esquema depois, crie outra revisão, preencha `upgrade()` e
@@ -74,8 +76,9 @@ python -m scripts.seed_demo --confirmar-demonstracao
 ```
 
 Em PowerShell sem ativar o ambiente, use `..\.venv\Scripts\python.exe` no lugar
-de `python`. A carga contém 25 valores fictícios, oito tipos de indicadores e três
-CNAEs provisórios. Repeti-la não duplica os registros nem substitui dados reais.
+de `python`. A carga contém 25 valores fictícios, oito tipos de indicadores, três
+CNAEs provisórios e três relatórios em PDF (dois publicados e um rascunho).
+Repeti-la não duplica os registros nem substitui dados reais.
 Não é executada automaticamente ao iniciar a aplicação ou aplicar migrações.
 
 O seed e o Alembic leem o `.env` da raiz. As variáveis necessárias são
@@ -168,3 +171,32 @@ Filtros de `/indicadores`: `tipo`, `cnae` e `rota` (repetíveis), `escopo`
   pela fonte é devolvido como `"0"`.
 - `inicio`/`fim` selecionam referências mensais; períodos anuais exigem `ano`
   ou `periodicidade=anual`.
+
+## Relatórios públicos
+
+Rotas sem autenticação; somente relatórios com `status = 'publicado'`:
+
+| Rota | Uso |
+| --- | --- |
+| `GET /api/v1/relatorios` | Título, fonte, data de publicação, referência (ano/mês) e marca de demonstração, do mais recente para o mais antigo |
+| `GET /api/v1/relatorios/{id}/arquivo` | PDF do relatório, com `Content-Disposition: attachment` |
+
+Os PDFs ficam em `backend/arquivos/relatorios/` (ou na pasta indicada por
+`RELATORIOS_DIR`, relativa a `backend/`). `relatorios.arquivo_url` guarda o nome
+do arquivo dentro dessa pasta; caminhos que saiam dela, arquivos ausentes ou sem
+extensão `.pdf` respondem 404, assim como relatórios em rascunho. O envio de
+arquivos e a geração automática não fazem parte desta entrega: para cadastrar um
+relatório, copie o PDF para a pasta e insira a linha. Ele aparece na listagem sem
+alteração no frontend:
+
+```sql
+INSERT INTO relatorios (periodo_id, titulo, arquivo_url, data_publicacao, fonte, status)
+VALUES (
+    (SELECT id FROM periodos WHERE ano = 2026 AND mes = 9),
+    'Boletim do turismo — setembro de 2026', 'boletim-2026-09.pdf', '2026-10-08',
+    'Secretaria de Turismo — boletim mensal', 'publicado'
+);
+```
+
+O banco recusa um relatório publicado sem fonte e dois relatórios com o mesmo
+arquivo. `autor_id` é opcional: relatórios carregados por script não têm autor.
