@@ -1,0 +1,266 @@
+{
+  "contrato": "c317.m6.v1",
+  "origem": {
+    "arquivo": "_Indicadores_OT_SRS_.xlsx",
+    "sha256": "e956c9350dbd4ca699b8803215413c23270daa5e4bfa5f7c4f594b969e9a3d8a"
+  },
+  "linhas_indicadores": 459,
+  "linhas_indicadores_elegiveis": 340,
+  "linhas_indicadores_excluidas": 119,
+  "pontos_series_anuais": 900,
+  "observacoes_unicas": 1228,
+  "repeticoes_unificadas": 12,
+  "triagem_por_aba": {
+    "Dados gerais": {
+      "elegivel": 40,
+      "excluido": 25
+    },
+    "Vale da Eletrônica": {
+      "excluido": 8,
+      "elegivel": 7
+    },
+    "Pesquisa e inovação": {
+      "elegivel": 187,
+      "excluido": 63
+    },
+    "Turismo": {
+      "elegivel": 73,
+      "excluido": 14
+    },
+    "Economia criativa": {
+      "excluido": 3,
+      "elegivel": 16
+    },
+    "Eventos": {
+      "excluido": 6,
+      "elegivel": 17
+    },
+    "Patentes por ano": {
+      "elegivel": 900
+    }
+  },
+  "conferencia_series": [
+    {
+      "linha": 2,
+      "soma_anual": "72",
+      "total_informado": "72",
+      "confere": true
+    },
+    {
+      "linha": 3,
+      "soma_anual": "49",
+      "total_informado": "49",
+      "confere": true
+    },
+    {
+      "linha": 4,
+      "soma_anual": "1",
+      "total_informado": "1",
+      "confere": true
+    },
+    {
+      "linha": 5,
+      "soma_anual": "11",
+      "total_informado": "11",
+      "confere": true
+    },
+    {
+      "linha": 6,
+      "soma_anual": "15",
+      "total_informado": "15",
+      "confere": true
+    },
+    {
+      "linha": 7,
+      "soma_anual": "0",
+      "total_informado": "0",
+      "confere": true
+    },
+    {
+      "linha": 8,
+      "soma_anual": "127",
+      "total_informado": "127",
+      "confere": true
+    },
+    {
+      "linha": 9,
+      "soma_anual": "55",
+      "total_informado": "55",
+      "confere": true
+    },
+    {
+      "linha": 10,
+      "soma_anual": "2",
+      "total_informado": "2",
+      "confere": true
+    },
+    {
+      "linha": 11,
+      "soma_anual": "5",
+      "total_informado": "5",
+      "confere": true
+    },
+    {
+      "linha": 12,
+      "soma_anual": "1",
+      "total_informado": "1",
+      "confere": true
+    },
+    {
+      "linha": 13,
+      "soma_anual": "0",
+      "total_informado": "0",
+      "confere": true
+    },
+    {
+      "linha": 14,
+      "soma_anual": "196",
+      "total_informado": "196",
+      "confere": true
+    },
+    {
+      "linha": 15,
+      "soma_anual": "69",
+      "total_informado": "69",
+      "confere": true
+    },
+    {
+      "linha": 16,
+      "soma_anual": "0",
+      "total_informado": "0",
+      "confere": true
+    },
+    {
+      "linha": 17,
+      "soma_anual": "19",
+      "total_informado": "19",
+      "confere": true
+    },
+    {
+      "linha": 18,
+      "soma_anual": "12",
+      "total_informado": "12",
+      "confere": true
+    },
+    {
+      "linha": 19,
+      "soma_anual": "0",
+      "total_informado": "0",
+      "confere": true
+    },
+    {
+      "linha": 20,
+      "soma_anual": "116",
+      "total_informado": "116",
+      "confere": true
+    },
+    {
+      "linha": 21,
+      "soma_anual": "26",
+      "total_informado": "26",
+      "confere": true
+    },
+    {
+      "linha": 22,
+      "soma_anual": "1",
+      "total_informado": "1",
+      "confere": true
+    },
+    {
+      "linha": 23,
+      "soma_anual": "11",
+      "total_informado": "11",
+      "confere": true
+    },
+    {
+      "linha": 24,
+      "soma_anual": "3",
+      "total_informado": "3",
+      "confere": true
+    },
+    {
+      "linha": 25,
+      "soma_anual": "0",
+      "total_informado": "0",
+      "confere": true
+    },
+    {
+      "linha": 26,
+      "soma_anual": "110",
+      "total_informado": "110",
+      "confere": true
+    },
+    {
+      "linha": 27,
+      "soma_anual": "65",
+      "total_informado": "65",
+      "confere": true
+    },
+    {
+      "linha": 28,
+      "soma_anual": "5",
+      "total_informado": "5",
+      "confere": true
+    },
+    {
+      "linha": 29,
+      "soma_anual": "48",
+      "total_informado": "48",
+      "confere": true
+    },
+    {
+      "linha": 30,
+      "soma_anual": "7",
+      "total_informado": "7",
+      "confere": true
+    },
+    {
+      "linha": 31,
+      "soma_anual": "2",
+      "total_informado": "2",
+      "confere": true
+    },
+    {
+      "linha": 32,
+      "soma_anual": "39",
+      "total_informado": "39",
+      "confere": true
+    },
+    {
+      "linha": 33,
+      "soma_anual": "45",
+      "total_informado": "45",
+      "confere": true
+    },
+    {
+      "linha": 34,
+      "soma_anual": "1",
+      "total_informado": "1",
+      "confere": true
+    },
+    {
+      "linha": 35,
+      "soma_anual": "1",
+      "total_informado": "1",
+      "confere": true
+    },
+    {
+      "linha": 36,
+      "soma_anual": "4",
+      "total_informado": "4",
+      "confere": true
+    },
+    {
+      "linha": 37,
+      "soma_anual": "0",
+      "total_informado": "0",
+      "confere": true
+    }
+  ],
+  "arquivos_sha256": {
+    "catalogos.json": "2a452d7e2ffc320a44b3d5f7aad2643a465ffcac45e3087d5fe65f33a27f3f63",
+    "observacoes.jsonl": "474026308c05e8da467d5a180a4115c2cbb8419361633c342d7f9eb95d2d37bf",
+    "triagem.csv": "1e458beebdd7dad06464a85538a2f645ee000dd5ccdff4d422129ac2853ce777",
+    "perfil_origem.json": "f1a6a696465bf21bc9b1c0b5d2c788382d5ebc87cd82a4194fd6d835c1e12000"
+  }
+}

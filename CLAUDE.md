@@ -6,6 +6,10 @@ validação em `docs/` — `docs/requisitos-entrega.md` (G1) é a referência pa
 As tarefas usam códigos ligados a issues do GitHub: G (requisitos/dados), V (API), J (front público),
 D (área administrativa e relatórios). Mantenha cada branch no escopo da sua tarefa.
 
+Para a Milestone 6, `docs/m6/requisitos-e-contrato.md` registra as decisões atuais e o contrato de intercâmbio;
+`docs/m6/carga-dos-dados.md` documenta preparação, simulação e carga. Dados completos das categorias recebidas
+são o foco; CNAE é secundário. A carga PostgreSQL e a consulta integrada dependem da migração V5 e da API V6.
+
 ## Comandos
 
 Front-end (pnpm, a partir da raiz):

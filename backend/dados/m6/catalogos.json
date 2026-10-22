@@ -1,0 +1,1625 @@
+{
+  "temas": {
+    "tema_dados_gerais_a37c845815": {
+      "codigo": "tema_dados_gerais_a37c845815",
+      "nome": "Dados gerais"
+    },
+    "tema_economia_criativa_ca3ef6a61b": {
+      "codigo": "tema_economia_criativa_ca3ef6a61b",
+      "nome": "Economia criativa"
+    },
+    "tema_eventos_752769b1d4": {
+      "codigo": "tema_eventos_752769b1d4",
+      "nome": "Eventos"
+    },
+    "tema_pesquisa_e_inovacao_2ce6883d18": {
+      "codigo": "tema_pesquisa_e_inovacao_2ce6883d18",
+      "nome": "Pesquisa e inovação"
+    },
+    "tema_turismo_f09ebc929b": {
+      "codigo": "tema_turismo_f09ebc929b",
+      "nome": "Turismo"
+    },
+    "tema_vale_da_eletronica_c1bb36b60f": {
+      "codigo": "tema_vale_da_eletronica_c1bb36b60f",
+      "nome": "Vale da Eletrônica"
+    }
+  },
+  "indicadores": {
+    "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c": {
+      "codigo": "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "nome": "Acessibilidade para pessoas com deficiência"
+    },
+    "i_aporte_financeiro_por_startup_no_acelera_vibra_6b2be2eeee": {
+      "codigo": "i_aporte_financeiro_por_startup_no_acelera_vibra_6b2be2eeee",
+      "nome": "Aporte financeiro por startup no Acelera Vibra"
+    },
+    "i_area_territorial_9b62248501": {
+      "codigo": "i_area_territorial_9b62248501",
+      "nome": "Área territorial"
+    },
+    "i_atendimento_bilingue_85bd5fa09b": {
+      "codigo": "i_atendimento_bilingue_85bd5fa09b",
+      "nome": "Atendimento bilíngue"
+    },
+    "i_atividades_economicas_cnae_cadastradas_no_municipio_232f732270": {
+      "codigo": "i_atividades_economicas_cnae_cadastradas_no_municipio_232f732270",
+      "nome": "Atividades econômicas (CNAE) cadastradas no município"
+    },
+    "i_avaliacao_geral_do_evento_2583c06e37": {
+      "codigo": "i_avaliacao_geral_do_evento_2583c06e37",
+      "nome": "Avaliação geral do evento"
+    },
+    "i_cadastros_repetidos_unidos_c9dce25e3e": {
+      "codigo": "i_cadastros_repetidos_unidos_c9dce25e3e",
+      "nome": "Cadastros repetidos unidos"
+    },
+    "i_cidade_vista_como_acolhedora_fc339b5db8": {
+      "codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "nome": "Cidade vista como: Acolhedora"
+    },
+    "i_cidade_vista_como_criativa_8db8f2a67b": {
+      "codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "nome": "Cidade vista como: Criativa"
+    },
+    "i_cidade_vista_como_inovadora_1a409d5f2a": {
+      "codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "nome": "Cidade vista como: Inovadora"
+    },
+    "i_cidade_vista_como_inspiradora_a047aed078": {
+      "codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "nome": "Cidade vista como: Inspiradora"
+    },
+    "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4": {
+      "codigo": "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "nome": "Concessão de patentes de invenção por mil habitantes"
+    },
+    "i_concessoes_de_certificados_de_adicao_de_invencao_ca_2af495a653": {
+      "codigo": "i_concessoes_de_certificados_de_adicao_de_invencao_ca_2af495a653",
+      "nome": "Concessões de certificados de adição de invenção (CA)"
+    },
+    "i_concessoes_de_modelos_de_utilidade_mu_8791a31437": {
+      "codigo": "i_concessoes_de_modelos_de_utilidade_mu_8791a31437",
+      "nome": "Concessões de modelos de utilidade (MU)"
+    },
+    "i_concessoes_de_patentes_de_invencao_pi_a86b296483": {
+      "codigo": "i_concessoes_de_patentes_de_invencao_pi_a86b296483",
+      "nome": "Concessões de patentes de invenção (PI)"
+    },
+    "i_densidade_demografica_6ebdeedca2": {
+      "codigo": "i_densidade_demografica_6ebdeedca2",
+      "nome": "Densidade demográfica"
+    },
+    "i_densidade_do_estoque_empresarial_ea9e6dce73": {
+      "codigo": "i_densidade_do_estoque_empresarial_ea9e6dce73",
+      "nome": "Densidade do estoque empresarial"
+    },
+    "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963": {
+      "codigo": "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "nome": "Depósito de patentes de invenção por mil habitantes"
+    },
+    "i_depositos_de_certificados_de_adicao_de_invencao_ca_d8cfb94ab3": {
+      "codigo": "i_depositos_de_certificados_de_adicao_de_invencao_ca_d8cfb94ab3",
+      "nome": "Depósitos de certificados de adição de invenção (CA)"
+    },
+    "i_depositos_de_modelos_de_utilidade_mu_ef610bc798": {
+      "codigo": "i_depositos_de_modelos_de_utilidade_mu_ef610bc798",
+      "nome": "Depósitos de modelos de utilidade (MU)"
+    },
+    "i_depositos_de_patentes_de_invencao_pi_1bc517ff0d": {
+      "codigo": "i_depositos_de_patentes_de_invencao_pi_1bc517ff0d",
+      "nome": "Depósitos de patentes de invenção (PI)"
+    },
+    "i_eletroeletronicos_como_parte_da_industria_e468521b66": {
+      "codigo": "i_eletroeletronicos_como_parte_da_industria_e468521b66",
+      "nome": "Eletroeletrônicos como parte da indústria"
+    },
+    "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e": {
+      "codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "nome": "Empreendimentos ativos em Santa Rita do Sapucaí"
+    },
+    "i_empreendimentos_ativos_por_categoria_79ac099547": {
+      "codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "nome": "Empreendimentos ativos por categoria"
+    },
+    "i_empreendimentos_criativos_ativos_cadastrados_02a85b4460": {
+      "codigo": "i_empreendimentos_criativos_ativos_cadastrados_02a85b4460",
+      "nome": "Empreendimentos criativos ativos cadastrados"
+    },
+    "i_empreendimentos_diferentes_cadastrados_0a77a210b8": {
+      "codigo": "i_empreendimentos_diferentes_cadastrados_0a77a210b8",
+      "nome": "Empreendimentos diferentes cadastrados"
+    },
+    "i_empreendimentos_que_se_cadastraram_nos_dois_anos_8341805f78": {
+      "codigo": "i_empreendimentos_que_se_cadastraram_nos_dois_anos_8341805f78",
+      "nome": "Empreendimentos que se cadastraram nos dois anos"
+    },
+    "i_empreendimentos_que_se_cadastraram_so_em_um_ano_bac99cdb13": {
+      "codigo": "i_empreendimentos_que_se_cadastraram_so_em_um_ano_bac99cdb13",
+      "nome": "Empreendimentos que se cadastraram só em um ano"
+    },
+    "i_empresas_por_segmento_sebrae_minas_3cc2522777": {
+      "codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "nome": "Empresas por segmento Sebrae Minas"
+    },
+    "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f": {
+      "codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "nome": "Envio do Boletim de Ocupação Hoteleira (BOH)"
+    },
+    "i_estoque_de_empresas_f3c074802c": {
+      "codigo": "i_estoque_de_empresas_f3c074802c",
+      "nome": "Estoque de empresas"
+    },
+    "i_estoque_de_empresas_por_porte_e2fde30564": {
+      "codigo": "i_estoque_de_empresas_por_porte_e2fde30564",
+      "nome": "Estoque de empresas por porte"
+    },
+    "i_estoque_de_empresas_por_setor_4c264f64d2": {
+      "codigo": "i_estoque_de_empresas_por_setor_4c264f64d2",
+      "nome": "Estoque de empresas por setor"
+    },
+    "i_gasto_medio_per_capita_23127ba6c9": {
+      "codigo": "i_gasto_medio_per_capita_23127ba6c9",
+      "nome": "Gasto médio per capita"
+    },
+    "i_idade_mediana_4ac2297a62": {
+      "codigo": "i_idade_mediana_4ac2297a62",
+      "nome": "Idade mediana"
+    },
+    "i_ideb_anos_finais_do_ensino_fundamental_rede_publica_e669247a95": {
+      "codigo": "i_ideb_anos_finais_do_ensino_fundamental_rede_publica_e669247a95",
+      "nome": "IDEB – anos finais do ensino fundamental (rede pública)"
+    },
+    "i_indice_de_conectividade_das_telecomunicacoes_e_internet_6d95e9e3da": {
+      "codigo": "i_indice_de_conectividade_das_telecomunicacoes_e_internet_6d95e9e3da",
+      "nome": "Índice de conectividade das telecomunicações e internet"
+    },
+    "i_indice_de_densidade_empresarial_28456e6aa5": {
+      "codigo": "i_indice_de_densidade_empresarial_28456e6aa5",
+      "nome": "Índice de densidade empresarial"
+    },
+    "i_indice_de_empregabilidade_23b6d390ef": {
+      "codigo": "i_indice_de_empregabilidade_23b6d390ef",
+      "nome": "Índice de empregabilidade"
+    },
+    "i_indice_de_infraestrutura_de_saude_06fba1b03e": {
+      "codigo": "i_indice_de_infraestrutura_de_saude_06fba1b03e",
+      "nome": "Índice de infraestrutura de saúde"
+    },
+    "i_indice_de_riqueza_9f99949b50": {
+      "codigo": "i_indice_de_riqueza_9f99949b50",
+      "nome": "Índice de riqueza"
+    },
+    "i_indice_de_vulnerabilidade_social_a5db68d13b": {
+      "codigo": "i_indice_de_vulnerabilidade_social_a5db68d13b",
+      "nome": "Índice de vulnerabilidade social"
+    },
+    "i_indice_sebrae_de_desenvolvimento_economico_local_isdel_5a1e3db7b1": {
+      "codigo": "i_indice_sebrae_de_desenvolvimento_economico_local_isdel_5a1e3db7b1",
+      "nome": "Índice Sebrae de Desenvolvimento Econômico Local (ISDEL)"
+    },
+    "i_industria_como_parte_de_todas_as_empresas_75f92f2ece": {
+      "codigo": "i_industria_como_parte_de_todas_as_empresas_75f92f2ece",
+      "nome": "Indústria como parte de todas as empresas"
+    },
+    "i_industria_de_eletroeletronicos_segmento_sebrae_minas_5f837a052a": {
+      "codigo": "i_industria_de_eletroeletronicos_segmento_sebrae_minas_5f837a052a",
+      "nome": "Indústria de eletroeletrônicos (segmento Sebrae Minas)"
+    },
+    "i_meios_de_hospedagem_10d688bcf7": {
+      "codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "nome": "Meios de hospedagem"
+    },
+    "i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea": {
+      "codigo": "i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea",
+      "nome": "Meios de hospedagem com CNPJ ativo"
+    },
+    "i_meios_de_hospedagem_por_zona_3a3165144f": {
+      "codigo": "i_meios_de_hospedagem_por_zona_3a3165144f",
+      "nome": "Meios de hospedagem por zona"
+    },
+    "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd": {
+      "codigo": "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "nome": "Meios de hospedagem que dizem estar no Cadastur"
+    },
+    "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73": {
+      "codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "nome": "Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam)"
+    },
+    "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1": {
+      "codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "nome": "Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam)"
+    },
+    "i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362": {
+      "codigo": "i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "nome": "Mestres e doutores atuando na cidade (Lattes)"
+    },
+    "i_mestres_e_doutores_formados_na_cidade_lattes_179fe49679": {
+      "codigo": "i_mestres_e_doutores_formados_na_cidade_lattes_179fe49679",
+      "nome": "Mestres e doutores formados na cidade (Lattes)"
+    },
+    "i_participantes_estimados_1425961244": {
+      "codigo": "i_participantes_estimados_1425961244",
+      "nome": "Participantes estimados"
+    },
+    "i_permanencia_media_dos_turistas_9c00a676b4": {
+      "codigo": "i_permanencia_media_dos_turistas_9c00a676b4",
+      "nome": "Permanência média dos turistas"
+    },
+    "i_permanencia_media_dos_visitantes_957fbc2e4a": {
+      "codigo": "i_permanencia_media_dos_visitantes_957fbc2e4a",
+      "nome": "Permanência média dos visitantes"
+    },
+    "i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32": {
+      "codigo": "i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32",
+      "nome": "Pessoas empregadas nos meios de hospedagem"
+    },
+    "i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b": {
+      "codigo": "i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b",
+      "nome": "Pessoas que passaram pelo evento (mais de)"
+    },
+    "i_pessoas_que_trabalharam_no_evento_mais_de_3025515561": {
+      "codigo": "i_pessoas_que_trabalharam_no_evento_mais_de_3025515561",
+      "nome": "Pessoas que trabalharam no evento (mais de)"
+    },
+    "i_pib_per_capita_8a9c11bc2b": {
+      "codigo": "i_pib_per_capita_8a9c11bc2b",
+      "nome": "PIB per capita"
+    },
+    "i_populacao_682eff3322": {
+      "codigo": "i_populacao_682eff3322",
+      "nome": "População"
+    },
+    "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3": {
+      "codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "nome": "Principais faixas etárias dos hóspedes (quantos empreendimentos citam)"
+    },
+    "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8": {
+      "codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "nome": "Procedência dos hóspedes (quantos empreendimentos recebem)"
+    },
+    "i_projetos_aprovados_na_chamada_novo_seed_a5c3437865": {
+      "codigo": "i_projetos_aprovados_na_chamada_novo_seed_a5c3437865",
+      "nome": "Projetos aprovados na chamada Novo SEED"
+    },
+    "i_recursos_aprovados_no_projeto_acelera_vibra_bcacc481a7": {
+      "codigo": "i_recursos_aprovados_no_projeto_acelera_vibra_bcacc481a7",
+      "nome": "Recursos aprovados no projeto Acelera Vibra"
+    },
+    "i_recursos_movimentados_na_economia_local_mais_de_64f0088e34": {
+      "codigo": "i_recursos_movimentados_na_economia_local_mais_de_64f0088e34",
+      "nome": "Recursos movimentados na economia local (mais de)"
+    },
+    "i_respostas_recebidas_nos_formularios_04fb99a412": {
+      "codigo": "i_respostas_recebidas_nos_formularios_04fb99a412",
+      "nome": "Respostas recebidas nos formulários"
+    },
+    "i_startups_a_serem_aceleradas_no_acelera_vibra_6b8b961368": {
+      "codigo": "i_startups_a_serem_aceleradas_no_acelera_vibra_6b8b961368",
+      "nome": "Startups a serem aceleradas no Acelera Vibra"
+    },
+    "i_startups_em_processo_de_incubacao_5c2feffd82": {
+      "codigo": "i_startups_em_processo_de_incubacao_5c2feffd82",
+      "nome": "Startups em processo de incubação"
+    },
+    "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad": {
+      "codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "nome": "Tipo de hospedagem usado pelos visitantes"
+    },
+    "i_total_de_empresas_7b34083361": {
+      "codigo": "i_total_de_empresas_7b34083361",
+      "nome": "Total de empresas"
+    },
+    "i_turistas_estimados_f440ffca8b": {
+      "codigo": "i_turistas_estimados_f440ffca8b",
+      "nome": "Turistas estimados"
+    },
+    "i_unidades_habitacionais_uhs_9e78642e0f": {
+      "codigo": "i_unidades_habitacionais_uhs_9e78642e0f",
+      "nome": "Unidades habitacionais (UHs)"
+    },
+    "i_valor_medio_da_diaria_media_simples_1b3f2e9d5d": {
+      "codigo": "i_valor_medio_da_diaria_media_simples_1b3f2e9d5d",
+      "nome": "Valor médio da diária (média simples)"
+    },
+    "i_valor_medio_da_diaria_mediana_ccb872f608": {
+      "codigo": "i_valor_medio_da_diaria_mediana_ccb872f608",
+      "nome": "Valor médio da diária (mediana)"
+    },
+    "i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3": {
+      "codigo": "i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3",
+      "nome": "Visitantes que pernoitaram na cidade"
+    }
+  },
+  "categorias": {
+    "c_categoria_cadastro_smcelt_agencias_agentes_e_guias_e118733054": {
+      "codigo": "c_categoria_cadastro_smcelt_agencias_agentes_e_guias_e118733054",
+      "nome": "Agências, agentes e guias",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_arte_e_artesanato_d248f8789c": {
+      "codigo": "c_categoria_cadastro_smcelt_arte_e_artesanato_d248f8789c",
+      "nome": "Arte e artesanato",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_comercio_de_produtos_locais_98b8d94fe4": {
+      "codigo": "c_categoria_cadastro_smcelt_comercio_de_produtos_locais_98b8d94fe4",
+      "nome": "Comércio de produtos locais",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_experiencias_cd45d2703f": {
+      "codigo": "c_categoria_cadastro_smcelt_experiencias_cd45d2703f",
+      "nome": "Experiências",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_gastronomia_4e30a6df39": {
+      "codigo": "c_categoria_cadastro_smcelt_gastronomia_4e30a6df39",
+      "nome": "Gastronomia",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_hospedagem_3ede31c0de": {
+      "codigo": "c_categoria_cadastro_smcelt_hospedagem_3ede31c0de",
+      "nome": "Hospedagem",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_mobilidade_urbana_f6a9df833f": {
+      "codigo": "c_categoria_cadastro_smcelt_mobilidade_urbana_f6a9df833f",
+      "nome": "Mobilidade urbana",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_negocios_criativos_b389d3e7c1": {
+      "codigo": "c_categoria_cadastro_smcelt_negocios_criativos_b389d3e7c1",
+      "nome": "Negócios criativos",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_organizacao_de_eventos_1030596639": {
+      "codigo": "c_categoria_cadastro_smcelt_organizacao_de_eventos_1030596639",
+      "nome": "Organização de eventos",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_cadastro_smcelt_outros_fora_do_guia_95574dc222": {
+      "codigo": "c_categoria_cadastro_smcelt_outros_fora_do_guia_95574dc222",
+      "nome": "Outros (fora do Guia)",
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_cama_e_cafe_6ad2455d3d": {
+      "codigo": "c_categoria_hospedagem_cama_e_cafe_6ad2455d3d",
+      "nome": "Cama e café",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_flat_apart_hotel_c0ef718e3f": {
+      "codigo": "c_categoria_hospedagem_flat_apart_hotel_c0ef718e3f",
+      "nome": "Flat/apart-hotel",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_hotel_c324b678a9": {
+      "codigo": "c_categoria_hospedagem_hotel_c324b678a9",
+      "nome": "Hotel",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_hotel_fazenda_639813e87f": {
+      "codigo": "c_categoria_hospedagem_hotel_fazenda_639813e87f",
+      "nome": "Hotel fazenda",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_hotel_historico_ba3b390634": {
+      "codigo": "c_categoria_hospedagem_hotel_historico_ba3b390634",
+      "nome": "Hotel histórico",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_outros_574519762b": {
+      "codigo": "c_categoria_hospedagem_outros_574519762b",
+      "nome": "Outros",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_pousada_119d97a37b": {
+      "codigo": "c_categoria_hospedagem_pousada_119d97a37b",
+      "nome": "Pousada",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_categoria_hospedagem_resort_a2440e52f7": {
+      "codigo": "c_categoria_hospedagem_resort_a2440e52f7",
+      "nome": "Resort",
+      "classificacao": "categoria_hospedagem",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_abril_697a5a2fda": {
+      "codigo": "c_mes_citado_em_questionario_abril_697a5a2fda",
+      "nome": "Abril",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_agosto_5b46302f47": {
+      "codigo": "c_mes_citado_em_questionario_agosto_5b46302f47",
+      "nome": "Agosto",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_dezembro_ec39e23a7b": {
+      "codigo": "c_mes_citado_em_questionario_dezembro_ec39e23a7b",
+      "nome": "Dezembro",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_fevereiro_8e0c38fddb": {
+      "codigo": "c_mes_citado_em_questionario_fevereiro_8e0c38fddb",
+      "nome": "Fevereiro",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_janeiro_181d6bf102": {
+      "codigo": "c_mes_citado_em_questionario_janeiro_181d6bf102",
+      "nome": "Janeiro",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_julho_bc131786ab": {
+      "codigo": "c_mes_citado_em_questionario_julho_bc131786ab",
+      "nome": "Julho",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_junho_a8ae5a8868": {
+      "codigo": "c_mes_citado_em_questionario_junho_a8ae5a8868",
+      "nome": "Junho",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_maio_b450eee3cf": {
+      "codigo": "c_mes_citado_em_questionario_maio_b450eee3cf",
+      "nome": "Maio",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_marco_59dbb27974": {
+      "codigo": "c_mes_citado_em_questionario_marco_59dbb27974",
+      "nome": "Março",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_novembro_9f8675f851": {
+      "codigo": "c_mes_citado_em_questionario_novembro_9f8675f851",
+      "nome": "Novembro",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_outubro_a039dc091f": {
+      "codigo": "c_mes_citado_em_questionario_outubro_a039dc091f",
+      "nome": "Outubro",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_mes_citado_em_questionario_setembro_c4fa6fa517": {
+      "codigo": "c_mes_citado_em_questionario_setembro_c4fa6fa517",
+      "nome": "Setembro",
+      "classificacao": "mes_citado_em_questionario",
+      "codigo_cnae": null
+    },
+    "c_porte_empresa_demais_c162d25b09": {
+      "codigo": "c_porte_empresa_demais_c162d25b09",
+      "nome": "Demais",
+      "classificacao": "porte_empresa",
+      "codigo_cnae": null
+    },
+    "c_porte_empresa_epp_empresa_de_pequeno_porte_4a0f41cf16": {
+      "codigo": "c_porte_empresa_epp_empresa_de_pequeno_porte_4a0f41cf16",
+      "nome": "EPP (empresa de pequeno porte)",
+      "classificacao": "porte_empresa",
+      "codigo_cnae": null
+    },
+    "c_porte_empresa_me_microempresa_af4b0ec29f": {
+      "codigo": "c_porte_empresa_me_microempresa_af4b0ec29f",
+      "nome": "ME (microempresa)",
+      "classificacao": "porte_empresa",
+      "codigo_cnae": null
+    },
+    "c_porte_empresa_mei_362f6f9173": {
+      "codigo": "c_porte_empresa_mei_362f6f9173",
+      "nome": "MEI",
+      "classificacao": "porte_empresa",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8_63f5a2d330": {
+      "codigo": "c_recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8_63f5a2d330",
+      "nome": "Têm",
+      "classificacao": "recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8_bf3445b595": {
+      "codigo": "c_recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8_bf3445b595",
+      "nome": "Não têm",
+      "classificacao": "recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_aporte_financeiro_por_startup_no_acelera_vibra_6b2_1d29078d17": {
+      "codigo": "c_recorte_i_aporte_financeiro_por_startup_no_acelera_vibra_6b2_1d29078d17",
+      "nome": "Valor máximo",
+      "classificacao": "recorte_i_aporte_financeiro_por_startup_no_acelera_vibra_6b2be2eeee",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_atendimento_bilingue_85bd5fa09b_nao_tem_442a1df4f0": {
+      "codigo": "c_recorte_i_atendimento_bilingue_85bd5fa09b_nao_tem_442a1df4f0",
+      "nome": "Não têm",
+      "classificacao": "recorte_i_atendimento_bilingue_85bd5fa09b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_atendimento_bilingue_85bd5fa09b_tem_766880a1db": {
+      "codigo": "c_recorte_i_atendimento_bilingue_85bd5fa09b_tem_766880a1db",
+      "nome": "Têm",
+      "classificacao": "recorte_i_atendimento_bilingue_85bd5fa09b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_avaliacao_geral_do_evento_2583c06e37_festa_de_sant_a81268ce11": {
+      "codigo": "c_recorte_i_avaliacao_geral_do_evento_2583c06e37_festa_de_sant_a81268ce11",
+      "nome": "Festa de Santa Rita 2024",
+      "classificacao": "recorte_i_avaliacao_geral_do_evento_2583c06e37",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_avaliacao_geral_do_evento_2583c06e37_hacktown_2025_43b84e11a3": {
+      "codigo": "c_recorte_i_avaliacao_geral_do_evento_2583c06e37_hacktown_2025_43b84e11a3",
+      "nome": "HackTown 2025",
+      "classificacao": "recorte_i_avaliacao_geral_do_evento_2583c06e37",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_amostra_to_241bd660af": {
+      "codigo": "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_amostra_to_241bd660af",
+      "nome": "Amostra total",
+      "classificacao": "recorte_i_cidade_vista_como_acolhedora_fc339b5db8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_moradores_0dcf0e395f": {
+      "codigo": "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_moradores_0dcf0e395f",
+      "nome": "Moradores",
+      "classificacao": "recorte_i_cidade_vista_como_acolhedora_fc339b5db8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_visitantes_3dba23ee72": {
+      "codigo": "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_visitantes_3dba23ee72",
+      "nome": "Visitantes",
+      "classificacao": "recorte_i_cidade_vista_como_acolhedora_fc339b5db8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_amostra_tota_013afe1056": {
+      "codigo": "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_amostra_tota_013afe1056",
+      "nome": "Amostra total",
+      "classificacao": "recorte_i_cidade_vista_como_criativa_8db8f2a67b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_moradores_210f5beb2e": {
+      "codigo": "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_moradores_210f5beb2e",
+      "nome": "Moradores",
+      "classificacao": "recorte_i_cidade_vista_como_criativa_8db8f2a67b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_visitantes_1784af7c42": {
+      "codigo": "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_visitantes_1784af7c42",
+      "nome": "Visitantes",
+      "classificacao": "recorte_i_cidade_vista_como_criativa_8db8f2a67b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_amostra_tot_112ebd2ee9": {
+      "codigo": "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_amostra_tot_112ebd2ee9",
+      "nome": "Amostra total",
+      "classificacao": "recorte_i_cidade_vista_como_inovadora_1a409d5f2a",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_moradores_5ee3c39cac": {
+      "codigo": "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_moradores_5ee3c39cac",
+      "nome": "Moradores",
+      "classificacao": "recorte_i_cidade_vista_como_inovadora_1a409d5f2a",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_visitantes_4b9f8b246a": {
+      "codigo": "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_visitantes_4b9f8b246a",
+      "nome": "Visitantes",
+      "classificacao": "recorte_i_cidade_vista_como_inovadora_1a409d5f2a",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_amostra_t_da01ef776c": {
+      "codigo": "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_amostra_t_da01ef776c",
+      "nome": "Amostra total",
+      "classificacao": "recorte_i_cidade_vista_como_inspiradora_a047aed078",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_moradores_24b5735ea1": {
+      "codigo": "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_moradores_24b5735ea1",
+      "nome": "Moradores",
+      "classificacao": "recorte_i_cidade_vista_como_inspiradora_a047aed078",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_visitante_0345342ae0": {
+      "codigo": "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_visitante_0345342ae0",
+      "nome": "Visitantes",
+      "classificacao": "recorte_i_cidade_vista_como_inspiradora_a047aed078",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_126fdfa2fa": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_126fdfa2fa",
+      "nome": "Pouso Alegre (acumulado 2000–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_2ee4fa5199": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_2ee4fa5199",
+      "nome": "Varginha (2020–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_3335181abc": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_3335181abc",
+      "nome": "Pouso Alegre (2020–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_34a5609711": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_34a5609711",
+      "nome": "Lavras (acumulado 2000–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_3d7c8ed2b5": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_3d7c8ed2b5",
+      "nome": "Poços de Caldas (acumulado 2000–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_417537db96": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_417537db96",
+      "nome": "Varginha (acumulado 2000–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_4d2b326920": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_4d2b326920",
+      "nome": "Itajubá (2020–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_70e5af7205": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_70e5af7205",
+      "nome": "Itajubá (acumulado 2000–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_84fc23984e": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_84fc23984e",
+      "nome": "Lavras (2020–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_8966786261": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_8966786261",
+      "nome": "Santa Rita do Sapucaí (acumulado 2000–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_afbf9243bb": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_afbf9243bb",
+      "nome": "Poços de Caldas (2020–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_cce9851259": {
+      "codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_cce9851259",
+      "nome": "Santa Rita do Sapucaí (2020–2024)",
+      "classificacao": "recorte_i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_0bb5e009ad": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_0bb5e009ad",
+      "nome": "Poços de Caldas (2020–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_0ee60c0967": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_0ee60c0967",
+      "nome": "Santa Rita do Sapucaí (acumulado 2000–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_100988afb8": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_100988afb8",
+      "nome": "Itajubá (2020–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_122129e361": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_122129e361",
+      "nome": "Santa Rita do Sapucaí (2020–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_4b3dbd23e6": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_4b3dbd23e6",
+      "nome": "Lavras (2020–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_59af9d26b4": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_59af9d26b4",
+      "nome": "Pouso Alegre (acumulado 2000–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_778b645862": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_778b645862",
+      "nome": "Itajubá (acumulado 2000–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_97a6f14941": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_97a6f14941",
+      "nome": "Pouso Alegre (2020–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_9d00204a72": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_9d00204a72",
+      "nome": "Varginha (2020–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_da1183f06d": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_da1183f06d",
+      "nome": "Lavras (acumulado 2000–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_ecd4b08cc5": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_ecd4b08cc5",
+      "nome": "Poços de Caldas (acumulado 2000–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_fab0a80959": {
+      "codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_fab0a80959",
+      "nome": "Varginha (acumulado 2000–2024)",
+      "classificacao": "recorte_i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_empreendimentos_que_se_cadastraram_nos_dois_anos_8_f10c73584c": {
+      "codigo": "c_recorte_i_empreendimentos_que_se_cadastraram_nos_dois_anos_8_f10c73584c",
+      "nome": "2022 e 2023",
+      "classificacao": "recorte_i_empreendimentos_que_se_cadastraram_nos_dois_anos_8341805f78",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_empreendimentos_que_se_cadastraram_so_em_um_ano_ba_a935210c3a": {
+      "codigo": "c_recorte_i_empreendimentos_que_se_cadastraram_so_em_um_ano_ba_a935210c3a",
+      "nome": "Só 2023",
+      "classificacao": "recorte_i_empreendimentos_que_se_cadastraram_so_em_um_ano_bac99cdb13",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_empreendimentos_que_se_cadastraram_so_em_um_ano_ba_c97ead1e53": {
+      "codigo": "c_recorte_i_empreendimentos_que_se_cadastraram_so_em_um_ano_ba_c97ead1e53",
+      "nome": "Só 2022",
+      "classificacao": "recorte_i_empreendimentos_que_se_cadastraram_so_em_um_ano_bac99cdb13",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_7b4e7b7d6f": {
+      "codigo": "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_7b4e7b7d6f",
+      "nome": "Não sabem o que é",
+      "classificacao": "recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_f111942a33": {
+      "codigo": "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_f111942a33",
+      "nome": "Enviam",
+      "classificacao": "recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_fc6b298439": {
+      "codigo": "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_fc6b298439",
+      "nome": "Não enviam",
+      "classificacao": "recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_gasto_medio_per_capita_23127ba6c9_hacktown_2025_mo_041174d02e": {
+      "codigo": "c_recorte_i_gasto_medio_per_capita_23127ba6c9_hacktown_2025_mo_041174d02e",
+      "nome": "HackTown 2025 – moradores",
+      "classificacao": "recorte_i_gasto_medio_per_capita_23127ba6c9",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_gasto_medio_per_capita_23127ba6c9_hacktown_2025_vi_5bde3d58e4": {
+      "codigo": "c_recorte_i_gasto_medio_per_capita_23127ba6c9_hacktown_2025_vi_5bde3d58e4",
+      "nome": "HackTown 2025 – visitantes",
+      "classificacao": "recorte_i_gasto_medio_per_capita_23127ba6c9",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea_sim_c24845b204": {
+      "codigo": "c_recorte_i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea_sim_c24845b204",
+      "nome": "Sim",
+      "classificacao": "recorte_i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_meios_de_hospedagem_por_zona_3a3165144f_rural_003a98ea9e": {
+      "codigo": "c_recorte_i_meios_de_hospedagem_por_zona_3a3165144f_rural_003a98ea9e",
+      "nome": "Rural",
+      "classificacao": "recorte_i_meios_de_hospedagem_por_zona_3a3165144f",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_meios_de_hospedagem_por_zona_3a3165144f_urbana_69c809119d": {
+      "codigo": "c_recorte_i_meios_de_hospedagem_por_zona_3a3165144f_urbana_69c809119d",
+      "nome": "Urbana",
+      "classificacao": "recorte_i_meios_de_hospedagem_por_zona_3a3165144f",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a_31d86720b7": {
+      "codigo": "c_recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a_31d86720b7",
+      "nome": "Sim",
+      "classificacao": "recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a_c781f3bd88": {
+      "codigo": "c_recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a_c781f3bd88",
+      "nome": "Não",
+      "classificacao": "recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_01d0f71794": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_01d0f71794",
+      "nome": "Mulheres (% do total)",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_049083504f": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_049083504f",
+      "nome": "Por grande área – Ciências Exatas e da Terra",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_29b5da3446": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_29b5da3446",
+      "nome": "Mulheres",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_5238dd5967": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_5238dd5967",
+      "nome": "Por grande área – Ciências da Saúde",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_5deed1c854": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_5deed1c854",
+      "nome": "Por mil habitantes",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_6b2c5b70f5": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_6b2c5b70f5",
+      "nome": "Por nível – Mestrado profissional",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_71068d0a34": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_71068d0a34",
+      "nome": "Engenharias (% do total)",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_7d0760bfef": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_7d0760bfef",
+      "nome": "Por nível – Doutorado",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_a4fcfce3d6": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_a4fcfce3d6",
+      "nome": "Por grande área – Engenharias",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_b3eabc4c8d": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_b3eabc4c8d",
+      "nome": "Por nível – Mestrado",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_c43965f2d6": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_c43965f2d6",
+      "nome": "Por grande área – Linguística, Letras e Artes",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_c58c6f6147": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_c58c6f6147",
+      "nome": "Por grande área – Ciências Agrárias",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_dab3fcb91b": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_dab3fcb91b",
+      "nome": "Por grande área – Ciências Biológicas",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_e1c0cae902": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_e1c0cae902",
+      "nome": "Por grande área – Ciências Humanas",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_f774686e55": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_f774686e55",
+      "nome": "Por grande área – Outra",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_f8c3dd69f0": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_f8c3dd69f0",
+      "nome": "Por grande área – Não informado",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_f92c9f0737": {
+      "codigo": "c_recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e62_f92c9f0737",
+      "nome": "Por grande área – Ciências Sociais Aplicadas",
+      "classificacao": "recorte_i_mestres_e_doutores_atuando_na_cidade_lattes_a44e624362",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe_01ccfd7b68": {
+      "codigo": "c_recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe_01ccfd7b68",
+      "nome": "Por nível – Doutorado",
+      "classificacao": "recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe49679",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe_2dd07c59ba": {
+      "codigo": "c_recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe_2dd07c59ba",
+      "nome": "Por nível – Mestrado profissional",
+      "classificacao": "recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe49679",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe_dfe8e66535": {
+      "codigo": "c_recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe_dfe8e66535",
+      "nome": "Por nível – Mestrado",
+      "classificacao": "recorte_i_mestres_e_doutores_formados_na_cidade_lattes_179fe49679",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_participantes_estimados_1425961244_festa_de_santa__0a4d1f1290": {
+      "codigo": "c_recorte_i_participantes_estimados_1425961244_festa_de_santa__0a4d1f1290",
+      "nome": "Festa de Santa Rita 2024",
+      "classificacao": "recorte_i_participantes_estimados_1425961244",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_permanencia_media_dos_turistas_9c00a676b4_festa_de_b1c926bfdd": {
+      "codigo": "c_recorte_i_permanencia_media_dos_turistas_9c00a676b4_festa_de_b1c926bfdd",
+      "nome": "Festa de Santa Rita 2024",
+      "classificacao": "recorte_i_permanencia_media_dos_turistas_9c00a676b4",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_permanencia_media_dos_visitantes_957fbc2e4a_hackto_4cffdb026b": {
+      "codigo": "c_recorte_i_permanencia_media_dos_visitantes_957fbc2e4a_hackto_4cffdb026b",
+      "nome": "HackTown 2025",
+      "classificacao": "recorte_i_permanencia_media_dos_visitantes_957fbc2e4a",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_pessoas_empregadas_nos_meios_de_hospedagem_8705121_5ee530c46f": {
+      "codigo": "c_recorte_i_pessoas_empregadas_nos_meios_de_hospedagem_8705121_5ee530c46f",
+      "nome": "Total informado",
+      "classificacao": "recorte_i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_pessoas_que_passaram_pelo_evento_mais_de_c49441875_e473ffd52c": {
+      "codigo": "c_recorte_i_pessoas_que_passaram_pelo_evento_mais_de_c49441875_e473ffd52c",
+      "nome": "Festa de Santa Rita 2025",
+      "classificacao": "recorte_i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_pessoas_que_trabalharam_no_evento_mais_de_30255155_a84705d7eb": {
+      "codigo": "c_recorte_i_pessoas_que_trabalharam_no_evento_mais_de_30255155_a84705d7eb",
+      "nome": "Festa de Santa Rita 2025",
+      "classificacao": "recorte_i_pessoas_que_trabalharam_no_evento_mais_de_3025515561",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_populacao_682eff3322_censo_2022_73e5380f77": {
+      "codigo": "c_recorte_i_populacao_682eff3322_censo_2022_73e5380f77",
+      "nome": "Censo 2022",
+      "classificacao": "recorte_i_populacao_682eff3322",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_populacao_682eff3322_estimativa_painel_sebrae_c6ab53fdcf": {
+      "codigo": "c_recorte_i_populacao_682eff3322_estimativa_painel_sebrae_c6ab53fdcf",
+      "nome": "Estimativa (painel Sebrae)",
+      "classificacao": "recorte_i_populacao_682eff3322",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_353604cd0a": {
+      "codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_353604cd0a",
+      "nome": "35 a 44 anos",
+      "classificacao": "recorte_i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_3947c1954d": {
+      "codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_3947c1954d",
+      "nome": "65 anos ou mais",
+      "classificacao": "recorte_i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_7b99ad92eb": {
+      "codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_7b99ad92eb",
+      "nome": "45 a 54 anos",
+      "classificacao": "recorte_i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_b59d5061f4": {
+      "codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_b59d5061f4",
+      "nome": "16 a 24 anos",
+      "classificacao": "recorte_i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_cb785dd568": {
+      "codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_cb785dd568",
+      "nome": "55 a 64 anos",
+      "classificacao": "recorte_i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_e0eb6277f8": {
+      "codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_e0eb6277f8",
+      "nome": "25 a 34 anos",
+      "classificacao": "recorte_i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_1639b36fe0": {
+      "codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_1639b36fe0",
+      "nome": "Internacional",
+      "classificacao": "recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_73b9ff58ac": {
+      "codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_73b9ff58ac",
+      "nome": "Entorno regional",
+      "classificacao": "recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_83213e4ea8": {
+      "codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_83213e4ea8",
+      "nome": "Nacional",
+      "classificacao": "recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_d8bde4c4bf": {
+      "codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_d8bde4c4bf",
+      "nome": "Municipal",
+      "classificacao": "recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_projetos_aprovados_na_chamada_novo_seed_a5c3437865_3a58147910": {
+      "codigo": "c_recorte_i_projetos_aprovados_na_chamada_novo_seed_a5c3437865_3a58147910",
+      "nome": "Aprovados em Minas Gerais",
+      "classificacao": "recorte_i_projetos_aprovados_na_chamada_novo_seed_a5c3437865",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_recursos_aprovados_no_projeto_acelera_vibra_bcacc4_acebeac67b": {
+      "codigo": "c_recorte_i_recursos_aprovados_no_projeto_acelera_vibra_bcacc4_acebeac67b",
+      "nome": "Chamada FAPEMIG/Sede 03/2026 (Novo SEED)",
+      "classificacao": "recorte_i_recursos_aprovados_no_projeto_acelera_vibra_bcacc481a7",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_recursos_movimentados_na_economia_local_mais_de_64_6dcf33b69d": {
+      "codigo": "c_recorte_i_recursos_movimentados_na_economia_local_mais_de_64_6dcf33b69d",
+      "nome": "Festa de Santa Rita 2025",
+      "classificacao": "recorte_i_recursos_movimentados_na_economia_local_mais_de_64f0088e34",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_respostas_recebidas_nos_formularios_04fb99a412_202_175d9e07b8": {
+      "codigo": "c_recorte_i_respostas_recebidas_nos_formularios_04fb99a412_202_175d9e07b8",
+      "nome": "2022 + 2023",
+      "classificacao": "recorte_i_respostas_recebidas_nos_formularios_04fb99a412",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_0a54a4ed76": {
+      "codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_0a54a4ed76",
+      "nome": "HackTown 2025 – Camping",
+      "classificacao": "recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_1d39faa0ae": {
+      "codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_1d39faa0ae",
+      "nome": "HackTown 2025 – Airbnb",
+      "classificacao": "recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_8d5aeda025": {
+      "codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_8d5aeda025",
+      "nome": "HackTown 2025 – Casa própria ou alugada",
+      "classificacao": "recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_b398ea6c38": {
+      "codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_b398ea6c38",
+      "nome": "HackTown 2025 – Casa de amigos/parentes",
+      "classificacao": "recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_e9746e335f": {
+      "codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_e9746e335f",
+      "nome": "HackTown 2025 – Hotéis e pousadas",
+      "classificacao": "recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_total_de_empresas_7b34083361_painel_ambiente_de_ne_93866c8ec7": {
+      "codigo": "c_recorte_i_total_de_empresas_7b34083361_painel_ambiente_de_ne_93866c8ec7",
+      "nome": "Painel Ambiente de Negócios",
+      "classificacao": "recorte_i_total_de_empresas_7b34083361",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_turistas_estimados_f440ffca8b_festa_de_santa_rita__81842574ee": {
+      "codigo": "c_recorte_i_turistas_estimados_f440ffca8b_festa_de_santa_rita__81842574ee",
+      "nome": "Festa de Santa Rita 2024",
+      "classificacao": "recorte_i_turistas_estimados_f440ffca8b",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_valor_medio_da_diaria_media_simples_1b3f2e9d5d_6_r_c64ec730ad": {
+      "codigo": "c_recorte_i_valor_medio_da_diaria_media_simples_1b3f2e9d5d_6_r_c64ec730ad",
+      "nome": "6 respostas, sem a Fazenda Pinhal",
+      "classificacao": "recorte_i_valor_medio_da_diaria_media_simples_1b3f2e9d5d",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_valor_medio_da_diaria_mediana_ccb872f608_6_respost_e353df5430": {
+      "codigo": "c_recorte_i_valor_medio_da_diaria_mediana_ccb872f608_6_respost_e353df5430",
+      "nome": "6 respostas, sem a Fazenda Pinhal",
+      "classificacao": "recorte_i_valor_medio_da_diaria_mediana_ccb872f608",
+      "codigo_cnae": null
+    },
+    "c_recorte_i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3_ha_ebdcb47a89": {
+      "codigo": "c_recorte_i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3_ha_ebdcb47a89",
+      "nome": "HackTown 2025",
+      "classificacao": "recorte_i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_alimentacao_fora_do_lar_4ec85f0652": {
+      "codigo": "c_segmento_sebrae_alimentacao_fora_do_lar_4ec85f0652",
+      "nome": "Alimentação fora do lar",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_beleza_df30dd211d": {
+      "codigo": "c_segmento_sebrae_beleza_df30dd211d",
+      "nome": "Beleza",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_comercio_de_alimentos_e_bebidas_0296afe9e5": {
+      "codigo": "c_segmento_sebrae_comercio_de_alimentos_e_bebidas_0296afe9e5",
+      "nome": "Comércio de alimentos e bebidas",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_comercio_varejista_da_moda_76e7e30789": {
+      "codigo": "c_segmento_sebrae_comercio_varejista_da_moda_76e7e30789",
+      "nome": "Comércio varejista da moda",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_cursos_livres_f2b675da12": {
+      "codigo": "c_segmento_sebrae_cursos_livres_f2b675da12",
+      "nome": "Cursos livres",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_industria_de_eletroeletronicos_7211514f70": {
+      "codigo": "c_segmento_sebrae_industria_de_eletroeletronicos_7211514f70",
+      "nome": "Indústria de eletroeletrônicos",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_micro_e_pequenas_empresas_mpe_a1f60a6cfe": {
+      "codigo": "c_segmento_sebrae_micro_e_pequenas_empresas_mpe_a1f60a6cfe",
+      "nome": "Micro e pequenas empresas (MPE)",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_participacao_no_total_de_empresas_c2a9a8cf55": {
+      "codigo": "c_segmento_sebrae_participacao_no_total_de_empresas_c2a9a8cf55",
+      "nome": "Participação no total de empresas",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_pequenos_negocios_mei_me_e_epp_ea63de8d8d": {
+      "codigo": "c_segmento_sebrae_pequenos_negocios_mei_me_e_epp_ea63de8d8d",
+      "nome": "Pequenos negócios (MEI, ME e EPP)",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_servicos_de_construcao_a2fbee5f8f": {
+      "codigo": "c_segmento_sebrae_servicos_de_construcao_a2fbee5f8f",
+      "nome": "Serviços de construção",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_servicos_empresariais_1748bbcc8d": {
+      "codigo": "c_segmento_sebrae_servicos_empresariais_1748bbcc8d",
+      "nome": "Serviços empresariais",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_segmento_sebrae_transporte_terrestre_170b9dccc0": {
+      "codigo": "c_segmento_sebrae_transporte_terrestre_170b9dccc0",
+      "nome": "Transporte terrestre",
+      "classificacao": "segmento_sebrae",
+      "codigo_cnae": null
+    },
+    "c_setor_sebrae_agropecuaria_7d488d9702": {
+      "codigo": "c_setor_sebrae_agropecuaria_7d488d9702",
+      "nome": "Agropecuária",
+      "classificacao": "setor_sebrae",
+      "codigo_cnae": null
+    },
+    "c_setor_sebrae_comercio_7fed8124cb": {
+      "codigo": "c_setor_sebrae_comercio_7fed8124cb",
+      "nome": "Comércio",
+      "classificacao": "setor_sebrae",
+      "codigo_cnae": null
+    },
+    "c_setor_sebrae_industria_1b53e70054": {
+      "codigo": "c_setor_sebrae_industria_1b53e70054",
+      "nome": "Indústria",
+      "classificacao": "setor_sebrae",
+      "codigo_cnae": null
+    },
+    "c_setor_sebrae_servicos_ba54538fb2": {
+      "codigo": "c_setor_sebrae_servicos_ba54538fb2",
+      "nome": "Serviços",
+      "classificacao": "setor_sebrae",
+      "codigo_cnae": null
+    }
+  },
+  "territorios": {
+    "t_cadastro_smcelt_2022_e_2023_com_todos_os_respondentes_3b29c47120": {
+      "codigo": "t_cadastro_smcelt_2022_e_2023_com_todos_os_respondentes_3b29c47120",
+      "nome": "Cadastro SMCELT 2022 e 2023 com todos os respondentes",
+      "tipo": "base_cadastral"
+    },
+    "t_itajuba_73ded10da9": {
+      "codigo": "t_itajuba_73ded10da9",
+      "nome": "Itajubá",
+      "tipo": "municipio"
+    },
+    "t_lavras_7ec1f301ab": {
+      "codigo": "t_lavras_7ec1f301ab",
+      "nome": "Lavras",
+      "tipo": "municipio"
+    },
+    "t_pocos_de_caldas_93b232ea95": {
+      "codigo": "t_pocos_de_caldas_93b232ea95",
+      "nome": "Poços de Caldas",
+      "tipo": "municipio"
+    },
+    "t_pouso_alegre_aaade6a15b": {
+      "codigo": "t_pouso_alegre_aaade6a15b",
+      "nome": "Pouso Alegre",
+      "tipo": "municipio"
+    },
+    "t_santa_rita_do_sapucai_831ff035c3": {
+      "codigo": "t_santa_rita_do_sapucai_831ff035c3",
+      "nome": "Santa Rita do Sapucaí",
+      "tipo": "municipio"
+    },
+    "t_sistema_regional_de_inovacao_do_sul_de_minas_2e05e914c7": {
+      "codigo": "t_sistema_regional_de_inovacao_do_sul_de_minas_2e05e914c7",
+      "nome": "Sistema Regional de Inovação do Sul de Minas",
+      "tipo": "regional"
+    },
+    "t_varginha_e0bf2a59e9": {
+      "codigo": "t_varginha_e0bf2a59e9",
+      "nome": "Varginha",
+      "tipo": "municipio"
+    }
+  },
+  "unidades": {
+    "u__bbf3f11cb5": {
+      "codigo": "u__bbf3f11cb5",
+      "nome": "%",
+      "inteira": false,
+      "maximo": 100,
+      "casas_exibicao": 2
+    },
+    "u_anos_82ffe5a409": {
+      "codigo": "u_anos_82ffe5a409",
+      "nome": "anos",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_atividades_3675217490": {
+      "codigo": "u_atividades_3675217490",
+      "nome": "atividades",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_concessoes_por_mil_hab_7ce36aac56": {
+      "codigo": "u_concessoes_por_mil_hab_7ce36aac56",
+      "nome": "concessões por mil hab.",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_das_empresas_do_segmento_d6a40e7fdf": {
+      "codigo": "u_das_empresas_do_segmento_d6a40e7fdf",
+      "nome": "% das empresas do segmento",
+      "inteira": false,
+      "maximo": 100,
+      "casas_exibicao": 2
+    },
+    "u_depositos_por_mil_hab_845ff4cf83": {
+      "codigo": "u_depositos_por_mil_hab_845ff4cf83",
+      "nome": "depósitos por mil hab.",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_dias_d470eac948": {
+      "codigo": "u_dias_d470eac948",
+      "nome": "dias",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_dos_entrevistados_d2d9128f71": {
+      "codigo": "u_dos_entrevistados_d2d9128f71",
+      "nome": "% dos entrevistados",
+      "inteira": false,
+      "maximo": 100,
+      "casas_exibicao": 2
+    },
+    "u_empreendimentos_51fbb9f121": {
+      "codigo": "u_empreendimentos_51fbb9f121",
+      "nome": "empreendimentos",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_empresas_df51a73104": {
+      "codigo": "u_empresas_df51a73104",
+      "nome": "empresas",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_empresas_por_mil_habitantes_43d605d0a0": {
+      "codigo": "u_empresas_por_mil_habitantes_43d605d0a0",
+      "nome": "empresas por mil habitantes",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_hab_km2_71336da493": {
+      "codigo": "u_hab_km2_71336da493",
+      "nome": "hab/km²",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_indice_0_a_100_bbd701a27d": {
+      "codigo": "u_indice_0_a_100_bbd701a27d",
+      "nome": "índice (0 a 100)",
+      "inteira": false,
+      "maximo": 100,
+      "casas_exibicao": 2
+    },
+    "u_indice_0_a_1_6198755964": {
+      "codigo": "u_indice_0_a_1_6198755964",
+      "nome": "índice (0 a 1)",
+      "inteira": false,
+      "maximo": 1,
+      "casas_exibicao": 2
+    },
+    "u_km2_b443e9bd17": {
+      "codigo": "u_km2_b443e9bd17",
+      "nome": "km²",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_nota_0_10_38a14f1594": {
+      "codigo": "u_nota_0_10_38a14f1594",
+      "nome": "nota 0–10",
+      "inteira": false,
+      "maximo": 10,
+      "casas_exibicao": 2
+    },
+    "u_nota_108ffcf2ca": {
+      "codigo": "u_nota_108ffcf2ca",
+      "nome": "nota",
+      "inteira": false,
+      "maximo": 10,
+      "casas_exibicao": 2
+    },
+    "u_patentes_b87194e2d8": {
+      "codigo": "u_patentes_b87194e2d8",
+      "nome": "patentes",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_pessoas_4ee4c52930": {
+      "codigo": "u_pessoas_4ee4c52930",
+      "nome": "pessoas",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_pessoas_por_mil_hab_803229f9cb": {
+      "codigo": "u_pessoas_por_mil_hab_803229f9cb",
+      "nome": "pessoas por mil hab.",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_projetos_914ca4240e": {
+      "codigo": "u_projetos_914ca4240e",
+      "nome": "projetos",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_r_7273f4020a": {
+      "codigo": "u_r_7273f4020a",
+      "nome": "R$",
+      "inteira": false,
+      "maximo": null,
+      "casas_exibicao": 2
+    },
+    "u_respostas_601e4e3177": {
+      "codigo": "u_respostas_601e4e3177",
+      "nome": "respostas",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_startups_eef5aa92dc": {
+      "codigo": "u_startups_eef5aa92dc",
+      "nome": "startups",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    },
+    "u_uhs_2397787f6e": {
+      "codigo": "u_uhs_2397787f6e",
+      "nome": "UHs",
+      "inteira": true,
+      "maximo": null,
+      "casas_exibicao": 0
+    }
+  },
+  "fontes": {
+    "f_agencia_sebrae_de_noticias_sri_do_sul_de_minas_conquista_r_1_9e3083cf37": {
+      "codigo": "f_agencia_sebrae_de_noticias_sri_do_sul_de_minas_conquista_r_1_9e3083cf37",
+      "nome": "Agência Sebrae de Notícias – SRI do Sul de Minas conquista R$ 1,85 milhão para impulsionar startups (29/07/2026)",
+      "links": [
+        "https://mg.agenciasebrae.com.br/inovacao-e-tecnologia/sistema-regional-de-inovacao-sri-do-sul-de-minas-conquista-r-185-milhao-para-impulsionar-startups/"
+      ]
+    },
+    "f_cadastro_de_meios_de_hospedagem_2024_formulario_google_da_sm_8bbfaa255f": {
+      "codigo": "f_cadastro_de_meios_de_hospedagem_2024_formulario_google_da_sm_8bbfaa255f",
+      "nome": "Cadastro de meios de hospedagem 2024 (formulário Google da SMCELT, respostas de jun e jul de 2024)",
+      "links": [
+        "https://forms.gle/82ef7PG85ZCKuqFZ9"
+      ]
+    },
+    "f_calculo_do_observatorio_com_inpi_e_ibge_49692de607": {
+      "codigo": "f_calculo_do_observatorio_com_inpi_e_ibge_49692de607",
+      "nome": "Cálculo do Observatório com INPI e IBGE",
+      "links": []
+    },
+    "f_cnpq_painel_lattes_formacao_e_atuacao_extracao_em_04_10_2026_a04b284fc6": {
+      "codigo": "f_cnpq_painel_lattes_formacao_e_atuacao_extracao_em_04_10_2026_a04b284fc6",
+      "nome": "CNPq – Painel Lattes, Formação e Atuação (extração em 04/10/2026)",
+      "links": [
+        "http://bi.cnpq.br/painel/formacao-atuacao-lattes/"
+      ]
+    },
+    "f_formulario_google_coleta_espontanea_complemento_via_econodat_5486cfac58": {
+      "codigo": "f_formulario_google_coleta_espontanea_complemento_via_econodat_5486cfac58",
+      "nome": "Formulário Google (coleta espontânea) + complemento via Econodata",
+      "links": [
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7U9_EOTCUmjcDdRjQJ3JYe5FukQ7F5a1m6iUJb4JvSePvyV-pOrM3xTcgDW3mZ-zX9RSKqhlkLOvC/pubhtml?gid=939101547&single=true"
+      ]
+    },
+    "f_formularios_de_cadastro_de_negocios_turisticos_e_criativos_d_54c0df646e": {
+      "codigo": "f_formularios_de_cadastro_de_negocios_turisticos_e_criativos_d_54c0df646e",
+      "nome": "Formulários de cadastro de negócios turísticos e criativos da SMCELT (respostas de 2022 e 2023), cruzados e sem repetições pelo Observatório",
+      "links": []
+    },
+    "f_ibge_censo_2022_populacao_residente_valor_conferido_em_ceps__16780b0a6d": {
+      "codigo": "f_ibge_censo_2022_populacao_residente_valor_conferido_em_ceps__16780b0a6d",
+      "nome": "IBGE – Censo 2022 (população residente) (valor conferido em ceps­brasil.com.br, que reproduz o IBGE)",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ]
+    },
+    "f_ibge_cidades_perfil_do_municipio_codigo_3159605_9a237135e8": {
+      "codigo": "f_ibge_cidades_perfil_do_municipio_codigo_3159605_9a237135e8",
+      "nome": "IBGE Cidades – perfil do município (código 3159605)",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ]
+    },
+    "f_ibge_cidades_perfil_do_municipio_codigo_3159605_ibge_e_orgao_1b7069847d": {
+      "codigo": "f_ibge_cidades_perfil_do_municipio_codigo_3159605_ibge_e_orgao_1b7069847d",
+      "nome": "IBGE Cidades – perfil do município (código 3159605) (IBGE e órgãos estaduais de estatística)",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ]
+    },
+    "f_ibge_cidades_perfil_do_municipio_codigo_3159605_inep_8d989203de": {
+      "codigo": "f_ibge_cidades_perfil_do_municipio_codigo_3159605_inep_8d989203de",
+      "nome": "IBGE Cidades – perfil do município (código 3159605) (INEP)",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ]
+    },
+    "f_inatel_startups_e_incubadora_municipal_c497834463": {
+      "codigo": "f_inatel_startups_e_incubadora_municipal_c497834463",
+      "nome": "Inatel Startups e Incubadora Municipal",
+      "links": []
+    },
+    "f_inpi_anuario_estatistico_de_propriedade_industrial_patentes__669dad4929": {
+      "codigo": "f_inpi_anuario_estatistico_de_propriedade_industrial_patentes__669dad4929",
+      "nome": "INPI – Anuário Estatístico de Propriedade Industrial (patentes), 2000–2024",
+      "links": [
+        "https://www.gov.br/inpi/pt-br/inpi-data/dados-e-series-temporais/tabelas-completas-dos-indicadores-de-pi"
+      ]
+    },
+    "f_painel_inteligencia_sebrae_ambiente_de_negocios_em_minas_ger_21f5351a37": {
+      "codigo": "f_painel_inteligencia_sebrae_ambiente_de_negocios_em_minas_ger_21f5351a37",
+      "nome": "Painel Inteligência Sebrae – Ambiente de Negócios em Minas Gerais (Raio-X Municipal)",
+      "links": [
+        "https://datasebrae.com.br"
+      ]
+    },
+    "f_painel_inteligencia_sebrae_mapa_sebrae_de_empresas_no_brasil_69ecd72ebb": {
+      "codigo": "f_painel_inteligencia_sebrae_mapa_sebrae_de_empresas_no_brasil_69ecd72ebb",
+      "nome": "Painel Inteligência Sebrae – Mapa Sebrae de Empresas no Brasil (dados até 13/09/2026)",
+      "links": [
+        "https://datasebrae.com.br"
+      ]
+    },
+    "f_peca_festa_de_santa_rita_em_numeros_publicada_em_11_06_2025_490bb01f24": {
+      "codigo": "f_peca_festa_de_santa_rita_em_numeros_publicada_em_11_06_2025_490bb01f24",
+      "nome": "Peça 'Festa de Santa Rita em números' (publicada em 11/06/2025)",
+      "links": [
+        "https://drive.google.com/open?id=1zODjUZjcK8OX9B2qqimcn627N73jo5H2"
+      ]
+    },
+    "f_relatorio_ot_no_001_2024_festa_de_santa_rita_2024_f22d0a48f2": {
+      "codigo": "f_relatorio_ot_no_001_2024_festa_de_santa_rita_2024_f22d0a48f2",
+      "nome": "Relatório OT nº 001/2024 – Festa de Santa Rita 2024",
+      "links": [
+        "https://drive.google.com/open?id=13EO8-Qg_5OLmpuezfwsPaFnHBgBeNu0l"
+      ]
+    },
+    "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_2259d85bb5": {
+      "codigo": "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_2259d85bb5",
+      "nome": "Relatório OT nº 004/2025 – Impacto Turístico HackTown 2025",
+      "links": [
+        "https://drive.google.com/open?id=1OiVuPbT2qKs_KpocGyBZ2SbdxA-9Gyhr"
+      ]
+    },
+    "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_sec_d2e1f26742": {
+      "codigo": "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_sec_d2e1f26742",
+      "nome": "Relatório OT nº 004/2025 – Impacto Turístico HackTown 2025 (seção 7.2, Percepção geral sobre a cidade)",
+      "links": [
+        "https://drive.google.com/open?id=1OiVuPbT2qKs_KpocGyBZ2SbdxA-9Gyhr"
+      ]
+    }
+  }
+}
