@@ -1,0 +1,57 @@
+{
+  "data": "2026-10-21",
+  "python": "3.12.14",
+  "observacoes": 1228,
+  "testes_dados": {
+    "executados": 25,
+    "falhas": 0,
+    "erros": 0
+  },
+  "novos_dados_integrados_na_aplicacao": false,
+  "dependencias": {
+    "fastapi": "0.159.1",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "psycopg": "3.3.6",
+    "SQLAlchemy": "2.1.6",
+    "pytest": "9.1.1"
+  },
+  "postgresql": {
+    "backend_pytest_exit_code": 0,
+    "contrato_legado_recusado": true,
+    "primeira_carga": {
+      "observacoes_criadas": 1228,
+      "observacoes_reutilizadas": 0,
+      "catalogos_criados": 291,
+      "carga_ja_registrada": false,
+      "status_dos_novos_registros": "rascunho"
+    },
+    "segunda_carga": {
+      "observacoes_criadas": 0,
+      "observacoes_reutilizadas": 1228,
+      "catalogos_criados": 0,
+      "carga_ja_registrada": true,
+      "status_dos_novos_registros": "rascunho"
+    },
+    "conflito_recusado": true,
+    "observacoes_armazenadas": 1228,
+    "rascunhos": 1228,
+    "precisao_decimal_preservada": true,
+    "esquema": "descartavel_separado_da_aplicacao",
+    "integracao_dos_novos_dados_na_api": false
+  },
+  "pytest_coleta_completa": {
+    "testes_principais": 148,
+    "subtestes": 14,
+    "casos_junit": 162,
+    "falhas": 0,
+    "erros": 0
+  },
+  "frontend": {
+    "build": "aprovado",
+    "vite": "8.3.1",
+    "arquivo_preexistente_preservado": true
+  },
+  "recriacao_pacote_identica": true,
+  "base_main": "074884537e7c9c6f71dd9b5b03d3f5b5089b206a"
+}

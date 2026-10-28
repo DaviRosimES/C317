@@ -1,5 +1,7 @@
 # Requisitos da próxima entrega — Observatório do Turismo
 
+> Referência histórica da implementação anterior. Para a Milestone 6, consultar [requisitos e contrato atualizados](m6/requisitos-e-contrato.md) e [procedimento de carga](m6/carga-dos-dados.md). As categorias da fonte são o foco da nova carga; os pressupostos provisórios abaixo não autorizam usar dados pendentes.
+
 Referência para as atividades [G1 (#13)](https://github.com/DaviRosimES/C317/issues/13), [G2 (#14)](https://github.com/DaviRosimES/C317/issues/14) e [G3 (#15)](https://github.com/DaviRosimES/C317/issues/15). Consolidação em 11/10/2026. As definições abaixo distinguem as solicitações confirmadas da Prefeitura das decisões provisórias para desenvolvimento.
 
 ## 1. Solicitações confirmadas

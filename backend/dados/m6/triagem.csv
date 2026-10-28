@@ -1,0 +1,1360 @@
+﻿aba;celula;indicador;situacao;motivos;observacao_id
+Dados gerais;D2;População;elegivel;;eb069dc9eb2ee82db5836d703b93aebe8ecbcf5fdc3293f6a2870407d811906a
+Dados gerais;D3;População;elegivel;;3863b0454931e7f6011c613b845eb36dd6ec5577aacd0b30b8f4f792b3491efe
+Dados gerais;D4;Densidade demográfica;elegivel;;603323f8685b682bf753e3bc9639d6ee5d4c36850bef43c6a5467b1e59d9552a
+Dados gerais;D5;Área territorial;elegivel;;c50b43a99eb6d845d1a09707b344e16ec0e0955d7230fb0ea158957d0756e958
+Dados gerais;D6;Idade mediana;elegivel;;232d5dc4c664d9e4a5012e814e7ab4995d848d8d92bfa1b199c01d5b67d2aa04
+Dados gerais;D7;Complexidade econômica;excluido;contexto_pendente_na_observacao | fonte_primaria_a_confirmar_na_origem;
+Dados gerais;D8;Complexidade econômica;excluido;fonte_primaria_a_confirmar_na_origem;
+Dados gerais;D9;PIB do município;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D10;Índice Sebrae de Desenvolvimento Econômico Local (ISDEL);elegivel;;6836728d86630f4f4d8f51d8feaa60b1c832936f4067bd31ecee211c04ec5c34
+Dados gerais;D11;Índice de riqueza;elegivel;;37bd555494dd4469ef63f4c9bff224b8955fcd816b4644597d5d3a47c1bb214d
+Dados gerais;D12;Índice de empregabilidade;elegivel;;cfaabddefd8f132cc49ea0b2cae626a9d198f7427dc24c9119e12342e2558b19
+Dados gerais;D13;Índice de vulnerabilidade social;elegivel;;63a7ddf04b576e998cb58ef96dfb1734d3aa9f2fb135374d0372fcd9f4e954e8
+Dados gerais;D14;PIB per capita;elegivel;;9e6ee8e1333d88144bc952467ce1370de40193893323c730ed9361b08a47cae2
+Dados gerais;D15;Empregados formais;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D16;Salário médio;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D17;IDEB – anos finais do ensino fundamental (rede pública);elegivel;;ebd12a3d75b3337e7c98a5eeb16f5b43dea74196e9bd155e7071c122b57cf03c
+Dados gerais;D18;Índice de conectividade das telecomunicações e internet;elegivel;;9285c1e2782e7aa7dced4e146c7a36adb217019726ca64b6b3e2d2875d78abee
+Dados gerais;D19;Grau de estímulo regulatório;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D20;Índice de infraestrutura de saúde;elegivel;;aef43fa0255b8120aadd890e80392151cac4b848864090c5c8052ed07e9d9795
+Dados gerais;D21;Concessões de patentes de invenção (PI);elegivel;;ad3835f7af3063c26ace3c1801471a5973754686a7975d48f6c612b7cb58f5d8
+Dados gerais;D22;Concessões de patentes de invenção (PI);elegivel;;a8d27b964e6a48dad830ded00df99ed2f2c03a324f64b2f57af7193b6c9f7a5f
+Dados gerais;D23;Concessões de modelos de utilidade (MU);elegivel;;209085ad0d5ef5345ca7db52a14f26049a49d28069aca8afbb65244fbc744fa4
+Dados gerais;D24;Concessões de modelos de utilidade (MU);elegivel;;a6f6875bcbfdd818117faf1772fe539e9595d57a12f4654f0b856821595d3cf4
+Dados gerais;D25;Concessões de certificados de adição de invenção (CA);elegivel;;f60240880cc0bfa183bcefa0539270169b6a38d6727e22d265ff5e5dd5838ba5
+Dados gerais;D26;Estoque de empresas;elegivel;;f46253850e596678de36beabf4ac7ca0d0617b1ae92b8c363bbc0a0f2c6cebb0
+Dados gerais;D27;Estoque de empresas por porte;elegivel;;4f1f3b2b6120a0c869708c9bdbe886684ec44b4391d12696e703b4192ca8fe27
+Dados gerais;D28;Estoque de empresas por porte;elegivel;;1213b2b9e93be84617e3237f511fc6f36d28983912d3ad2ab5184d4fda908ab1
+Dados gerais;D29;Estoque de empresas por porte;elegivel;;b6c7e2832b20480ebda9ae5ae2b90a4fba5534dbc249a48adc89a373c0a37784
+Dados gerais;D30;Estoque de empresas por porte;elegivel;;fa72664c8e3b65824dd0728980f2d42f4271bae8d38913d1d923afa4d4d01940
+Dados gerais;D31;Estoque de empresas por setor;elegivel;;990f79c56ea3e05c1455a4b3c084402c4b4f4c1aa56548d243ea9fdf2e722cbc
+Dados gerais;D32;Estoque de empresas por setor;elegivel;;7482d9ce89898495875c79a64ee79a6079af793e6b7cbbf22776547cf75ade4a
+Dados gerais;D33;Estoque de empresas por setor;elegivel;;3d5c00773117fe9751ef81f5941221b6eae261599042af4f0f38ae097a8e3ada
+Dados gerais;D34;Estoque de empresas por setor;elegivel;;9795727f16d211da7dd6a21758d16e77fd644a74115179391adf928200984c2b
+Dados gerais;D35;Densidade do estoque empresarial;elegivel;;efa7ecaf21588ed025cbdc85dbdac63fe9ab17ed01b45d63768a2b30a009c063
+Dados gerais;D36;Atividades econômicas (CNAE) cadastradas no município;elegivel;;58ceaa0723e0f2ecc1a26ea9d22094284aee63b3ea632afbbf78dc4a2bc6f6bb
+Dados gerais;D37;Empresas por segmento Sebrae Minas;elegivel;;3b63a6adb8a0f5fe8d2530c964662d1936062bfe34a83f4d12b9a403e5739188
+Dados gerais;D38;Empresas por segmento Sebrae Minas;elegivel;;f495b6d04ecaa329c7a0537ee18f59ddd8d917b660d7939f212c5ad1d4638696
+Dados gerais;D39;Empresas por segmento Sebrae Minas;elegivel;;1b7ac32543275eb457e49ddf825e4c2742b62c33bf27efdfb279ddb4da9a3e1d
+Dados gerais;D40;Empresas por segmento Sebrae Minas;elegivel;;e4d445d967204e77fbc32d36059484a101c815db02878dc308a05e9487b32a43
+Dados gerais;D41;Empresas por segmento Sebrae Minas;elegivel;;421e806f091a48844a5f768eb4583c04778f8d3a3e84746c0c9d519d78d82366
+Dados gerais;D42;Empresas por segmento Sebrae Minas;elegivel;;d667fd109bf598c752f3b512768266bcdcb4386a7be007c3e926b2427c2b2eef
+Dados gerais;D43;Empresas por segmento Sebrae Minas;elegivel;;2ab0b26cc6336de31f26bb80ea3390e01345a91be8d50cb89c3c4b2f5a99b25c
+Dados gerais;D44;Empresas por segmento Sebrae Minas;elegivel;;cfaeb11515f357bbd2c4b4668a0e0b3b011c91a1dad3de0b7b15b21f4e1172b3
+Dados gerais;D45;Empresas por segmento Sebrae Minas;elegivel;;744ff5d104a511e7c81b81c14362fa309414829f56c3eee8c240b68d0813183c
+Dados gerais;D46;Total de empresas;elegivel;;1fecf93c480dc83984472747ad2682b17229a33c4b55de9d41eeab46ffa14f9e
+Dados gerais;D47;Índice de densidade empresarial;elegivel;;d32473a2254317cfe6a4e32bcb41c9646f0aebeb2f18c82b94cb2b73fb22402e
+Dados gerais;D48;População;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D49;PIB do município;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D50;Total de empresas;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D51;Empregados formais;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D52;Salário médio;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D53;População;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D54;PIB do município;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D55;Total de empresas;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D56;Empregados formais;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D57;Salário médio;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D58;Empresas por mil habitantes;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada;
+Dados gerais;D59;Empresas por mil habitantes;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D48,Dados gerais!D50;
+Dados gerais;D60;Empresas por mil habitantes;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D53,Dados gerais!D55;
+Dados gerais;D61;Empregados formais por mil habitantes;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D15;
+Dados gerais;D62;Empregados formais por mil habitantes;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D48,Dados gerais!D51;
+Dados gerais;D63;Empregados formais por mil habitantes;excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D53,Dados gerais!D56;
+Dados gerais;D64;PIB por habitante (PIB do painel ÷ população do painel);excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D9;
+Dados gerais;D65;PIB por habitante (PIB do painel ÷ população do painel);excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D48,Dados gerais!D49;
+Dados gerais;D66;PIB por habitante (PIB do painel ÷ população do painel);excluido;periodo_ausente_ou_pendente | referencia_nao_confirmada | depende_de_registro_excluido:Dados gerais!D53,Dados gerais!D54;
+Vale da Eletrônica;D2;Indústrias de eletroeletrônicos;excluido;contexto_pendente_na_observacao | fonte_primaria_a_confirmar_na_origem;
+Vale da Eletrônica;D3;Empresas da indústria (todos os segmentos);elegivel;;3d5c00773117fe9751ef81f5941221b6eae261599042af4f0f38ae097a8e3ada
+Vale da Eletrônica;D4;Indústria como parte de todas as empresas;elegivel;;b4f90ae78d9bb64c3a33e3a9f39d38825110274d210ce9be15c9234829d8f697
+Vale da Eletrônica;D5;Indústria de eletroeletrônicos (Sebrae);elegivel;;744ff5d104a511e7c81b81c14362fa309414829f56c3eee8c240b68d0813183c
+Vale da Eletrônica;D6;Eletroeletrônicos como parte da indústria;elegivel;;92e0bd7192990636139a26fbc3f01d06aae8919d36a9883ff2fb3800c9676fc0
+Vale da Eletrônica;D7;Empregos no ecossistema como parte dos empregados formais do município;excluido;fonte_primaria_a_confirmar_na_origem | depende_de_registro_excluido:Dados gerais!D15,Vale da Eletrônica!D16;
+Vale da Eletrônica;D8;Empregos formais por atividade industrial (CNAE);excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | recorte_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Vale da Eletrônica;D9;Valor adicionado da indústria no PIB do município;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | recorte_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Vale da Eletrônica;D10;Exportações de eletroeletrônicos do município;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | recorte_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Vale da Eletrônica;D11;Indústria de eletroeletrônicos (segmento Sebrae Minas);elegivel;;920ddc1087cafa635f7b97331d34a431c99b15ea327bc1f8195190b6ff8eed56
+Vale da Eletrônica;D12;Indústria de eletroeletrônicos (segmento Sebrae Minas);elegivel;;5f0b2a5e44b1cb16bfb2af04f3862fbd5dfdaabdf227c9d5102934203756f169
+Vale da Eletrônica;D13;Indústria de eletroeletrônicos (segmento Sebrae Minas);elegivel;;b119a871a4f85a8b8b02e3c1cb35bc570d4c0c26960ce08e262d1d4bb5724099
+Vale da Eletrônica;D14;Empregos formais na indústria de eletroeletrônicos;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Vale da Eletrônica;D15;Salário médio na indústria de eletroeletrônicos;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Vale da Eletrônica;D16;Empregos no ecossistema (mais de);excluido;contexto_pendente_na_observacao | fonte_primaria_a_confirmar_na_origem;
+Pesquisa e inovação;D2;Depósitos de patentes de invenção (PI);elegivel;;a215bd3bb7ab2b1b2fbca10915a84fb2a7d2642fc0b4517cb5b868d40b393b36
+Pesquisa e inovação;D3;Depósitos de patentes de invenção (PI);elegivel;;7a30c4debfc3956619d5f1469fc06700d510e1639355c77d126e6e82b5f1253c
+Pesquisa e inovação;D4;Depósitos de modelos de utilidade (MU);elegivel;;c4442bbe2d65f15bafdbc4de20f4a06bb6049349662dfd662630ac90a3b11bac
+Pesquisa e inovação;D5;Depósitos de modelos de utilidade (MU);elegivel;;31bd2a824d840de1ad8e2fd88387a548650d04c4897d5ed25ccfe39e2fb35b66
+Pesquisa e inovação;D6;Depósitos de certificados de adição de invenção (CA);elegivel;;53572a8bfae4bd15b58f3675ff8022d5191ede67a6aa132ce82dd8c747d2d079
+Pesquisa e inovação;D7;Depósitos de certificados de adição de invenção (CA);elegivel;;bbe0d45b5ba6ccfd4eadfcfef4db84e1f68456d5bfb93cb6220a2e44a6cf268b
+Pesquisa e inovação;D8;SRI – Depósito de patentes de invenção;elegivel;;a215bd3bb7ab2b1b2fbca10915a84fb2a7d2642fc0b4517cb5b868d40b393b36
+Pesquisa e inovação;D9;SRI – Depósito de patentes de invenção;elegivel;;8ed34fba34553a40fc3dc42850908577df160b11a7e513f52fea3330d6739aad
+Pesquisa e inovação;D10;SRI – Depósito de patentes de invenção;elegivel;;354a35e846a71354adcac4e60c967ddea3c67e0e2bec98f2a74ec64433e396ff
+Pesquisa e inovação;D11;SRI – Depósito de patentes de invenção;elegivel;;b82de00e6679b0894982039b7153f197d5d6c3208dde81e85571a243b555b3b9
+Pesquisa e inovação;D12;SRI – Depósito de patentes de invenção;elegivel;;b6fdf4ccab364b26ef87efce46b5bd1f57a6d551e119490313c65ef34f7aca7b
+Pesquisa e inovação;D13;SRI – Depósito de patentes de invenção;elegivel;;affa4073955ee285faf40899b2359889266ba204254f2fa98be0506be908ed7e
+Pesquisa e inovação;D14;SRI – Depósito de modelos de utilidade;elegivel;;c4442bbe2d65f15bafdbc4de20f4a06bb6049349662dfd662630ac90a3b11bac
+Pesquisa e inovação;D15;SRI – Depósito de modelos de utilidade;elegivel;;98066be2629345f3368ef86c5231dd5cd565d4746044aec2ae94ef2308de8b3c
+Pesquisa e inovação;D16;SRI – Depósito de modelos de utilidade;elegivel;;9c9a6991fac313a6029260215bed733f1e7fbf5f11c61e5f4bc1f13c13f4f292
+Pesquisa e inovação;D17;SRI – Depósito de modelos de utilidade;elegivel;;10d5b098465e6b0b80270b7aa9c402f5a20637397d75f342a717b541e886fedf
+Pesquisa e inovação;D18;SRI – Depósito de modelos de utilidade;elegivel;;f43a3e3c3ec8e5f839759441872eedf1af0d7b8d2af0c958dbd13d740ce9b2c1
+Pesquisa e inovação;D19;SRI – Depósito de modelos de utilidade;elegivel;;c4c96c04a49f3df4bb9531b6589dbe7657824203a9798e717f0172f4a75ced44
+Pesquisa e inovação;D20;SRI – Concessão de patentes de invenção;elegivel;;ad3835f7af3063c26ace3c1801471a5973754686a7975d48f6c612b7cb58f5d8
+Pesquisa e inovação;D21;SRI – Concessão de patentes de invenção;elegivel;;482da4ce9b13c9693d6b9be45bddf400886b3538d8ec0ce28b90ae31f7459b2e
+Pesquisa e inovação;D22;SRI – Concessão de patentes de invenção;elegivel;;f2740ef0dfda375f467907967312b8374f20873bb765cd84a7c7b4f6a102d165
+Pesquisa e inovação;D23;SRI – Concessão de patentes de invenção;elegivel;;e4949e1dc6d86ad4651a53b34afbfcca4089d49e60183022f9b1346c1a36a6ff
+Pesquisa e inovação;D24;SRI – Concessão de patentes de invenção;elegivel;;e2c4dbcb87be38f963268ef3353faa649154f2a0206643074d27f494451daed1
+Pesquisa e inovação;D25;SRI – Concessão de patentes de invenção;elegivel;;94cbdd3d831831772737fb64909a9e091c465e27a06348a7fbf945db2b3ae574
+Pesquisa e inovação;D26;SRI – Concessão de modelos de utilidade;elegivel;;209085ad0d5ef5345ca7db52a14f26049a49d28069aca8afbb65244fbc744fa4
+Pesquisa e inovação;D27;SRI – Concessão de modelos de utilidade;elegivel;;c685493b3632f2d0ecf1e560d2467acef35267d027a10d105b6b8cc0ddcb1ad4
+Pesquisa e inovação;D28;SRI – Concessão de modelos de utilidade;elegivel;;8900b8b783b172c893c62b30b539ccb5bbff225a4f237d486b6148b40763a3a7
+Pesquisa e inovação;D29;SRI – Concessão de modelos de utilidade;elegivel;;c2d55654dab7934c81a295c6408723deabaf3827e8953232520e6e2615dcc8bb
+Pesquisa e inovação;D30;SRI – Concessão de modelos de utilidade;elegivel;;dd502936000f208423120c0d8f2fe30c202a027a9962a6eb9cd315eec9805616
+Pesquisa e inovação;D31;SRI – Concessão de modelos de utilidade;elegivel;;45fe1623bd88925c1eddd172531bfef24f12261eb0efced52cb3eab1f0edfa4f
+Pesquisa e inovação;D32;SRI – População;elegivel;;3863b0454931e7f6011c613b845eb36dd6ec5577aacd0b30b8f4f792b3491efe
+Pesquisa e inovação;D33;SRI – População;elegivel;;799040af0c9c5ebc86a09ef0e40f9142ff13fb0d5ebb7e7696c59041599f3f64
+Pesquisa e inovação;D34;SRI – População;elegivel;;3462d9ea3a7d2aebb4961372b92aaf90eaa97bcaac79c8ce9f85794b9feb7e66
+Pesquisa e inovação;D35;SRI – População;elegivel;;230b363d9ab53ba0d65f625dea2c8dc1965927da9e258514cde5015232d41a25
+Pesquisa e inovação;D36;SRI – População;elegivel;;18d34cc31bc36714cf68ccc81f56e27d54fd44c6b07293c146ef15ece72764c0
+Pesquisa e inovação;D37;SRI – População;elegivel;;c77c9898c5e4b381dd7fb8b7e69559c5c4f10d45b0a68f3658bad8c41ef9cc30
+Pesquisa e inovação;D38;SRI – Depósito de patentes de invenção;elegivel;;e97e14313fd641d4312565b001059d9f0f0b888add3b0411503290d52097eef3
+Pesquisa e inovação;D39;SRI – Depósito de patentes de invenção;elegivel;;a4c2746cf6676a72498b32f7075461cf8bde5f59a160583399393711e077a938
+Pesquisa e inovação;D40;SRI – Depósito de patentes de invenção;elegivel;;023dc7af61bbdce47fd0c20d29bfd4ac26733a2c7512592317f86f5db5e24fb9
+Pesquisa e inovação;D41;SRI – Depósito de patentes de invenção;elegivel;;919ba48795529d58131c968d0cdc74e65eda33768d29c7b52c784d704460e076
+Pesquisa e inovação;D42;SRI – Depósito de patentes de invenção;elegivel;;c1262f74a4b2ed48405dead94e3944d3ffd4bcdc37669104ee14792670907126
+Pesquisa e inovação;D43;SRI – Depósito de patentes de invenção;elegivel;;d785f926128f5b5e40905bb8f43139a7512ab6c7bd59c741ad6bd3b7b1653900
+Pesquisa e inovação;D44;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;4134a7fdc2d68dc852ca6ebfe86c99ac4888e40bfe26e3cfb502a7f921352195
+Pesquisa e inovação;D45;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;ceb7d078cb5bdf381e8371b773a51581d544ebd66cd8f9be3d3bb9baba4732e8
+Pesquisa e inovação;D46;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;966ee430f93d7417073961a10e3d9dc1b4e971dc63d219514cda5a55b2f3c0ec
+Pesquisa e inovação;D47;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;3bff5c0e76b7480d5fda4bb8cd0356321a5e03a64c113f2b85ad9d33daf5ff85
+Pesquisa e inovação;D48;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;fff43a6e16ff50e9c750be90f2ffcf675d0f519ae0505953e1da305651ec3826
+Pesquisa e inovação;D49;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;339cf1de7f3481bb8d7b868e3e710d02e2026d1f3ea3b5f675dee8882d174aca
+Pesquisa e inovação;D50;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;f476457439e0fb26c0564115c911e201554ad7bba8ca23c17e1dcfcfa177224b
+Pesquisa e inovação;D51;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;9847d3c37d3522f8cb01c632c468b70a3e18903ef8ba3814636cf1b9dd93f4a9
+Pesquisa e inovação;D52;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;1400b2160444dc780e129520272b6f103c03209c41e9d33e2d47024e38d7d0cf
+Pesquisa e inovação;D53;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;bbe21b64df5441b4e8ac2a157d928329dbcd41aac124339235d26fa0dc1187e5
+Pesquisa e inovação;D54;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;bb0c482078e9831a29dd9fe57b8d63fa4849ea1e6093c06ce21ef6d5b9f6aa9d
+Pesquisa e inovação;D55;SRI – Depósito de patentes de invenção por mil habitantes;elegivel;;aa85ecc773411c7462f033feca90d4254d3b9b281d919aeabdb146ede75e3647
+Pesquisa e inovação;D56;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;b61b7f6c4c66d854186f6b3f8f22cb8a29c04a64ba65d2b2bc63e9004ebe1709
+Pesquisa e inovação;D57;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;05ce81c2bfc8fec3ba150b591018b613da09a64712cf9404fea42d05835dded4
+Pesquisa e inovação;D58;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;e2f3e9570e7ef1932bba5bb2545e497f151ea33f7f8bb5f0c2f672562bacd9be
+Pesquisa e inovação;D59;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;336d0e94c694d983ca96c735d36ae33d9e1e79af6a8ad16056b7a10c783fc9a7
+Pesquisa e inovação;D60;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;b6f1f6fc565bc90797a95db7730fcb2bf4b2ab3ccb1267ddca6ff8d85f07aff0
+Pesquisa e inovação;D61;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;d694ee941da64be534b586c1a12e36ac540bdbe2f553f9be46a9e88de26e8cb3
+Pesquisa e inovação;D62;SRI – Concessão de patentes de invenção;elegivel;;a2080c68b9ee24f3508faeaa4cada1c5e356b397749b98b513c0907c27de966b
+Pesquisa e inovação;D63;SRI – Concessão de patentes de invenção;elegivel;;3963fabadf1084fdd05cd56671e5e5c24bf22b8ccdfdce206654ced63e5325e3
+Pesquisa e inovação;D64;SRI – Concessão de patentes de invenção;elegivel;;d6e5001e35243ed728f44aa9743377708c83813d9345e9cac6c314bf5c4ad373
+Pesquisa e inovação;D65;SRI – Concessão de patentes de invenção;elegivel;;6dfaf2e35792011c8ba8d7394053a53a98a0703fd993abe5c2fd3e773746da5f
+Pesquisa e inovação;D66;SRI – Concessão de patentes de invenção;elegivel;;3c1867e2d84ad43ad186f426242139defde55c1f6133ce2b587a36df50cd986d
+Pesquisa e inovação;D67;SRI – Concessão de patentes de invenção;elegivel;;32b1bcd777b42539feb05a99d08352450a19d2a906800d26b93e23ca2a822c15
+Pesquisa e inovação;D68;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;9ed7bbb5cf92eb4309f5aed9ff506997a52df2bfdec292fd7a4295018fae520e
+Pesquisa e inovação;D69;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;8156469c703d8825241ffc9325d1f9ff112898d5fa6b684263ba8749a5d798b5
+Pesquisa e inovação;D70;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;69a420704a00017e9c20e02331baea5406cd83ed09d3783f781eeeb24a27b73c
+Pesquisa e inovação;D71;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;2e9eedb9719dfc717805a9b173a83a06b53a2bd112c0e9717cdf3fa425793975
+Pesquisa e inovação;D72;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;61b1549468c855cf25260edf5dc85fa806dc9b8feb70f1708207bd5356c549f1
+Pesquisa e inovação;D73;SRI – Concessão de patentes de invenção por mil habitantes;elegivel;;213fc88dc49b5e07d00a480e058f8011ea2bbb3cf50f65c06769e1104cf7d797
+Pesquisa e inovação;D74;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D75;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D76;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D77;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D78;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D79;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224 | depende_de_registro_excluido:Pesquisa e inovação!D74,Pesquisa e inovação!D78;
+Pesquisa e inovação;D80;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D81;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D82;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D83;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D84;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D85;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D86;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D87;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D88;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D89;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D90;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224 | depende_de_registro_excluido:Pesquisa e inovação!D74,Pesquisa e inovação!D80;
+Pesquisa e inovação;D91;SRI – Mestres e doutores atuando na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224 | depende_de_registro_excluido:Pesquisa e inovação!D74;
+Pesquisa e inovação;D92;SRI – Mestres e doutores formados na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D93;SRI – Mestres e doutores formados na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D94;SRI – Mestres e doutores formados na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D95;SRI – Mestres e doutores formados na cidade (Lattes);excluido;lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224;
+Pesquisa e inovação;D96;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;86a71329a73e91cad8f0d42b83db0af66ea3185256c08925d3a19158ac3781e4
+Pesquisa e inovação;D97;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;e57b27d82e5e35057d36e9dfcea50566cc1de5e1aee6e98b3f9a4ebaac6f84e7
+Pesquisa e inovação;D98;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;485527df6fc88e9dee4327ba24fad12ad10647f2424b588cdfc669ee2727fbcd
+Pesquisa e inovação;D99;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;9447d77e7b9c990c2952cd079519b49ca4d3ffc69747ba4380cf318c5077253b
+Pesquisa e inovação;D100;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;a3644ba19570cf807ea56a26655d1863b9c94f80d806f326e275c77701ead859
+Pesquisa e inovação;D101;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;4eb34b22313fbade0cee370b678cd3b1b2d50dc2024d13fdb281d57105488295
+Pesquisa e inovação;D102;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;60f51b779bf81201e8afb9b21145da5b987e83e54ce07aa098f6aa8186b6e4d8
+Pesquisa e inovação;D103;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;759d9a4052306f7b8362abacf50b934d53aac90e04d6a965cb231c3484f45b13
+Pesquisa e inovação;D104;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;1df3e5ccb845b0e15064c586bc04ebfa23613ac91fd951a69d70e0b3788f7539
+Pesquisa e inovação;D105;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;c9294b1675e3eaa2e4822c8a6abff5879777e1c8552dfc0b4b79807ead9f8033
+Pesquisa e inovação;D106;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;94fb025ecd9a303c536ff48f92fa1a879540d165feca5cc0525cc426be118186
+Pesquisa e inovação;D107;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;81c8b04c2883b9e7a1c5ef4da9718ed2ce9763c1a91e058ca3f39e58bfb98df4
+Pesquisa e inovação;D108;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;d279beab1da135e4448d48dc4e9702b03c155fd2a5abcd515efb2a55f565630d
+Pesquisa e inovação;D109;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;d4fef661bb0c97e2b4f2920ff7a131bb41f07083f80ae03423bad1e3934bd1d1
+Pesquisa e inovação;D110;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;930e160f40836210de8eee1e4554f8200bc048bf362cea3f5ee86dd75f19dde3
+Pesquisa e inovação;D111;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;4ac4170629f7328a1320515e3b34e432f76c8aa44ee38b2cab6120f641838301
+Pesquisa e inovação;D112;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;48ed613b3e5a7149a50511659103757bf7bffd896f878bc9c00961f39c711d21
+Pesquisa e inovação;D113;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;b1c5889e0f91b945942861f9102269a308a186467c495dbbc9046501b0489055
+Pesquisa e inovação;D114;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;46b68b79f89ab6f68049bcf3bdad853c471951dc7f8574045c99b2039db1cd93
+Pesquisa e inovação;D115;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;7c7195c2e48f0267de3b5048d709c42b61aec6b5662effb9a394ba5d08f8cd3d
+Pesquisa e inovação;D116;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;1dd10ef84c692894a5dee091bc7f0e71d45eab570b1a930b8d2ac472f13ad281
+Pesquisa e inovação;D117;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;643cf670ce850cc960bcbd4964b458c4be008a09a2bd429e6f4d3d93854b66f9
+Pesquisa e inovação;D118;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;56285c6ee51ae99353ff4f39d3dff18078bfad86206ea67427c50b1da03ee2ca
+Pesquisa e inovação;D119;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;43c74f72d5514750c8ef99f8b07397089c3b13560e02b6a94e9cae9dae500776
+Pesquisa e inovação;D120;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;fa760f8f8624fe3eeb7e9d0e8cab1781ec71a4aad1f51d844d2f0fbc4769baa0
+Pesquisa e inovação;D121;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;7c8cce487bb2b01951f0cb75ee3a2d70d6a1a69d98c6c230ad714b49959023d4
+Pesquisa e inovação;D122;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;b366220fa85e3b639134fe0157637181a9640a2849ddf8b1f176c16732939fd7
+Pesquisa e inovação;D123;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;43244aecec6b57d2f16e7a228750f22b491e553ff92ee4838683488c2aca6292
+Pesquisa e inovação;D124;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;793d1c2ec9529c4e0f1a78708ca70d3c4e42d83b8d4a244f4db536760fac95d0
+Pesquisa e inovação;D125;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;30ef4555a69a6eef38ae81b78186ef1444c201e360a0cdb9c5fc38875f712884
+Pesquisa e inovação;D126;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;d1a13a64514519ed7f4a29494cb64c4098952e64417fb4ee1a2d5f11d13fccf0
+Pesquisa e inovação;D127;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;908a2f0cc20929fcfa48168f021fdd70f84f2586633faa67bee72702ad3257e0
+Pesquisa e inovação;D128;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;cffc6153aaa03011a54bbddaa47b241c4cf6bf13b43cc40dff61c5eb5ab9e74f
+Pesquisa e inovação;D129;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;7fda1ea51a183b4abb398647d91629caf09c99dea9c41b670ce6aab077a73f35
+Pesquisa e inovação;D130;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;bbac472f9b5f7945c6980ecc565397a92cc2fbffa2bc3ad066f1320c453d9342
+Pesquisa e inovação;D131;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;b90bdc764d1bd632478bdf80d17919882015d7cc33ceaaf802e792a9a496ffea
+Pesquisa e inovação;D132;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;39cb66463326b685c90410cdf21d400b4dc0dd631d0b81dde5f7e9df435bb25e
+Pesquisa e inovação;D133;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;501a6938aec207c67255571d9f632c38532b148cb56e156e0f0724cd32d5e756
+Pesquisa e inovação;D134;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;cd8e5c970eb91f9c672b533cce34c8ef349d91e15bc78085d2802bc9cc148f15
+Pesquisa e inovação;D135;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;bcab3870e1bcd9fb8841627d7898185559df3dd1fc3085f053581e7c1f4c3dd4
+Pesquisa e inovação;D136;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;6ff40535d05ae50f3063d8d52b41e4ac1267cd31435f5883bc7ce5ae77994982
+Pesquisa e inovação;D137;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;36c574c60db0de5803702849591d5d22b59dddbf9f8390175451f5d6fc5496cf
+Pesquisa e inovação;D138;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;6cca610c62c81a29c30392ac4fd91e4d0961c1e71f1992d89c1c70b511a6b470
+Pesquisa e inovação;D139;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;9d2e5ac781cc2aa7aaa9724c7bed09e31712d5d265780c391326f1101ddd8102
+Pesquisa e inovação;D140;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;f4b4a4dd91924ec033af36922bad48ff572ba66bbb9ad84b65d83ccb3488ec73
+Pesquisa e inovação;D141;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;0e62eaaa5276d3362867896d07902eba97a76bb82dedb370f976984641f466d0
+Pesquisa e inovação;D142;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;697069e840181515bd95406e9451d22782b4a3de5b3aa4eee9391336c2224ed9
+Pesquisa e inovação;D143;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;97c99f2ca0f79365a0b6539a4f560776b373493df1e6e98ed83b989b2b5ba699
+Pesquisa e inovação;D144;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;fa657e6d1036d2123371461881bdf8373ec3d60d52b1aa88c6435fa26d96d548
+Pesquisa e inovação;D145;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;40d3ee03f9963863e95d1369b5900795d73f571a7c85b38febf37c6a003c35e7
+Pesquisa e inovação;D146;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;0e663d4ef4c4bb86fc26dedd3d8efa7ce0f7533f42a25b2090c5a939bf8bc1d3
+Pesquisa e inovação;D147;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;0085fb3b6672966f44af9b913a6edb8b996a546d026ff2e400c584fbeced5eee
+Pesquisa e inovação;D148;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;dc445cc7f61c4fc8d62e354d225a31715877e5d10be07e1c32ec4f9db8429d1a
+Pesquisa e inovação;D149;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;db98e6e7c1bce54476e5042003c848254a9a0d2eb287495e025d34596992777d
+Pesquisa e inovação;D150;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;7ea10077b97c4ccf69bddb9ac5c2be4e8829702b2d2691b63b147a52c7910d9d
+Pesquisa e inovação;D151;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;abf08d0e55e44d39c2b3139222e8307e3ae23c2f7a73d68084ed3b631b0fedda
+Pesquisa e inovação;D152;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;e07b2777e3dafb4adbd6ec23252ccec8e456d40cbfc3cd0ae212c495955e8648
+Pesquisa e inovação;D153;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;843bbb1f436a73f53895f10938a274f982ec7abfe3c1704d8211ccc9958e9351
+Pesquisa e inovação;D154;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;e71307be26c7ec037a27d40c68c195ff331c6bda2206f815322ef942a82c98b7
+Pesquisa e inovação;D155;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;5449aca6f60185475ad0c5e326996236c331ad8bbfa9e6b96bdac6ab2f977ab6
+Pesquisa e inovação;D156;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;4695b1fc4d01416ed3ec5d197189261c3fe9799789cace32e126dd1dda2808f4
+Pesquisa e inovação;D157;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;0f6a3346382a092e58b225bb33884ebf1ac77d1d7f7be625e1e89b7d63ab5ed2
+Pesquisa e inovação;D158;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;57a126973a51ed815bdbbcbc66e9bb4838f3e24daf66edf0d325ea8f2019a46d
+Pesquisa e inovação;D159;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;fa80c757bf503266a9f3840b1ba37ba3b02c75a067032856dfe5263e6c64bfbd
+Pesquisa e inovação;D160;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;49cdb804013b7ed90001c5bca2a863a265b7544caa13908a228feefc1563bc31
+Pesquisa e inovação;D161;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;592a3fab325f3c2e7146143fc46f87f16047d8211e0204942c56157ec9793600
+Pesquisa e inovação;D162;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;c5a402881b73776c62f179924bd68b73fe2f14347bb1812706e9b50a04c6102a
+Pesquisa e inovação;D163;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;0ac8e7ca516734020b575594bec8a551075b2ab5dba17ceec96b8894f65cb4fb
+Pesquisa e inovação;D164;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;ef3932c4a1d46184b9d5504707f15d3720ba2eee1502ce13af4c62ae622543b4
+Pesquisa e inovação;D165;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;779a9cca1dbf71cf65f55872999c4a8fa62a9c216d0553decda6fe9ea9bbbc99
+Pesquisa e inovação;D166;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;1c8a220d9de3e9276bd769f38ca921e8073c37ada7b56b1dccfc12b3e919d123
+Pesquisa e inovação;D167;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;070135b69dc9214cbe3134598f880d56522cc4ac3c367b4fb7e0c6f95aacb5f4
+Pesquisa e inovação;D168;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;2536623df6c3ffcbe6c39cf49d0c1e677063e279a33a5cee175b74717bba90b1
+Pesquisa e inovação;D169;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;e291c8e2d0771a87219772f2aa1c4bfd441133ff83650d69d8096bf13c60f1e5
+Pesquisa e inovação;D170;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;f938f0377875f64188a5727e25f7f4b2e672ef68869cadd88e6d0d5b87d59a6c
+Pesquisa e inovação;D171;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;03b780e8dc4a72a66c6d730ebcd8657532737c9b434dba5ff677a7500bf2d560
+Pesquisa e inovação;D172;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;455cfcc88e3a641e9dec9ac9dde2e8acccd88f775979e799ab37af9776438f36
+Pesquisa e inovação;D173;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;d386aabda41cc6dd3ac2559034c033f8437eb4343223aded55fbe56ee5e529b9
+Pesquisa e inovação;D174;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;df7be08fd1ed7621523d4e4d04fe664a1b403fb66695d875df11e0526f4b5f1a
+Pesquisa e inovação;D175;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;f31bd046f9c62820bd72c4a85b5fe709754a4f051c6d0c7e982a8032779beb8e
+Pesquisa e inovação;D176;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;5c4b8ca426a684271e33549261fecfac5bd18933d9e10a9b9b97b4e389358233
+Pesquisa e inovação;D177;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;f6842088b8dfd206305a0f568ccf4cbadd7e1fa1c4770a7598dc60f0feebfb70
+Pesquisa e inovação;D178;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;2f052ab03da7be185277d0457a1ac4c0925b516a43fc1f6a80f8785cd3c4853c
+Pesquisa e inovação;D179;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;81f65b3ef38bf93014e2bc1ff2f04b4bdeee559e1c529f3d7eb0c1bd9a2a1399
+Pesquisa e inovação;D180;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;9bfd66525c44438feff549d2af8fcb17ce549bcaf712d71396faafd51f14a7b2
+Pesquisa e inovação;D181;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;ee6ab7f8b70e7b2f296386ec3345b73c6dd58fdcdf36a38d091e68a44d27c979
+Pesquisa e inovação;D182;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;a85ebd6ace5dc1e924bef640b977563f3d8b3461f0b6030b7a92d0d037544ca9
+Pesquisa e inovação;D183;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;540a14cc1bf3d8ca1001095085075016a3fca0f8fbe021265d92765d22081b65
+Pesquisa e inovação;D184;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;c49900bbbb8fe82a32ade9aa67b8ec8f81364e6f74efff1d8b670b8bf7708ed4
+Pesquisa e inovação;D185;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;a9bc7d963c67be0c331dcd5b94d5627c68c45bf26a74f7c1db5139c57447c0b5
+Pesquisa e inovação;D186;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;c84d3bed875e161e9e49b45746d1c6865b0569e3ce12a5c471f225c50729357c
+Pesquisa e inovação;D187;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;c192f58f09feb83491dafb0d4dadb4e6a8355e4a9c6cf74d3c56f54a948ed49b
+Pesquisa e inovação;D188;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;30b55ee541d2af6860ef9b33ea2e11a9514846031dfbee93a8aa2901906a11f2
+Pesquisa e inovação;D189;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;8b55149ce027bd3df0659efecf346886b288b26f1e6f376636759d7f09252214
+Pesquisa e inovação;D190;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;864c825c08500e15bed8fe8d6a73f920eb5205ca5cc5e48d43cd2037a3f25549
+Pesquisa e inovação;D191;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;c094988381fe74efda7910412d9f50c63ba4effb2d24fe1e55936f56214e70c1
+Pesquisa e inovação;D192;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;544c3c4f1eae5bc789f9ed5498909cd4fd45e38806412e82c84ae7fa06cf2e3d
+Pesquisa e inovação;D193;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;55714cc5394933116ddb365738c7e5960b3cf7564e6045c8cddfa4b91b6f2a17
+Pesquisa e inovação;D194;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;e4392e09d6414c03a8cb887f3faed7331ba22d2b0da7531473ca7f233711f12b
+Pesquisa e inovação;D195;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;ee1da7a34b99b7cdc49e771dc51aab6334044ce0c1a8d8d6ac1d92f8dc15d063
+Pesquisa e inovação;D196;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;f01de8708c2a19821242767726bcfccf18406628e0bb35b8a81dd1d063d22fdf
+Pesquisa e inovação;D197;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;408028a38ff1ee2ac34368d607ff9ce75a05d786c0bf39ae26b8e83d7c341d0f
+Pesquisa e inovação;D198;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;bd32f2f2b0426a916dec3b6edd23c31d76ffed5d1bf2cea7b052d362c9b95eba
+Pesquisa e inovação;D199;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;cc3ace852bd8fb65276a855ff4c73bfbb59163cf1e4e156379afbaf047bb450f
+Pesquisa e inovação;D200;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;3a090b7c2fc8b30c60fd8e063cb342e52ae5b0892a9aa5f18220a7217d57c383
+Pesquisa e inovação;D201;SRI – Mestres e doutores atuando na cidade (Lattes);elegivel;;1cbb13db2f6541adde405a5b1c1c81da221225ffe0d9ebe6f2a642d492a7895d
+Pesquisa e inovação;D202;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;00c62248efa2a929795ae57a42a6639276f625df0fa22f512ef24cef70aa42b7
+Pesquisa e inovação;D203;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;41053b5e94fd6c122f8d0917c5cf3389ddb1749f894f6bb6639b146027ac7694
+Pesquisa e inovação;D204;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;3159221824c8ed6ad0ab6afd5f68ffc0282d94dffedf51f4b989209df86cf07d
+Pesquisa e inovação;D205;SRI – Mestres e doutores formados na cidade (Lattes);elegivel;;80ee6b6561557b8b46be6519d9dc156f6613af97b1b3c980da6c90adfe21b42f
+Pesquisa e inovação;D206;SRI – Recursos aprovados no projeto Acelera Vibra;elegivel;;3ca2bebcf41386e0234581571a5beb1d7fd8388cb2c6861f4d4911977088b596
+Pesquisa e inovação;D207;SRI – Startups a serem aceleradas no Acelera Vibra;elegivel;;0972d8149dda1be3841ba8d52e836cf687c201b77d988f242fdb1faf26af3930
+Pesquisa e inovação;D208;SRI – Aporte financeiro por startup no Acelera Vibra;elegivel;;bb5860bda6379406e7cc527628399cd8e8a00ca00ed68e068354653f297aa998
+Pesquisa e inovação;D209;SRI – Projetos aprovados na chamada Novo SEED;elegivel;;1e79646d3f10f26ecdcb03ceb4145706affa223ade98a00b73d61756953b45fe
+Pesquisa e inovação;D210;Pessoas com pós-graduação stricto sensu (Lattes);excluido;contexto_pendente_na_observacao | lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D211;Pessoas com pós-graduação stricto sensu (Lattes);excluido;contexto_pendente_na_observacao | lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D212;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D213;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D214;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D215;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D216;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D217;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D218;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D219;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D220;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D221;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D222;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D223;Pessoas com pós-graduação stricto sensu (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D224;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;contexto_pendente_na_observacao | lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D225;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D226;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D227;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D228;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D229;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D230;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D231;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D232;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D233;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D234;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D235;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D236;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D237;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D238;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D239;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D240;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D241;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D242;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D243;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D244;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D245;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D246;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D247;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D248;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D249;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D250;Pessoas com doutorado ou mestrado atuando em Santa Rita do Sapucaí (Lattes);excluido;lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar;
+Pesquisa e inovação;D251;Startups em processo de incubação;elegivel;;c4b5dcb504e5e8de1d3e57384f7e84fd27197d4e0d86bbce675361fc3627f511
+Turismo;D2;Meios de hospedagem;elegivel;;3d8b65c83b6fe5f3dff64b353c606941570bb98cd70f4200c2cfcd4312fbf7b0
+Turismo;D3;Meios de hospedagem;elegivel;;97c3cce580cc06340cf97c5a9d9d26fb8219f3aee4c6f0c58f0854e7366e595e
+Turismo;D4;Meios de hospedagem;elegivel;;6133f4509151a81db3aa30cb91b1f8641195354675e91962776cea27af6326b7
+Turismo;D5;Meios de hospedagem;elegivel;;ed58f888ed9bbb75d0fb9000b564b8c4fd2a3f53f491355c2ae906d62156752c
+Turismo;D6;Meios de hospedagem;elegivel;;606fce559bb83a92c3c7ae84d54bddfd221627f462b3b2447580acd402c1f608
+Turismo;D7;Meios de hospedagem;elegivel;;851566cbf8a2187700838c0f9a282c04b6f20bd557492fe5b919c7bf8d270513
+Turismo;D8;Meios de hospedagem;elegivel;;57f374a52888ca5f9c5558ea870ca9d90651ad3d5458cd7016963b9457513fcd
+Turismo;D9;Meios de hospedagem;elegivel;;716ae19bcca733e64e484b1cfb831a4fd67fb26c008779d3b3153d87aa8054a1
+Turismo;D10;Meios de hospedagem;elegivel;;763a1c434c2837f309fb67fbae989fcc472ec1aff4eaaa3c29b79d4f6a7608c1
+Turismo;D11;Unidades habitacionais (UHs);elegivel;;90f31a33fe82bc44df22d5175b2efd7ec1fa314300c62c3301de3c49974e649c
+Turismo;D12;Leitos;excluido;contexto_pendente_na_observacao | leitos_incluem_resposta_cujo_significado_precisa_ser_confirmado;
+Turismo;D13;Meios de hospedagem por zona;elegivel;;1db51b5eb5b0a1cdae2b6e61ce853c01a0056678cc79284194219324f0f3cc65
+Turismo;D14;Meios de hospedagem por zona;elegivel;;c651905f3b6691643177a090694d8f5ae4e9727437d900c9df6405f3c2bf0ad0
+Turismo;D15;Meios de hospedagem com CNPJ ativo;elegivel;;e3fc6c685c38364d85363589c9dc358b8cdb921b37b5d84a7eb7d238319bcdfd
+Turismo;D16;Meios de hospedagem que dizem estar no Cadastur;elegivel;;0f90d02e4a8b471b7bcb6ce1e1448ec7ef01c8e0eeb9b7cd989c59952af17b54
+Turismo;D17;Meios de hospedagem que dizem estar no Cadastur;elegivel;;c5294af4abb7aaa3ad46a9ec6f57d372410bbfcac105b59d4539c4c500a37464
+Turismo;D18;Valor médio da diária (média simples);elegivel;;e1e614b01345833483304fdccd409d1d624e9258ca78681f93ec28962433e313
+Turismo;D19;Valor médio da diária (mediana);elegivel;;7ce87cbaf8ba509b91eea83509bd0ea82501c7fa1a95c8dced3fb1bc84cc7f54
+Turismo;D20;Pessoas empregadas nos meios de hospedagem;elegivel;;3e630262451c24f70fe56a93e6496712560aa41a5976ba4ea0e0ce876ca25f35
+Turismo;D21;Acessibilidade para pessoas com deficiência;elegivel;;060610f1242d711d7ea77e85d160047ed35eb3187a3144ad11c17f0558e234bf
+Turismo;D22;Acessibilidade para pessoas com deficiência;elegivel;;ecf51dc78e7d9b86160e27921f340ac691deb4ddec895a24a16b05bbfae10b34
+Turismo;D23;Envio do Boletim de Ocupação Hoteleira (BOH);elegivel;;f1bc7980bd11e63134135a823b2f47cf1e4c95e873619f356e1aa8c3105d214a
+Turismo;D24;Envio do Boletim de Ocupação Hoteleira (BOH);elegivel;;dea6296b3e6ab18cffda894ea8fca29a748cd8711546d97ffeb5be0ec62dbfbe
+Turismo;D25;Envio do Boletim de Ocupação Hoteleira (BOH);elegivel;;1e32f9ba8b01cdb7c08fa13e4a2539eeaa29c3883df18cbe7f04962296f855b9
+Turismo;D26;Atendimento bilíngue;elegivel;;bb5b69f16f7bb11674a3383b8d1945ddc87a1b80db449a73b91554827c336f35
+Turismo;D27;Atendimento bilíngue;elegivel;;06e64f22ab5e9e7dd4f29cd7f7b6eef655d9b50477877b64f5cfffb1fa956e83
+Turismo;D28;Procedência dos hóspedes (quantos empreendimentos recebem);elegivel;;6a65d07aeedd07849f8549dcafec0fe6f760b3045860c90dbcd6479bc34cb9ad
+Turismo;D29;Procedência dos hóspedes (quantos empreendimentos recebem);elegivel;;23a31359f834cc152ae10d35c9a003da9262a8134dc47f7fbeac0861a7c3b89a
+Turismo;D30;Procedência dos hóspedes (quantos empreendimentos recebem);elegivel;;eca71f1f9ecfbbcee142c766d011d29b56fa03b083d211fffca382a8813da092
+Turismo;D31;Procedência dos hóspedes (quantos empreendimentos recebem);elegivel;;715d7258c988ac4e957f79ce41736960c8fc4586f72f235f8d2b07c89d65057d
+Turismo;D32;Principais faixas etárias dos hóspedes (quantos empreendimentos citam);elegivel;;d23127c076688a6e070013cf7d4302768339f4dba6be7d1d377eb3001190026f
+Turismo;D33;Principais faixas etárias dos hóspedes (quantos empreendimentos citam);elegivel;;3fc5cad85eb4e46991f7550c93a397d1d8082f97b1482e0ab5ba9a472bc3bdfc
+Turismo;D34;Principais faixas etárias dos hóspedes (quantos empreendimentos citam);elegivel;;a3babef0aceda17f1e9f3d9eb0464f6a5989faf7d00d8bf4096697ed1b0d8aa2
+Turismo;D35;Principais faixas etárias dos hóspedes (quantos empreendimentos citam);elegivel;;1f978357875cf45327b0e3720902d91494ab77fabecc25a159ac4cb3e9f4c0d3
+Turismo;D36;Principais faixas etárias dos hóspedes (quantos empreendimentos citam);elegivel;;e68eb3c27415f5f50a9efa044397b1799a3a8a2a84636a3c43405fef596dde91
+Turismo;D37;Principais faixas etárias dos hóspedes (quantos empreendimentos citam);elegivel;;567ca44895854f4afa7f60ed9c2b0d6d17f02541c7ccaa2bb6775e77bdcf665f
+Turismo;D38;Taxa de ocupação no ano anterior (média);excluido;divulgacao_restrita_amostra_de_quatro_respondentes;
+Turismo;D39;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;081c9e013a382e4349364d825f684fb9cb1e2a9d0739166f777004bd9e1a0ba8
+Turismo;D40;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;e65032673d58cc8005f396e045f7573fe0aae6cc252052b0bb23296f8639fdfe
+Turismo;D41;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;a7b54c7e807345e7b65fd4d4d3b65fd21d8977de007d2fe36b0ede217041ad49
+Turismo;D42;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;5c59bd70d319d93c59af5b36e3604ba48c587d83cb649091ce9165c424ead045
+Turismo;D43;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;f0e98d92af649a78eb2002cb3c2a9d01528655d964634573f4d39c93f358d63a
+Turismo;D44;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;ee23cff3460c320118120e41d367a22946a2f9faaaa63348b04b558732ea9e08
+Turismo;D45;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;50d4e3bd66b4807013583db95c470d0e93a911a194551b7661087e1fd2753475
+Turismo;D46;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;4f647fef316814889486105b6bc921623ecf46dc05c106125b93511ed2bc4208
+Turismo;D47;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;7db55888ce3dc2e16a0d8d2405f35dfd2e37505142141d9533f3e563c0fc072c
+Turismo;D48;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;f2773ea147716ae413c36653bc213190fa0779cdc714c3f2fbd1b1001efa875d
+Turismo;D49;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;cc265bb3c35e945cf7cb31a183fa6f54c35efaa1d4f7bdf0fdad16778a1e5bd2
+Turismo;D50;Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;4bedb1d40f77a58d1a59ea5fcedcb65da4a216dc6231c53754b439014311dc38
+Turismo;D51;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;ec2312eff6bc39132a408e9443f4e4063536170527de24452af7be7fe227a8ec
+Turismo;D52;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;95ffd15eed9cfc8c6178753b5d65c3ec3f5bb6f998f9042b5a8f33235cb45515
+Turismo;D53;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;c1e29700494d6237a579a9862aaad949a1831d767fdccef41b1571adfb63f6cc
+Turismo;D54;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;fde92e3d635ba689dace6e3646a263abeb3a8498529c8e889b37da145067e4ee
+Turismo;D55;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;4d94d574dbc8156d828f5f84d5cfb99a7ac891238c4597b25e7baab6053d0ab5
+Turismo;D56;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;01cb44dc5b33452f9c1d693841bdf803b527d44db701dab70cee7951c7fddd5e
+Turismo;D57;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;6cf3d3f9ff14fa0ca5e02b85e72c1b0022a5b75d14ae516a6c230cea4962a264
+Turismo;D58;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;59adc8224ef0761adae8ea8d4d28ba22721d1022752273e7c16a9e3269864b49
+Turismo;D59;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;26b5ac9c73e34220f5a204f1057f1d0d4d42e603c844b184c774cfbeeb825863
+Turismo;D60;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;dc79c04fdf5fa39c5b3626a66bc0b75ee8222592d185f078c7ae0a4e7c80661b
+Turismo;D61;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;b20d25c82020a9e5e8f22d3281d7e550ac13e1225125abd0b0d690ff1321ee2b
+Turismo;D62;Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam);elegivel;;a4652a8e179675bf7019f41a3c63100d634d98d085e92ea880a2739e063fb461
+Turismo;D63;Respostas recebidas nos formulários;elegivel;;dc57fd2bb5f07ce76de4a85f6ac18d6e3688053e61e293eebce9531676936f42
+Turismo;D64;Empreendimentos diferentes cadastrados;elegivel;;f6e6ee79058929e466f1cf5cabd6af85a9a3a5098efbb20310e274f25de30dea
+Turismo;D65;Cadastros repetidos unidos;elegivel;;5b8b8f4698cdebf63e212b3d951a02cb0f64c9f3ce095ea97464952bd774df51
+Turismo;D66;Empreendimentos que se cadastraram nos dois anos;elegivel;;cba2b870e61ba38c63667ea93c159c8ee20381517a0595f84e8e8b1e2778d8a3
+Turismo;D67;Empreendimentos que se cadastraram só em um ano;elegivel;;99f4192276b8ba7a5ca10e6c479308d789970d5906a4dc554671dd38985352bc
+Turismo;D68;Empreendimentos que se cadastraram só em um ano;elegivel;;a5c5e7611d0ea5db452dd985d5adbbbc6fa91b44b2c4c1f6bf48de17a1165916
+Turismo;D69;Empreendimentos ativos em Santa Rita do Sapucaí;elegivel;;fc13e676782612f924ce6178ace9f79b8bdb2707ebd4d8cdfc3b53f387630048
+Turismo;D70;Empreendimentos ativos por categoria;elegivel;;de726edb14a376b85ca83a1337fe3354dff4f659e7aeb977f682c35079ad2757
+Turismo;D71;Empreendimentos ativos por categoria;elegivel;;248ea61413abeddc8e8bbaa57c6d64a1c05838a1f10c70ab011a63bf21ca2859
+Turismo;D72;Empreendimentos ativos por categoria;elegivel;;688a2eea105d4add79a552d09613decba13a06b07e47f07b02231333692e1668
+Turismo;D73;Empreendimentos ativos por categoria;elegivel;;b873c14442f742020416c42fbce4830db89e698b28f5445d956bb702f0dae30f
+Turismo;D74;Empreendimentos ativos por categoria;elegivel;;a03b221899c24efd75576cd1ff37380e988303f5eaf818f32ae5adb1fce7da2e
+Turismo;D75;Empreendimentos ativos por categoria;elegivel;;17b2f465a8015d061d230c10dc108b9c573f2207ad8e2695da1be2c319e6fba2
+Turismo;D76;Empreendimentos ativos por categoria;elegivel;;fab4c5fb959fa68bf0e356290cf67e9afb65dcf303309a683cce00e324592f5b
+Turismo;D77;Prestadores no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77 | contexto_pendente_na_observacao;
+Turismo;D78;Prestadores no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D79;Prestadores no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D80;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D81;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D82;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D83;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D84;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D85;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D86;Registros de atividade no Cadastur;excluido;bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77;
+Turismo;D87;Prestadores no Cadastur;excluido;fonte_ausente_ou_pendente | valor_ausente_ou_nao_numerico;
+Turismo;D88;Empregos no setor turístico;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Economia criativa;D2;Empresas da economia criativa;excluido;contexto_pendente_na_observacao | fonte_primaria_a_confirmar_na_origem;
+Economia criativa;D3;Empreendimentos criativos ativos cadastrados;elegivel;;dc6e56c688dc69bc5e804a252224cf422ba4b201453433615c06a1129db998c2
+Economia criativa;D4;Empreendimentos criativos ativos cadastrados;elegivel;;18c943a3fa97f4196647473eb8be52dbc62f6cf0934f79edaf936a596e2c85b1
+Economia criativa;D5;Empreendimentos criativos ativos cadastrados;elegivel;;69f4603f61a2136d90792abc7f5c1da1e7f73c38510deff8259cdd81a5558275
+Economia criativa;D6;Empreendimentos criativos ativos cadastrados;elegivel;;de699f347c19705b8fd84752d81c561f7c878a8ec22d4e92d8153aaa04a082d0
+Economia criativa;D7;Projetos do CCCF (mais de);excluido;contexto_pendente_na_observacao | fonte_primaria_a_confirmar_na_origem;
+Economia criativa;D8;Cidade vista como: Criativa;elegivel;;b5b707572c314153816a5dee116b7137378ec95ece080e00cfaef40a6ffae791
+Economia criativa;D9;Cidade vista como: Criativa;elegivel;;78b168e1ecf8073f85fc10cd50b55013b1614cdb919063edffb66112e60b1fbe
+Economia criativa;D10;Cidade vista como: Criativa;elegivel;;5c53ecc0f0e340002a80c6a6788ea85c8d6e9fd87ed59d133527aa848a72f32b
+Economia criativa;D11;Cidade vista como: Inovadora;elegivel;;7077e51b7f89baa9b0ca16395967d8a68a1626413f252c9613ecd2c5c05b1d39
+Economia criativa;D12;Cidade vista como: Inovadora;elegivel;;c431e803a450ef35ae2b045fa187a8fa578c77be9d5acc4d81cff08e9e996115
+Economia criativa;D13;Cidade vista como: Inovadora;elegivel;;e38796e44e0824d4a6340f7783e5de15a3b6e0081a0b623660105717c7056525
+Economia criativa;D14;Cidade vista como: Acolhedora;elegivel;;4cba26ce6a00ecc214a121027e0f7b33487ffa6cb470fd2c73d625cbcd27ea04
+Economia criativa;D15;Cidade vista como: Acolhedora;elegivel;;4152c38ca7d8e01a414d268629189bebb381815c979fdb82c1b31a0ddb25735b
+Economia criativa;D16;Cidade vista como: Acolhedora;elegivel;;1fcbc7380a5b8c7b907bebb13b2e5fcf0eac7e53917d051dbab3e96722eef07b
+Economia criativa;D17;Cidade vista como: Inspiradora;elegivel;;2500cd45c07b56bb7d619860a384b5f8ea12efdb4dcb0a38c124314a3ab6a9db
+Economia criativa;D18;Cidade vista como: Inspiradora;elegivel;;27e7f4de4fbd4aac84fb00127f238d069e78e561f042beaa901ccc1e8c079879
+Economia criativa;D19;Cidade vista como: Inspiradora;elegivel;;445a1e7c150be18baa025b49340521ff37779b8e1eeb08023f7fbaaa1c3ef4b8
+Economia criativa;D20;Empresas da economia criativa;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Eventos;D2;Avaliação do evento (nota de aprovação);excluido;contexto_pendente_na_observacao | escala_da_nota_a_confirmar;
+Eventos;D3;Pessoas que passaram pelo evento (mais de);elegivel;;73a430d1a0d954fdb305798984c4811bb0d5bc15a99fe9ac11d596384433f8e9
+Eventos;D4;Recursos movimentados na economia local (mais de);elegivel;;10d6437132aa4790f819ae5a6833d4e98e057ccd3a269402311714dd1d2751c9
+Eventos;D5;Pessoas que trabalharam no evento (mais de);elegivel;;732b8a19ca23af916fa4e1a2780e2145bd7945ab0fb974fc12706ca8f2abefa3
+Eventos;D6;Participantes estimados;elegivel;;e56f3c58e726966ed888bd72186bcb9fd9f56b7423848d3eaa557377a4ecdc3b
+Eventos;D7;Turistas estimados;elegivel;;987f3f5172f45014822555bed33e9e4e2ebb28e740c28e1752040725c3891ac9
+Eventos;D8;Permanência média dos turistas;elegivel;;2d9794c63f048fe4ed856b49b26c2f686c8bb523b7756992401107eb06e42aaa
+Eventos;D9;Avaliação geral do evento;elegivel;;f975eaccbd5faba8887ec27cd2d7d6003530b08563c0069dc1400e878e023756
+Eventos;D10;Público total;excluido;composicao_de_publico_hacktown_depende_do_alinhamento_indicado_em_D10 | contexto_pendente_na_observacao;
+Eventos;D11;Turistas;excluido;composicao_de_publico_hacktown_depende_do_alinhamento_indicado_em_D10;
+Eventos;D12;Visitantes que pernoitaram na cidade;elegivel;;a4741c828c545bf7de8a8a078eca6e3a0f22b628819bf94adf006cc1b29dbcb5
+Eventos;D13;Permanência média dos visitantes;elegivel;;707344d476da4ea76e283ebc19581f231ddadb1de391d0e77f81a50d65eec014
+Eventos;D14;Tipo de hospedagem usado pelos visitantes;elegivel;;ec258c673288c128fe9a90015e379d213009e9352ca607a4e85999e8597fcb0a
+Eventos;D15;Tipo de hospedagem usado pelos visitantes;elegivel;;4c105ae0147865319b162e7f4edfa20b469be1025829bb0aaccbdb837c775497
+Eventos;D16;Tipo de hospedagem usado pelos visitantes;elegivel;;a427517e4bb8bc0b5685b00c4900c6510101c692e63a9038a5233c6113871350
+Eventos;D17;Tipo de hospedagem usado pelos visitantes;elegivel;;c4eb4dc824240c202b7eccbe6674090bc638a6d0c1fb91edb2aed36865a36749
+Eventos;D18;Tipo de hospedagem usado pelos visitantes;elegivel;;ef89cfd28564b1203d86373871055c5582a167a3c3d18db650ba567460bd42b1
+Eventos;D19;Gasto médio per capita;elegivel;;dfa45d908c4bb0497f7ef2b95819ef4fad3d4dbf3c0751fa7fdc5363b67c6f2b
+Eventos;D20;Gasto médio per capita;elegivel;;924b91a4e7c9ee140de1d77a4eeb966e277b7a356c1c934d31f21239c42037fa
+Eventos;D21;Avaliação geral do evento;elegivel;;496968160be452223d528c1c82260658c5d4f28dbd60d5bb6813ace6725240e4
+Eventos;D22;Visitantes por ano em eventos de tecnologia (mais de);excluido;contexto_pendente_na_observacao | fonte_primaria_a_confirmar_na_origem;
+Eventos;D23;Eventos realizados;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | recorte_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Eventos;D24;Público estimado em eventos;excluido;fonte_ausente_ou_pendente | periodo_ausente_ou_pendente | recorte_ausente_ou_pendente | referencia_nao_confirmada | valor_ausente_ou_nao_numerico;
+Patentes por ano;D2;Depósito de patentes de invenção;elegivel;;916ff3fec03d3d1b51f863ea0e1239dc6873ebe4e0371a7a06d22535663ac17c
+Patentes por ano;E2;Depósito de patentes de invenção;elegivel;;f65a1b2e737c9bf1a541a95105690acab37463e5c7509382fb9698e956e12eab
+Patentes por ano;F2;Depósito de patentes de invenção;elegivel;;37e8048cdaccd2d5f48a3f67a8a0c758a2e0bbd040b3daf69f51d16eb82c2d1c
+Patentes por ano;G2;Depósito de patentes de invenção;elegivel;;cc8908df4dfd8fdd0d45f7d28d4c879bd797381fa543e16e2ce992937eb15582
+Patentes por ano;H2;Depósito de patentes de invenção;elegivel;;f787b475b2c00609f0fca7bd035e2c7359a75a883cef1084ffce3b40af63610f
+Patentes por ano;I2;Depósito de patentes de invenção;elegivel;;577fbedbdff8be010b2165c03e4b870c540400b515108a895290c29913b9de7f
+Patentes por ano;J2;Depósito de patentes de invenção;elegivel;;54faf904cc3c1b1851fcb8b2dae0ddedcf06021a39624f7b3e31f1520cec0b6c
+Patentes por ano;K2;Depósito de patentes de invenção;elegivel;;dff165e1ccd3efbaaec4f2f39110d170b92d6b489e1812b94865728d648784ae
+Patentes por ano;L2;Depósito de patentes de invenção;elegivel;;34cda6f503aee71f8e7fd12d2fc16be61a978e08137d9d3649cd96ef69ab2d27
+Patentes por ano;M2;Depósito de patentes de invenção;elegivel;;f042890c304e5977975f52d90aebb2cbb4d7bf3e16ccd7c7300eb876a1703d49
+Patentes por ano;N2;Depósito de patentes de invenção;elegivel;;5c7492c732f38073b7c7c12abc9eab34e2359d919d6d0f3932ca8ee4a286323f
+Patentes por ano;O2;Depósito de patentes de invenção;elegivel;;cf67272cacafaa9eae94aca3f15b046917d081e0363627f433047ee942e6b22c
+Patentes por ano;P2;Depósito de patentes de invenção;elegivel;;0801846067ebd8e1777faa7fce4752903971739daefdeffd50b05b84869db0e0
+Patentes por ano;Q2;Depósito de patentes de invenção;elegivel;;fa5961dffb410b13d8a327d92877d899421ccb5eca9e34a06ff4db10b2504ae5
+Patentes por ano;R2;Depósito de patentes de invenção;elegivel;;3bbe717e6cd6e51bc3cfb9c8f11bd05ce5b3b6b04a5f7f929215e6dd367b0d76
+Patentes por ano;S2;Depósito de patentes de invenção;elegivel;;ce7852082f9b5acaeb84d4f71eb7a732e015297c15b3562517a6eaa5233ce2fd
+Patentes por ano;T2;Depósito de patentes de invenção;elegivel;;97c8033ca61107b8c8460cdda0152e0d5124c8753b7ed60934a35122eb83dc3f
+Patentes por ano;U2;Depósito de patentes de invenção;elegivel;;dc1daf0b1ab1972c67bfc672ca77b5d99b5722a2344fe6c4da885cbe53474a43
+Patentes por ano;V2;Depósito de patentes de invenção;elegivel;;ff2182bc3f2c40fe013be6dcd266f52ddf9f0ba1686396776fcc874d64ba43f2
+Patentes por ano;W2;Depósito de patentes de invenção;elegivel;;6ecb1f2b8544b3faafc33a3fccf5c5706bdfc724fae9c6aa33af6b08a3515fa2
+Patentes por ano;X2;Depósito de patentes de invenção;elegivel;;949acf1aece1faaa7f3b5e8e077c1f3328e83d9d39dc7e441e287c1dd6fdcdde
+Patentes por ano;Y2;Depósito de patentes de invenção;elegivel;;08c54bffa397a9ff602e973b05ce837f6440839d1167e2d07a1a51199caff5e6
+Patentes por ano;Z2;Depósito de patentes de invenção;elegivel;;34bded197aa59c5d885d7251de7c9e9aafaf1927c410fa0e00ac95c60e762c72
+Patentes por ano;AA2;Depósito de patentes de invenção;elegivel;;3259c127c51c2309d94cf9a442df52cff5e04c99acba09cc8a8972843c12113c
+Patentes por ano;AB2;Depósito de patentes de invenção;elegivel;;7a30c4debfc3956619d5f1469fc06700d510e1639355c77d126e6e82b5f1253c
+Patentes por ano;D3;Depósito de modelos de utilidade;elegivel;;5a4342b2f243260a6ebb724620d0d34645abf8e52043f18a0863564b1fa4d7d2
+Patentes por ano;E3;Depósito de modelos de utilidade;elegivel;;2196c54105ee09f2c8d6c23a3a06023576b54549676652cb9eb2a05780419f53
+Patentes por ano;F3;Depósito de modelos de utilidade;elegivel;;7904753c5545c49e0791dc37cfe942c8aca978323829930dfd14b715de66bd18
+Patentes por ano;G3;Depósito de modelos de utilidade;elegivel;;247e001e48f464a1e3ddecaa4498bd6c31fb4b44963998599d9ff951ce860f89
+Patentes por ano;H3;Depósito de modelos de utilidade;elegivel;;8559fb67c26ede88434b8261e570fd096e194001fea49047b0449a16f1b5cd26
+Patentes por ano;I3;Depósito de modelos de utilidade;elegivel;;8e293bdf4db47922f27259e5598ab7bd0d4ae33c5d6273e7791b6d6a9c3490ca
+Patentes por ano;J3;Depósito de modelos de utilidade;elegivel;;052fcf19635d1248ab38b0c0a8d1d68a5f1abc77032fe30df303a7b901d969e5
+Patentes por ano;K3;Depósito de modelos de utilidade;elegivel;;d07ea8e0977fff00076ec6df9012c364ea06e050d12432e45e203d07d78da344
+Patentes por ano;L3;Depósito de modelos de utilidade;elegivel;;8db59ce0ab640f440a0bb825a0e53be40e6e6409cc8ed3d1ab6c42e98e76da81
+Patentes por ano;M3;Depósito de modelos de utilidade;elegivel;;20e8f9c1e931017b55d86885a5dbe1e396ed4f4be8c4daf59bb326341a1c8909
+Patentes por ano;N3;Depósito de modelos de utilidade;elegivel;;897302d4d970be509818056b3433baefb31d298404e7e7c1c8cc671ea9d1b9a9
+Patentes por ano;O3;Depósito de modelos de utilidade;elegivel;;64e5eb3a7a982a7b2d48bf184a3501d487ab1f95f0edd7369c5efbaa12890a1a
+Patentes por ano;P3;Depósito de modelos de utilidade;elegivel;;97c828427ffe358353047887b97a9c7f1fbb298181420f715b53c8682c17421b
+Patentes por ano;Q3;Depósito de modelos de utilidade;elegivel;;d30cbeaabe160fcb5d285ff40e15163ad325684f09a7f36367af7bcdd6113dd8
+Patentes por ano;R3;Depósito de modelos de utilidade;elegivel;;bae25722936e4d2c04012e4460ca05790258c3fbe7a6bf3e8312d8961edb08a8
+Patentes por ano;S3;Depósito de modelos de utilidade;elegivel;;a417022b6184c756dd5a89ccf3920eae840b6b16ba3fea123da2670366d676ab
+Patentes por ano;T3;Depósito de modelos de utilidade;elegivel;;bc8b2993051f30e759cd4ecfa6045448da7a678f7a5ecc68c0c142555b4f8d1b
+Patentes por ano;U3;Depósito de modelos de utilidade;elegivel;;120778f64e50a7264a0d85425daf06d40e19a896767d7a0c373c57e781b0965c
+Patentes por ano;V3;Depósito de modelos de utilidade;elegivel;;b9f6f21301f053b8917b175f4da1e6baf7b4b0bf00a691771a58289754979270
+Patentes por ano;W3;Depósito de modelos de utilidade;elegivel;;b9a87980aeb84daa76f5415e84e59a27e185af948e4188cadd1ea2dd32313aca
+Patentes por ano;X3;Depósito de modelos de utilidade;elegivel;;4c478f1e21b1cf0fc2f44b376a00ff540fe898ae0c87686416e0645d1e1f4e20
+Patentes por ano;Y3;Depósito de modelos de utilidade;elegivel;;eb358f5fc531a22b8e2198b0018d4c0ff38473640f2fc45ec1f5cc540af05b5e
+Patentes por ano;Z3;Depósito de modelos de utilidade;elegivel;;2ee4bc3354f733f0f6378585e64ffa7451f21c1ef5b103209f6959c37ba524de
+Patentes por ano;AA3;Depósito de modelos de utilidade;elegivel;;e33b263c661c6cfac5231e3ab635ca852127c964fdb72e5a5028be7b431ed21a
+Patentes por ano;AB3;Depósito de modelos de utilidade;elegivel;;31bd2a824d840de1ad8e2fd88387a548650d04c4897d5ed25ccfe39e2fb35b66
+Patentes por ano;D4;Depósito de certificados de adição;elegivel;;eb1c0f9ac280e508190cae39f1340cfda8bc6a3a1df007fd946659b11e7999b1
+Patentes por ano;E4;Depósito de certificados de adição;elegivel;;f7ad8ebd68c6b09d2adffa8de4bb479c2faebf743959096f0cc4b3302905f60c
+Patentes por ano;F4;Depósito de certificados de adição;elegivel;;8b719df448b0b191285f5e87762a4d3ee33149b1be93dd20898b5bf8850c69b5
+Patentes por ano;G4;Depósito de certificados de adição;elegivel;;0dc45aeff091225598aaa3c0e1bdc31d53103edbbb8590c84fba0791fd670ed5
+Patentes por ano;H4;Depósito de certificados de adição;elegivel;;3d927689c2cf45d517039fcafa6637d570c0ab2ca28718f5ce5027397b92a444
+Patentes por ano;I4;Depósito de certificados de adição;elegivel;;e999d337c6c9dbcec3023cd5b2f987fda60f7480623f138907630d84432e2796
+Patentes por ano;J4;Depósito de certificados de adição;elegivel;;673f38020bef2165161e1f7589a6b535a91d334d6b9d2df83eae9e4d2a36b137
+Patentes por ano;K4;Depósito de certificados de adição;elegivel;;5ea12ed91093aee351a650de434964940681cb003531d899ca422dd99c2b78d2
+Patentes por ano;L4;Depósito de certificados de adição;elegivel;;101da942139d148dae4696c726b02b6889ed58b37027593ce05c9e8edfb22692
+Patentes por ano;M4;Depósito de certificados de adição;elegivel;;fd1194d4609a96068c89bedde6dde56d7c1855332cc55046b04d7bd445c17b9d
+Patentes por ano;N4;Depósito de certificados de adição;elegivel;;39d107f7064bb31b27c1ecc30b6a53093382579118173f88be799a8633309b05
+Patentes por ano;O4;Depósito de certificados de adição;elegivel;;50047eb6c5fcdc2ea285e9fce1f84763cd41e36558ee50be33880581ca69a21b
+Patentes por ano;P4;Depósito de certificados de adição;elegivel;;a911a78f3ba385fd49b115da961028fa96d24b03c4639abbde8a483b958da7bf
+Patentes por ano;Q4;Depósito de certificados de adição;elegivel;;426f55bad269db2f05b87efcd2e84bd089de9ddb44748d541497763e582c74b4
+Patentes por ano;R4;Depósito de certificados de adição;elegivel;;c32bc7e535aff728fab3dee52f64d4e68f9250628578e81ff60bcd8aa96059e6
+Patentes por ano;S4;Depósito de certificados de adição;elegivel;;eb7d6cbcdef01be7402f642833b057356a3737ad090462fda0a1b6fe6f57a6d1
+Patentes por ano;T4;Depósito de certificados de adição;elegivel;;ebfb426f198d8d11c0997abe19abff6143b5e63d6851ae7fa22d4bdae8b39fd3
+Patentes por ano;U4;Depósito de certificados de adição;elegivel;;99a91f4eae7565ce573c30fad04fe18ae8e19104c4c14f0963b09846cfa6c6e8
+Patentes por ano;V4;Depósito de certificados de adição;elegivel;;4b984f7c7717a2df95d8325291d0656de70c8c08bd72ba45329cf0a50a801532
+Patentes por ano;W4;Depósito de certificados de adição;elegivel;;7b5113c71490f1a9386c2a5c5a8007f881a1a1e46b6d66caf591ca17e90118cb
+Patentes por ano;X4;Depósito de certificados de adição;elegivel;;d4f2d7ac52448fc841744660bd74121f09cb17000f12b0460eb8bdcb00198252
+Patentes por ano;Y4;Depósito de certificados de adição;elegivel;;b60f5b135fa34b12ee3a092bb5be2322c10f8aa03247d11271f6d18a23d25ffa
+Patentes por ano;Z4;Depósito de certificados de adição;elegivel;;15f84057637cc68eb2c7bd2ba45dc3e94354751a1fbc6fca16ebb1d8a1b6a51a
+Patentes por ano;AA4;Depósito de certificados de adição;elegivel;;100f099b19656d503b582e08e61c577b7a328385fa143f1bc1de3b1391d1d140
+Patentes por ano;AB4;Depósito de certificados de adição;elegivel;;bbe0d45b5ba6ccfd4eadfcfef4db84e1f68456d5bfb93cb6220a2e44a6cf268b
+Patentes por ano;D5;Concessão de patentes de invenção;elegivel;;25a5167dd301ab4449db9566c1a107d94daf9f2d7a43c44bf21a78ece9654456
+Patentes por ano;E5;Concessão de patentes de invenção;elegivel;;0aadcf2d35fdaee823894f31bb41dd0bdb99ec24797bdfbe549b5125944ee7fa
+Patentes por ano;F5;Concessão de patentes de invenção;elegivel;;87b6c093d33e4445d34405b1fdd4b0cd7f10920f9ed35f4cbe8a64c7aee20214
+Patentes por ano;G5;Concessão de patentes de invenção;elegivel;;3f691a0dba536bca2c153addf9a3d67f4a1ee6a5be1188c7ef8d78a9e1a2ed20
+Patentes por ano;H5;Concessão de patentes de invenção;elegivel;;a1947e0ca1c986fe30fb1bbec71109d85598ac3db3b15be13a8055148286ae2f
+Patentes por ano;I5;Concessão de patentes de invenção;elegivel;;c4264b7f738fb9e67d31cb6aab6c9a94107c3211441c5b0f74d78f8c8ee53637
+Patentes por ano;J5;Concessão de patentes de invenção;elegivel;;a09955fdb8ac975e402c729a4c24defaa2354275373f05eec4b2817f7a17305d
+Patentes por ano;K5;Concessão de patentes de invenção;elegivel;;5f54f7897fc833ff7c6bd83382c70282f2061d796d7f52f3fb22a98017cbab2f
+Patentes por ano;L5;Concessão de patentes de invenção;elegivel;;7580d2255ae3c490b80a32b829a923bb1a42bc72106a5f501639ac3aa510dbbe
+Patentes por ano;M5;Concessão de patentes de invenção;elegivel;;1598d5292b5e849ddb9cb21f7ced9ae080682255b2c480f43466169e13db13d3
+Patentes por ano;N5;Concessão de patentes de invenção;elegivel;;aaa584b6e5114fff1845ec357dea9f194ad0b6bfaead3f25167cf3563f79854c
+Patentes por ano;O5;Concessão de patentes de invenção;elegivel;;2aedc02fc5e8bf8a288e8b33c22c4859a625b2c4272bb8d78f1bc09fa0ac8cf2
+Patentes por ano;P5;Concessão de patentes de invenção;elegivel;;b22eb359ba6d229d9de6b1d14233a7c60d55e63d13b0dff62461d48fcef053e0
+Patentes por ano;Q5;Concessão de patentes de invenção;elegivel;;9f666a7b7d47288a63e95d9c7c18a8408630f9fa4d175d3e44c2907280f38095
+Patentes por ano;R5;Concessão de patentes de invenção;elegivel;;39418c576d72d71296ce8c9ab97bea69d44fafa8cc2d74fef977d27989a77c9c
+Patentes por ano;S5;Concessão de patentes de invenção;elegivel;;f175f73c39f89c03f48af994915d0816afe82bcc67c4743adc4cb4cc1f66c450
+Patentes por ano;T5;Concessão de patentes de invenção;elegivel;;4bfb32b6e970a8a54ffd798bbc645c45705af307a9d8c44b63538d0dc3916e20
+Patentes por ano;U5;Concessão de patentes de invenção;elegivel;;c075da479c334af02a551babcf802c3a87026c928211352440476b1d470dc53d
+Patentes por ano;V5;Concessão de patentes de invenção;elegivel;;929cf24b54d451ad33a94f2450d9e0b3174dab0ca58ac022ac1eba5944a6fc7e
+Patentes por ano;W5;Concessão de patentes de invenção;elegivel;;fc7e70b31b523b4f12f18324946bd9057d2d9695092b8ac2fc7d2fc947057b7e
+Patentes por ano;X5;Concessão de patentes de invenção;elegivel;;2aa15e01199c7dc9e778da9d718e186a41267bf104159f4a25c1bf65472ab41b
+Patentes por ano;Y5;Concessão de patentes de invenção;elegivel;;cfa75278d09e0d362523e68dc299e6c3bb5c1fb71c43af603ed4e022a1631e83
+Patentes por ano;Z5;Concessão de patentes de invenção;elegivel;;df957f36647c358e7981c07e51248abb58e6d9ba9f0bea0a785f9d4c51490076
+Patentes por ano;AA5;Concessão de patentes de invenção;elegivel;;8baa2bc2e41732a8f5a2c2f0aa0088e1a9bce4c137d5dee966b12fcb32252474
+Patentes por ano;AB5;Concessão de patentes de invenção;elegivel;;a8d27b964e6a48dad830ded00df99ed2f2c03a324f64b2f57af7193b6c9f7a5f
+Patentes por ano;D6;Concessão de modelos de utilidade;elegivel;;f9b1f99c2813275dbc068bc773308f5bbc804b336c7b5afb877ac0cb586b1b5b
+Patentes por ano;E6;Concessão de modelos de utilidade;elegivel;;e1d259693508c9c689a7de34d394079988d3eb74f7c40b3c6c7c846470afbc5c
+Patentes por ano;F6;Concessão de modelos de utilidade;elegivel;;59e166aee8625bc1fd72ba4853a249ec45f1ec44bdd2dfd3c2842f07a5194612
+Patentes por ano;G6;Concessão de modelos de utilidade;elegivel;;bfa2869103f6b430b74528a969f00c71a8e9c0593e414a5b505a604e0d53c649
+Patentes por ano;H6;Concessão de modelos de utilidade;elegivel;;c89acaf953bc818010ca7e5ba1b2ae229dfcf2fc0f1e14a11f4fcea34546239e
+Patentes por ano;I6;Concessão de modelos de utilidade;elegivel;;9c2e2d44cb985f61df1d0612207bf9b465b8ca4d941bd4438f68e3af947ca3e6
+Patentes por ano;J6;Concessão de modelos de utilidade;elegivel;;043c2359484d771df23c7ade6d0ebe518dcf038de0f954510221b595eb3cb958
+Patentes por ano;K6;Concessão de modelos de utilidade;elegivel;;3e15a28bed8ac6ef96e7e456e33d4d924f5f28292a9e08732a7248db164d0b7b
+Patentes por ano;L6;Concessão de modelos de utilidade;elegivel;;878211f4ff17dd3dd3b4371f441b2c8f2a4418479ec2d93759a433fc0c821fa5
+Patentes por ano;M6;Concessão de modelos de utilidade;elegivel;;cb89e447bc481d9a46e375b26fd41c5aadc47b4afcb966c1245a111a2682e9e6
+Patentes por ano;N6;Concessão de modelos de utilidade;elegivel;;33ebdf63e1ddaba6ade2b0e56647ac779fdfd5b52be9f1b5213640dcce7113ef
+Patentes por ano;O6;Concessão de modelos de utilidade;elegivel;;9d91e733d89629ba0f5accb32a8d9de694278f4ac97f458c5526c5c55db8700f
+Patentes por ano;P6;Concessão de modelos de utilidade;elegivel;;af20b48954eee8b3fec3da5531810ef9158028457a785823af43cd26db3979c8
+Patentes por ano;Q6;Concessão de modelos de utilidade;elegivel;;62ea99eeaafe5a8cd77e7a7fbe87f10eba0852d4202e95b0c6d59bdebb5eccce
+Patentes por ano;R6;Concessão de modelos de utilidade;elegivel;;ca683a708a7ddce7f7ec9c57a774eb9887f7ff7185ff4f34e5621c189f9e5467
+Patentes por ano;S6;Concessão de modelos de utilidade;elegivel;;02e5265c4d223c4fd70c6e2b58a2162b4e9ec5d24fa7cfa16293c50af6d817e1
+Patentes por ano;T6;Concessão de modelos de utilidade;elegivel;;ddf30559da2d7a69287b380dcf6d359583b71674852e4d645cb36c71b258b233
+Patentes por ano;U6;Concessão de modelos de utilidade;elegivel;;fb7de22f05512eabe3ef8162f41972cffbe3536119f95e7bb7915d226fbb03d8
+Patentes por ano;V6;Concessão de modelos de utilidade;elegivel;;82a5fc8d27ad2c03a730ce28dd5247c7a785bc96fb0d0524fafef1d768e4f28a
+Patentes por ano;W6;Concessão de modelos de utilidade;elegivel;;284350549f44d14d1710fa84989225ed7eb3e091f2d56b88d07d6030d0284462
+Patentes por ano;X6;Concessão de modelos de utilidade;elegivel;;27fa89a82c4e003fc03166de982cec5165f5dbbe081cdda88ccd111f21679345
+Patentes por ano;Y6;Concessão de modelos de utilidade;elegivel;;bbe3fbd127b56291a66aa61db97b8ea110f80f43d9d9db3f9f0af89d82170aca
+Patentes por ano;Z6;Concessão de modelos de utilidade;elegivel;;1725c47240d9550ddc9d90a382c1c0c9d4ca269417b64b4518c606c3664df9eb
+Patentes por ano;AA6;Concessão de modelos de utilidade;elegivel;;7d56e7cbe9a31c08f55e47173c061d830b972e72283ddcd97c26d5f4d2f6e91e
+Patentes por ano;AB6;Concessão de modelos de utilidade;elegivel;;a6f6875bcbfdd818117faf1772fe539e9595d57a12f4654f0b856821595d3cf4
+Patentes por ano;D7;Concessões de certificados de adição (CA);elegivel;;d414d7b10c189efb15f8cb4a34dea39d2a33bb05d7a339df99c871c32d115cdb
+Patentes por ano;E7;Concessões de certificados de adição (CA);elegivel;;bc7cb55eb2d8e5d21e0a03510f758021aabec16b76ad79ef7fe8501ba4cce2ee
+Patentes por ano;F7;Concessões de certificados de adição (CA);elegivel;;2a712e94d8f3d76a49f509560e9d1acce329fca2d10adf510413b4d4fdbf3b93
+Patentes por ano;G7;Concessões de certificados de adição (CA);elegivel;;4621543cda5b9178fbeb3cc13c9c5a8799e7a00061c7c28d67dba3962bd966ac
+Patentes por ano;H7;Concessões de certificados de adição (CA);elegivel;;ddefebdbe93b68d4e186edd8b1ab0d81979d55fc443e3bcd295d9e33ded6bcbb
+Patentes por ano;I7;Concessões de certificados de adição (CA);elegivel;;85c41d7c7036714d477169391b53c64b260d9c7ece3433885610145b05a5498a
+Patentes por ano;J7;Concessões de certificados de adição (CA);elegivel;;987467fb9495ef09e4f7d90564a45711961949fbc25ef5957d8bfd27668c0577
+Patentes por ano;K7;Concessões de certificados de adição (CA);elegivel;;a64e28a7cfd31d62672031c0af7e3ad2592a515a3027d2c391cc8e50d24d4685
+Patentes por ano;L7;Concessões de certificados de adição (CA);elegivel;;bf1bc1815672478d6f0df9621487864be9a6911b6dc8a6ef9a412bc4513b8983
+Patentes por ano;M7;Concessões de certificados de adição (CA);elegivel;;1a4490318a1fce25f069ce25145dbab206312f06e4715f676b730cac96e2a9d4
+Patentes por ano;N7;Concessões de certificados de adição (CA);elegivel;;323a0919e105b2c160b66e2fa66ad8f062d0fe5baf7f853152b3b8727e3bd65d
+Patentes por ano;O7;Concessões de certificados de adição (CA);elegivel;;c202d8d7398a0f0d24a87550ceb4977d0930b3f610362b94f2e3543e46ec7470
+Patentes por ano;P7;Concessões de certificados de adição (CA);elegivel;;ead3e7f780b0722b7fe33c6944ffd388ea873809f3898ff8d639cd2d424d52ab
+Patentes por ano;Q7;Concessões de certificados de adição (CA);elegivel;;7758473501b8f52b4aa6368fe1464fb4c58923759a35b84d5958a8da1659e5b5
+Patentes por ano;R7;Concessões de certificados de adição (CA);elegivel;;3070c5ebe8d13595a6fbbe3a0e628cce067af7765516459b739816d650e15381
+Patentes por ano;S7;Concessões de certificados de adição (CA);elegivel;;ca860239eb63372b4743c37ecd98fe21f166002601f9802744056dc74c1b3e96
+Patentes por ano;T7;Concessões de certificados de adição (CA);elegivel;;e649ac1e08b426b6af26f2ddfa974cfbe0be3efc51cf1f51ea174817cad7286e
+Patentes por ano;U7;Concessões de certificados de adição (CA);elegivel;;4eea5011655d5a38cae2bcbfcabdfe6748ed27bcc4272d9dc6347e5b442dc33b
+Patentes por ano;V7;Concessões de certificados de adição (CA);elegivel;;f5a1b52444f6c6d0495c2a98f50f3193da9e9723fd40678022034812f1c93d7a
+Patentes por ano;W7;Concessões de certificados de adição (CA);elegivel;;9525c933d161a8ff0e431633b99592c14adf6f3fe2c8ec298fd884debebb3ab1
+Patentes por ano;X7;Concessões de certificados de adição (CA);elegivel;;940bc44879c16698cc3fd9e48dbcbe46f2e7d06b047c06564dee7579b148056f
+Patentes por ano;Y7;Concessões de certificados de adição (CA);elegivel;;294186beb94d324d969bf10a8f83f9e0f7632ce4cb7a9dd12389320d41a1318c
+Patentes por ano;Z7;Concessões de certificados de adição (CA);elegivel;;a05ed9a96d7635bb6ab50e8e654b31470b9085f3eff78ad99869c9868e6871cf
+Patentes por ano;AA7;Concessões de certificados de adição (CA);elegivel;;a2e5cdb159a4b1a2cd0a014088fed73022393678c149f5d51f00e515b4e2ebf4
+Patentes por ano;AB7;Concessões de certificados de adição (CA);elegivel;;cd37d720858c0b62a73b653800ccfca2cb1f95b429c3390579ab81cc97062d74
+Patentes por ano;D8;Depósito de patentes de invenção;elegivel;;48f2d4cd65ff24abf2158e34f83ba27de78b90dab66be7a761ee85b47ed5d1da
+Patentes por ano;E8;Depósito de patentes de invenção;elegivel;;33c6ab56971420e10e79f4d2074bf14aa2f48390bc0cd2efddc592d902ffea9a
+Patentes por ano;F8;Depósito de patentes de invenção;elegivel;;94b3a00261d5be8e1696b6cd57a891ab5bb34a5d4b765942c13916a3540f6034
+Patentes por ano;G8;Depósito de patentes de invenção;elegivel;;20e068e32d16f5d055c80866f5cac72313f092bd759f14901be58e38b421d472
+Patentes por ano;H8;Depósito de patentes de invenção;elegivel;;7b35beca98519e9906d7ee9c3bd7cd29f7006fbc68a219e386d145173c4e2d0f
+Patentes por ano;I8;Depósito de patentes de invenção;elegivel;;369d43957e28d6f06e0bc5350e637c6da3de5bd92f2043e3e7ff5805f593becb
+Patentes por ano;J8;Depósito de patentes de invenção;elegivel;;46ccd827048312ce4219eabb75750e211184647716db6c01c2d308803f179941
+Patentes por ano;K8;Depósito de patentes de invenção;elegivel;;568e4c9856e451ef508ff3627a5c1cf79493cea3546f26f92c0db0c05066c59b
+Patentes por ano;L8;Depósito de patentes de invenção;elegivel;;bd17b48167c1efd3e4c35e198b98cf95cc55a2f4eb1ea75c95a4512a068c266a
+Patentes por ano;M8;Depósito de patentes de invenção;elegivel;;20ebc2da0f9ed87e84f45c0bf827b68904eb87763d45a178da8df11c135ca32a
+Patentes por ano;N8;Depósito de patentes de invenção;elegivel;;d27919ad5bc723ba7f435fae4b332928cf0ad490ea8990ec9680b8b5c32fe362
+Patentes por ano;O8;Depósito de patentes de invenção;elegivel;;82177e2095a807839a56718b8537722648c7a562a049ecd1453c6e6ebac4d09a
+Patentes por ano;P8;Depósito de patentes de invenção;elegivel;;7611d97b5e5a1f7b3506c291a42118b61c70249c440287d4efa803cfefddbc3d
+Patentes por ano;Q8;Depósito de patentes de invenção;elegivel;;8a7838e333481087ed718b628ef88f5c1350af4c9dea35c1ed0034bb9ddfc40a
+Patentes por ano;R8;Depósito de patentes de invenção;elegivel;;135a39d84b9fa0f5e64ce0076a56ca0b38790eb4f8f54be1463cb4082dabbbe4
+Patentes por ano;S8;Depósito de patentes de invenção;elegivel;;085d8ac6dd99c17233cae4e81ffc25d5b1fafe2ed72109eb29abf5908357cfe2
+Patentes por ano;T8;Depósito de patentes de invenção;elegivel;;67f2a3f459274712bc0c7ed8570da8b6e83f3b6cf738a4b1df383f5625c76456
+Patentes por ano;U8;Depósito de patentes de invenção;elegivel;;1c1b6d2a992dbc1a2e92e59dc5ac0f57d1f0b2069d2b7be481d34cf6d7b79c85
+Patentes por ano;V8;Depósito de patentes de invenção;elegivel;;d0ac614973a37c3d15cb6c6cd8585d3399dd72abaa0e59464b05fc93fe6c6676
+Patentes por ano;W8;Depósito de patentes de invenção;elegivel;;17d265c0e1c039c4edac8bc673d5609640d588b9f9be2b884cc4b9032eb187be
+Patentes por ano;X8;Depósito de patentes de invenção;elegivel;;e1a71524fa4b3366e5c0c7a898b459fecd138f35e358fc2c3fd92f20d9de6a61
+Patentes por ano;Y8;Depósito de patentes de invenção;elegivel;;a07b140ea63ab2a3b12b458ac2678eb41ee75a1fed54250e9b74e8d6117a785e
+Patentes por ano;Z8;Depósito de patentes de invenção;elegivel;;ab1824c4b33a7ddc37a1324f889449055d05c2dd41384e8e58bb07895eff7e74
+Patentes por ano;AA8;Depósito de patentes de invenção;elegivel;;ff1e161eca2f8885edc4b637e3408ae5940f55d7c73ea5675139c7c5369cc731
+Patentes por ano;AB8;Depósito de patentes de invenção;elegivel;;484f9f8e1fa6c618e77f749ceaf575636175420caddab5c3816f955055262bec
+Patentes por ano;D9;Depósito de modelos de utilidade;elegivel;;35c7c0c1e73c59fc2817534fbf2042eded29a3d15ddc1fb5626f89be388636ef
+Patentes por ano;E9;Depósito de modelos de utilidade;elegivel;;2a012e052100c3880401d36637d17e7d03a3ac171303a846357006c7293056e2
+Patentes por ano;F9;Depósito de modelos de utilidade;elegivel;;68323811ee6bf57413feae42ab9c8a025a0efc4156e4a6cf6925e5fd559027de
+Patentes por ano;G9;Depósito de modelos de utilidade;elegivel;;498be6cf8d33076e16d2ef21a96d5c11b319ed132044a8204eb66ee8d47d5631
+Patentes por ano;H9;Depósito de modelos de utilidade;elegivel;;46f65ae373e121dead7c0d0fb0d5e8e5e128ad5b1659723a3e3f5eb8dd835e52
+Patentes por ano;I9;Depósito de modelos de utilidade;elegivel;;ec5dea28af04fa84a5d499aa0d76fb0064930539c14b7be77e2a5e50cc02a0dd
+Patentes por ano;J9;Depósito de modelos de utilidade;elegivel;;7be2eff3b643ca3110b09fad8859706713d4c892fc7225d7ab2e167cbf36affd
+Patentes por ano;K9;Depósito de modelos de utilidade;elegivel;;5e7918cdd4c53e269de8391cb2016fc3646f2e789ef66c01ebe1eada5c4575fd
+Patentes por ano;L9;Depósito de modelos de utilidade;elegivel;;eeff9a3a1984eef5f67fb84f2b46d02dbce64dcaad6fe594a4bf0f572f6ea1ca
+Patentes por ano;M9;Depósito de modelos de utilidade;elegivel;;e121c7be67ce02b572e0a29636612e9379d536c922e3d9506b05a8e342dbcf81
+Patentes por ano;N9;Depósito de modelos de utilidade;elegivel;;6e8717c34e45ade50d173e86decef670a2d0be29808f43f1af050e2e3ab5af3f
+Patentes por ano;O9;Depósito de modelos de utilidade;elegivel;;0e1ba67045519594dd7ef6c49fb4783f22cc9ade9e0154be8c0284a8bf2b3ea8
+Patentes por ano;P9;Depósito de modelos de utilidade;elegivel;;0d98ff5c45b5b0aafd5e62fefccd734affc99b311c33df6561ad0e1b4619d10b
+Patentes por ano;Q9;Depósito de modelos de utilidade;elegivel;;584c6580e4982e26aacb56438fec947f9fee202793db77e57dc283b36a10540a
+Patentes por ano;R9;Depósito de modelos de utilidade;elegivel;;b595a73c1c1c2e2145788355cb04b7a5a3dc9ac2d95326949bf36e7cf21e3962
+Patentes por ano;S9;Depósito de modelos de utilidade;elegivel;;041b0e2abb036ebb59acd3d1c009aac03e3cd797431f0b830ab9b0cfe76aa9c4
+Patentes por ano;T9;Depósito de modelos de utilidade;elegivel;;ada94bfd486b6449acf5ba2e6ac88406e893d53cfb862d1818482806cba2691f
+Patentes por ano;U9;Depósito de modelos de utilidade;elegivel;;8eabb40cee92feb3595a76cdb0663deed46e38734366aba7c8da820716b6f119
+Patentes por ano;V9;Depósito de modelos de utilidade;elegivel;;ddffd75fc6235f036f49a096ec5358e8749acf274f6ac22b29f9e6906226624f
+Patentes por ano;W9;Depósito de modelos de utilidade;elegivel;;23f16f8249306e22ede936f5b81af6d3bfcee58c385ed04d6535ce3f2132c026
+Patentes por ano;X9;Depósito de modelos de utilidade;elegivel;;0decd58092790f3076ce7a8b10ca579a64894dbf624bb84c434c84b10dfd1309
+Patentes por ano;Y9;Depósito de modelos de utilidade;elegivel;;dcae8bf34025d180575f31cdfff56f6ffdba6ef02a5680cd838caa23f65710f5
+Patentes por ano;Z9;Depósito de modelos de utilidade;elegivel;;c9379acaac3fa4dff249c994d4f691c75dbd697cd3844ace313da4d558aecca2
+Patentes por ano;AA9;Depósito de modelos de utilidade;elegivel;;2a92d0ad28465907514a6b100d33fe4d54c772185685602ef452b8d39b0286b8
+Patentes por ano;AB9;Depósito de modelos de utilidade;elegivel;;9680e67a0cd5877787231417b47a8ab5696073944b9a41f6c7133e01589a2dda
+Patentes por ano;D10;Depósito de certificados de adição;elegivel;;5bc1fa0eeb9a66c59e3db11eaca2e112d69d8a8ffc8381dbcca2de2c0f7815a1
+Patentes por ano;E10;Depósito de certificados de adição;elegivel;;738565265900082e6597344a8862a7269a47040291abe799c77a99acf72e8b03
+Patentes por ano;F10;Depósito de certificados de adição;elegivel;;6306e11abd309fc465593a373bbb878f9b1b078212c6d29c349aaa323b4d30b8
+Patentes por ano;G10;Depósito de certificados de adição;elegivel;;2852bef84223a39c8de7c6ecdaa60d9126644edce8659ffb8a2015ab3194cffb
+Patentes por ano;H10;Depósito de certificados de adição;elegivel;;0c60fc2190c54c2393a9985c3647947125df93bce0c3d41f7fc6f320268a1515
+Patentes por ano;I10;Depósito de certificados de adição;elegivel;;fc1b765db07fefd0a4a778935dc36c289648774f22c00dca3ad1d01a18927c1e
+Patentes por ano;J10;Depósito de certificados de adição;elegivel;;f58ceee2fa58606dc396faef59583eedb0b8cca95301ca7f246a4ee3b4c40770
+Patentes por ano;K10;Depósito de certificados de adição;elegivel;;0ec7071fe9db03b5603e0979d03912c0ed59f26ef37845621f9ef8490ec5cf10
+Patentes por ano;L10;Depósito de certificados de adição;elegivel;;942834204ce4c6c4e3bb193171315d340a70d75bf8fc5163e39f58c6a20e248b
+Patentes por ano;M10;Depósito de certificados de adição;elegivel;;057937d9990ccc6fa5a4b58017fb8dc5c270d0e3b17c886e80a20553fc8a956e
+Patentes por ano;N10;Depósito de certificados de adição;elegivel;;62ae8441227b389a93626106069976935183aa58991d1e8cdac751991ec1b925
+Patentes por ano;O10;Depósito de certificados de adição;elegivel;;2dabea3700e21ad963ad0906b57a4caaf2872a0e85134b055a674a421cd1baf3
+Patentes por ano;P10;Depósito de certificados de adição;elegivel;;9f12d4ee283f8aba8d42b0bc391d49baed2362e71531d443d733308857428b19
+Patentes por ano;Q10;Depósito de certificados de adição;elegivel;;6bc425fb817c16b2ca4a75d229a2e4a8d19cf86267a3c4c904bd5a825d2d6876
+Patentes por ano;R10;Depósito de certificados de adição;elegivel;;85febbb381016cc2ff1199f8c59b38e28a5913f78d5194a5c7adadba6a765495
+Patentes por ano;S10;Depósito de certificados de adição;elegivel;;99fbe975dde468f6ed4ed1cd8c75323e2bbead76ca5660f23813b1fce8ba2d2c
+Patentes por ano;T10;Depósito de certificados de adição;elegivel;;494509276a5e7e10fabd825a5bd5350bcf6a7fc614e73f933922d294efbb6050
+Patentes por ano;U10;Depósito de certificados de adição;elegivel;;8ef74f909721dd02deafd7313ffbd790d7059b645f2c1242419efbe31bd7779b
+Patentes por ano;V10;Depósito de certificados de adição;elegivel;;e53504216cfdf47836ae505296dff8bff5820dc6f95b2c511e536152384c4b89
+Patentes por ano;W10;Depósito de certificados de adição;elegivel;;17ddbeb8400609f5b17786980e8bec505af6df49f2847644a32447b149a6ddd1
+Patentes por ano;X10;Depósito de certificados de adição;elegivel;;20ab265b7b01537bb4f7396a86ca96f153c571ff5e6e09ea84d478f90ec5e30c
+Patentes por ano;Y10;Depósito de certificados de adição;elegivel;;0d2d3c10e1dfcef651ec01aee0b33fdf41331095c57aa32aefc37b8f0cc41083
+Patentes por ano;Z10;Depósito de certificados de adição;elegivel;;bfe35c74d397b1448ef8c2356c3b1176e3ded34531ccdc448d8467a0f58d09bd
+Patentes por ano;AA10;Depósito de certificados de adição;elegivel;;90354357c7557604829d5ef03d33803d20e95642424b755b9fa3c9f59f0507c1
+Patentes por ano;AB10;Depósito de certificados de adição;elegivel;;e164e0bb4b1a010fd3845acb7b4974ed5c53f96fa71626ae4fb6220237971a6c
+Patentes por ano;D11;Concessão de patentes de invenção;elegivel;;a6be4d2900491c6acebf2fd67bc99ece5f80e001ec5e8ffd71876baf3fa8a747
+Patentes por ano;E11;Concessão de patentes de invenção;elegivel;;6acee0aa43bae87dfacddfeb14116e0390c7e66eca5ba0d92befc3ae836612ac
+Patentes por ano;F11;Concessão de patentes de invenção;elegivel;;1caa8ce5b32dc98cf673cc563dbafb179f0057203e22cf872a6060b7218d1fea
+Patentes por ano;G11;Concessão de patentes de invenção;elegivel;;9bcfe697b6e80da73833d414dad9e95066e16b831357c0ace1f3106b0a6597cf
+Patentes por ano;H11;Concessão de patentes de invenção;elegivel;;341db4b416c68601cd766820a1210224bcd4d6ecc0da47452c66e99bd780a2de
+Patentes por ano;I11;Concessão de patentes de invenção;elegivel;;b6abe72a7adcdff3ff743a82ba90ee6fb48fedfc146a0711675a107d9e82779f
+Patentes por ano;J11;Concessão de patentes de invenção;elegivel;;6b1d717c41caab54974fc7f0a76b0747d8d4d58cca3aee2e7a785c65dc4e580e
+Patentes por ano;K11;Concessão de patentes de invenção;elegivel;;c9a34816588e8413bcd0bc700c6291496f491f902ccda234431e9bac2b41f196
+Patentes por ano;L11;Concessão de patentes de invenção;elegivel;;61f516d023932e6ce546fd53b12fec49bd5a1ddd3b30f81a6285a539b07957fb
+Patentes por ano;M11;Concessão de patentes de invenção;elegivel;;3a0080b6957c2edf6eceedf061feb45d542f01c51f2ac70a5a5a99ec314ba8d4
+Patentes por ano;N11;Concessão de patentes de invenção;elegivel;;f3430400b8d2f22235702c3e5f156f97ff3da9dd75a9dd96d386a55dfb6d1b9d
+Patentes por ano;O11;Concessão de patentes de invenção;elegivel;;e277fc3eeaf2533e8d551c1b7bdded25cb4c184de43b82254f4d5a4e30195ae5
+Patentes por ano;P11;Concessão de patentes de invenção;elegivel;;609a8f9f04a0c7ffd886fabc4f69a7b2e4c7c991c415213e4b040b9e76f6ae12
+Patentes por ano;Q11;Concessão de patentes de invenção;elegivel;;3bde7db5b3169615fb426387f6c90457d73a9f7cd8cc5bc88149150c82b76b67
+Patentes por ano;R11;Concessão de patentes de invenção;elegivel;;96282e2d7d7bab8dd1518234ca307d94ed7815588d9008a728c81881806c1f74
+Patentes por ano;S11;Concessão de patentes de invenção;elegivel;;563575b654ae65e901c69718c129cd26f42de7677808bff85a7c68a863dc169e
+Patentes por ano;T11;Concessão de patentes de invenção;elegivel;;809b4310ed19cbfa27ee74b6bff908cb3e8c4f148b61788c71c135696086b297
+Patentes por ano;U11;Concessão de patentes de invenção;elegivel;;2ecad57c6f540ba6802f8c8cce26492e68f02e41dcba6a5d8a2ad2429ba97fe9
+Patentes por ano;V11;Concessão de patentes de invenção;elegivel;;1f4f00488623e4ae97034f505f75324bc9b714f0dbd8ab676e9f2734b523e864
+Patentes por ano;W11;Concessão de patentes de invenção;elegivel;;2535539ac0caf2dd4dfed4eaca3abb215b765e5d931420a7af5159a2525fd09d
+Patentes por ano;X11;Concessão de patentes de invenção;elegivel;;83eff7577fc426bde1bdfedc87bfc0462b2b99a9e53277134cc6ecfeba8b9119
+Patentes por ano;Y11;Concessão de patentes de invenção;elegivel;;583ab2ec4644fb4015d831aab3d07a4a718f50a74dcc461e3417ffe504dc57d7
+Patentes por ano;Z11;Concessão de patentes de invenção;elegivel;;be2be6e69749e40f6b860a219d8d5375781d41c9c8d71df295a350e33b0495d4
+Patentes por ano;AA11;Concessão de patentes de invenção;elegivel;;201c45afec43d41d76087c087156b6889fd348185f7c47604d4cacd56a086f82
+Patentes por ano;AB11;Concessão de patentes de invenção;elegivel;;c7babd2a762370bdce31ee1ad63d9f61414d3448789da5f405c8bedc2618c496
+Patentes por ano;D12;Concessão de modelos de utilidade;elegivel;;d0ee41159917c438587ec6f4c4639cd2fa9721800429fbc561f218c77bf359a4
+Patentes por ano;E12;Concessão de modelos de utilidade;elegivel;;b216dbfd4c9919e2eb2d383523d9f9ab745648f5e954e4e85792b3fe0d86b855
+Patentes por ano;F12;Concessão de modelos de utilidade;elegivel;;505250a4804e8ff66bcaa141c092433b540f71767198a9827467bc6d5dea2a71
+Patentes por ano;G12;Concessão de modelos de utilidade;elegivel;;29a3a09019213b426a389102b651a60452ed6403361ae5d234ebdb60cc1645d0
+Patentes por ano;H12;Concessão de modelos de utilidade;elegivel;;be7a18a3d1cf4f8127b2a71c031c8d5e1cb9a82f9f8cd9d0dff0d80522869205
+Patentes por ano;I12;Concessão de modelos de utilidade;elegivel;;85b763c406cb974c2bff7923737e03584d94a3058d93f9bcd6e0d8039c679c08
+Patentes por ano;J12;Concessão de modelos de utilidade;elegivel;;1cf6fe6fd3e5a64b924eaa3d870fae47feff38865b96bef619bb2a160a2bf7c3
+Patentes por ano;K12;Concessão de modelos de utilidade;elegivel;;8a0510e1d54bdf132b0462550744185e83d7a7b25152427f192abbeb4e2885b3
+Patentes por ano;L12;Concessão de modelos de utilidade;elegivel;;33fa3ecdae2ae7b425e3a1eb918864b3206d431fde13c1f615789a2122a3806a
+Patentes por ano;M12;Concessão de modelos de utilidade;elegivel;;df4f0bb6e96c3fd6b4f6a6fe906108ae3ff1b43c5a059618cd424e23b30a0c3e
+Patentes por ano;N12;Concessão de modelos de utilidade;elegivel;;280487d9633bf717fb206fcb01a6b19a3e8ff973f6b2aacefe1ccce7e0755a89
+Patentes por ano;O12;Concessão de modelos de utilidade;elegivel;;263ad2582627f9759a9b5cf988bc3e8604b902c1415df978ec2e8e2f93b9c4b5
+Patentes por ano;P12;Concessão de modelos de utilidade;elegivel;;a3cfc7978ee7edd8b3c0bc400591edf3ad198377436182522cf2901af5d033e5
+Patentes por ano;Q12;Concessão de modelos de utilidade;elegivel;;fb8feb16772f9603f4e569ed976cf497ed40355b2363aae8ed651004c2f459a2
+Patentes por ano;R12;Concessão de modelos de utilidade;elegivel;;2ec51e5fb0d8830d5d37f3397519f29ac82f36a6e290d5b174c9cf7c714ef25a
+Patentes por ano;S12;Concessão de modelos de utilidade;elegivel;;9f68d0e9521b95c66dfb244b6ed694516f467925e6369a80c3cc9dd034905f43
+Patentes por ano;T12;Concessão de modelos de utilidade;elegivel;;d10eff53a0aa560698248579f570210cedbfcb675747f79fb86283570a1565b6
+Patentes por ano;U12;Concessão de modelos de utilidade;elegivel;;7a37a232a778941e718eeef8f1dcec552c3ce958a5edd7ee3e039ce6706fe22c
+Patentes por ano;V12;Concessão de modelos de utilidade;elegivel;;7bfe5b40bf2e7320b59e9fa996298c977aff0832899841d37125c3b6cc7269d3
+Patentes por ano;W12;Concessão de modelos de utilidade;elegivel;;084a3f7126a338d56052c30c8a1733e8887d57559c3e9ed5f3920dea746a7dfe
+Patentes por ano;X12;Concessão de modelos de utilidade;elegivel;;269b6bc01645173f5d63ddd3eac67f4da0348b5ddd60dd72f12ec28d41981dca
+Patentes por ano;Y12;Concessão de modelos de utilidade;elegivel;;f1a3fbefbc99db7b6a245b1d5f2ef951103a4e9c54b4bba8cf464a5ed7ab1d18
+Patentes por ano;Z12;Concessão de modelos de utilidade;elegivel;;fd29b2fbe65016a106df7c6dcdcda5fb8c3ed14ebe6b43f36a9518efd874744a
+Patentes por ano;AA12;Concessão de modelos de utilidade;elegivel;;730d7f3f9c5fbf79f637e470853ad2ae58b9bbfe8c4c1ee911a3f7437c57d194
+Patentes por ano;AB12;Concessão de modelos de utilidade;elegivel;;eabb495e93bae5a49a6d1830195e1bd46ece11d3cee5f3969ecfce2c52029bf2
+Patentes por ano;D13;Concessões de certificados de adição (CA);elegivel;;04513d98671a0f12bcd3c6c74807cffcc7556797b873a5129b94f89048ab0891
+Patentes por ano;E13;Concessões de certificados de adição (CA);elegivel;;0a173179181cf01a8ab1cea10aaa766cbcfacea61db9686924d863b1044d91a2
+Patentes por ano;F13;Concessões de certificados de adição (CA);elegivel;;9b37e6058fee7a850fc3833808227bf2999a56bb9790342e7d07dca934c10561
+Patentes por ano;G13;Concessões de certificados de adição (CA);elegivel;;73a847355135b24a4d0ac7c65614dcb34610c0ab0ec443544bbf2dc77d7518c7
+Patentes por ano;H13;Concessões de certificados de adição (CA);elegivel;;1d08ca1aac15c5e369cf6e9e1596937efcf98b621bb0815a4d5ff799744bead5
+Patentes por ano;I13;Concessões de certificados de adição (CA);elegivel;;06fead7dbd54083011cf67985e2aca1dc2e2adc5bc02c73bc9c0406fbe3dc1f7
+Patentes por ano;J13;Concessões de certificados de adição (CA);elegivel;;f501b4857aa863474d515f2a29f0f05cff24650c8ecf9140e47aa0bc3ccc7e10
+Patentes por ano;K13;Concessões de certificados de adição (CA);elegivel;;d2fe83c1a541b2a8958dda30680e972beea49b68cfc4a054f216cb770e633b38
+Patentes por ano;L13;Concessões de certificados de adição (CA);elegivel;;171695d6c5ba8b806bb40122595b2d90ef46f0490887921eb91547f7e30c1405
+Patentes por ano;M13;Concessões de certificados de adição (CA);elegivel;;d85c0e2955f22cd319db25ab4c8ef01eabacd984e3e0cf5c534ca368e35beea6
+Patentes por ano;N13;Concessões de certificados de adição (CA);elegivel;;6e50493525d4dca8f9d0b5654c45c3a13cd861612a97c68fc0971042bc3a5208
+Patentes por ano;O13;Concessões de certificados de adição (CA);elegivel;;97e25a5381398769deb28ba1557ea0ff603f2cf5863843a6c059175df0263333
+Patentes por ano;P13;Concessões de certificados de adição (CA);elegivel;;8fd14cf232fb859c5aa4d8d81d2da39a65b1b9681928d5f5b7f3d7a041cf2782
+Patentes por ano;Q13;Concessões de certificados de adição (CA);elegivel;;9ffa872be38baaaa5e9bc3ae4c1f6774eec2ea9d1fb7c85d6490631ee2d823be
+Patentes por ano;R13;Concessões de certificados de adição (CA);elegivel;;fc601450b9c9ca4015a36b120ac372091541d953d0f815a83518787a3d6df03f
+Patentes por ano;S13;Concessões de certificados de adição (CA);elegivel;;3394950ae40fe942e6ab8d1a649f228a936cb2441cb1a8671dac01312601e6d6
+Patentes por ano;T13;Concessões de certificados de adição (CA);elegivel;;03e0ca19211b59512fa3df88559a81dd4f7d84e0260ca48722e066b45391c9f6
+Patentes por ano;U13;Concessões de certificados de adição (CA);elegivel;;a3f567fbdf2c118ed5ce90ecc812b5a6a8d91ff1b37e4e154c5f4e5e9e34f3f1
+Patentes por ano;V13;Concessões de certificados de adição (CA);elegivel;;2f546272ee884b95a87c8b9d4097c58d79ef4fa53228067cf478e1636aaad510
+Patentes por ano;W13;Concessões de certificados de adição (CA);elegivel;;b0c632171ff52bc10054584a3ccaef81e5ca3e5778675fbfed71b674967bf5e5
+Patentes por ano;X13;Concessões de certificados de adição (CA);elegivel;;1a4e6107f4af9b3223cc203d888c4209007755964233153a241e3358590a2fbc
+Patentes por ano;Y13;Concessões de certificados de adição (CA);elegivel;;189891a4678c71c61b572f35325292aa7be317640d830536c910259df15702d8
+Patentes por ano;Z13;Concessões de certificados de adição (CA);elegivel;;c27395a8e48a8929026bcbba0d7a374dd6fd845e5cb2f3cc1a700f51f9467375
+Patentes por ano;AA13;Concessões de certificados de adição (CA);elegivel;;091142a54af62e3c3e9bdaefc69b7c7e194e30bbed1c6370c4f2facef0e90c69
+Patentes por ano;AB13;Concessões de certificados de adição (CA);elegivel;;49d7f5a7045f73ad3ad55849caa4c4dd9a4a050c950e32b2176d361a5775e757
+Patentes por ano;D14;Depósito de patentes de invenção;elegivel;;97cabfbdd1c2fa36c8290c03d99a8f519d1c6820f182cfa1fde58a65288b8095
+Patentes por ano;E14;Depósito de patentes de invenção;elegivel;;b250195214819b4590c2ca91b367dbaf5d6bd1672f24e5f2704eeed5c939b9dc
+Patentes por ano;F14;Depósito de patentes de invenção;elegivel;;9b2ff5523e4f3fad8a1177d644fbdaf0943c3bbeed6cb822e7471bf28240cb6a
+Patentes por ano;G14;Depósito de patentes de invenção;elegivel;;f2202f2165311b2a5a48d229b8be47bcce6fa67e61cb0df143b1f8e989c01259
+Patentes por ano;H14;Depósito de patentes de invenção;elegivel;;65f262ce4ed5eda046880b018c55d8f040e54817cebc49a1bd3aac84f2762ebb
+Patentes por ano;I14;Depósito de patentes de invenção;elegivel;;c6784b6797cfc2641cc247e9b5dcebee9dc550de3bf1ebfddd144e3428d135c3
+Patentes por ano;J14;Depósito de patentes de invenção;elegivel;;8531c06cfe15296aaf754745acb199252e1fa54f6e5fba492b2892cffbf605d4
+Patentes por ano;K14;Depósito de patentes de invenção;elegivel;;c4960c1188ae4008de9c235b32446c3ee89f944a3cfc737b82eb442725740017
+Patentes por ano;L14;Depósito de patentes de invenção;elegivel;;f888463d557ca9ee87ba3aae1e5272b9ed2cae291aece17bcc5d5614a15acf5a
+Patentes por ano;M14;Depósito de patentes de invenção;elegivel;;7795976775a3caf49e235ccf7eb83540208385a140a8477f9005219ea331c679
+Patentes por ano;N14;Depósito de patentes de invenção;elegivel;;d2d2fa9a926e387a2e1daaa90f6f9dfcce7dbf69bbeaf5c18ef18ebe4ffaac50
+Patentes por ano;O14;Depósito de patentes de invenção;elegivel;;edeba0e098db8442436c27c9b0ed95f53628af9ff03430fbddd4f10c00a828c0
+Patentes por ano;P14;Depósito de patentes de invenção;elegivel;;a80e554ca1c87a2524fe4d8c93107b906bafb10172895a04304e41122f7d7a6e
+Patentes por ano;Q14;Depósito de patentes de invenção;elegivel;;ecd91218b527d4274de78df7f3878ee970569b5664b86a1969ddf668b938f21f
+Patentes por ano;R14;Depósito de patentes de invenção;elegivel;;112d5b5fb38d87ba38e16c6cb60d038feaa32f6de13b906e2eee6ac461418c73
+Patentes por ano;S14;Depósito de patentes de invenção;elegivel;;b4359130ab95d6aee640044b224d97685db93678f780085d7b70a229a5180cd8
+Patentes por ano;T14;Depósito de patentes de invenção;elegivel;;0e9f799d233fd51d3452c44b8d4eb917ef56a450c0e1d57f08e6993063c8cc0b
+Patentes por ano;U14;Depósito de patentes de invenção;elegivel;;20526055412668ef3dcaaa4d92a8b54527b6bc8a114ea825b9704d892b0dcf32
+Patentes por ano;V14;Depósito de patentes de invenção;elegivel;;16d92f671b647b27843bf8fccfa9b17bc15be2ce270754579af871b7d1eb26c3
+Patentes por ano;W14;Depósito de patentes de invenção;elegivel;;668f83482913aca14e45f92bb924adbad02bc9d1a62ec1e6ed22d118b3bd6b2e
+Patentes por ano;X14;Depósito de patentes de invenção;elegivel;;9a0b3fa6bfd191fc707166a8f421c954ec2fb7fac2d1899b4195352eddb91965
+Patentes por ano;Y14;Depósito de patentes de invenção;elegivel;;fe990eb0709229e3d322539a71363871486eb0d37d5a71b747c36bc62a372bbe
+Patentes por ano;Z14;Depósito de patentes de invenção;elegivel;;1bd5d2ace2d3eb473960313dbec231a8b3a8c5a075788e773d5c32f5007ba278
+Patentes por ano;AA14;Depósito de patentes de invenção;elegivel;;057f382beb6b733fbfe3a117e3bca3666c65942adf7041d27b13a5bc961ceaa3
+Patentes por ano;AB14;Depósito de patentes de invenção;elegivel;;950cb20c0ac144d44194e4d9ebd7e65a45eac220f4dd32dee89b564d1388dab1
+Patentes por ano;D15;Depósito de modelos de utilidade;elegivel;;f416219055979ed84111603da178bcd074c42907bb5807d55fe6c35c509ee5bb
+Patentes por ano;E15;Depósito de modelos de utilidade;elegivel;;b39d578bace73daea76541b6c1d01a1d6be4d634cba63c895ddfcc221c4763a7
+Patentes por ano;F15;Depósito de modelos de utilidade;elegivel;;2fd61adfaf17329d55b8b0ef5b683e1aa08f9f6ad0f8e2bbb6b65cfbc7af7bf5
+Patentes por ano;G15;Depósito de modelos de utilidade;elegivel;;4356ebfdac6b8cb0342f863a8cba40aba46306afe053b1964730e053093f8c7a
+Patentes por ano;H15;Depósito de modelos de utilidade;elegivel;;c31310e5c1ed4301ce0122026baa9a22ad0069ad71afded1ea788c02c9e21baa
+Patentes por ano;I15;Depósito de modelos de utilidade;elegivel;;cd771f1d13ac0893b4996daf55e82fb6652e487bbf5ed631e69402cd0a9faf3b
+Patentes por ano;J15;Depósito de modelos de utilidade;elegivel;;f00b8e9de4383ccc76483de0104499f7a04a511fe7751b55747a7e3ee6b78aee
+Patentes por ano;K15;Depósito de modelos de utilidade;elegivel;;46392f67046911c90b730749012e02023e48d20272fd024bf12a69910ff8de10
+Patentes por ano;L15;Depósito de modelos de utilidade;elegivel;;6c6fbf66a6fcf12d4501b353f5963f47f15da9ba1d825f530c38008afe700a3f
+Patentes por ano;M15;Depósito de modelos de utilidade;elegivel;;278be2009eb9040ecb6b22b3d7045aefd04445b977ba502e66371e37909e2bb9
+Patentes por ano;N15;Depósito de modelos de utilidade;elegivel;;f3c5109e0163c1a8cc1dd0411799f0dae7a6268c9037bd979302d3c9e4914b40
+Patentes por ano;O15;Depósito de modelos de utilidade;elegivel;;a0b7f7778ae841d07538cbea5e939780e21f8177fe992c4afc9912dd11f3e30c
+Patentes por ano;P15;Depósito de modelos de utilidade;elegivel;;42d022590a2e0fa01f3ef71d75bbd200da6784b202a3bd6de2606aebc6fad680
+Patentes por ano;Q15;Depósito de modelos de utilidade;elegivel;;32141e861ceb58274b706dc9236f4a46ced08c1f011300a56fbd605188f17fe5
+Patentes por ano;R15;Depósito de modelos de utilidade;elegivel;;1d0d012afc88c28b3402298f8d53933563c15b855e566e82f40ad75cb328e510
+Patentes por ano;S15;Depósito de modelos de utilidade;elegivel;;ec6339e8c29fe3e543fe9973cf64d8ef7acd77b7ba3e04227c36b745de47e176
+Patentes por ano;T15;Depósito de modelos de utilidade;elegivel;;41130ac78cc9851bf2946a7b9ea776093c7317ec6e6c1f1353af790f182b9125
+Patentes por ano;U15;Depósito de modelos de utilidade;elegivel;;7bdfd6ea64f58a2c547df74b35986365e098fe420752b2a8dc84f53878923328
+Patentes por ano;V15;Depósito de modelos de utilidade;elegivel;;b8366bf281cb8a9d812f49199e992aedd95f851ab9735e6822b4c918f5f67f91
+Patentes por ano;W15;Depósito de modelos de utilidade;elegivel;;f0397e90b4cea6cc81202858c518454577878ee2d295141d8012ee9b392de89f
+Patentes por ano;X15;Depósito de modelos de utilidade;elegivel;;f9cf4a0a57c5468543f352afcf256e9a90fcd39b9e221904e62eb789c92a72a1
+Patentes por ano;Y15;Depósito de modelos de utilidade;elegivel;;0fe07fb8161756908cbb0567f121e1d5eef920153c5b3a610618df095b8c652b
+Patentes por ano;Z15;Depósito de modelos de utilidade;elegivel;;ff7cde46232b4adcaf6eae5db0b78db7b626829b1114ebc6d203e919516b34d6
+Patentes por ano;AA15;Depósito de modelos de utilidade;elegivel;;068d1fb50f2f7ec0d8ba1435fdfb4b1ea29d16eb93dca43b70f94835d0c5549b
+Patentes por ano;AB15;Depósito de modelos de utilidade;elegivel;;565eb2e243382175d7d1155f3c234b3e7983f46315dd0e6bdca7a246e5e29840
+Patentes por ano;D16;Depósito de certificados de adição;elegivel;;041b300b85ee81569364d6719c4697576fe03d03d5cdebc35e90fb8348180da0
+Patentes por ano;E16;Depósito de certificados de adição;elegivel;;926cd300b1a0f47796d9d9ff3e87ff6c75c452754438635431fe44385cc9ca19
+Patentes por ano;F16;Depósito de certificados de adição;elegivel;;288b46444d2c967f7584addcc296b914d97dafb3b70cbc12e09a4cc52526c44b
+Patentes por ano;G16;Depósito de certificados de adição;elegivel;;13bdda48a785bbaec6ba249db80f69cc8f5a9c2c291c1e2027cff7f99a924ccc
+Patentes por ano;H16;Depósito de certificados de adição;elegivel;;4ac644dbc6b1bcb55313d02d2525912861c3feef3bfc9c5bf776a0d5733ac02d
+Patentes por ano;I16;Depósito de certificados de adição;elegivel;;52b3cf5cb800cf1ca76f3f17c57bd764b186377dd1163318875b7f4417340756
+Patentes por ano;J16;Depósito de certificados de adição;elegivel;;9fbc1afed803bd8fb2ac6041a66bcdcc6827b23781ac104a3b7692958840a7dc
+Patentes por ano;K16;Depósito de certificados de adição;elegivel;;8ad953f4402d77293552d3b56130fcf1154b172c852687d631373e22b56cd620
+Patentes por ano;L16;Depósito de certificados de adição;elegivel;;745a38e51de6bd4121054c9db6de64524e1d083c68410136544fc402e83a265e
+Patentes por ano;M16;Depósito de certificados de adição;elegivel;;c744cfca21146ed2ffaa273607996e9953efd43eb3341f8aefe532bc8a8fc901
+Patentes por ano;N16;Depósito de certificados de adição;elegivel;;c640567bfb13256e678cc27209676a7f594d6675aab55852e07e534160a37302
+Patentes por ano;O16;Depósito de certificados de adição;elegivel;;2925abe4fce27c1f36e579dfe2fdaee5061eabb6204dd072ea8fbb7b39a3cb98
+Patentes por ano;P16;Depósito de certificados de adição;elegivel;;404d1cc59ed6770669bf6a080da34f5a16dd99d5bed0c5183db4c776b1a34705
+Patentes por ano;Q16;Depósito de certificados de adição;elegivel;;65b7c67ee991616d339be05f986c5ea45fbe772ef386046367cb85f2e3699c49
+Patentes por ano;R16;Depósito de certificados de adição;elegivel;;9d1440ae989aa99a8797829e52809de5d2a4c0dca5172b8c26119570bf1d380d
+Patentes por ano;S16;Depósito de certificados de adição;elegivel;;6f9e7027df81ff2c4aa8f7a36f40969f4f9229725a25b730eb3c05fbfa83854e
+Patentes por ano;T16;Depósito de certificados de adição;elegivel;;d0668cfc477b8ecac61e0427829543ac64178befe235ca1e12cf1a490685f6ad
+Patentes por ano;U16;Depósito de certificados de adição;elegivel;;b4773548815db4e665def90c0756169fcea7bdc20ce0aca936218e1d6eea22aa
+Patentes por ano;V16;Depósito de certificados de adição;elegivel;;05c87425605143e558c9212de1a39ea24542710f04e69795bc7e628e901e6246
+Patentes por ano;W16;Depósito de certificados de adição;elegivel;;e5368c0ffa67df6117265487d6225d0af105f7f6990cb58c92d944651929708d
+Patentes por ano;X16;Depósito de certificados de adição;elegivel;;88430d3c603c35f1b88b514b03a10c337773fe4c55d9c5e8db21423d7dbfad29
+Patentes por ano;Y16;Depósito de certificados de adição;elegivel;;cf1177f9820c6a86c3876840995e1403db6f79f2b09b92c347728cd03b96f8d9
+Patentes por ano;Z16;Depósito de certificados de adição;elegivel;;dfc6957b4a765ba3d882db873c7948e8922f71bd0920014fc77b8675009b6432
+Patentes por ano;AA16;Depósito de certificados de adição;elegivel;;3837a914a3ba575705a8a8a8027f9b62199747540ed74db064be8bde8bd9fa14
+Patentes por ano;AB16;Depósito de certificados de adição;elegivel;;a60329ddc6e9881ec2a36dd921eb17a34e262e5fbe341de51ee13bc861d75cfb
+Patentes por ano;D17;Concessão de patentes de invenção;elegivel;;8b36d8adac2f7f94bb3234f3836a9e6dd6a59014b1b9f94ad87852251ed76c2f
+Patentes por ano;E17;Concessão de patentes de invenção;elegivel;;ad1e6b07833c753803aefc4e4e642595aa0ae6923383147a2fd5f179eb2a167a
+Patentes por ano;F17;Concessão de patentes de invenção;elegivel;;6634adb49c929aaf604db08e779b80dc9d21a0e8b646b238b4f5bec594602b5e
+Patentes por ano;G17;Concessão de patentes de invenção;elegivel;;ff139fc7963f9a8fa9c03f335458c628ad43f23e7562faf2864f940a446647bc
+Patentes por ano;H17;Concessão de patentes de invenção;elegivel;;feef8b46c04ae7217117443dfc1f2e0804f73798b8f3fe14c45c79f6ea2b093e
+Patentes por ano;I17;Concessão de patentes de invenção;elegivel;;240c4d1f33f8ffbe5129a82363f852bd3205b75ae9881eef3741a328b344e072
+Patentes por ano;J17;Concessão de patentes de invenção;elegivel;;4e93ff4fd044ed5590f860abcfe062f16de72890d7aba5f99b2b02399885ff0a
+Patentes por ano;K17;Concessão de patentes de invenção;elegivel;;569c416e1cb737cdcf4be8cec1d024bac94a97fbc42ba1bc324e3d3c5b906d20
+Patentes por ano;L17;Concessão de patentes de invenção;elegivel;;d618170c1d887ec6b89111970c87858640af15effde74105fe3a2b7c37dfa423
+Patentes por ano;M17;Concessão de patentes de invenção;elegivel;;7e12ea929ee7054bc41ddcbcfd60c74078f769d5d3f86498f46969833c2f0197
+Patentes por ano;N17;Concessão de patentes de invenção;elegivel;;f305e9001f09a96ded9c8b73353bdc858b094b3a654c024fb159743e67e03383
+Patentes por ano;O17;Concessão de patentes de invenção;elegivel;;9fed3cc303975bb2a65ae1b941225018d3444954a380fa8bb1f12213825025aa
+Patentes por ano;P17;Concessão de patentes de invenção;elegivel;;c69e528e98bd87bebe5d8d22f3154769aa1990c0540abb1eeb78be0c52ed17ff
+Patentes por ano;Q17;Concessão de patentes de invenção;elegivel;;3af4edb65de8062c40c84b33fa756211cfbbdffd13094c7e42f1a68d58725d70
+Patentes por ano;R17;Concessão de patentes de invenção;elegivel;;7bfc17d9e0efc9e1b23f3571aeab07bdb7f5750eb98cdef7d1e86b4bf968340e
+Patentes por ano;S17;Concessão de patentes de invenção;elegivel;;904a73da4011033f05a265cd43f0efa6586bf62e342389c97b51228414988cd7
+Patentes por ano;T17;Concessão de patentes de invenção;elegivel;;8bae03a2a36a5d156f7f1d31a44f7ace306eee68ee546939aacec39451f9afbf
+Patentes por ano;U17;Concessão de patentes de invenção;elegivel;;1be55521f94f2696ea8f8642c4ffcef9412e6832147aa5784ad43de568cf838a
+Patentes por ano;V17;Concessão de patentes de invenção;elegivel;;4ca2a871c8434c42aee16323ff7428e8b129e1c14ea382264a4fa8ec129a5983
+Patentes por ano;W17;Concessão de patentes de invenção;elegivel;;a3af932628591fe699e849dc5bc3c4346633e619eb00ea0ccf4affd000169edb
+Patentes por ano;X17;Concessão de patentes de invenção;elegivel;;53d09a4df3a266cab93cecfe35331a1240b7f3eaf1cf1135f5dcc015adbfc344
+Patentes por ano;Y17;Concessão de patentes de invenção;elegivel;;c69c4ac756d7e10e28b0d903b4de10fb2fe776be2e127234261543979937bad7
+Patentes por ano;Z17;Concessão de patentes de invenção;elegivel;;fa1583dfbe46213c28680b8f6e2cb723540a3e04ec9237538e5f0958182dc788
+Patentes por ano;AA17;Concessão de patentes de invenção;elegivel;;1a2e1dec45b39ce06cb8f37053fc23fd5f85dd72fa7e0006648770485297e27b
+Patentes por ano;AB17;Concessão de patentes de invenção;elegivel;;5362b0f7fe337b960e15f8ac352ddb2f202d15ceef1fc345a788d479aaaa6694
+Patentes por ano;D18;Concessão de modelos de utilidade;elegivel;;dd601527d9fb8ab41982753080567dcb7afb04811b00cd725a767f44a00e07db
+Patentes por ano;E18;Concessão de modelos de utilidade;elegivel;;c459c9e3296d35b9c1fc3b449a43153a8a6907688710ff81275e3d106f1e7a68
+Patentes por ano;F18;Concessão de modelos de utilidade;elegivel;;29938763195b72d528197d9c2eb5d9deb14fcf6fb07342b36ad1f7c1b67a75a9
+Patentes por ano;G18;Concessão de modelos de utilidade;elegivel;;4010c0a2fb80faa86eedd54256eabe7a9156887c7537e25e2f4c00c4342c2f8e
+Patentes por ano;H18;Concessão de modelos de utilidade;elegivel;;8d8d8a4c420368aad2ee96e78d8a0421e9bf7b3c9896baa5900d88b461027bd7
+Patentes por ano;I18;Concessão de modelos de utilidade;elegivel;;cc0f16c3eef0c41e6663fc0256793cd6bf4afdb1583766b39e763c729042a01a
+Patentes por ano;J18;Concessão de modelos de utilidade;elegivel;;968f99b89dec07a6c28a9ffef44655464f3ff76261b8099d7761470c9d136fb8
+Patentes por ano;K18;Concessão de modelos de utilidade;elegivel;;af97a722fa466e4c5771ec0817b51b95dc3b0344dd8ee3aaa2c53a1f054d3cce
+Patentes por ano;L18;Concessão de modelos de utilidade;elegivel;;8a27d75b2ceb4686752c0a04a44c03c6d5f45967b34d4f8e20ab663b5c1cdcac
+Patentes por ano;M18;Concessão de modelos de utilidade;elegivel;;fd7b9a61e2483489ab44e08e84d4d9ef2f46601bcc586a6aea913ea4904d9c60
+Patentes por ano;N18;Concessão de modelos de utilidade;elegivel;;0f87e12c43ce887997d2d3be46137e088671aa96506400318c5c797cf7e2a441
+Patentes por ano;O18;Concessão de modelos de utilidade;elegivel;;6f38bc451448f4a39a80ad21125714871b56e89e39245fae8437ca34a3bf9c34
+Patentes por ano;P18;Concessão de modelos de utilidade;elegivel;;8817b12cb0674a8a0618f2506e9ef47eb27a68d18679af2c574bcac646597d01
+Patentes por ano;Q18;Concessão de modelos de utilidade;elegivel;;8b9d30f8d900f7266a521869c96aa2c9c32b90beb5fbfa79940ca8ebca74e55d
+Patentes por ano;R18;Concessão de modelos de utilidade;elegivel;;0826b0640be6b325eed3fe18d6f662b4feb187018f7d3d90ef8dbd30c75b345b
+Patentes por ano;S18;Concessão de modelos de utilidade;elegivel;;505ac6bd72f83059a121726940361501e929bb760f67fa8a4100d73a856dc41f
+Patentes por ano;T18;Concessão de modelos de utilidade;elegivel;;69c0c6b22b662864621d934579ebda5693545eceff9757cdacd30ce9a461b0e7
+Patentes por ano;U18;Concessão de modelos de utilidade;elegivel;;088d8a48cdd0575db5aac022e61687fba565737553acd11c30357629c7bf9691
+Patentes por ano;V18;Concessão de modelos de utilidade;elegivel;;e159ae32f5e487f1ef7c5c7b8c7ac694a1ea1bae713b5ccb692db11fa9f149a9
+Patentes por ano;W18;Concessão de modelos de utilidade;elegivel;;e53797a9ea7b08d7a5b0983096ac230f2f02657254ded68fd3f5acfcf61a6870
+Patentes por ano;X18;Concessão de modelos de utilidade;elegivel;;9f69279fe40a3fab4ba794bbcf1367603269df2693fc8a194fb55709f047565f
+Patentes por ano;Y18;Concessão de modelos de utilidade;elegivel;;c0a92f787c4b30410fff0c4844b7b6c3458dd0c1a8bc2ef01038ed01b7c64655
+Patentes por ano;Z18;Concessão de modelos de utilidade;elegivel;;a216685bd97b3ba8310f058e83945818b89037e3eb6e757bb8bce7e92543e349
+Patentes por ano;AA18;Concessão de modelos de utilidade;elegivel;;fef2329ce23db876f26d9420c920778c4bdc43a7d3571da491e8e0bb39288b9d
+Patentes por ano;AB18;Concessão de modelos de utilidade;elegivel;;5803a1d2d6ff1de3eca8112ef60328716d22f2afbb1d35e2d5332769a29d304f
+Patentes por ano;D19;Concessões de certificados de adição (CA);elegivel;;db2dbda5c510ace711bb6372ab4249ddc0eaaaab4610965e0da7f5bf6fd5b095
+Patentes por ano;E19;Concessões de certificados de adição (CA);elegivel;;7b9c492a3a6364889d12b539dd1f2001c06e847a042cc48e7efa504dca456de4
+Patentes por ano;F19;Concessões de certificados de adição (CA);elegivel;;3f6f516955fec29a298e0ec415f1cfacc695594600f68ae736a4c17d31b7b829
+Patentes por ano;G19;Concessões de certificados de adição (CA);elegivel;;0f35945c734151126c58e16067383a9dc4521414ee1fba6393e2e05a6b7f71fd
+Patentes por ano;H19;Concessões de certificados de adição (CA);elegivel;;08b86421774aa686f1b4fcdccfed0e814370d6250da20186e892245940d12f11
+Patentes por ano;I19;Concessões de certificados de adição (CA);elegivel;;669956088d4f938a7ef29150847b502480ccbd98f37e5aacbcb7fafa23c8c922
+Patentes por ano;J19;Concessões de certificados de adição (CA);elegivel;;b21afa62663e3c98ea33ba191600533e0548af9af3083947fe5a7cf3ad80ac45
+Patentes por ano;K19;Concessões de certificados de adição (CA);elegivel;;bed7a78df3e7c3e8c923c4fcf2b12923da905d386739fd2ccee86c97935dd527
+Patentes por ano;L19;Concessões de certificados de adição (CA);elegivel;;57b1b8698b0c642a2ce5789db1193d03b3015c09e9ad2ed08ea7608082330fe9
+Patentes por ano;M19;Concessões de certificados de adição (CA);elegivel;;e3be08d482948e94a6f03e8279a9e828e140d694e0f6a8fe6c36b4a16978d41f
+Patentes por ano;N19;Concessões de certificados de adição (CA);elegivel;;bb5696d6799947452b761b7455d0aa073b401f5f47fa965b9d323b721658f55d
+Patentes por ano;O19;Concessões de certificados de adição (CA);elegivel;;1227980e2a294b2c9d8a1f8040e7fca86e7b1c4d4754b560b37c988802a492b7
+Patentes por ano;P19;Concessões de certificados de adição (CA);elegivel;;200688d5bff9abc4ac715ea083b6413ef0da8d62a8b2e4e80a11a7447d614b08
+Patentes por ano;Q19;Concessões de certificados de adição (CA);elegivel;;6a56dc797622b80f162140348d8400f64f2eebbd52ad082ffa0d4d0ef34f4ab0
+Patentes por ano;R19;Concessões de certificados de adição (CA);elegivel;;d5072ef423ae0f6aedb66838d501ee94a1e6a8cd5b28af1513534662d4287bd1
+Patentes por ano;S19;Concessões de certificados de adição (CA);elegivel;;6ade91f9d9a38ac172057b387a5c72ffb039c93cd4923d07d010e4e6a8e1698e
+Patentes por ano;T19;Concessões de certificados de adição (CA);elegivel;;96e9307847d7c4e6b2b781b74e885f9b0b3523cd8d3ab6a1d70de1c8cbdc1a11
+Patentes por ano;U19;Concessões de certificados de adição (CA);elegivel;;97787a5c8de8e2c9d70fc89d4cbc1809bf439f3188204ef23f43cde84c5824b8
+Patentes por ano;V19;Concessões de certificados de adição (CA);elegivel;;c9ca7290c6b690641537cba7f282ad1b354ae380b3145752a824e17942d5aa0b
+Patentes por ano;W19;Concessões de certificados de adição (CA);elegivel;;e2a938f085b08cc3cf216a73bdef68b2b87c720c4f977bc53241433c31409ea2
+Patentes por ano;X19;Concessões de certificados de adição (CA);elegivel;;51d7ad92eb45c264b60088734b089a46fb45245db7fdf812adbbe61ece614999
+Patentes por ano;Y19;Concessões de certificados de adição (CA);elegivel;;000b43e466275d5a2e58f33d4273a6128e0b45bd952ab9c424850cbdb3e8675b
+Patentes por ano;Z19;Concessões de certificados de adição (CA);elegivel;;8fa237428e70cbc79b0ce26a4acdb20ff4a2ec5a9cc4bfc82c82bf3727bbf0ba
+Patentes por ano;AA19;Concessões de certificados de adição (CA);elegivel;;67bc520b6f18d20244d09705fccac886727e1e1033e4c6eae2a93d92cab8545e
+Patentes por ano;AB19;Concessões de certificados de adição (CA);elegivel;;78a8cb70097349c1268e1cfcb7f554626154d527b1ffa79a3417183ec55737ec
+Patentes por ano;D20;Depósito de patentes de invenção;elegivel;;9968edd1ca5a7796b3bb6857dcf18739645e7fad90fa582dfedad8cb5b966ba0
+Patentes por ano;E20;Depósito de patentes de invenção;elegivel;;4118e9c2c93c43f9e14a54dfa8cea3ddda32c0faaddeaf6742f033a2dbf11e46
+Patentes por ano;F20;Depósito de patentes de invenção;elegivel;;9a0dacde8bce107cf30f0a87e608ef97c1ca82024e522846ca6eb0ad76772739
+Patentes por ano;G20;Depósito de patentes de invenção;elegivel;;4312356956924d449027b4744b92d91f203c59aac1da4ee69b3377956801888a
+Patentes por ano;H20;Depósito de patentes de invenção;elegivel;;576890b6d49adfa4e7938515f733556cd199f7ac2754f98b7183576b2a2ebbc9
+Patentes por ano;I20;Depósito de patentes de invenção;elegivel;;160bcec51cc34d1f201e68c792068552775f5f51de1ace7d823d77fa46c45571
+Patentes por ano;J20;Depósito de patentes de invenção;elegivel;;6f08e28b1eec53fc4668c0ec87d23e143b36e10de7e649930f81f3ae024da21b
+Patentes por ano;K20;Depósito de patentes de invenção;elegivel;;31f92c837c2cd5ed9dbb7f4fa861ea3001f77432df541353dd02084556f34246
+Patentes por ano;L20;Depósito de patentes de invenção;elegivel;;bb3a0e4fb10eb578f13e2af9ed3d37e926ed42e3bcbcea1a763f292f0fd40037
+Patentes por ano;M20;Depósito de patentes de invenção;elegivel;;6d5ec2ba05b94d45893f8f8a19bfe354cd9511f410d18c45b502280b29709f81
+Patentes por ano;N20;Depósito de patentes de invenção;elegivel;;4da0cba055804c68e215585ff210aa28cabf2e1c346a0e1b9fce6d9613045990
+Patentes por ano;O20;Depósito de patentes de invenção;elegivel;;dd160d2991848c19957eb471cb4e43e1177ed12ab9211086d56f24d26bd2702c
+Patentes por ano;P20;Depósito de patentes de invenção;elegivel;;23bb22d1f4932ddc856ae8811b3f218afef936506aa64f565eb9e5f268e73c51
+Patentes por ano;Q20;Depósito de patentes de invenção;elegivel;;c0a252de2bb3f7f6fccd35201cad49af5f77a6bb0cc211c8ea1074eca1f5d930
+Patentes por ano;R20;Depósito de patentes de invenção;elegivel;;9d93b4d8e46c0cdda275abeb5985d3f355b22736e90a54137ef2e9e2c9fd5da0
+Patentes por ano;S20;Depósito de patentes de invenção;elegivel;;64fe87018be684e687c1682b6fa93097e2de89906b3880f071775c053e9ea333
+Patentes por ano;T20;Depósito de patentes de invenção;elegivel;;49ae3ffea42f1425d9d3cdb2ea95191b9ad695666bfa786e39b866aafc4fff66
+Patentes por ano;U20;Depósito de patentes de invenção;elegivel;;2dcd2ee92049888a82b296bdf877847b8c7067bc47b241d532f84e1225b8e487
+Patentes por ano;V20;Depósito de patentes de invenção;elegivel;;9a8c958f13e8773898bb89a231b3e13c7409ef885c1ff993851564d3baa1ff1b
+Patentes por ano;W20;Depósito de patentes de invenção;elegivel;;ba36b26dead42abaade2c4ba0f3cccbb6366bf570d275fddf8e24e134033888e
+Patentes por ano;X20;Depósito de patentes de invenção;elegivel;;a8821e3b20db59611278e3b3d0da5f35f1ae8fd73fbef9c624098f4c2e730046
+Patentes por ano;Y20;Depósito de patentes de invenção;elegivel;;d7b413adddcdc7213d207e2eb1b8918fd6870e75d0995298051dcea36ba7d9a5
+Patentes por ano;Z20;Depósito de patentes de invenção;elegivel;;a27b584ec1999c6fadc15a4aa61b013ec44a5062a298a38a913c0208948347f6
+Patentes por ano;AA20;Depósito de patentes de invenção;elegivel;;0171231bd5001e36944304daedde747606e3dbc00c0b4262a3a38e5e3dfa0585
+Patentes por ano;AB20;Depósito de patentes de invenção;elegivel;;8dfc8e410b48f34e33feffafa097498a048c8ee40808c1aa50b33a4b3962c91c
+Patentes por ano;D21;Depósito de modelos de utilidade;elegivel;;c156ef13202307a4c20d14c7adb6e58e3cc15bca3b073b84173e5f89a1e80014
+Patentes por ano;E21;Depósito de modelos de utilidade;elegivel;;dbd864d9ec1e2b03d5b873364668085d98b62de66f10e1561587792325235416
+Patentes por ano;F21;Depósito de modelos de utilidade;elegivel;;91df88239579b4af981a607d8bb4cd5d93aee5593874eeeeb89f17e67d918c20
+Patentes por ano;G21;Depósito de modelos de utilidade;elegivel;;b933fe09999deadc28a9d06fd12d5a64ad4d3c4d6cd635c54956a763ea131b9a
+Patentes por ano;H21;Depósito de modelos de utilidade;elegivel;;b75d212622e3b51d7cb2affea38ce69ebbee22c383f2f7ed739f523bd8814e27
+Patentes por ano;I21;Depósito de modelos de utilidade;elegivel;;999bf127c1f6b731f007167fd249b0352f39e1e41ec50b2afb7998b437b3b6c3
+Patentes por ano;J21;Depósito de modelos de utilidade;elegivel;;33d2517c957e0bd94f0bac3fdb0b7a05eb1d7acfb6a23b962a74bf1e7446c925
+Patentes por ano;K21;Depósito de modelos de utilidade;elegivel;;45f1c73a3f9afa306d046b7d3c5c48d8f4bc99899d25fbf3d9183731a0902dd1
+Patentes por ano;L21;Depósito de modelos de utilidade;elegivel;;d9484211c8d851d83b9e6c165d6c7ebd959eec9d80f3b72f88a398478c0dc93f
+Patentes por ano;M21;Depósito de modelos de utilidade;elegivel;;766aaea81474c7106172457f03e7c722459d1da46a80b754e74cc33320991b8b
+Patentes por ano;N21;Depósito de modelos de utilidade;elegivel;;02bb0dd1f3b90a78693eb89749b351ecfd3de5b82a1764da78acc1bc3fe8b944
+Patentes por ano;O21;Depósito de modelos de utilidade;elegivel;;10d9057b9da49bc7e02ed940dcfecd74d4f6cd117981a01f2b116fb5d2f08902
+Patentes por ano;P21;Depósito de modelos de utilidade;elegivel;;305a300e810d99948ab60363a866149ed2ab499e237ce7af40b17919bae99059
+Patentes por ano;Q21;Depósito de modelos de utilidade;elegivel;;cb7ada92bac1384ab3889832905f6d4863a838c60c1a688b84235f3408b2dfb7
+Patentes por ano;R21;Depósito de modelos de utilidade;elegivel;;891715286e07701d22f96818a05cc0ee0f49502c006f88f3f7c4a53f4510735c
+Patentes por ano;S21;Depósito de modelos de utilidade;elegivel;;37560f441fd313f903edb8662c720c2de9ccfe7b9dd118372404d913cb9b7007
+Patentes por ano;T21;Depósito de modelos de utilidade;elegivel;;aaa3fdb927fcb01b921d51c78a78ac35f770e8f614a98d1115a7879f9743f142
+Patentes por ano;U21;Depósito de modelos de utilidade;elegivel;;b58069786f5ef367a3daba78225b5449145d6ddffa562a8f2a91c65084deb702
+Patentes por ano;V21;Depósito de modelos de utilidade;elegivel;;ba49c3e8e6c29a1cbc89adb34b1119802a81c6cd6075cce36cbd54fe7f3cfd86
+Patentes por ano;W21;Depósito de modelos de utilidade;elegivel;;b6f36597c5e569b09c687ce2507d9ab7658682574cb0aa8cee83e725e9fd62e7
+Patentes por ano;X21;Depósito de modelos de utilidade;elegivel;;705a609ffd3ff082261551157cfe6849fdaf2ee80a354a2b5119ecab0bc96198
+Patentes por ano;Y21;Depósito de modelos de utilidade;elegivel;;415264997166d183c42f33cfade72e28d2b8e6cd0c956be3006b0e6cd92ce68e
+Patentes por ano;Z21;Depósito de modelos de utilidade;elegivel;;a53a24fa56c1e981418b1142adbd9585fc1446827a9cdecaf8a9acf5c3098dc7
+Patentes por ano;AA21;Depósito de modelos de utilidade;elegivel;;14ac6020f422618e3b21ff3087c03f6d5a287a485ec25f01743ff199ef7efe50
+Patentes por ano;AB21;Depósito de modelos de utilidade;elegivel;;ade9fadefb1abe165fd4527c7c1d44ad230e16c20f1c7b0b139ad0a57bd70a32
+Patentes por ano;D22;Depósito de certificados de adição;elegivel;;72d69608cd44f740c43affdbe93de8c58676fa2edfd5e34c0e0d12055b6aee01
+Patentes por ano;E22;Depósito de certificados de adição;elegivel;;5f576e89a4c8cb4f58ff4e1d98c78266514d2e92c5707f098794eed8968f8a71
+Patentes por ano;F22;Depósito de certificados de adição;elegivel;;0c752fe58090ae9ba2b1a90804c2b03ca50969a51da4ebb095b029e51c53c75c
+Patentes por ano;G22;Depósito de certificados de adição;elegivel;;f73c218317040dc74f76b41c88b562a933829d2091b1600fdd36c6386e46c1c2
+Patentes por ano;H22;Depósito de certificados de adição;elegivel;;5ba18c784ccf7ea3ecc2d5e455999fc923fc574d43d6bb541f3090903c273c2e
+Patentes por ano;I22;Depósito de certificados de adição;elegivel;;8701e32fbef77179f481e03c7092a4270086d3a188345de70a9ebab32dafe496
+Patentes por ano;J22;Depósito de certificados de adição;elegivel;;cd7271baf7d20e54745fac5d47311fb359cf52a525091b18a54ec055a8bf9e12
+Patentes por ano;K22;Depósito de certificados de adição;elegivel;;ea1ef65f1e2eab7aeb06c1c18e51bb8cc5a802ccb7319f631090046a99ea0c44
+Patentes por ano;L22;Depósito de certificados de adição;elegivel;;cccba5c15e44c91b3eee29de5799cc0baab99ced2ea875c85d5ae45451abb4f4
+Patentes por ano;M22;Depósito de certificados de adição;elegivel;;1b24326cf33b84619ff94e48e59b0b3cf738320bc4ee5aebcf597f49034fb452
+Patentes por ano;N22;Depósito de certificados de adição;elegivel;;03f5434e1e5661e77e19eecd22a422db649c470224457a0c6f7556cea8387e72
+Patentes por ano;O22;Depósito de certificados de adição;elegivel;;5ab739fd951071eff50c96b40a05ef0ce6193d71936e52b9d62f486035c72c75
+Patentes por ano;P22;Depósito de certificados de adição;elegivel;;1db626bdb05429bce741c2ffef79ac81bd47163270f46e1b5807a6ec0710387a
+Patentes por ano;Q22;Depósito de certificados de adição;elegivel;;887d32912cab33ff5c036da0f539ea9026c1560f8b7d8f26c9553136aef9ada6
+Patentes por ano;R22;Depósito de certificados de adição;elegivel;;ef0f38e210e3018007191effbd395e41018debe460aff3fd4a6933c93afe9106
+Patentes por ano;S22;Depósito de certificados de adição;elegivel;;745b3ce5ff5c068064074a597b03a3eb27b820f50e00705a3377233ec86308a1
+Patentes por ano;T22;Depósito de certificados de adição;elegivel;;2b9f8f873a04ef43d163006d8e3145adeb3796a4630f31c3f6ea6e813563cf24
+Patentes por ano;U22;Depósito de certificados de adição;elegivel;;dc6e4acd9fc018a7ada82f1cc50916c90111a1679c3ce0ec954a0daba4ac528b
+Patentes por ano;V22;Depósito de certificados de adição;elegivel;;e83f59d1620e81cc3139ebee8fb0ddae61b9f3bc3b00b9c442a6c8821d956749
+Patentes por ano;W22;Depósito de certificados de adição;elegivel;;dc37b8980e6d01a46f09e7a4436365fd99e19bcbbb5fd4165def3f27a8cbbbc1
+Patentes por ano;X22;Depósito de certificados de adição;elegivel;;a8f924a7d6e5a7a2e70546a037b2e7d87321c49816dabdde5f60f292013b727a
+Patentes por ano;Y22;Depósito de certificados de adição;elegivel;;b88a6e5830554780a5dbd72f4df853d13f71caf4f921242c8d569670a01cd5b3
+Patentes por ano;Z22;Depósito de certificados de adição;elegivel;;bccf0fa9f8fe470f3d2460c2b1994bd721d1f0e40eef44263d551b9db7b4ddcf
+Patentes por ano;AA22;Depósito de certificados de adição;elegivel;;5299a7de42c9686c779f2da3d35f85e0a1ec6e75ff779186f36330dab2f4c078
+Patentes por ano;AB22;Depósito de certificados de adição;elegivel;;de8623cb8c5fb7b6b3301330f34804b6de42954ccc5564edeab448fcf2bbe5dc
+Patentes por ano;D23;Concessão de patentes de invenção;elegivel;;9830c38aad14a01d3c951dbf7df7f843940e76b17b119d9400c016ef8b6cb48f
+Patentes por ano;E23;Concessão de patentes de invenção;elegivel;;6483288fa5233fc7823f9a68c504532aaec37557e136d17806eb5747f64c8f00
+Patentes por ano;F23;Concessão de patentes de invenção;elegivel;;5a00d28e758805b0ff7bd81428554e77139feefa859f83c7831e1da0da75cd2c
+Patentes por ano;G23;Concessão de patentes de invenção;elegivel;;e068d5ed19cbff941c0a85bf6ae1e78d8ba165d5b3b76e3cc65e71b1834eac3e
+Patentes por ano;H23;Concessão de patentes de invenção;elegivel;;78fd1300223de9ae138a5412b6559cb731b77963ac1ab3be0ce776af3d034e76
+Patentes por ano;I23;Concessão de patentes de invenção;elegivel;;37c7fef686072b6e9e76bf51c14b9cb202a7aed2a6ea6aa1341dcc400c034238
+Patentes por ano;J23;Concessão de patentes de invenção;elegivel;;86f34129c3c567db4fa33407baa810e01c4838e36cd3a84055d1455b1c91d2c3
+Patentes por ano;K23;Concessão de patentes de invenção;elegivel;;f5ed99748a5ef406c029a14e967f5527bcc6cc58309a77136090708346460368
+Patentes por ano;L23;Concessão de patentes de invenção;elegivel;;f0b8158f99646ede666e689946bdc9e920d55db4c22a11da8210721fb0cb92f9
+Patentes por ano;M23;Concessão de patentes de invenção;elegivel;;387a2b9d84654fda38e2957e171c0b140dc29707f440fb7cbaf141002933ee23
+Patentes por ano;N23;Concessão de patentes de invenção;elegivel;;f1b763b72ea9443436358563c93eb6980e0a0daef412aafa9b87f13d2413de46
+Patentes por ano;O23;Concessão de patentes de invenção;elegivel;;460b23ee5aa29a8c5516014c3d4876e9ac9cdd97f0e700c1d0abb271465f8e30
+Patentes por ano;P23;Concessão de patentes de invenção;elegivel;;5f77b4a0c2f5793e835552647db706ec573ad7b0cfd546e779e8d9fcef31bc89
+Patentes por ano;Q23;Concessão de patentes de invenção;elegivel;;8f8b4216a69055ea8ac8310f4952a85f12aad21fe1fe5fa608745af84e193928
+Patentes por ano;R23;Concessão de patentes de invenção;elegivel;;ad259f9c5c21ef098836fadcf51aed03287a395180884507c317239c2ee474d9
+Patentes por ano;S23;Concessão de patentes de invenção;elegivel;;84b0c6f82864132c908a9a7904e45a1d71066baebe576ae12b72655f4150634a
+Patentes por ano;T23;Concessão de patentes de invenção;elegivel;;cc38eafb74606da559271858878da86c8de0dc8ee57a74fe8d9b650ff878af26
+Patentes por ano;U23;Concessão de patentes de invenção;elegivel;;a89ff957359f04ac541a557b569e6f56f2a2439333756ffbec0ceaadde9335b6
+Patentes por ano;V23;Concessão de patentes de invenção;elegivel;;22153eb1e2114f437151afb79228acc208bb44e4c85e8559799f18a47ca4441a
+Patentes por ano;W23;Concessão de patentes de invenção;elegivel;;a2bd5de378985b55ff3849ab8d9233f688191c7f21b01bc6b51c2cbce2c5d38a
+Patentes por ano;X23;Concessão de patentes de invenção;elegivel;;818d516aec79c425d26a71eac4e67e7208c7410cfd974e19f43a1f7c54946546
+Patentes por ano;Y23;Concessão de patentes de invenção;elegivel;;3b6246703142c863435ab29cc892bca6cee7cbfca5a12f88c74ddfb844fb5cb6
+Patentes por ano;Z23;Concessão de patentes de invenção;elegivel;;06c532d7bacefb2aef9f88d202370dcc24c2eb2936eef58b8fdfac75b275a6f0
+Patentes por ano;AA23;Concessão de patentes de invenção;elegivel;;c5f4615434e20163ddc31004dcccafa9dc8923dcb1519758318a718c9f8bfd44
+Patentes por ano;AB23;Concessão de patentes de invenção;elegivel;;9c2bae2e12ac159b20442671fe6dfbc007593e914e583af4ff48b5e79562c27a
+Patentes por ano;D24;Concessão de modelos de utilidade;elegivel;;4be9e7f0dbc05291754a80d2fa8f7c0abb48f372f98b708d120a26cdba3df203
+Patentes por ano;E24;Concessão de modelos de utilidade;elegivel;;72b7516ffc86cd1d50f9d0c35932746ba04bdbd3534b13f6b498d917fcfaacb1
+Patentes por ano;F24;Concessão de modelos de utilidade;elegivel;;070f5f1ddb32aba76eb8c72706642c9d1ef5e652cf011013d0cc46c3503dd282
+Patentes por ano;G24;Concessão de modelos de utilidade;elegivel;;699c7649776e7b54c9b4de9cc988686c6aaff1f073e1c2ceff282e20b09c3f2d
+Patentes por ano;H24;Concessão de modelos de utilidade;elegivel;;0f515ebfe40007ddffb54668cc9d998fb939ba256ebd17acd82990209d6d333a
+Patentes por ano;I24;Concessão de modelos de utilidade;elegivel;;348db54023bb9076d90cb4cd01b6b00eef163b7a24aa4b77c12831a2feeec9cf
+Patentes por ano;J24;Concessão de modelos de utilidade;elegivel;;3c560c38a94b500524dee4edfbaa762bdc93937c632cb762f93f29946b9bfd80
+Patentes por ano;K24;Concessão de modelos de utilidade;elegivel;;40d552a14fedfe17386aa9897c6b434dc58c182692c153d8046a6c7e360c4bd7
+Patentes por ano;L24;Concessão de modelos de utilidade;elegivel;;5c5a563023c1d566c1b2bd34a6fd71deaeace567825d38618fd95aa35255fb62
+Patentes por ano;M24;Concessão de modelos de utilidade;elegivel;;983f51399c2bbd664d1ec5a36271fc4bde57c690b2ec21e191b0c1fa7b926221
+Patentes por ano;N24;Concessão de modelos de utilidade;elegivel;;b1b8882517c729f1b0c2b7e4b421542f96314f124f793ca95fde02fdad4d3f2c
+Patentes por ano;O24;Concessão de modelos de utilidade;elegivel;;3740c27e728f6bba970623be337771c9596d5bda757f933f4df0f31106a1f1a5
+Patentes por ano;P24;Concessão de modelos de utilidade;elegivel;;17a88796690c5c9dd85642052d744b4a75b873285f9d82917df5984b3e572251
+Patentes por ano;Q24;Concessão de modelos de utilidade;elegivel;;0feac0b74daf50a20262a9556bb46579f62a45af4033a8ff749407b083784276
+Patentes por ano;R24;Concessão de modelos de utilidade;elegivel;;9b3414f22f3e3390827f53b391b0851697f256735f5477767e5c6cbca5fe6e3d
+Patentes por ano;S24;Concessão de modelos de utilidade;elegivel;;d5b5fe980b2dae9561ff33a01e6a1bc44a525e1306e92d0ba1032f27c4a1eff9
+Patentes por ano;T24;Concessão de modelos de utilidade;elegivel;;3d174321a9bbe5cc26abf8595ad8ac0409d905382620dd62543aeaf1bef51ce2
+Patentes por ano;U24;Concessão de modelos de utilidade;elegivel;;4d20fd5aa2afa20a367f801be87d6a59a60350ef2a7da3af88862c9bce325e3f
+Patentes por ano;V24;Concessão de modelos de utilidade;elegivel;;caff884d6b5591e166365481a423f505edaa66c9ad1c229d1d521ab8c9aada97
+Patentes por ano;W24;Concessão de modelos de utilidade;elegivel;;a13e65b73a71ad2864267b6a62de0dda3c7aff4a4108279b0ef7943b2de69350
+Patentes por ano;X24;Concessão de modelos de utilidade;elegivel;;77356a845d1587fcb6e0fddb5cb623eb6d26e01052bf2038a8579e1ddf946c19
+Patentes por ano;Y24;Concessão de modelos de utilidade;elegivel;;555cd747b1740a4b5ed784d0b12dc62ea7c00c51db3b46e9beed6e901a687911
+Patentes por ano;Z24;Concessão de modelos de utilidade;elegivel;;1890d1eb27032cce1d9b9e2e0d062e2577893237f339c4eb2b0fbc06658484cb
+Patentes por ano;AA24;Concessão de modelos de utilidade;elegivel;;bd1f8f9537a012b13fb7c80a302923fceaebf32109e38cf9bf9032b7fde41944
+Patentes por ano;AB24;Concessão de modelos de utilidade;elegivel;;c1fb4ceca8247655e0ab6f34baa204dc3d3faba16fee0f8e7dc720ee5fa26222
+Patentes por ano;D25;Concessões de certificados de adição (CA);elegivel;;0073e396cb818705d40095172ae48a7ced72cdcb731652740be28e409976ed17
+Patentes por ano;E25;Concessões de certificados de adição (CA);elegivel;;d20f74def52bddb5b31670ce7ae13fea42e764d3966341e194804ab1dcbec698
+Patentes por ano;F25;Concessões de certificados de adição (CA);elegivel;;adb183078c8645d4565b52303eff3c1b9644d421ced34f0c21868571ef402f4a
+Patentes por ano;G25;Concessões de certificados de adição (CA);elegivel;;adcc87934fe69fbd38b1d9bd6bde2e5c261a6cf23c537a6fcb029447822187df
+Patentes por ano;H25;Concessões de certificados de adição (CA);elegivel;;d1958204c399371500ddbe1ad1d8fc86d9ac535570ff7607807b6b61e521ed4d
+Patentes por ano;I25;Concessões de certificados de adição (CA);elegivel;;82b5aa6b4604a9f2b6d045e66b04b5122223a756fed47e66e19b039d39649318
+Patentes por ano;J25;Concessões de certificados de adição (CA);elegivel;;2126238f902bc5b790d1bdee9bbd40adc30a9e4336cc2ce7f3d018a871f645d2
+Patentes por ano;K25;Concessões de certificados de adição (CA);elegivel;;770999a44d55ebf23198f7cb82e52487aafa88eef66d4e6cfb6b2dc8f0156115
+Patentes por ano;L25;Concessões de certificados de adição (CA);elegivel;;6f655bc4111d0302509db8c2f6b4f5d0a726ead17f7bce74e597d80e4d4d163a
+Patentes por ano;M25;Concessões de certificados de adição (CA);elegivel;;c892f3aca12e6203a9c64668911f2a4418f5d84d724e93a3a1db5ee00d45f61b
+Patentes por ano;N25;Concessões de certificados de adição (CA);elegivel;;50444f78697502e9830c2959a7573950a4939ff0e69799f1d808e622e6895ad8
+Patentes por ano;O25;Concessões de certificados de adição (CA);elegivel;;252f52ac424880057175c1265aba54f0cea2af4d8a3a3e7143e9e61304f81c63
+Patentes por ano;P25;Concessões de certificados de adição (CA);elegivel;;7e3518cb6630950f0dcd9ebb8e8efed99651965e28aca7b50434e5f0df28f877
+Patentes por ano;Q25;Concessões de certificados de adição (CA);elegivel;;958d6767c2140c07a83cabc5f37ac3cd1acd9e91b00eaae8a799b67b8c6192a2
+Patentes por ano;R25;Concessões de certificados de adição (CA);elegivel;;ed664648d139e992666b27dda470e310f4d24c90e5bbc1eac547f3a69ecbb61d
+Patentes por ano;S25;Concessões de certificados de adição (CA);elegivel;;dc372cbe58fff5d4767d1c2d53e1585cb31b05dd93f0c75917fadf76e3536d8c
+Patentes por ano;T25;Concessões de certificados de adição (CA);elegivel;;c1fd835c039bd84e1fad2539fec5d6ac8340f9e668bfa8254ff12737026c730b
+Patentes por ano;U25;Concessões de certificados de adição (CA);elegivel;;349a18196b6bc247aad74c858ff1789042e80f404281576f9bb40d4a08f37cc9
+Patentes por ano;V25;Concessões de certificados de adição (CA);elegivel;;7402e3a5102bb0f392af0199484db6a1c224cae987433138bdabf621eba751cf
+Patentes por ano;W25;Concessões de certificados de adição (CA);elegivel;;950f66af0050d4d06f9b4b649df0936bae88b68a86cdbaa1346b483a6e75a218
+Patentes por ano;X25;Concessões de certificados de adição (CA);elegivel;;d436f526d024e4d7d4d2f9dd0eed097088e2402902fed742d5a65fff09c70b8c
+Patentes por ano;Y25;Concessões de certificados de adição (CA);elegivel;;9d32bf598e48d147d0793ffdaade630ba608ad51ae281bbd30baf22a2411eb41
+Patentes por ano;Z25;Concessões de certificados de adição (CA);elegivel;;c0b847211bdb4c3b5ec46fa81088458fd48ffe57a6df1acddd46c879a2a2029d
+Patentes por ano;AA25;Concessões de certificados de adição (CA);elegivel;;bc17610aa221253f1657b9496d1598a65c88071e5d6bec7b336811325eed1c2d
+Patentes por ano;AB25;Concessões de certificados de adição (CA);elegivel;;ad66121031dac877eb5c28de8941658cc76b634dde8b490e24dd3eee44620a4c
+Patentes por ano;D26;Depósito de patentes de invenção;elegivel;;f32925dce1563e5625cac0bfd2a8586ed939a5d5ed570fa697a8d89c68ef507a
+Patentes por ano;E26;Depósito de patentes de invenção;elegivel;;3a62cbb17e2726ecebd5da5da8ce367a10cc6b1335c968a37203490a0933c9a5
+Patentes por ano;F26;Depósito de patentes de invenção;elegivel;;bc5ecc2db435411fe63465a862f2c407e0369ad19b18b62badbdaa16fc628e25
+Patentes por ano;G26;Depósito de patentes de invenção;elegivel;;833eac531a58e7d24d02214b5a67403bca4759636c38693f9025b597a012c85c
+Patentes por ano;H26;Depósito de patentes de invenção;elegivel;;6916c35bc45cfd76e233497947145dd183a051b95c9cdb344a03e9103fbbbcd2
+Patentes por ano;I26;Depósito de patentes de invenção;elegivel;;2f8eed29edf5b76c446b3e44f62b272cae0629798e782bf95a8ba809b87228b6
+Patentes por ano;J26;Depósito de patentes de invenção;elegivel;;9b42e08a366b1a8b31c36a5046ecf72bb303085392c973cd0447690e95adcdba
+Patentes por ano;K26;Depósito de patentes de invenção;elegivel;;51b5ea5165975000faac577cb9f01938cd81ebe2db0be7f68ae4f07c218a3e88
+Patentes por ano;L26;Depósito de patentes de invenção;elegivel;;345330d9d6a40c54f8649cc2e2d2fb6bfdfbf8e46cfd4755d80adee151ba336a
+Patentes por ano;M26;Depósito de patentes de invenção;elegivel;;06911ff089f79f168daf7c14223f43d4546eba501ea4e95ec4c2709c79cf9853
+Patentes por ano;N26;Depósito de patentes de invenção;elegivel;;2fe9697743e391ce7f7250777dc5a18495dc534609c664e7ef47c9cca1eb6517
+Patentes por ano;O26;Depósito de patentes de invenção;elegivel;;b608df6cea5c0ffde6646c1b453c4c901a5eab9a1726353e5336f0223e10235b
+Patentes por ano;P26;Depósito de patentes de invenção;elegivel;;7498da3b036bdc9b43d3df2333bbd0ebc382251567811c4c12bebd7edd86e6da
+Patentes por ano;Q26;Depósito de patentes de invenção;elegivel;;a1b5bff3670c819b303ecac9067cf72040ae5772fdb3a013781975177326ab5c
+Patentes por ano;R26;Depósito de patentes de invenção;elegivel;;8d69588d1d0ccd8bba88d6c3dbbadbeaf69f8133acb4bd1e0830cdd977186dd1
+Patentes por ano;S26;Depósito de patentes de invenção;elegivel;;fe3dac93c33416f92a2baf0dd68610934765e6666b1133f64cc0232f6b447c71
+Patentes por ano;T26;Depósito de patentes de invenção;elegivel;;48a67b15f3fd1359de06baacc1b37473620b957be5cd7c2ea42b321bd2c9c90c
+Patentes por ano;U26;Depósito de patentes de invenção;elegivel;;9b334959ace14c24e07641354ae1ac94c1f0adf5bb5b07595733544c2733fe08
+Patentes por ano;V26;Depósito de patentes de invenção;elegivel;;421fb2d2ce7971413f85656cb9764ec398d2732c41b2efeff1a14f1ff68ad98a
+Patentes por ano;W26;Depósito de patentes de invenção;elegivel;;929114ce2e54501f12f7c437847ea1806d94cfdc3fb87abf61fad8c811f795c5
+Patentes por ano;X26;Depósito de patentes de invenção;elegivel;;6eff09ed77b6a7e6621215112761b99232278705765c3fd42e3b309bab894e6f
+Patentes por ano;Y26;Depósito de patentes de invenção;elegivel;;a075c1ea3cfb96be76add78320318a184b3e8dd2326c1c92bcf63484fcdbbfe1
+Patentes por ano;Z26;Depósito de patentes de invenção;elegivel;;b2e007749c8bcad341b2fb654b6f1ac03de26f7a83ff7887ec8a3caa8e25359f
+Patentes por ano;AA26;Depósito de patentes de invenção;elegivel;;dcef0484e8f459b933f430c0a92ab9550df54787ff5bae51e6f3e4fc2293b74d
+Patentes por ano;AB26;Depósito de patentes de invenção;elegivel;;bc13499c57cc234f82dae002608346808f867c5972c2568194fc90380d4ff14e
+Patentes por ano;D27;Depósito de modelos de utilidade;elegivel;;35abc48b278b91c52c3f9b2b25b4be57251219a79085ba2fc36b431b541cf218
+Patentes por ano;E27;Depósito de modelos de utilidade;elegivel;;a0c617261f668381dabfb5b62a4528dfbbeb1f2ff27863fa1195337a38e3900d
+Patentes por ano;F27;Depósito de modelos de utilidade;elegivel;;6cbc76faa5fdf6c9d34071fbfd3ff73f29581a99c39d62e78930c81966331b0b
+Patentes por ano;G27;Depósito de modelos de utilidade;elegivel;;231750ca6e04d0dbae08b9d3a10c0c610503a1fce1da04b11ab501ee2fd62914
+Patentes por ano;H27;Depósito de modelos de utilidade;elegivel;;30b5d2e4f1e6754f7c50f76ad0beaa166d82d203b4edcc472ef7d3b08639060d
+Patentes por ano;I27;Depósito de modelos de utilidade;elegivel;;7ef8967a449aa243ab58ea15ad773316b6b61767fe558a86147bc4ab5c56ed73
+Patentes por ano;J27;Depósito de modelos de utilidade;elegivel;;cbdd77f104046ced4cc8d24f920fa09751e84380b16c74b69363e2a60ec10d53
+Patentes por ano;K27;Depósito de modelos de utilidade;elegivel;;f9927c6c3290a8b6e6362c12c18d28a878853ddc4aeb60157918eee0d7e25bc4
+Patentes por ano;L27;Depósito de modelos de utilidade;elegivel;;59641a555490dbe4d58f0dcb48e3245c1eb91357f3d4eb71689d397b6a2b64a4
+Patentes por ano;M27;Depósito de modelos de utilidade;elegivel;;adb31ec69fce87636b00c110bfa500a791c7b807839810dd9169a797caa1acba
+Patentes por ano;N27;Depósito de modelos de utilidade;elegivel;;934e275eb95a4d50a98fedd98718728b3f4305fa917b008bef9611774ed2ae17
+Patentes por ano;O27;Depósito de modelos de utilidade;elegivel;;e582f6c87b443f3dde9ea532672dab9e8d6bbedc95a0edd61f9f7afdce1506e5
+Patentes por ano;P27;Depósito de modelos de utilidade;elegivel;;5d88d983c6d49b25be587c3e98f3fcea442676936ce2c42a4497ce29f210e030
+Patentes por ano;Q27;Depósito de modelos de utilidade;elegivel;;47636eefbd76192f48d952223aeb93da759860392ea9d4d0d64d57d5d7720530
+Patentes por ano;R27;Depósito de modelos de utilidade;elegivel;;32072469041d045e2cba067415b9cd499428c2519b1b7ea72d05b1df172700da
+Patentes por ano;S27;Depósito de modelos de utilidade;elegivel;;0a772b43291282c0483bb2616e86ebbe42e3ca5ab107dde7f1edec862fb1e533
+Patentes por ano;T27;Depósito de modelos de utilidade;elegivel;;4af08e48e2af40efe296aee7e1e7ac432d759e31d7992e0ee85c455eee0adb66
+Patentes por ano;U27;Depósito de modelos de utilidade;elegivel;;ed647ef64567d1dd0bad42ee3a1dfee2a978655ed551f252e13149d1f271dc00
+Patentes por ano;V27;Depósito de modelos de utilidade;elegivel;;8c2e5768069c684d00030b2d2a398068895b93f6588f790b8a3cd48011583e36
+Patentes por ano;W27;Depósito de modelos de utilidade;elegivel;;53da8e076a2eeae1f842ddad42daca3e2cb84853a75b634d1b4b841b18c34ea8
+Patentes por ano;X27;Depósito de modelos de utilidade;elegivel;;82431d61411ca64854ee4a9ac64c0ce321326bf055258316262a23e463cc0328
+Patentes por ano;Y27;Depósito de modelos de utilidade;elegivel;;059999910a22029b467ce77f226e0bef7f7b57cbb3a8b558e70a773351038238
+Patentes por ano;Z27;Depósito de modelos de utilidade;elegivel;;62e5aa27bb92558ab26b1aa83e2ed3bcf1d591886df7dd64258e111caabac957
+Patentes por ano;AA27;Depósito de modelos de utilidade;elegivel;;679ef72c87191ac6b61a3d71407ec50aa1b2d6bd103349321a9d1770fe23dbfd
+Patentes por ano;AB27;Depósito de modelos de utilidade;elegivel;;eafd039d99a003dee09cb43e7bc6a11b7fe1d7dd31b224d6a150b83f20b07624
+Patentes por ano;D28;Depósito de certificados de adição;elegivel;;ddddff992628b1478bdeddb02c0318aa2be24906848fd832ac9e7b4c8e162d3a
+Patentes por ano;E28;Depósito de certificados de adição;elegivel;;9b89d5cad285a9d918b3c2caded64b1cfeaea306f192c7f1f866461e0559ea81
+Patentes por ano;F28;Depósito de certificados de adição;elegivel;;226d0e3f8f6b3e52ed6f1c8ab22b0da605908221983c46f851035d671b06c117
+Patentes por ano;G28;Depósito de certificados de adição;elegivel;;557f00eb06af9f7a407762747aa427b8cc992786efb7ffd03d8cf4d86b28efc2
+Patentes por ano;H28;Depósito de certificados de adição;elegivel;;f4c6b39b58b9a48395a248f92f9b0035ba564afe3060bcddf683c9021df29180
+Patentes por ano;I28;Depósito de certificados de adição;elegivel;;e2325111639255d690b2ea4888c2e74c721d9b08849fb7dd85dfa21ca4112aee
+Patentes por ano;J28;Depósito de certificados de adição;elegivel;;998daf86ebc6f25a6dcd9d735f21e9c3bb9f9077445b8c2f4c0539f8a4f575a6
+Patentes por ano;K28;Depósito de certificados de adição;elegivel;;a50382e95fca85579a0b0d901f214c06632c9c4b33583db7743fdffd2e63a4e9
+Patentes por ano;L28;Depósito de certificados de adição;elegivel;;be41ad8596ecc9374bc2ff2f0531e5c8bcbce2028a8cf0428e13a400928ab085
+Patentes por ano;M28;Depósito de certificados de adição;elegivel;;ce0534d85823c3c71966a224f61b061ed925f27c61794e43258ae4d3ae0a1064
+Patentes por ano;N28;Depósito de certificados de adição;elegivel;;a9d953f9d1cb96803113bb888eecdf55809fb8e9b6f5c4de7f05c04ea7acbd83
+Patentes por ano;O28;Depósito de certificados de adição;elegivel;;c3b4141a6a521238ac47d0fd78cbac7330295ea8b4a16f3384973e95936ce308
+Patentes por ano;P28;Depósito de certificados de adição;elegivel;;b373a7b0f7348fcc27ca48cae4d7089ba31585d5b00df64effdeec0ac1eb06c2
+Patentes por ano;Q28;Depósito de certificados de adição;elegivel;;21d4e6cc73ad2090a4ccf8ce834a2ddd0ab1a000d9384bde159de09556ea5752
+Patentes por ano;R28;Depósito de certificados de adição;elegivel;;9f7d091618aeeb373cdbb7a53e3d9c143ece2d4517955052166f25ad9e68b29d
+Patentes por ano;S28;Depósito de certificados de adição;elegivel;;832a599d58a9107d9d4161774d20238b755fcb021387a988260cc5ba7e033aff
+Patentes por ano;T28;Depósito de certificados de adição;elegivel;;670f227f70ef86b993070d7be4271237e7733b51179c2bd9d30174f40f69abf1
+Patentes por ano;U28;Depósito de certificados de adição;elegivel;;5d785311d754eab346f6154e4fabcf9e92f02f23be0802f7bcd4da246ea55d66
+Patentes por ano;V28;Depósito de certificados de adição;elegivel;;c314bd14432f0426b9afb280fb01198b1f2ffdede82615b4d21b4465bb275263
+Patentes por ano;W28;Depósito de certificados de adição;elegivel;;9a3e60a1ca12904d909be3ce4b6e773dbd5a4c85eaac70a2ae4bd3a7ca1b81e8
+Patentes por ano;X28;Depósito de certificados de adição;elegivel;;eb99f92270e9a1e938d287e6e1b92685c9d2fb4cd94df78b4c2ba539dbd94ae6
+Patentes por ano;Y28;Depósito de certificados de adição;elegivel;;41da2f62acd782a907443224e3b436dd0952cd581881181a738f30feef7b2010
+Patentes por ano;Z28;Depósito de certificados de adição;elegivel;;19fcc6b6eaeeee17644cb82cd798b607dfbdc2fad9dfe2c619ebc5e39c47815b
+Patentes por ano;AA28;Depósito de certificados de adição;elegivel;;5233ae1dbff24707daf27c37e885ac23401c4301cf78ffb691cdd43ed5035086
+Patentes por ano;AB28;Depósito de certificados de adição;elegivel;;5f5be5ab1a009472562094d0c6afc1746f63808cd29dabe16c6cd01591483d26
+Patentes por ano;D29;Concessão de patentes de invenção;elegivel;;ab771091eae3335a5072f932a3b41c9bdd3cec89ca863705a10291ad0587972e
+Patentes por ano;E29;Concessão de patentes de invenção;elegivel;;aee947c7275894b5e1b5b57ec6ce4dc09c2339bbeff1c99ea34300c407cee187
+Patentes por ano;F29;Concessão de patentes de invenção;elegivel;;a2a17a5d0947ee4ee490d0a04bfec30751f57cfa4e3bae1ebc657a5b6d153513
+Patentes por ano;G29;Concessão de patentes de invenção;elegivel;;1a02f8f002b982a42bdbb176d4a50ed1f82e667ebd378e113024f5688f76a840
+Patentes por ano;H29;Concessão de patentes de invenção;elegivel;;a89cebc41e5ca0487455bbcc023d3329a11675d02de96c946ce096cd31098e24
+Patentes por ano;I29;Concessão de patentes de invenção;elegivel;;e60228565276b9cde10f0f74057a4b6dc71569365b8bc39273aaa5967c932c1d
+Patentes por ano;J29;Concessão de patentes de invenção;elegivel;;b15781a2e2a0cd2fa020fa327da49f8ce983cbb7ce348ff98566c051fbeb9b37
+Patentes por ano;K29;Concessão de patentes de invenção;elegivel;;bb6c0afe1b73c927f7ca2ee32d2d554df1118a511c3029d62d458e62be2052c5
+Patentes por ano;L29;Concessão de patentes de invenção;elegivel;;e91ea05fbc2df305dbde01a34e39d2ad2bfeeacc74d575e4a39d9c0bd350b7e2
+Patentes por ano;M29;Concessão de patentes de invenção;elegivel;;ac8f2925d6921c27da9aaf68db8781bcb85bc0177256fff5b438e7073dc2e7a7
+Patentes por ano;N29;Concessão de patentes de invenção;elegivel;;9f20c3bf035a69d051725ade1ce282e3d5e743801e624325c3080194fec44642
+Patentes por ano;O29;Concessão de patentes de invenção;elegivel;;6f338b0e872b364ae1ee4ac34559e8afd1147c8a83f4456959c82cc29f07c19d
+Patentes por ano;P29;Concessão de patentes de invenção;elegivel;;c84e7047ef3baa6fc40b113db6995ecbab39ab556af5054dca143712d620ac14
+Patentes por ano;Q29;Concessão de patentes de invenção;elegivel;;05420f805d07f682a4c6c93c6ea28b3549206962ac447334a2808654423da9f8
+Patentes por ano;R29;Concessão de patentes de invenção;elegivel;;7945d5093b899042ac43d4b8a092b702e87c8d03c5f0a17f1f06562671e22065
+Patentes por ano;S29;Concessão de patentes de invenção;elegivel;;e85d456ff1556709726a8427e2d2ce3da28e10618bff944318571f75ad1504af
+Patentes por ano;T29;Concessão de patentes de invenção;elegivel;;b394597e7703d652d1c063156c5c1783c336bcb1e260cc71f89bccc03f403d2c
+Patentes por ano;U29;Concessão de patentes de invenção;elegivel;;4dd8dcd56b9f5889edb39fff0e61f87cd615b522ef2090a87a502c92dedd5262
+Patentes por ano;V29;Concessão de patentes de invenção;elegivel;;a00aed3c70bfad55630d49ba46bcd1c760fa4d2e6ac0aa0542db3187728f259b
+Patentes por ano;W29;Concessão de patentes de invenção;elegivel;;708b2898fff396671486868458fcf60776f1e2289da49f9e49f6053e429411ed
+Patentes por ano;X29;Concessão de patentes de invenção;elegivel;;6f09691448f49fdd3e358277bf86c8257ef184ac8b3a7eeb8c735691cf5d721d
+Patentes por ano;Y29;Concessão de patentes de invenção;elegivel;;083bf5c49997a6c38480e8b2bf5d7cb2d03a8569cb6dbf133bf6d9936fd432fc
+Patentes por ano;Z29;Concessão de patentes de invenção;elegivel;;ac2b463b09b72b226ff6f84ecfcb4027fac564d422af41d9e5bea6d2d818bf1e
+Patentes por ano;AA29;Concessão de patentes de invenção;elegivel;;d663a6f3be3abc4ec9ea2373c77a87431290099bb89a8744e4b22d83348e2e1c
+Patentes por ano;AB29;Concessão de patentes de invenção;elegivel;;78c487d728388630ae1946aa7a91149077cbf886c6330ae477a07e92ec180ffa
+Patentes por ano;D30;Concessão de modelos de utilidade;elegivel;;cd5da80c1d4c1b1e1e98304f5a20103276c833b2456d3d91fb503583b90d710d
+Patentes por ano;E30;Concessão de modelos de utilidade;elegivel;;48913108274f06dbd2e6bf630ab5f6017dee905f75d63bba71b50dc23f3487c0
+Patentes por ano;F30;Concessão de modelos de utilidade;elegivel;;a9d7d7ca0da0e5faa095a1844688e6697fc62dade5ff8d4722be4d7a74769925
+Patentes por ano;G30;Concessão de modelos de utilidade;elegivel;;a57c4650007946865fe78f598c3a4e33afd90f46f4b816e057c256c5f05da445
+Patentes por ano;H30;Concessão de modelos de utilidade;elegivel;;be16cad78df394b20ce82b6abeaf2f987534fdcafaa99355ec3fcab60b180d99
+Patentes por ano;I30;Concessão de modelos de utilidade;elegivel;;3feb9bdeaaf53aa95e1a19858e4bc7627a4002c3e87425ca8dc9b364eeb1124e
+Patentes por ano;J30;Concessão de modelos de utilidade;elegivel;;dfd02bc0d3b9f34de7fbc6bd7fbbc018b39189c019123e686a8b0c89ad4157d2
+Patentes por ano;K30;Concessão de modelos de utilidade;elegivel;;b203318965ee5dd96922c45f4cdabee6c615088767df5b98a916dd0d45bb3bb6
+Patentes por ano;L30;Concessão de modelos de utilidade;elegivel;;43e90c4363ebdcba543ee8313b2307c152f2b1026e99a5aa3e5e1921b4ea8072
+Patentes por ano;M30;Concessão de modelos de utilidade;elegivel;;4fc329ce001507553ccefd9043d40640487010908432a7e5a6e82d3c0671e7b4
+Patentes por ano;N30;Concessão de modelos de utilidade;elegivel;;d621d8d80cdccbde0173468d9f638072ec4286d73c9a9d051e9e5f16e7abaace
+Patentes por ano;O30;Concessão de modelos de utilidade;elegivel;;cb6ad897fdd871561dbf0bffebd16ce08567ea66b3ebf331fb85279395539bd1
+Patentes por ano;P30;Concessão de modelos de utilidade;elegivel;;d14e8383cf5a4ce808dc800520d1428fa2920a33e262d50edf1e10b6aab11d69
+Patentes por ano;Q30;Concessão de modelos de utilidade;elegivel;;80fef62019d1773d78b52dd91a4a6734a94804c2a7f1c5fd1e1ad8b804db3dc5
+Patentes por ano;R30;Concessão de modelos de utilidade;elegivel;;5132c7ab199f69431f11db47c2a5e4e502382e1af3d2cadc68833ff253d488ad
+Patentes por ano;S30;Concessão de modelos de utilidade;elegivel;;d0d984e822968c2706b7ba9910c18b530ca15db3a528c6997e28f46cfd6cad69
+Patentes por ano;T30;Concessão de modelos de utilidade;elegivel;;9ad05dc2811b230dc3d8c4a41f75773a05bd53f8ce2e148ea258874b40a31f9f
+Patentes por ano;U30;Concessão de modelos de utilidade;elegivel;;f3b2781ff40cc5dcd38c38af59e5dc0f12e49955ea41180a20f5d9c456bb1477
+Patentes por ano;V30;Concessão de modelos de utilidade;elegivel;;a46f92f5f07c996b980c6d43ec903cb1ba44070b80bcbae9784fa16d787707b1
+Patentes por ano;W30;Concessão de modelos de utilidade;elegivel;;dc01e545b9501bda170ccc02b3c291627cc840f5e94735079f08aa11a2182d00
+Patentes por ano;X30;Concessão de modelos de utilidade;elegivel;;1f2f810ca638d3ea7e954c4257f3e70ad77436f77cb67abcb4c3b5034a8a0efe
+Patentes por ano;Y30;Concessão de modelos de utilidade;elegivel;;53fbf0d30e859aa1e293e5750fb3a5a90036e3368856b0924af1c522c3654a31
+Patentes por ano;Z30;Concessão de modelos de utilidade;elegivel;;e5d2a45d9839bb1926f51a8398f133b610248a9082af01f61a8ef735987b7294
+Patentes por ano;AA30;Concessão de modelos de utilidade;elegivel;;cc6b79ae22d88ad4b604d9106a8c33162623df82bcf00337ab1b9ba75d565014
+Patentes por ano;AB30;Concessão de modelos de utilidade;elegivel;;7b5eeeba34f702d5ee43e9b52319ba2058cee2e90e977fac7f386cebc3eecfef
+Patentes por ano;D31;Concessões de certificados de adição (CA);elegivel;;9d7e91f7e5728beeae4c229c75901f230c876feb9e5b34a97b97b9729c0e78cc
+Patentes por ano;E31;Concessões de certificados de adição (CA);elegivel;;a8667bc52c5d4162c25b55d2b2231181ffe3db2a8a83920ff5aa8e3b1d02b00e
+Patentes por ano;F31;Concessões de certificados de adição (CA);elegivel;;a8eb1f373130dbee987a86eff2500b5fa5fdb3b6b4f35cc42d1997dcdc3f9324
+Patentes por ano;G31;Concessões de certificados de adição (CA);elegivel;;024513821887b1a3627d81b560a8862e1133eb979225052a60e91982196b6d93
+Patentes por ano;H31;Concessões de certificados de adição (CA);elegivel;;09a2aa35ea593c2948d46da871019a2e927cb3073f113262d0ed5b34eb48c9cf
+Patentes por ano;I31;Concessões de certificados de adição (CA);elegivel;;9f3c015ee9fc007c747f4b9be3be84bacc0309ede75c6b70c81ab7974b5652f6
+Patentes por ano;J31;Concessões de certificados de adição (CA);elegivel;;fa26010998e7bb2f90c3f377ed5b2540c4af95ab455e45f0628c041757fe91d6
+Patentes por ano;K31;Concessões de certificados de adição (CA);elegivel;;e9fbba914feb80e918e999fec2ca048754891773e8c862e26f0ed84806f86653
+Patentes por ano;L31;Concessões de certificados de adição (CA);elegivel;;97aff1532f66096a7aaffa066372678d563b44ca6d70338a31ff6f755b4726b7
+Patentes por ano;M31;Concessões de certificados de adição (CA);elegivel;;a50babcaaeebc20aa784100da7e9e568b039f1f097e7228e2e92dd81e1a1a16c
+Patentes por ano;N31;Concessões de certificados de adição (CA);elegivel;;927e94c8a02178f30ff81f6df9be821a2fd08611e8400ddc3cad0ba6d635c02d
+Patentes por ano;O31;Concessões de certificados de adição (CA);elegivel;;9680fbe5f0a8b7698f529261628aa0488465d11c4c4e6e8257a3c2406e557db0
+Patentes por ano;P31;Concessões de certificados de adição (CA);elegivel;;36498ad933f973b89ca3b8c1042924ff260fbdec53891154f5f52b3b96ebb16a
+Patentes por ano;Q31;Concessões de certificados de adição (CA);elegivel;;a6147fbe5aa030adf713703674b2be757311070f5c1d602980001e1468ea4d8d
+Patentes por ano;R31;Concessões de certificados de adição (CA);elegivel;;68f215da6e22820d13a9717fe2c84f4a37b982256d4af85f3ad5c73ffbc4ff07
+Patentes por ano;S31;Concessões de certificados de adição (CA);elegivel;;9f7e5a3247254601e248b409b94f337a0d54fe3b19cffc64f26d3454e4cca243
+Patentes por ano;T31;Concessões de certificados de adição (CA);elegivel;;a8eff8fa9614a85fb4dde8db8446e99f6fc8d2a94b44c2571a4fed47f6a89148
+Patentes por ano;U31;Concessões de certificados de adição (CA);elegivel;;ee5f754ee12d8a620ac6224190b1f5c0e673e37ba48417ca7ccf63ec46487974
+Patentes por ano;V31;Concessões de certificados de adição (CA);elegivel;;f6bae59c51bbf8b5b82f14b704ed6058f368286197202fb5dceaa0f34bf6f0e2
+Patentes por ano;W31;Concessões de certificados de adição (CA);elegivel;;d0e490b54ef55892981548c719522cba5732e40fd38ed9cbbe01656cd81db400
+Patentes por ano;X31;Concessões de certificados de adição (CA);elegivel;;13a3f55af6c455770f603c7d3206e7203dbc9442af6b31e98d96fc1d7d1992f0
+Patentes por ano;Y31;Concessões de certificados de adição (CA);elegivel;;7304604ba21b49528750d2d2f6afd9967ff904a7697ab4e7faed42d28230aaed
+Patentes por ano;Z31;Concessões de certificados de adição (CA);elegivel;;60378fc2cdf90a34a4fc7c6852ab986a4af30535997b6b8ce2460b10bbd18489
+Patentes por ano;AA31;Concessões de certificados de adição (CA);elegivel;;8c052a184bc1bb63e7452afa9e09f7725b035e2c101f1cec81ec4cad68f10bfd
+Patentes por ano;AB31;Concessões de certificados de adição (CA);elegivel;;28ab9440744cb2343a0036e797544c57f063680a2c6d33bffab2f215c77ef9dc
+Patentes por ano;D32;Depósito de patentes de invenção;elegivel;;3153116cddea695bf807c3dbb5711c1a296f41b607b2fdf6eaf0300e0adbf214
+Patentes por ano;E32;Depósito de patentes de invenção;elegivel;;9e87df87de5588e2780c80b45e9daf081aee4e579de6aa872fee8bc6abfd2b8b
+Patentes por ano;F32;Depósito de patentes de invenção;elegivel;;84f797aa239d016a79fdeec64a77f7532016b46d8925ac56fb60c2b200ec4d16
+Patentes por ano;G32;Depósito de patentes de invenção;elegivel;;4543e08f346013605a7944ab6c0cf9561f1c48f4d48e30b422f0b972660fd24d
+Patentes por ano;H32;Depósito de patentes de invenção;elegivel;;d13b0e84063942bac45b84621220a4842eb19e269d0d2e93ee269109197ca401
+Patentes por ano;I32;Depósito de patentes de invenção;elegivel;;9467fcb58d15b1f7c92d33d573bcaf81aa86f14e52e5466f72e0aa7638515c66
+Patentes por ano;J32;Depósito de patentes de invenção;elegivel;;f1c3a2c383554c836dfac05a213952024c55e1ded18de347147c1476dee39007
+Patentes por ano;K32;Depósito de patentes de invenção;elegivel;;94841ca00fbbf048d5b14c3b4c24636ea5ef2484be08c8ac0fae692fba4334c6
+Patentes por ano;L32;Depósito de patentes de invenção;elegivel;;03ebbe42c829e49a0408202c354a276e85aed52a8e3dc74480528b1f32a426c1
+Patentes por ano;M32;Depósito de patentes de invenção;elegivel;;e76b5c9f7732c6a4fa5323385d3d6b6e0ac874d022a53f06d23a359d22b01a59
+Patentes por ano;N32;Depósito de patentes de invenção;elegivel;;26ba32522b5d02296ad39e2ead21f328ec4c98734485c89abaf7cf51c254c4e3
+Patentes por ano;O32;Depósito de patentes de invenção;elegivel;;f3b14278cfca66abfb85afdf3c9dea96ba64a94746305c5420745d8c59385dac
+Patentes por ano;P32;Depósito de patentes de invenção;elegivel;;f07f7b3fe4adc2c8944bf4aac13c2180658a5c29f258c99a327995ce22f252b3
+Patentes por ano;Q32;Depósito de patentes de invenção;elegivel;;f8d71a0f4f9255cc07a66e102adfcdbfbf9fe35a404c3fbe5858df413402c06c
+Patentes por ano;R32;Depósito de patentes de invenção;elegivel;;4d07d92ddef01a48de343307dd6da2afa103f978fbbe33b913da1e24bd11fb80
+Patentes por ano;S32;Depósito de patentes de invenção;elegivel;;478222602212e9c36eb02a636a3fe49c4f08c6b8d4176cac1b467a55c63c5f17
+Patentes por ano;T32;Depósito de patentes de invenção;elegivel;;72d632b1c7d61f3b698f50ca22da69de4e9b38bc0b43c79d3592bd280657c68e
+Patentes por ano;U32;Depósito de patentes de invenção;elegivel;;36c6b45896f19c582bf3d46a2186816c911afb8f2ed50fb0a9959a1e2b435fef
+Patentes por ano;V32;Depósito de patentes de invenção;elegivel;;8786f8c9a779c8a33a2c444b8006cea1866b69fac5c2ffbbdf12b3a9804cdde8
+Patentes por ano;W32;Depósito de patentes de invenção;elegivel;;e9fd96ece7cf81df4af2cf698175ae5ef90d0d0c632bc317c0e40aa43e2ded5a
+Patentes por ano;X32;Depósito de patentes de invenção;elegivel;;fc8d23214222f8dfc6a3ceeb36753dff173c1b9482752ab8071daf030272e500
+Patentes por ano;Y32;Depósito de patentes de invenção;elegivel;;607a6eece8bf1bfb6420575c47fd91f31a03b08bcb7a4bdd9e219514e0cc39d8
+Patentes por ano;Z32;Depósito de patentes de invenção;elegivel;;35195c818c0984f3d2fbec35fea50b170335c247692b4530f3cac0320dd4dce8
+Patentes por ano;AA32;Depósito de patentes de invenção;elegivel;;ccc5009ced771accf215f3737f02a774307c87e9647291ba50dcaddca493a563
+Patentes por ano;AB32;Depósito de patentes de invenção;elegivel;;e4d60aa0918ceffe8cb1d992991f6e2b54e9e97b0a99403f0c31622066cf7234
+Patentes por ano;D33;Depósito de modelos de utilidade;elegivel;;14d775c2783eec8abfcd11d07a16875d8c5b7e5304fbdb8fafc0c6662730c99e
+Patentes por ano;E33;Depósito de modelos de utilidade;elegivel;;2c1f57751f4e4b97f6599fa1a3a292190a7dd76d53366a05244e208d693ee4de
+Patentes por ano;F33;Depósito de modelos de utilidade;elegivel;;1dda560c5098b40ef811f4ecaa4b592e40d719fe50be4f7ca0b5b2e6b4c82ee9
+Patentes por ano;G33;Depósito de modelos de utilidade;elegivel;;3532f9d26e1820627df7a4294972c9e7904dad55d477e2f9d65804e5ca029a23
+Patentes por ano;H33;Depósito de modelos de utilidade;elegivel;;8bf6cd13f9d846b9088f0d0e1ea03a0f9dbd1be573a32d6faf42b2557bc09377
+Patentes por ano;I33;Depósito de modelos de utilidade;elegivel;;5b2ae54f109fbf7d179ab8946df66bc1be65c6b9dd97f764efbc4a5d76dcdf5f
+Patentes por ano;J33;Depósito de modelos de utilidade;elegivel;;2d6a691c26399f75394747db5057781e642e769d7c21974f9f057c982c9a7f07
+Patentes por ano;K33;Depósito de modelos de utilidade;elegivel;;3f27c014b764d3aa84efc3cd15b1cf990d934a6cab460ecd7f4baa5ba9ab67e6
+Patentes por ano;L33;Depósito de modelos de utilidade;elegivel;;90486d593577dba0a9d326c860d99d13d3e85711348832bbf4891b8d0b5f6f75
+Patentes por ano;M33;Depósito de modelos de utilidade;elegivel;;82a80159631ad2db81de49f3eea43c82da7b177a8cdabcad7bbd3b7bfc2a67e6
+Patentes por ano;N33;Depósito de modelos de utilidade;elegivel;;1e8913540ed93120a556fb25630b140be816bb5d919d3ef47b1bc75c4d86a6e5
+Patentes por ano;O33;Depósito de modelos de utilidade;elegivel;;1e68e23960cd07c6b55fc5573e9a80f158c0c36774110fe53b512a041c48ccb7
+Patentes por ano;P33;Depósito de modelos de utilidade;elegivel;;81b30a55e5ed7af24aabb6eef36465e05f9ab9d57fb6a09141da5df67885439e
+Patentes por ano;Q33;Depósito de modelos de utilidade;elegivel;;d8b12232f8dbddea66ee6c3ffcb0d1b05196c93caa5ab9019a560491b7e1ffef
+Patentes por ano;R33;Depósito de modelos de utilidade;elegivel;;6ba2cc949168be63217751c12a19dfa10fd1add191aa7045d5365bf41e157035
+Patentes por ano;S33;Depósito de modelos de utilidade;elegivel;;c864fdd1052f692fb79929dd0cadba2e1979a2e9ea1ad12beeab1e0f43dbb056
+Patentes por ano;T33;Depósito de modelos de utilidade;elegivel;;376839aa963f984e8b3147fef1d02ec7a193fb3820d0ba37c0206a764a5ea8b5
+Patentes por ano;U33;Depósito de modelos de utilidade;elegivel;;d83d2acb86a4f5e7a88fd75b27360f0ffd205de5caf168f1fc4662a5ff30a704
+Patentes por ano;V33;Depósito de modelos de utilidade;elegivel;;cc1c9988bbaf0412058a4ff97c9e10e41ed91d14b415fe5bfe7a7ecc67117ffe
+Patentes por ano;W33;Depósito de modelos de utilidade;elegivel;;6c50c92310ced28ad93469913a68ac5fe9545f5e469ff0f6a0f82c23fdf5ff39
+Patentes por ano;X33;Depósito de modelos de utilidade;elegivel;;60278bdb32cf745a4a95ee56a1ce577e21cf76c6d0d27a4c9c76e469e4b2e679
+Patentes por ano;Y33;Depósito de modelos de utilidade;elegivel;;4ea70199f68f7c901cb28aff95cd0e7fa5983647620428d34b8cb4e64f1449f6
+Patentes por ano;Z33;Depósito de modelos de utilidade;elegivel;;795a5388844a2819e26543eb357e5b20873a66cbe78e3d5e3a62c6c90cfddaf4
+Patentes por ano;AA33;Depósito de modelos de utilidade;elegivel;;460dc9a63efa5595c7b76a1420a2e16ab1fc9c99fb83c2d54260fbbe73d3e74f
+Patentes por ano;AB33;Depósito de modelos de utilidade;elegivel;;be6e3d984672e3755dd80cc95e5039b696170d2823078e37bb83a84a8b127ca0
+Patentes por ano;D34;Depósito de certificados de adição;elegivel;;4435d23c7dc12bd9caa88b154c66345d3b72dbfee94a317e91e1c35e1e380623
+Patentes por ano;E34;Depósito de certificados de adição;elegivel;;6a9a47f84e9e62d318db44fea044b1b0f21bd4b3cbf8daea6011f1863f933f86
+Patentes por ano;F34;Depósito de certificados de adição;elegivel;;c0d9e8e674b0f6531d538135ef98bab0a2da850f739dca3cb679989dd6c2d874
+Patentes por ano;G34;Depósito de certificados de adição;elegivel;;4c3a1ee708c40fb319d4f7974ccaf9024ccf1da488f124164e5c5e27bdf0b2bc
+Patentes por ano;H34;Depósito de certificados de adição;elegivel;;50a6e4b02d8d9b78c2ffd145f7d02ddd45ebf6dcfba521f9321251679c84d63a
+Patentes por ano;I34;Depósito de certificados de adição;elegivel;;9e2f0c5b8f5b9b8dffa141e4c4c72f8c677ebcb0ffa8d9dee8054cac08cd9948
+Patentes por ano;J34;Depósito de certificados de adição;elegivel;;199cc63f8eedcb0b47ffba6f3ac9038f4c9a09c54e210113d65f640beb56739c
+Patentes por ano;K34;Depósito de certificados de adição;elegivel;;0d47a1019346161437786337c39cf37cf8788743042fe2b04bcc3d1583e20953
+Patentes por ano;L34;Depósito de certificados de adição;elegivel;;59e6e8c325abdc728da3af0f50162e267bbafb9ef427b667ccec4b2a49826a98
+Patentes por ano;M34;Depósito de certificados de adição;elegivel;;39face7d362b7e0c698eae3d7b19d1dd54a0e0f8377d48caa70d4b1c6ebd245c
+Patentes por ano;N34;Depósito de certificados de adição;elegivel;;4620adb5f5aefd4e9fe9b0388f791fb6a72cc4af5592796c66aeab590507d168
+Patentes por ano;O34;Depósito de certificados de adição;elegivel;;cb3353538e89f5f57b17fe7a5cd34f8b51164e7761174b129730ad41d91d96ce
+Patentes por ano;P34;Depósito de certificados de adição;elegivel;;027efb626e174797684b5a28be647c9efcdd8934a6803b9950df9ccb4c098c0f
+Patentes por ano;Q34;Depósito de certificados de adição;elegivel;;d171db454a812a16df783be0900c9b05f7c8ea69a5bb84385d89732257cb7935
+Patentes por ano;R34;Depósito de certificados de adição;elegivel;;d212ad604286b0808464355f4717704d5e77a0748b8669a12ea52c144296f4af
+Patentes por ano;S34;Depósito de certificados de adição;elegivel;;65488d21ea63676493f08126253c5f8d6292e2752a71aed331b77a1f288be421
+Patentes por ano;T34;Depósito de certificados de adição;elegivel;;1ef198a8582d3dbfe665841791dd65bbab48d1fca936405c3d33ec90fe836520
+Patentes por ano;U34;Depósito de certificados de adição;elegivel;;bf3555ddaea20fe6bba0894bf6711d6e8befff07bece959cf8e646936b7e2bb3
+Patentes por ano;V34;Depósito de certificados de adição;elegivel;;2a892e00491960f64cb2f271ab24268480fae92fc23b5912c1b2a7377d32b62d
+Patentes por ano;W34;Depósito de certificados de adição;elegivel;;0bad52a2af7427acfb6e6546bb74ebe6d09134ba99a0dc91c2dacdfc7c69fa12
+Patentes por ano;X34;Depósito de certificados de adição;elegivel;;24ddca7ee8004adb8d8ac610850344d5f53a2663c4089b2e44b126a5639126c5
+Patentes por ano;Y34;Depósito de certificados de adição;elegivel;;2b43c6f5ee47f03b5a877b3a7bbea21717ca796f14f7fd8869d7cb10b620ce1a
+Patentes por ano;Z34;Depósito de certificados de adição;elegivel;;250f0f00c931dc06591bf5ba857e0fe418f9f2cdae5effc39ebb11463af3a490
+Patentes por ano;AA34;Depósito de certificados de adição;elegivel;;e9c1ac6e5c35702108f0b8af17a515911f98a4cf8b02085843219b2acaba38aa
+Patentes por ano;AB34;Depósito de certificados de adição;elegivel;;c5080647fb96f21d8b5d5538358038c042b0a7eaa96b0fa8977de5583259e49c
+Patentes por ano;D35;Concessão de patentes de invenção;elegivel;;899023ca178d8a0530daa6210719a8bc00dc22b701193f102e401484de7ce9e8
+Patentes por ano;E35;Concessão de patentes de invenção;elegivel;;dc891d85376e25eb2c558511fb21a301bf3d0bc15e220f49570d95bf36069610
+Patentes por ano;F35;Concessão de patentes de invenção;elegivel;;b55c15e0a8f820f6b4c9cf82fc45535405c45c3affcf077662bb46557c614c0b
+Patentes por ano;G35;Concessão de patentes de invenção;elegivel;;0240ab1b3bf324a0c8e8ac1a08d225dc00b7cd6413a189dca12d9c5022e6a583
+Patentes por ano;H35;Concessão de patentes de invenção;elegivel;;ca4388acfd37d823ed17b5e2172805d303e7b3f9a94d0626c46d8f6c602a918b
+Patentes por ano;I35;Concessão de patentes de invenção;elegivel;;ba77f205ada87020ba92cbaab9b65a083e7cc37d068266992cec513509e394ab
+Patentes por ano;J35;Concessão de patentes de invenção;elegivel;;8554ad7c263ae968104ccaa673ab828a82b386ce475e531c3bf0804ab8be644a
+Patentes por ano;K35;Concessão de patentes de invenção;elegivel;;f144930c92aee3ef94204797ca37ed541c3b3b9cdac4d34b4065456000deedc6
+Patentes por ano;L35;Concessão de patentes de invenção;elegivel;;68a67fb2400fd97a532dbe20142bc32a1261e3d17c2614aa9f94ab72ca04b623
+Patentes por ano;M35;Concessão de patentes de invenção;elegivel;;516a0932a0902da282879f18bededcdfef7c5e2249cff03258d0508fa504ad76
+Patentes por ano;N35;Concessão de patentes de invenção;elegivel;;670b9e7f7866a937a87e3de01783507d2adb6bb6d90448c2caabe913ad395038
+Patentes por ano;O35;Concessão de patentes de invenção;elegivel;;6d271e2796e2979eae0a17a2bfb612ea75f64a98bdaf8ee29aef45e17242ff49
+Patentes por ano;P35;Concessão de patentes de invenção;elegivel;;356aa54e4357a576b058ac2a158d0a12ca0d9b27d2ad46d743dbc1766470ffbb
+Patentes por ano;Q35;Concessão de patentes de invenção;elegivel;;7bec4afa7c180a02f2327ba7627b1deb1f14d65d69c4420acb946e9b577e8dff
+Patentes por ano;R35;Concessão de patentes de invenção;elegivel;;948bfe8c7b4373a9c3813356709703c5748601e0e61752620d59861d75f94836
+Patentes por ano;S35;Concessão de patentes de invenção;elegivel;;c2c647efbb69baa23db5c9e36682a9d6915340458d17b0e12d91b6f767f26190
+Patentes por ano;T35;Concessão de patentes de invenção;elegivel;;0d5aeea6b17e852c335cca0acae638c30c433e1c0a771cb6df26ecab9fd4c68a
+Patentes por ano;U35;Concessão de patentes de invenção;elegivel;;63300104cb7d4a4ef9ade48ffe59c0d6f3bdcaa94b9b7129576907dead542bdd
+Patentes por ano;V35;Concessão de patentes de invenção;elegivel;;d20992926fd2a9a749e8a15cf6e1ab1e85419384e6447e677123100f8f4bf9a3
+Patentes por ano;W35;Concessão de patentes de invenção;elegivel;;415b303e2f4fd46191db40bd70574e9b6e31def5080bc6f7cd2ad0e8212ac313
+Patentes por ano;X35;Concessão de patentes de invenção;elegivel;;d4467933f069319b49ae2a80bcb85a4ba32a55143faaaf12d839e7fbb5845266
+Patentes por ano;Y35;Concessão de patentes de invenção;elegivel;;8c7aa99d37d8e28923b92a26b82815274ac3e14a61d2a98ae7756d81087121da
+Patentes por ano;Z35;Concessão de patentes de invenção;elegivel;;637d6c6071d7bf434bf1c00da32d0a81537599c652c302dd14d432bdd7c0ee90
+Patentes por ano;AA35;Concessão de patentes de invenção;elegivel;;15353ffeadef8c2bac7d9e532178b54a6560707606269b6eb6f41be81f6e9263
+Patentes por ano;AB35;Concessão de patentes de invenção;elegivel;;9a4bd7a75800d32339b0510fcd045413747345323525cbe1d03ecfd0ec1871b1
+Patentes por ano;D36;Concessão de modelos de utilidade;elegivel;;c694bcaa91b75f0b4a46d631522e1a144ad11af7167c861063da6a0b4779df20
+Patentes por ano;E36;Concessão de modelos de utilidade;elegivel;;0edebc751d9cdda74de8c20158f57acba0f4cc78c6b8817262128b954731514c
+Patentes por ano;F36;Concessão de modelos de utilidade;elegivel;;65f203511be07bbe2c132f72f642b57125210727f9e3eb3fd4e17f3b32d70a9f
+Patentes por ano;G36;Concessão de modelos de utilidade;elegivel;;8a2272be073406016215309f14d1f93ff9b940c0d9e537cfc85e8d55fcf3e4d1
+Patentes por ano;H36;Concessão de modelos de utilidade;elegivel;;e4519520e5dff7a508643740a9df883a3359298d10553b51cae6c265051c2337
+Patentes por ano;I36;Concessão de modelos de utilidade;elegivel;;3c44a90f4eeef3d2aee1a8174c2332f56f272c6dc2f5faf9004b46c104713819
+Patentes por ano;J36;Concessão de modelos de utilidade;elegivel;;0a74f2b3772598a0890287dabc867f09cc464814dc4d6d149dce2b19f0c67b22
+Patentes por ano;K36;Concessão de modelos de utilidade;elegivel;;437b21f413b28d21cbf9347269eae3404d3989d4a8cec74d44e802642895d2ba
+Patentes por ano;L36;Concessão de modelos de utilidade;elegivel;;32479bf16c66d68dab6c464c9d24a84f326544bf7659700348286985852f4d8b
+Patentes por ano;M36;Concessão de modelos de utilidade;elegivel;;5d21bbcf4a032ce5a7b2646d67ba87698518c1bba1a5df30eae8d338b59a1e59
+Patentes por ano;N36;Concessão de modelos de utilidade;elegivel;;273bf3756c0a652b40562853ce8ae32347b864a145abc91363d56d03df481b72
+Patentes por ano;O36;Concessão de modelos de utilidade;elegivel;;b260b70688f0a3d63664ad720c5352074a308f35f039baeb1e918a3e621d2803
+Patentes por ano;P36;Concessão de modelos de utilidade;elegivel;;d1d69d0f74c8740b74f0e760c7f83a78f741a2f20bd0a921f0ba5536f1a3fa57
+Patentes por ano;Q36;Concessão de modelos de utilidade;elegivel;;4a0d73e1ce70ecec487b77baed51e88ad1877fe431141c13961c800f706a903a
+Patentes por ano;R36;Concessão de modelos de utilidade;elegivel;;35474340d018680b090a3203beb4bff5632d1b6af5d7bd245cb70ef5624902c6
+Patentes por ano;S36;Concessão de modelos de utilidade;elegivel;;d9da8250181afcae62bdd5c1599ffe1e7efb6432c8999d6d4454570d0a1c75c9
+Patentes por ano;T36;Concessão de modelos de utilidade;elegivel;;111e30141b3a46d2c71ba0a7a16f855b2186c1e3feab7edeaa377afab6532bce
+Patentes por ano;U36;Concessão de modelos de utilidade;elegivel;;7d33c8b2dc49d8414a0addb3b0c47777b71931df0b32193260779bbec9973ec6
+Patentes por ano;V36;Concessão de modelos de utilidade;elegivel;;c94bfef87671022860f5c66d9da81cb403822951456e92264da8d8e30b9f28e3
+Patentes por ano;W36;Concessão de modelos de utilidade;elegivel;;800334f553f1bddceeef6440c4d35b5f0c76d693365d538efd6b3695d5147421
+Patentes por ano;X36;Concessão de modelos de utilidade;elegivel;;39a1967b0119733449b42cd7cf4578716bf9849616a798b9d86f3168f4422a44
+Patentes por ano;Y36;Concessão de modelos de utilidade;elegivel;;d03d63585fa31ddc011e750ae9b0a8933e644d85fd74abca8d5febcefc3baedd
+Patentes por ano;Z36;Concessão de modelos de utilidade;elegivel;;87768511fe3928d65b6fdf3f748bf824e445d88d2c3e580a67e36b9939a52eb7
+Patentes por ano;AA36;Concessão de modelos de utilidade;elegivel;;4a5dd8809331f8d1650eb3c0bb8ed69bf111cd6e08becbff2f925b67ce580022
+Patentes por ano;AB36;Concessão de modelos de utilidade;elegivel;;0ee21a8d0cfbdd0193c46626424269a5eda2e7416e8180e577a9787b72f5e423
+Patentes por ano;D37;Concessões de certificados de adição (CA);elegivel;;d77074a65bdcb8d8ae84218734c2979a6057f55d6c7c45f0f51ad0acc303c058
+Patentes por ano;E37;Concessões de certificados de adição (CA);elegivel;;c9640e4f1accca205a730cf15f620406794b28cd6e6063b8d05f5a70003ec97f
+Patentes por ano;F37;Concessões de certificados de adição (CA);elegivel;;45d5c69898d45d159d767fff7fc461b2c37ec513b470436fc72fa42516a235de
+Patentes por ano;G37;Concessões de certificados de adição (CA);elegivel;;7cd50fea6199d79a851ecdb0201e0de5df797fcef848fa9249ae7de6100d5e51
+Patentes por ano;H37;Concessões de certificados de adição (CA);elegivel;;ced32c3aac15a8a5a8f29c99eeb27fa994f152720b3e73dfeabb1f60511a8562
+Patentes por ano;I37;Concessões de certificados de adição (CA);elegivel;;3f55ee416acf386b809b96636d3cb7bd9c10e4a125dc1541d9603288eebbe414
+Patentes por ano;J37;Concessões de certificados de adição (CA);elegivel;;7a5b2bdd01eca838037939791cc63c79b767b87b3e9a63033aa6306b05b196bf
+Patentes por ano;K37;Concessões de certificados de adição (CA);elegivel;;570647d85f3981570bf149db9a7dd2c8438b78f38b0e9094199e26d5fb0ec927
+Patentes por ano;L37;Concessões de certificados de adição (CA);elegivel;;a97dc3894ab8b11b9c75d2b3f66b75051f6d1ec31b1b1cac164983f97289e57b
+Patentes por ano;M37;Concessões de certificados de adição (CA);elegivel;;068988e2577add1ab64c43c1381da599dc36770a56bf6ba3c0d255017f0670d4
+Patentes por ano;N37;Concessões de certificados de adição (CA);elegivel;;e2992831744b2f7b1ee6a04885d3730fd0f4f95f74cc774b56c4f0effee07cb7
+Patentes por ano;O37;Concessões de certificados de adição (CA);elegivel;;0a7a91d76717f4d668f8b09a08cc6e3110b25ce542575693b65ff0c13fde3cdb
+Patentes por ano;P37;Concessões de certificados de adição (CA);elegivel;;2684432c5753b569617bb1f3a955dc041460009af6c99c7a0804539cb2fee9a1
+Patentes por ano;Q37;Concessões de certificados de adição (CA);elegivel;;09ec154cff3e053620a19faf03b29956b04bbb794aa6c2405169e7a119cbcea1
+Patentes por ano;R37;Concessões de certificados de adição (CA);elegivel;;81de7e57e8338b1e916df435ae65f849caabb77ad520df0e1eba73e2707a18b2
+Patentes por ano;S37;Concessões de certificados de adição (CA);elegivel;;a01ecdd42a3d975243c4dc373241df0e1600ef8f80e71495ed9095401bdcf4de
+Patentes por ano;T37;Concessões de certificados de adição (CA);elegivel;;196ecbb78f309b2c90ecf4f5a382c1800039eace90d90949a7ad1045533278b2
+Patentes por ano;U37;Concessões de certificados de adição (CA);elegivel;;a793768ea31aa2abef7f0a4f821a268113b56d0c190a15e1eee0a4b0712af08a
+Patentes por ano;V37;Concessões de certificados de adição (CA);elegivel;;c7fa350352d600b4fb2bfaf5214a39c5f701ef3db2afd5e7420a877981661424
+Patentes por ano;W37;Concessões de certificados de adição (CA);elegivel;;5ecc8f6762705376113a44f8f1902058239c0be3d2685d682217731c655b55d2
+Patentes por ano;X37;Concessões de certificados de adição (CA);elegivel;;1aa830fb04c978b87546d30794bf05c8f701bb45d3a5ef5c9a78e7de5a18dfb5
+Patentes por ano;Y37;Concessões de certificados de adição (CA);elegivel;;8cbff93ff3b38445bee10c755df8650c360e3d8961faa99c73d585d912d00bb6
+Patentes por ano;Z37;Concessões de certificados de adição (CA);elegivel;;f8dfa5e78cf4cdd001162bbe5e836bdd841fc4adac935ab579c68a3ef4ec8ba7
+Patentes por ano;AA37;Concessões de certificados de adição (CA);elegivel;;9d16a6dbd75f1335d0d756f307cfdfe1eaa897c5ef9829df06894a07eb64167a
+Patentes por ano;AB37;Concessões de certificados de adição (CA);elegivel;;e44d8029df1c5845156a1b02f69a3b49165e0803edcc0ab16725797395cc18a5
