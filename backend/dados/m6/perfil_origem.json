@@ -1,0 +1,38 @@
+{
+  "origem_sha256": "e956c9350dbd4ca699b8803215413c23270daa5e4bfa5f7c4f594b969e9a3d8a",
+  "linhas_indicadores": 459,
+  "mesma_observacao": {
+    "Pesquisa e inovação!D32": "Dados gerais!D3"
+  },
+  "excluir_intervalos": [
+    {"aba": "Pesquisa e inovação", "inicio": 74, "fim": 95, "motivo": "lattes_srs_depende_do_filtro_pendente_indicado_em_D210_D224"},
+    {"aba": "Pesquisa e inovação", "inicio": 210, "fim": 250, "motivo": "lattes_srs_filtro_de_cidade_ou_formacao_atuacao_a_confirmar"},
+    {"aba": "Turismo", "inicio": 77, "fim": 86, "motivo": "bloco_cadastur_com_significado_da_situacao_a_confirmar_em_D77"},
+    {"aba": "Eventos", "inicio": 10, "fim": 11, "motivo": "composicao_de_publico_hacktown_depende_do_alinhamento_indicado_em_D10"}
+  ],
+  "excluir_celulas": {
+    "Turismo!D12": "leitos_incluem_resposta_cujo_significado_precisa_ser_confirmado",
+    "Turismo!D38": "divulgacao_restrita_amostra_de_quatro_respondentes",
+    "Eventos!D2": "escala_da_nota_a_confirmar"
+  },
+  "excecoes_comentarios": {
+    "Dados gerais!D3": "A dúvida na nota é sobre a estimativa Sebrae citada como comparação. O valor desta linha é explicitamente Censo IBGE 2022; remover a comparação da nota pública."
+  },
+  "territorios_por_intervalo": [
+    {"aba": "Pesquisa e inovação", "inicio": 74, "fim": 95, "nome": "Santa Rita do Sapucaí", "tipo": "municipio"},
+    {"aba": "Pesquisa e inovação", "inicio": 96, "fim": 117, "nome": "Pouso Alegre", "tipo": "municipio"},
+    {"aba": "Pesquisa e inovação", "inicio": 118, "fim": 139, "nome": "Itajubá", "tipo": "municipio"},
+    {"aba": "Pesquisa e inovação", "inicio": 140, "fim": 161, "nome": "Lavras", "tipo": "municipio"},
+    {"aba": "Pesquisa e inovação", "inicio": 162, "fim": 183, "nome": "Poços de Caldas", "tipo": "municipio"},
+    {"aba": "Pesquisa e inovação", "inicio": 184, "fim": 205, "nome": "Varginha", "tipo": "municipio"},
+    {"aba": "Pesquisa e inovação", "inicio": 206, "fim": 209, "nome": "Sistema Regional de Inovação do Sul de Minas", "tipo": "regional"},
+    {"aba": "Turismo", "inicio": 63, "fim": 68, "nome": "Cadastro SMCELT 2022 e 2023 com todos os respondentes", "tipo": "base_cadastral"}
+  ],
+  "notas_publicas": {
+    "Dados gerais!D3": "População residente no Censo IBGE 2022, preservada separadamente da estimativa Sebrae de outra referência.",
+    "Dados gerais!D45": "Segmento Indústria de eletroeletrônicos do Sebrae Minas. Participação de 3,90% no estoque; 56,83% são pequenos negócios, conforme o painel.",
+    "Vale da Eletrônica!D5": "Segmento Indústria de eletroeletrônicos do Sebrae Minas, com referência de 2026.",
+    "Turismo!D16": "Autodeclaração dos estabelecimentos no questionário de 2024; não equivale à comprovação de registro no Cadastur oficial.",
+    "Economia criativa!D6": "Soma das três categorias de negócios criativos ativos nos formulários. Abrange somente os cadastrados, não todas as empresas criativas do município."
+  }
+}

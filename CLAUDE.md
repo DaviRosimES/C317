@@ -6,6 +6,11 @@ validação em `docs/` — `docs/requisitos-entrega.md` (G1) é a referência pa
 As tarefas usam códigos ligados a issues do GitHub: G (requisitos/dados), V (API), J (front público),
 D (área administrativa e relatórios). Mantenha cada branch no escopo da sua tarefa.
 
+Para a Milestone 6, `docs/m6/requisitos-e-contrato.md` registra as decisões atuais e o contrato de intercâmbio;
+`docs/m6/carga-dos-dados.md` documenta preparação, simulação e carga. Dados completos das categorias recebidas
+são o foco; CNAE é secundário. `docs/m6/modelo-observacoes.md` descreve as tabelas `*_m6` (V5) e as regras que
+o banco garante; a consulta integrada depende da API V6. Não grave as colunas geradas de `observacoes_m6`.
+
 ## Comandos
 
 Front-end (pnpm, a partir da raiz):
@@ -98,6 +103,11 @@ Camadas em `backend/app`: `api/routes` (HTTP) → `services` (regras) → `repos
 `schemas` (Pydantic). Erros de domínio em `core/errors.py` (`ValidacaoError` 422, `NaoEncontradoError` 404,
 `ConflitoError` 409) viram `{"detail": "..."}`. Rotas administrativas usam a dependência `AdminUser`
 (`api/deps.py`). Prefixo da API: `/api/v1`. Mudanças de esquema sempre por nova revisão do Alembic.
+
+Rotas recebem o banco só por `DbConnection` (`api/deps.py`), nunca por `Depends(get_connection)` direto:
+o `scope="function"` faz o commit antes de a resposta ser enviada, então um sucesso já está confirmado
+para a leitura seguinte. Testes que compartilham a fixture `db` não detectam esse problema; a regressão
+com requisições independentes fica em `tests/test_confirmacao_transacao.py`.
 
 ## Convenções gerais
 

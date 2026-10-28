@@ -1,1 +1,6 @@
 *.pdf binary
+
+# Os hashes do pacote verificam os bytes recebidos em qualquer sistema operacional.
+backend/dados/m6/*.json -text
+backend/dados/m6/*.jsonl -text
+backend/dados/m6/*.csv -text
