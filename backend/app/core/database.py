@@ -26,6 +26,10 @@ def get_engine() -> Engine:
 
 
 def get_connection() -> Iterator[Connection]:
-    """Uma transação por requisição: confirmada ao final, revertida em caso de erro."""
+    """Uma transação por requisição: confirmada ao final, revertida em caso de erro.
+
+    Use sempre por `DbConnection` (app/api/deps.py), que encerra a transação antes
+    de a resposta ser enviada.
+    """
     with get_engine().begin() as connection:
         yield connection

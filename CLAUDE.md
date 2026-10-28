@@ -99,6 +99,11 @@ Camadas em `backend/app`: `api/routes` (HTTP) → `services` (regras) → `repos
 `ConflitoError` 409) viram `{"detail": "..."}`. Rotas administrativas usam a dependência `AdminUser`
 (`api/deps.py`). Prefixo da API: `/api/v1`. Mudanças de esquema sempre por nova revisão do Alembic.
 
+Rotas recebem o banco só por `DbConnection` (`api/deps.py`), nunca por `Depends(get_connection)` direto:
+o `scope="function"` faz o commit antes de a resposta ser enviada, então um sucesso já está confirmado
+para a leitura seguinte. Testes que compartilham a fixture `db` não detectam esse problema; a regressão
+com requisições independentes fica em `tests/test_confirmacao_transacao.py`.
+
 ## Convenções gerais
 
 - Domínio, nomes de variáveis/funções de negócio e textos da interface em português (`indicador`, `periodo`,

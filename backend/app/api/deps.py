@@ -11,7 +11,10 @@ from app.services.auth_service import AuthService
 
 bearer = HTTPBearer(auto_error=False)
 
-DbConnection = Annotated[Connection, Depends(get_connection)]
+# scope="function": a transação é confirmada (ou revertida) assim que a rota retorna,
+# antes do envio da resposta. No escopo padrão ("request"), o commit só ocorreria
+# depois que o cliente já recebeu o sucesso, e a leitura seguinte poderia não vê-lo.
+DbConnection = Annotated[Connection, Depends(get_connection, scope="function")]
 
 
 def get_current_user(
