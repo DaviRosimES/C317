@@ -57,7 +57,9 @@ posteriores acrescentam o hash de senha dos usuários e a publicação de
 relatórios (fonte, status e marca de demonstração). Consulte o
 [modelo de dados](../docs/modelo-dados.md), inclusive antes de um downgrade.
 A revisão `e3b8d41f6a27` cria as tabelas das observações da M6; veja o
-[modelo das observações](../docs/m6/modelo-observacoes.md).
+[modelo das observações](../docs/m6/modelo-observacoes.md). A revisão
+`f4c9a2d7e1b3` acrescenta aos relatórios número, tipo e link externo e aceita
+data e referência desconhecidas.
 
 Para alterar o esquema depois, crie outra revisão, preencha `upgrade()` e
 `downgrade()` e aplique-a:
@@ -180,8 +182,8 @@ Rotas sem autenticação; somente relatórios com `status = 'publicado'`:
 
 | Rota | Uso |
 | --- | --- |
-| `GET /api/v1/relatorios` | Título, fonte, data de publicação, referência (ano/mês) e marca de demonstração, do mais recente para o mais antigo |
-| `GET /api/v1/relatorios/{id}/arquivo` | PDF do relatório, com `Content-Disposition: attachment` |
+| `GET /api/v1/relatorios` | Título, número, tipo, fonte, data de publicação, referência (ano/mês), link externo e marca de demonstração, do mais recente para o mais antigo (sem data no fim) |
+| `GET /api/v1/relatorios/{id}/arquivo` | PDF do relatório, com `Content-Disposition: attachment`; 404 se o relatório só tiver link externo |
 
 Os PDFs ficam em `backend/arquivos/relatorios/` (ou na pasta indicada por
 `RELATORIOS_DIR`, relativa a `backend/`). `relatorios.arquivo_url` guarda o nome
@@ -202,6 +204,28 @@ VALUES (
 
 O banco recusa um relatório publicado sem fonte e dois relatórios com o mesmo
 arquivo. `autor_id` é opcional: relatórios carregados por script não têm autor.
+
+### Relatórios recebidos do Observatório
+
+Os relatórios reais publicados pelo Observatório em outro endereço (Google Drive)
+entram com `link_externo`, sem cópia do PDF: cada relatório tem exatamente um
+destino (`arquivo_url` ou `link_externo`, este sempre `https://`). `numero`
+("004/2025"), `tipo` (`relatorio_tecnico` ou `peca_divulgacao`),
+`data_publicacao` e a referência ficam nulos quando a fonte não os informa; não
+preencha valores presumidos.
+
+Os metadados conferidos estão em `dados/relatorios.json`; a conferência de
+acesso e os documentos excluídos ficam em
+[controle de documentos e canais](../docs/m6/controle-documentos-e-canais.md).
+
+```bash
+python -m scripts.carregar_relatorios            # só valida o arquivo
+python -m scripts.carregar_relatorios --aplicar  # grava como publicados
+```
+
+Reexecutar não duplica relatórios. Se um relatório já existir com outros
+metadados (por exemplo, corrigido no banco), a carga inteira é recusada sem
+alterar nada.
 
 ## Observações da M6
 

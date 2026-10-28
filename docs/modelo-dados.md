@@ -129,6 +129,18 @@ A revisão `c5e1f7a3b902` (tarefa D3) completa a tabela `relatorios`, criada na 
 
 O downgrade é recusado se houver relatório sem autor, pois o esquema anterior o exige.
 
+A revisão `f4c9a2d7e1b3` (tarefa D5) acomoda os relatórios recebidos do Observatório:
+
+| Campo | Uso |
+| --- | --- |
+| `numero` | Número oficial ("004/2025"); nulo quando a fonte não informa |
+| `tipo` | `relatorio_tecnico` ou `peca_divulgacao`; nulo quando a fonte não distingue |
+| `link_externo` | Documento publicado em outro endereço (`https://`), único por relatório |
+| `arquivo_url` | Passa a ser opcional: cada relatório tem exatamente um destino, `arquivo_url` ou `link_externo` |
+| `data_publicacao`, `periodo_id` | Passam a aceitar nulo, para não presumir data ou referência desconhecidas |
+
+O downgrade é recusado se houver relatório com link externo, sem data ou sem referência.
+
 ## Reversão
 
 ```bash

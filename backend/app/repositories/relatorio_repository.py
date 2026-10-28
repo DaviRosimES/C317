@@ -2,10 +2,10 @@ from sqlalchemy import text
 from sqlalchemy.engine import Connection, Row
 
 _SELECT_PUBLICADOS = """
-    SELECT r.id, r.titulo, r.fonte, r.data_publicacao, p.ano, p.mes, r.demonstracao,
-           r.arquivo_url
+    SELECT r.id, r.titulo, r.numero, r.tipo, r.fonte, r.data_publicacao, p.ano, p.mes,
+           r.link_externo, r.demonstracao, r.arquivo_url
     FROM relatorios r
-    JOIN periodos p ON p.id = r.periodo_id
+    LEFT JOIN periodos p ON p.id = r.periodo_id
     WHERE r.status = 'publicado'
 """
 
@@ -17,9 +17,10 @@ class RelatorioRepository:
         self.connection = connection
 
     def listar_publicados(self) -> list[Row]:
+        # Sem data conhecida, o relatório vai para o fim da lista em vez de receber uma data.
         return list(
             self.connection.execute(
-                text(_SELECT_PUBLICADOS + " ORDER BY r.data_publicacao DESC, r.id DESC")
+                text(_SELECT_PUBLICADOS + " ORDER BY r.data_publicacao DESC NULLS LAST, r.id DESC")
             )
         )
 
