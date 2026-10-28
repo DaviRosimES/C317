@@ -213,36 +213,51 @@ Consulta pública (somente publicadas e não bloqueadas):
 
 | Rota | Uso |
 | --- | --- |
-| `GET /api/v1/observacoes` | Observações com filtros combináveis |
+| `GET /api/v1/observacoes` | Página `{itens, total, limite, deslocamento}` com filtros combináveis |
 | `GET /api/v1/observacoes/{id}` | Uma observação; 404 se for rascunho ou estiver bloqueada |
-| `GET /api/v1/observacoes/catalogos` | Temas, indicadores, categorias, territórios, unidades e fontes, com `com_dados_publicados` |
+| `GET /api/v1/observacoes/catalogos` | Itens de catálogo **usados por observações publicadas** |
 | `GET /api/v1/observacoes/referencias` | Referências com dados publicados, com `rotulo` pronto para exibição |
 
 Filtros: `tema`, `indicador`, `territorio`, `categoria`, `classificacao` e
 `codigo_cnae` (repetíveis), `referencia_tipo` (`anual`, `mensal`, `acumulada`,
 `levantamento`, `retrato`), `ano`, `ano_inicio`, `ano_fim` e `mes` (exige `ano`).
+Paginação: `limite` (padrão 200, máximo 1000) e `deslocamento`.
 
 - `ano` seleciona referências de um único ano: `ano=2024` traz os 5 depósitos
-  de PI de 2024, não os 72 do acumulado 2000–2024 (use `referencia_tipo=acumulada`).
-- `categoria` (recorte da fonte) e `codigo_cnae` são parâmetros distintos.
+  de PI de 2024, não os 72 do acumulado 2000–2024.
+- `ano_inicio`/`ano_fim` formam um intervalo: referências que começam em
+  `ano_inicio` ou depois e terminam em `ano_fim` ou antes. A série anual de
+  2020 a 2024 é `referencia_tipo=anual&ano_inicio=2020&ano_fim=2024`;
+  `ano_inicio > ano_fim` responde 422.
+- `categoria` (recorte da fonte) e `codigo_cnae` são parâmetros distintos. O CNAE
+  de um recorte pertence à categoria do catálogo; `codigo_cnae` encontra a
+  observação pela categoria ou pelo próprio campo.
 - Código desconhecido responde 422; nunca é ignorado nem tratado como total.
 - Cada observação traz `valor` (decimal exato), `valor_exibicao` (arredondado nas
   `casas_exibicao` da unidade), `qualificador` (`maior_que` = "mais de"),
   unidade, fonte com links, referência com `rotulo`, temas e notas.
-- Lista vazia significa "sem dados"; um zero vem como `"0"`.
+- `itens` vazio significa "sem dados"; um zero vem como `"0"`.
 
 Administração (token de admin):
 
 | Rota | Uso |
 | --- | --- |
-| `GET /api/v1/admin/observacoes?status=&divulgacao_bloqueada=` | Todas, inclusive rascunhos e bloqueadas, com os mesmos filtros |
-| `GET /api/v1/admin/observacoes/{id}` | Detalhe com proveniências e dados de publicação |
+| `GET /api/v1/admin/observacoes?status=&divulgacao_bloqueada=` | Página com todas, inclusive rascunhos e bloqueadas, com os mesmos filtros |
+| `GET /api/v1/admin/observacoes/catalogos` | Catálogo completo para o formulário, com `com_dados_publicados` |
+| `GET /api/v1/admin/observacoes/{id}` | Detalhe com proveniências, publicação e `historico` |
 | `POST /api/v1/admin/observacoes` | Cadastra como rascunho; a identidade é calculada pela API (409 se já existir) |
-| `PATCH /api/v1/admin/observacoes/{id}` | Corrige `valor`, `qualificador` ou `notas`; registra o valor anterior nas proveniências |
+| `PATCH /api/v1/admin/observacoes/{id}` | Corrige `valor`, `qualificador` ou `notas` |
 | `POST /api/v1/admin/observacoes/{id}/publicar` | Publica; 422 com o motivo se a divulgação estiver bloqueada |
 | `POST /api/v1/admin/observacoes/{id}/despublicar` | Volta para rascunho |
 | `POST /api/v1/admin/observacoes/{id}/bloquear` | `{"motivo": "..."}`; uma observação publicada sai da consulta |
-| `POST /api/v1/admin/observacoes/{id}/desbloquear` | Remove o bloqueio; continua rascunho |
+| `POST /api/v1/admin/observacoes/{id}/desbloquear` | Remove o bloqueio; continua rascunho até nova publicação |
 
-`valor` é enviado como texto decimal (`"0.0328478422252442"`), sem limite de casas
-nem notação científica; a unidade define se precisa ser inteiro e o máximo.
+- `valor` é enviado como texto decimal (`"0.0328478422252442"`), sem limite de
+  casas nem notação científica; a unidade define se precisa ser inteiro e o máximo.
+- O cadastro recusa campos desconhecidos, inclusive `codigo_cnae`: use uma
+  categoria com CNAE.
+- Corrigir uma observação publicada mantém o valor novo na consulta e preserva
+  `publicado_por`/`publicado_em`; quem corrigiu fica no histórico.
+- Toda ação administrativa (cadastro, correção, publicação, despublicação,
+  bloqueio, desbloqueio) entra em `historico_observacoes_m6`, fora do `conteudo`:
+  repetir a carga do pacote não vira conflito por causa delas.

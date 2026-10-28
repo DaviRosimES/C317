@@ -7,6 +7,7 @@ from app.api.deps import DbConnection
 from app.schemas.observacao import (
     CatalogosResponse,
     ObservacaoPublicaResponse,
+    PaginaObservacoesPublicas,
     ReferenciaResponse,
     TipoReferencia,
 )
@@ -40,8 +41,14 @@ def filtros_observacao(
         int | None,
         Query(ge=1900, le=2100, description="Referências de um único ano; não inclui acumulados."),
     ] = None,
-    ano_inicio: Annotated[int | None, Query(ge=1900, le=2100)] = None,
-    ano_fim: Annotated[int | None, Query(ge=1900, le=2100)] = None,
+    ano_inicio: Annotated[
+        int | None,
+        Query(ge=1900, le=2100, description="Início do intervalo: referências que começam neste ano ou depois."),
+    ] = None,
+    ano_fim: Annotated[
+        int | None,
+        Query(ge=1900, le=2100, description="Fim do intervalo: referências que terminam neste ano ou antes."),
+    ] = None,
     mes: Annotated[int | None, Query(ge=1, le=12, description="Exige o ano.")] = None,
 ) -> dict:
     return {
@@ -61,23 +68,37 @@ def filtros_observacao(
 
 FiltrosObservacao = Annotated[dict, Depends(filtros_observacao)]
 
+LIMITE_MAXIMO = 1000
+
+
+def paginacao(
+    limite: Annotated[int, Query(ge=1, le=LIMITE_MAXIMO, description="Itens por página.")] = 200,
+    deslocamento: Annotated[int, Query(ge=0, description="Quantos itens pular.")] = 0,
+) -> dict:
+    return {"limite": limite, "deslocamento": deslocamento}
+
+
+Paginacao = Annotated[dict, Depends(paginacao)]
+
 router = APIRouter(prefix="/observacoes", tags=["Observações (M6)"])
 
 
-@router.get("", response_model=list[ObservacaoPublicaResponse])
-def listar(connection: DbConnection, filtros: FiltrosObservacao) -> list[ObservacaoPublicaResponse]:
-    """Observações publicadas e não bloqueadas, com filtros combináveis.
+@router.get("", response_model=PaginaObservacoesPublicas)
+def listar(
+    connection: DbConnection, filtros: FiltrosObservacao, pagina: Paginacao
+) -> PaginaObservacoesPublicas:
+    """Observações publicadas e não bloqueadas, com filtros combináveis e paginação.
 
-    Lista vazia significa "sem dados" para a combinação; um zero vem como "0".
+    `itens` vazio significa "sem dados" para a combinação; um zero vem como "0".
     Código de catálogo desconhecido responde 422, nunca é ignorado.
     """
-    return ObservacaoService(connection).listar_publicas(**filtros)
+    return ObservacaoService(connection).listar_publicas(**pagina, **filtros)
 
 
 @router.get("/catalogos", response_model=CatalogosResponse)
 def catalogos(connection: DbConnection) -> CatalogosResponse:
-    """Temas, indicadores, categorias, territórios, unidades e fontes, lidos do banco."""
-    return ObservacaoService(connection).listar_catalogos()
+    """Itens de catálogo usados por observações publicadas; nada só de rascunho ou bloqueado."""
+    return ObservacaoService(connection).catalogo_publico()
 
 
 @router.get("/referencias", response_model=list[ReferenciaResponse])

@@ -1,12 +1,15 @@
 """Contrato de intercâmbio: decimais em texto e referências sem datas presumidas."""
 
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal
 import csv
 from hashlib import sha256
 import json
 from pathlib import Path
 import re
 import unicodedata
+
+# Definidas em app.core.contrato_m6, para que a API use exatamente a mesma regra.
+from app.core.contrato_m6 import decimal_exato, identidade, json_canonico  # noqa: E402,F401
 
 VERSAO = "c317.m6.v1"
 TIPOS_REFERENCIA = {"anual", "mensal", "acumulada", "levantamento", "retrato"}
@@ -20,24 +23,10 @@ def normalizar(valor: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFKD", valor.casefold()) if not unicodedata.combining(c))
 
 
-def json_canonico(valor: object) -> str:
-    return json.dumps(valor, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
-
-
 def codigo(prefixo: str, nome: str) -> str:
     normal = normalizar(texto(nome))
     slug = re.sub(r"[^a-z0-9]+", "_", normal).strip("_")[:60]
     return f"{prefixo}_{slug}_{sha256(normal.encode()).hexdigest()[:10]}"
-
-
-def decimal_exato(valor: str) -> str:
-    try:
-        numero = Decimal(valor)
-    except (InvalidOperation, TypeError) as erro:
-        raise ValueError("Valor numérico inválido.") from erro
-    if not numero.is_finite() or numero < 0:
-        raise ValueError("O conjunto recebido exige números finitos e não negativos.")
-    return format(numero, "f")
 
 
 def referencia(valor: str) -> dict:
@@ -60,11 +49,6 @@ def referencia(valor: str) -> dict:
     if m and m[1] in meses:
         return {"tipo": "mensal", "ano_inicio": int(m[2]), "ano_fim": int(m[2]), "mes": meses[m[1]]}
     raise ValueError(f"Referência não confirmada ou não reconhecida: {original!r}.")
-
-
-def identidade(observacao: dict) -> str:
-    campos = ("indicador_codigo", "territorio_codigo", "categoria_codigo", "referencia", "unidade_codigo", "fonte_codigo")
-    return sha256(json_canonico({c: observacao[c] for c in campos}).encode()).hexdigest()
 
 
 def validar_observacao(registro: dict, catalogos: dict) -> None:
