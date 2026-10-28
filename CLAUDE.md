@@ -8,7 +8,8 @@ D (área administrativa e relatórios). Mantenha cada branch no escopo da sua ta
 
 Para a Milestone 6, `docs/m6/requisitos-e-contrato.md` registra as decisões atuais e o contrato de intercâmbio;
 `docs/m6/carga-dos-dados.md` documenta preparação, simulação e carga. Dados completos das categorias recebidas
-são o foco; CNAE é secundário. A carga PostgreSQL e a consulta integrada dependem da migração V5 e da API V6.
+são o foco; CNAE é secundário. `docs/m6/modelo-observacoes.md` descreve as tabelas `*_m6` (V5) e as regras que
+o banco garante; a consulta integrada depende da API V6. Não grave as colunas geradas de `observacoes_m6`.
 
 ## Comandos
 
