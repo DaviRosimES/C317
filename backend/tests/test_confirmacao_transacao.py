@@ -224,3 +224,75 @@ def test_sequencias_http_leem_imediatamente_o_que_foi_confirmado(
     with servidor() as http:
         publicos = http.get("/indicadores", params={"tipo": tipo}).json()
     assert {(item["ano"], item["mes"]): item["valor"] for item in publicos} == esperados
+
+
+@pytest.fixture
+def catalogo_m6_confirmado(engine, confirmados):
+    """Itens de catálogo M6 próprios, confirmados no banco e removidos ao final."""
+    sufixo = confirmados["tipo"].removeprefix("teste_v4_")
+    itens = {
+        "temas": {"codigo": f"tema_v4_{sufixo}", "nome": "Tema V4"},
+        "indicadores": {"codigo": f"i_v4_{sufixo}", "nome": "Indicador V4"},
+        "territorios": {"codigo": f"t_v4_{sufixo}", "nome": "Cidade V4", "tipo": "municipio"},
+        "unidades": {
+            "codigo": f"u_v4_{sufixo}", "nome": "pessoas", "inteira": True, "maximo": None,
+            "casas_exibicao": 0,
+        },
+        "fontes": {"codigo": f"f_v4_{sufixo}", "nome": "Fonte V4", "links": []},
+    }
+    with engine.begin() as connection:
+        for tipo, conteudo in itens.items():
+            connection.execute(
+                text(
+                    "INSERT INTO catalogos_m6 (tipo, codigo, conteudo) "
+                    "VALUES (:tipo, :codigo, CAST(:conteudo AS jsonb))"
+                ),
+                {"tipo": tipo, "codigo": conteudo["codigo"], "conteudo": json.dumps(conteudo)},
+            )
+    try:
+        yield {tipo: conteudo["codigo"] for tipo, conteudo in itens.items()}
+    finally:
+        with engine.begin() as connection:
+            connection.execute(
+                text("DELETE FROM observacoes_m6 WHERE indicador_codigo = :i"),
+                {"i": itens["indicadores"]["codigo"]},
+            )
+            for tipo, conteudo in itens.items():
+                connection.execute(
+                    text("DELETE FROM catalogos_m6 WHERE tipo = :tipo AND codigo = :codigo"),
+                    {"tipo": tipo, "codigo": conteudo["codigo"]},
+                )
+
+
+def test_observacoes_m6_leem_imediatamente_o_que_foi_confirmado(
+    engine, confirmados, catalogo_m6_confirmado, commit_lento
+):
+    codigos, headers = catalogo_m6_confirmado, confirmados["headers"]
+    with servidor() as http:
+        for i in range(20):
+            corpo = {
+                "indicador_codigo": codigos["indicadores"],
+                "territorio_codigo": codigos["territorios"],
+                "referencia": {"tipo": "anual", "ano_inicio": 2000 + i, "ano_fim": 2000 + i},
+                "valor": str(i),
+                "unidade_codigo": codigos["unidades"],
+                "fonte_codigo": codigos["fontes"],
+                "temas": [codigos["temas"]],
+            }
+            criado = http.post("/admin/observacoes", json=corpo, headers=headers)
+            assert criado.status_code == 201, f"sequência {i}: {criado.text}"
+            observacao_id = criado.json()["id"]
+
+            publicado = http.post(f"/admin/observacoes/{observacao_id}/publicar", headers=headers)
+            assert publicado.status_code == 200, f"sequência {i}: publicar → {publicado.text}"
+            publico = http.get(f"/observacoes/{observacao_id}")
+            assert publico.status_code == 200 and publico.json()["valor"] == str(i), f"sequência {i}"
+
+            corrigido = http.patch(
+                f"/admin/observacoes/{observacao_id}", json={"valor": str(i + 100)}, headers=headers
+            )
+            assert corrigido.status_code == 200, f"sequência {i}: {corrigido.text}"
+            assert http.get(f"/observacoes/{observacao_id}").json()["valor"] == str(i + 100)
+
+        duplicado = http.post("/admin/observacoes", json=corpo, headers=headers)
+        assert duplicado.status_code == 409

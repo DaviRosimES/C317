@@ -7,7 +7,6 @@ recebe a conexão psycopg dessa mesma transação.
 import json
 from copy import deepcopy
 from decimal import Decimal
-from pathlib import Path
 
 import pytest
 from sqlalchemy import text
@@ -16,31 +15,13 @@ from sqlalchemy.exc import IntegrityError
 from app.core.apresentacao import valor_para_exibicao
 from app.core.security import hash_password
 from scripts.carregar_m6 import aplicar, validar_banco
-from scripts.m6.contrato import carregar_pacote, identidade
+from scripts.m6.contrato import identidade
 
-PACOTE = Path(__file__).resolve().parents[1] / "dados" / "m6"
 JANEIRO = "c_mes_citado_em_questionario_janeiro_181d6bf102"
 
 
-@pytest.fixture(scope="module")
-def pacote():
-    return carregar_pacote(PACOTE)
-
-
 @pytest.fixture
-def psycopg(db):
-    """Conexão psycopg da transação do teste, no formato que o carregador espera."""
-    return db.connection.driver_connection
-
-
-@pytest.fixture
-def carregado(db, psycopg, pacote):
-    manifesto, catalogos, observacoes = pacote
-    return aplicar(psycopg, "postgresql", manifesto, catalogos, observacoes)
-
-
-@pytest.fixture
-def catalogos(db, pacote):
+def catalogos(db, m6_vazio, pacote):
     """Somente os catálogos: suficiente para inserir variações sem a carga completa."""
     _, catalogos, _ = pacote
     for tipo, itens in catalogos.items():
@@ -460,7 +441,7 @@ def test_observacao_sem_proveniencia_e_recusada(db, pacote, catalogos):
         {"codigo": "t_sem_nome", "nome": "  "},
     ],
 )
-def test_catalogo_incompleto_e_recusado(db, conteudo):
+def test_catalogo_incompleto_e_recusado(db, m6_vazio, conteudo):
     rejeitado(
         db,
         lambda: inserir_catalogo(db, "territorios", "t_sem_nome", conteudo),

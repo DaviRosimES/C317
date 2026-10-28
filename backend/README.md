@@ -202,3 +202,47 @@ VALUES (
 
 O banco recusa um relatório publicado sem fonte e dois relatórios com o mesmo
 arquivo. `autor_id` é opcional: relatórios carregados por script não têm autor.
+
+## Observações da M6
+
+Contrato e regras do banco: [modelo das observações](../docs/m6/modelo-observacoes.md).
+A carga entra como rascunho (`python -m scripts.carregar_m6 --aplicar --confirmar-carga-real`)
+e só aparece na consulta depois de publicada.
+
+Consulta pública (somente publicadas e não bloqueadas):
+
+| Rota | Uso |
+| --- | --- |
+| `GET /api/v1/observacoes` | Observações com filtros combináveis |
+| `GET /api/v1/observacoes/{id}` | Uma observação; 404 se for rascunho ou estiver bloqueada |
+| `GET /api/v1/observacoes/catalogos` | Temas, indicadores, categorias, territórios, unidades e fontes, com `com_dados_publicados` |
+| `GET /api/v1/observacoes/referencias` | Referências com dados publicados, com `rotulo` pronto para exibição |
+
+Filtros: `tema`, `indicador`, `territorio`, `categoria`, `classificacao` e
+`codigo_cnae` (repetíveis), `referencia_tipo` (`anual`, `mensal`, `acumulada`,
+`levantamento`, `retrato`), `ano`, `ano_inicio`, `ano_fim` e `mes` (exige `ano`).
+
+- `ano` seleciona referências de um único ano: `ano=2024` traz os 5 depósitos
+  de PI de 2024, não os 72 do acumulado 2000–2024 (use `referencia_tipo=acumulada`).
+- `categoria` (recorte da fonte) e `codigo_cnae` são parâmetros distintos.
+- Código desconhecido responde 422; nunca é ignorado nem tratado como total.
+- Cada observação traz `valor` (decimal exato), `valor_exibicao` (arredondado nas
+  `casas_exibicao` da unidade), `qualificador` (`maior_que` = "mais de"),
+  unidade, fonte com links, referência com `rotulo`, temas e notas.
+- Lista vazia significa "sem dados"; um zero vem como `"0"`.
+
+Administração (token de admin):
+
+| Rota | Uso |
+| --- | --- |
+| `GET /api/v1/admin/observacoes?status=&divulgacao_bloqueada=` | Todas, inclusive rascunhos e bloqueadas, com os mesmos filtros |
+| `GET /api/v1/admin/observacoes/{id}` | Detalhe com proveniências e dados de publicação |
+| `POST /api/v1/admin/observacoes` | Cadastra como rascunho; a identidade é calculada pela API (409 se já existir) |
+| `PATCH /api/v1/admin/observacoes/{id}` | Corrige `valor`, `qualificador` ou `notas`; registra o valor anterior nas proveniências |
+| `POST /api/v1/admin/observacoes/{id}/publicar` | Publica; 422 com o motivo se a divulgação estiver bloqueada |
+| `POST /api/v1/admin/observacoes/{id}/despublicar` | Volta para rascunho |
+| `POST /api/v1/admin/observacoes/{id}/bloquear` | `{"motivo": "..."}`; uma observação publicada sai da consulta |
+| `POST /api/v1/admin/observacoes/{id}/desbloquear` | Remove o bloqueio; continua rascunho |
+
+`valor` é enviado como texto decimal (`"0.0328478422252442"`), sem limite de casas
+nem notação científica; a unidade define se precisa ser inteiro e o máximo.
