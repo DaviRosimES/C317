@@ -1,12 +1,54 @@
-import { Download } from 'lucide-react'
+import { Download, ExternalLink } from 'lucide-react'
 import { PublicContainer, PublicPageHeader } from '@/components/layout/public-layout'
-import { Button, DemoBadge, EmptyState, ListRow, ListRowThumb, Skeleton } from '@/components/ui'
-import { formatDate } from '@/lib/format'
+import { Badge, Button, DemoBadge, EmptyState, ListRow, ListRowThumb, Skeleton } from '@/components/ui'
+import { formatDate, toDataIso } from '@/lib/format'
 import { formatPeriodo } from '@/lib/periodo'
+import type { Relatorio, TipoRelatorio } from '@/models'
 import { useRelatorios } from '@/queries/relatorio.queries'
 
-const toIsoDate = (data: Date) =>
-  `${data.getFullYear()}-${String(data.getMonth() + 1).padStart(2, '0')}-${String(data.getDate()).padStart(2, '0')}`
+const TIPOS: Record<TipoRelatorio, string> = {
+  relatorio_tecnico: 'Relatório técnico',
+  peca_divulgacao: 'Peça de divulgação',
+}
+
+/** Número, referência e data aparecem somente quando a fonte os informa. */
+function identificacao(relatorio: Relatorio) {
+  const partes = [
+    relatorio.numero ? <span key="numero">Nº {relatorio.numero}</span> : null,
+    relatorio.periodo ? <span key="referencia">Referência: {formatPeriodo(relatorio.periodo, 'longo')}</span> : null,
+    relatorio.dataPublicacao ? (
+      <span key="data">
+        Publicado em <time dateTime={toDataIso(relatorio.dataPublicacao)}>{formatDate(relatorio.dataPublicacao)}</time>
+      </span>
+    ) : null,
+  ].filter(Boolean)
+  return partes.length ? <>{partes.flatMap((parte, i) => (i ? [' · ', parte] : [parte]))}</> : undefined
+}
+
+function Acesso({ relatorio }: { relatorio: Relatorio }) {
+  const { acesso } = relatorio
+  if (acesso.tipo === 'arquivo') {
+    return (
+      <Button asChild variant="secondary" className="w-full sm:w-auto">
+        <a href={acesso.url} download aria-label={`Baixar PDF: ${relatorio.titulo}`}>
+          <Download aria-hidden />
+          Baixar PDF
+        </a>
+      </Button>
+    )
+  }
+  return (
+    <div className="flex w-full flex-col gap-1 sm:w-auto sm:items-end">
+      <Button asChild variant="secondary" className="w-full sm:w-auto">
+        <a href={acesso.url} target="_blank" rel="noreferrer" aria-label={`Abrir em ${acesso.destino} (nova aba): ${relatorio.titulo}`}>
+          <ExternalLink aria-hidden />
+          Abrir documento
+        </a>
+      </Button>
+      <span className="text-center text-xs text-ink-muted sm:text-right">Abre em {acesso.destino}</span>
+    </div>
+  )
+}
 
 export function RelatoriosPage() {
   const relatorios = useRelatorios()
@@ -16,7 +58,7 @@ export function RelatoriosPage() {
       <PublicPageHeader
         eyebrow="Publicações"
         title="Relatórios"
-        description="Boletins e estudos publicados pelo Observatório. Consulte a referência e a fonte de cada relatório e baixe o PDF."
+        description="Relatórios e estudos publicados pelo Observatório, com número, referência, data e fonte quando informados. Documentos publicados em outro endereço abrem no local de origem."
       />
 
       <section aria-label="Relatórios publicados" className="flex flex-col gap-4">
@@ -28,28 +70,19 @@ export function RelatoriosPage() {
           relatorios.data.map((relatorio) => (
             <ListRow
               key={relatorio.id}
-              leading={<ListRowThumb>PDF</ListRowThumb>}
-              title={relatorio.titulo}
-              subtitle={
-                <>
-                  Referência: {formatPeriodo(relatorio.periodo, 'longo')} · Publicado em{' '}
-                  <time dateTime={toIsoDate(relatorio.dataPublicacao)}>{formatDate(relatorio.dataPublicacao)}</time>
-                </>
+              leading={
+                <ListRowThumb>{relatorio.acesso.tipo === 'arquivo' ? 'PDF' : <ExternalLink className="size-5" />}</ListRowThumb>
               }
+              title={relatorio.titulo}
+              subtitle={identificacao(relatorio)}
               meta={
                 <>
+                  {relatorio.tipo ? <Badge variant="neutral">{TIPOS[relatorio.tipo]}</Badge> : null}
                   <span className="break-words">Fonte: {relatorio.fonte}</span>
                   {relatorio.demonstracao ? <DemoBadge /> : null}
                 </>
               }
-              actions={
-                <Button asChild variant="secondary" className="w-full sm:w-auto">
-                  <a href={relatorio.urlArquivo} download aria-label={`Baixar PDF: ${relatorio.titulo}`}>
-                    <Download aria-hidden />
-                    Baixar PDF
-                  </a>
-                </Button>
-              }
+              actions={<Acesso relatorio={relatorio} />}
             />
           ))
         ) : (
