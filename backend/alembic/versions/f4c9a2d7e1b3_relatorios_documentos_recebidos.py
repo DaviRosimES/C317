@@ -1,7 +1,7 @@
 """Relatórios recebidos: número, tipo, link externo e metadados desconhecidos.
 
 Revision ID: f4c9a2d7e1b3
-Revises: e3b8d41f6a27
+Revises: f4c9a2d7e815
 """
 
 from alembic import op
@@ -9,7 +9,7 @@ import sqlalchemy as sa
 
 
 revision = "f4c9a2d7e1b3"
-down_revision = "e3b8d41f6a27"
+down_revision = "f4c9a2d7e815"
 branch_labels = None
 depends_on = None
 

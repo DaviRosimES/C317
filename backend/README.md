@@ -56,10 +56,11 @@ extensíveis, períodos anuais e associação configurável de rotas. As revisõ
 posteriores acrescentam o hash de senha dos usuários e a publicação de
 relatórios (fonte, status e marca de demonstração). Consulte o
 [modelo de dados](../docs/modelo-dados.md), inclusive antes de um downgrade.
-A revisão `e3b8d41f6a27` cria as tabelas das observações da M6; veja o
+A revisão `e3b8d41f6a27` cria as tabelas das observações da M6 e a
+`f4c9a2d7e815` acrescenta o histórico das ações administrativas; veja o
 [modelo das observações](../docs/m6/modelo-observacoes.md). A revisão
-`f4c9a2d7e1b3` acrescenta aos relatórios número, tipo e link externo e aceita
-data e referência desconhecidas.
+`f4c9a2d7e1b3`, aplicada depois delas, acrescenta aos relatórios número, tipo e
+link externo e aceita data e referência desconhecidas.
 
 Para alterar o esquema depois, crie outra revisão, preencha `upgrade()` e
 `downgrade()` e aplique-a:
