@@ -19,10 +19,14 @@ from scripts.seed_demo import _periodo
 ARQUIVO = Path(__file__).resolve().parents[1] / "dados" / "relatorios.json"
 TIPOS = {"relatorio_tecnico", "peca_divulgacao"}
 CAMPOS = ("titulo", "numero", "tipo", "fonte", "data_publicacao", "ano", "mes")
+TEXTOS = ("titulo", "numero", "tipo", "fonte", "data_publicacao", "link_externo", "acesso_conferido_em")
 
 
 def ler(arquivo: Path = ARQUIVO) -> list[dict]:
-    relatorios = json.loads(arquivo.read_text(encoding="utf-8"))["relatorios"]
+    dados = json.loads(arquivo.read_text(encoding="utf-8"))
+    relatorios = dados.get("relatorios") if isinstance(dados, dict) else None
+    if not isinstance(relatorios, list):
+        raise ValueError('O arquivo precisa ter a lista "relatorios".')
     for relatorio in relatorios:
         validar(relatorio)
     links = [relatorio["link_externo"] for relatorio in relatorios]
@@ -32,13 +36,26 @@ def ler(arquivo: Path = ARQUIVO) -> list[dict]:
 
 
 def validar(relatorio: dict) -> None:
-    titulo = relatorio.get("titulo") or ""
+    if not isinstance(relatorio, dict):
+        raise ValueError("Cada relatório precisa ser um objeto.")
+    titulo = relatorio.get("titulo")
+    titulo = titulo if isinstance(titulo, str) else ""
+    # Tipos conferidos antes das regras, para um JSON malformado ser recusado com mensagem.
+    for campo in TEXTOS:
+        if not isinstance(relatorio.get(campo), str | None):
+            raise ValueError(f"O campo {campo} precisa ser texto ou null: {titulo!r}.")
+    for campo in ("ano", "mes"):
+        valor = relatorio.get(campo)
+        if valor is not None and (isinstance(valor, bool) or not isinstance(valor, int)):
+            raise ValueError(f"O campo {campo} precisa ser um número inteiro ou null: {titulo!r}.")
     for campo in ("titulo", "fonte"):
         if not (relatorio.get(campo) or "").strip():
             raise ValueError(f"Relatório sem {campo}: {titulo!r}.")
-    if not str(relatorio.get("link_externo", "")).startswith("https://"):
+    if not (relatorio.get("link_externo") or "").startswith("https://"):
         raise ValueError(f"Link externo ausente ou sem https: {titulo!r}.")
     # Só entra o que teve o acesso conferido; o restante fica registrado como pendência.
+    if not relatorio.get("acesso_conferido_em"):
+        raise ValueError(f"Relatório sem data de acesso conferido: {titulo!r}.")
     date.fromisoformat(relatorio["acesso_conferido_em"])
     if relatorio.get("tipo") is not None and relatorio["tipo"] not in TIPOS:
         raise ValueError(f"Tipo de relatório desconhecido: {relatorio['tipo']!r}.")

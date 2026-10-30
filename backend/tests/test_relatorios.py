@@ -1,3 +1,5 @@
+import json
+import sys
 from datetime import date
 
 import pytest
@@ -5,7 +7,7 @@ from sqlalchemy import text
 from sqlalchemy.exc import IntegrityError
 
 from app.core.config import settings
-from scripts.carregar_relatorios import carregar, ler
+from scripts.carregar_relatorios import carregar, ler, main
 from scripts.seed_demo import load_dataset, seed_demo
 
 URL = "/api/v1/relatorios"
@@ -309,12 +311,45 @@ def test_carga_nao_sobrescreve_relatorio_corrigido(db, recebidos):
     assert titulo == "Título corrigido"
 
 
-def test_carga_recusa_relatorio_sem_acesso_conferido(tmp_path):
+RECEBIDO = {
+    "titulo": "Peça",
+    "fonte": "Observatório",
+    "link_externo": "https://drive.google.com/open?id=x",
+    "acesso_conferido_em": "2026-10-01",
+}
+
+
+def gravar(tmp_path, dados):
     arquivo = tmp_path / "relatorios.json"
-    arquivo.write_text(
-        '{"relatorios": [{"titulo": "Peça", "fonte": "Observatório", '
-        '"link_externo": "https://drive.google.com/open?id=x"}]}',
-        encoding="utf-8",
-    )
-    with pytest.raises(KeyError):
+    arquivo.write_text(json.dumps(dados), encoding="utf-8")
+    return arquivo
+
+
+def test_carga_recusa_relatorio_sem_acesso_conferido(tmp_path):
+    arquivo = gravar(tmp_path, {"relatorios": [{**RECEBIDO, "acesso_conferido_em": None}]})
+    with pytest.raises(ValueError, match="sem data de acesso conferido"):
         ler(arquivo)
+
+
+@pytest.mark.parametrize(
+    ("dados", "mensagem"),
+    [
+        ([RECEBIDO], 'lista "relatorios"'),
+        ({"relatorios": 4}, 'lista "relatorios"'),
+        ({"relatorios": ["Peça"]}, "precisa ser um objeto"),
+        ({"relatorios": [{**RECEBIDO, "numero": 4}]}, "numero precisa ser texto"),
+        ({"relatorios": [{**RECEBIDO, "titulo": ["Peça"]}]}, "titulo precisa ser texto"),
+        ({"relatorios": [{**RECEBIDO, "ano": "2024"}]}, "ano precisa ser um número inteiro"),
+        ({"relatorios": [{**RECEBIDO, "ano": 2024, "mes": True}]}, "mes precisa ser um número inteiro"),
+    ],
+)
+def test_carga_recusa_json_malformado_com_mensagem(tmp_path, dados, mensagem):
+    with pytest.raises(ValueError, match=mensagem):
+        ler(gravar(tmp_path, dados))
+
+
+def test_carga_recusada_sai_com_codigo_2(tmp_path, monkeypatch, capsys):
+    arquivo = gravar(tmp_path, {"relatorios": [{**RECEBIDO, "ano": "2024"}]})
+    monkeypatch.setattr(sys, "argv", ["carregar_relatorios", "--arquivo", str(arquivo)])
+    assert main() == 2
+    assert "Carga recusada: O campo ano" in capsys.readouterr().err
