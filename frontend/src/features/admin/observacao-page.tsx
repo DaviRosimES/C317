@@ -20,9 +20,8 @@ import {
 } from '@/components/ui'
 import { compararDecimal, decimalParaCampo } from '@/lib/decimal'
 import { formatDecimal } from '@/lib/format'
-import type { ObservacaoAdmin, ObservacaoCorrecao, Proveniencia, Qualificador } from '@/models'
-import { useCorrigirObservacao, useObservacaoAdmin } from '@/queries/admin-observacao.queries'
-import { useCatalogosObservacoes } from '@/queries/observacao.queries'
+import type { EventoHistorico, ObservacaoAdmin, ObservacaoAdminDetalhe, ObservacaoCorrecao, Qualificador, RegistroHistorico } from '@/models'
+import { useCatalogosAdmin, useCorrigirObservacao, useObservacaoAdmin } from '@/queries/admin-observacao.queries'
 import { AdminContainer, AdminPageHeader } from './admin-layout'
 import { AcoesPublicacao } from './observacao-acoes'
 import { ConferenciaPublicacao, ConsultaPublicaObservacao, FichaObservacao, SituacaoObservacao, descreverRecorte } from './observacao-resumo'
@@ -30,7 +29,7 @@ import { erroDasNotas, lerNotas, validarValor } from './observacao-validacao'
 
 export function ObservacaoPage({ id }: { id: string }) {
   const observacao = useObservacaoAdmin(id)
-  const catalogos = useCatalogosObservacoes()
+  const catalogos = useCatalogosAdmin()
 
   if (!observacao.isSuccess || !catalogos.isSuccess) {
     const erro = observacao.error ?? catalogos.error
@@ -84,7 +83,7 @@ export function ObservacaoPage({ id }: { id: string }) {
           </Card>
           {/* Outra observação começa uma correção nova, sem o texto digitado na anterior. */}
           <CorrecaoObservacao key={o.id} observacao={o} />
-          <Historico proveniencias={o.proveniencias} />
+          <Historico observacao={o} />
         </div>
 
         <div className="flex min-w-0 flex-col gap-5">
@@ -265,8 +264,17 @@ const ORIGENS: Record<string, string> = {
   correcao_administrativa: 'Corrigida pela área administrativa',
 }
 
-function descreverAnterior(anterior: Record<string, unknown>) {
-  return Object.entries(anterior)
+const EVENTOS: Record<EventoHistorico, string> = {
+  cadastro: 'Cadastro',
+  correcao: 'Correção',
+  publicacao: 'Publicação',
+  despublicacao: 'Retirada da consulta pública',
+  bloqueio: 'Bloqueio da divulgação',
+  desbloqueio: 'Desbloqueio da divulgação',
+}
+
+function descreverValores(valores: Record<string, unknown>) {
+  return Object.entries(valores)
     .map(([campo, valor]) => {
       if (campo === 'valor' && typeof valor === 'string') return `valor ${formatDecimal(valor)}`
       if (campo === 'qualificador') return valor === 'maior_que' ? 'limite “mais de”' : 'valor igual ao informado'
@@ -276,16 +284,35 @@ function descreverAnterior(anterior: Record<string, unknown>) {
     .join('; ')
 }
 
-/** Origem na planilha recebida e registros de cadastro e correção. */
-function Historico({ proveniencias }: { proveniencias: Proveniencia[] }) {
+const autoria = (registradoEm: Date | null, usuarioId: number | null) => [
+  registradoEm ? registradoEm.toLocaleString('pt-BR') : null,
+  usuarioId !== null ? `usuário nº ${usuarioId}` : null,
+]
+
+function descreverEvento(r: RegistroHistorico) {
+  return [
+    ...autoria(r.registradoEm, r.usuarioId),
+    r.anterior ? `antes: ${descreverValores(r.anterior)}` : null,
+    r.novo ? `depois: ${descreverValores(r.novo)}` : null,
+    r.motivo ? `${r.evento === 'desbloqueio' ? 'motivo removido' : 'motivo'}: ${r.motivo}` : null,
+    r.publicadoEm ? `publicada desde ${r.publicadoEm.toLocaleString('pt-BR')}` : null,
+    r.estavaPublicada && r.evento === 'correcao' ? 'já estava na consulta pública' : null,
+    r.estavaPublicada && r.evento === 'bloqueio' ? 'saiu da consulta pública' : null,
+  ]
+    .filter(Boolean)
+    .join(' · ')
+}
+
+/** Origem na planilha recebida ou no cadastro, e as ações administrativas registradas pela API. */
+function Historico({ observacao }: { observacao: ObservacaoAdminDetalhe }) {
   return (
     <Card>
       <CardHeader>
         <CardTitle>Proveniência e histórico</CardTitle>
       </CardHeader>
-      <CardContent>
-        <ol className="flex flex-col gap-3 text-sm">
-          {proveniencias.map((p, i) => (
+      <CardContent className="flex flex-col gap-5">
+        <ol aria-label="Proveniência" className="flex flex-col gap-3 text-sm">
+          {observacao.proveniencias.map((p, i) => (
             <li key={i} className="rounded-lg bg-canvas p-3">
               {p.tipo === 'planilha' ? (
                 <>
@@ -306,11 +333,7 @@ function Historico({ proveniencias }: { proveniencias: Proveniencia[] }) {
                 <>
                   <p className="font-medium text-ink">{ORIGENS[p.origem] ?? p.origem}</p>
                   <p className="mt-1 break-words text-[13px] text-ink-muted">
-                    {[
-                      p.registradoEm ? p.registradoEm.toLocaleString('pt-BR') : null,
-                      p.usuarioId !== null ? `usuário nº ${p.usuarioId}` : null,
-                      p.anterior ? `antes: ${descreverAnterior(p.anterior)}` : null,
-                    ]
+                    {[...autoria(p.registradoEm, p.usuarioId), p.anterior ? `antes: ${descreverValores(p.anterior)}` : null]
                       .filter(Boolean)
                       .join(' · ')}
                   </p>
@@ -319,6 +342,22 @@ function Historico({ proveniencias }: { proveniencias: Proveniencia[] }) {
             </li>
           ))}
         </ol>
+
+        <div className="flex flex-col gap-3">
+          <h3 className="text-sm font-semibold text-ink">Ações administrativas</h3>
+          {observacao.historico.length ? (
+            <ol className="flex flex-col gap-3 text-sm">
+              {observacao.historico.map((r, i) => (
+                <li key={i} className="rounded-lg bg-canvas p-3">
+                  <p className="font-medium text-ink">{EVENTOS[r.evento] ?? r.evento}</p>
+                  <p className="mt-1 break-words text-[13px] text-ink-muted">{descreverEvento(r)}</p>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p className="text-[13px] text-ink-muted">Nenhuma ação registrada desde a carga.</p>
+          )}
+        </div>
       </CardContent>
     </Card>
   )

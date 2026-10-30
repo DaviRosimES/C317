@@ -62,7 +62,7 @@ export interface Observacao {
   indicador: ItemCatalogo
   territorio: Territorio
   categoria: Categoria | null
-  /** CNAE é classificação própria e opcional, nunca inferida da categoria. */
+  /** CNAE do recorte (da observação ou da categoria); nulo quando a fonte não o informa. */
   codigoCnae: string | null
   referencia: ReferenciaRotulada
   /** Decimal exato em texto ("0.0328478422252442"); não passa por number para não perder precisão. */
@@ -77,7 +77,10 @@ export interface Observacao {
   demonstracao: boolean
 }
 
-/** Linha da planilha recebida (carga da G5) ou registro de cadastro/correção pela área administrativa. */
+/**
+ * Linha da planilha recebida (carga da G5) ou cadastro pela área administrativa. Correções anteriores
+ * ao histórico também chegam como registro, com os valores substituídos em `anterior`.
+ */
 export type Proveniencia =
   | {
       tipo: 'planilha'
@@ -101,9 +104,46 @@ export interface ObservacaoAdmin extends Observacao {
   status: StatusObservacao
   divulgacaoBloqueada: boolean
   motivoBloqueio: string | null
+  /** Quem publicou; uma correção não o substitui. */
   publicadoPor: number | null
   publicadoEm: Date | null
   proveniencias: Proveniencia[]
+}
+
+export type EventoHistorico = 'cadastro' | 'correcao' | 'publicacao' | 'despublicacao' | 'bloqueio' | 'desbloqueio'
+
+/** Ação administrativa registrada pela API. */
+export interface RegistroHistorico {
+  evento: EventoHistorico
+  usuarioId: number | null
+  registradoEm: Date
+  /** Correção: valores substituídos e os que entraram no lugar. */
+  anterior: Record<string, unknown> | null
+  novo: Record<string, unknown> | null
+  /** Bloqueio: motivo registrado; desbloqueio: motivo removido. */
+  motivo: string | null
+  /** A observação estava publicada no momento da ação. */
+  estavaPublicada: boolean
+  /** Despublicação ou bloqueio de uma publicada: quando ela tinha sido publicada. */
+  publicadoEm: Date | null
+}
+
+/** Observação aberta individualmente, com o histórico das ações administrativas. */
+export interface ObservacaoAdminDetalhe extends ObservacaoAdmin {
+  historico: RegistroHistorico[]
+}
+
+export interface PaginaObservacoesAdmin {
+  itens: ObservacaoAdmin[]
+  /** Total que atende aos filtros, além da página. */
+  total: number
+  limite: number
+  deslocamento: number
+}
+
+export interface Paginacao {
+  limite: number
+  deslocamento: number
 }
 
 /** Dados do formulário de cadastro; `valor` é a string decimal enviada à API ("68.25"). */
@@ -111,7 +151,6 @@ export interface ObservacaoEntrada {
   indicadorCodigo: string
   territorioCodigo: string
   categoriaCodigo: string | null
-  codigoCnae: string | null
   referencia: Referencia
   valor: string
   unidadeCodigo: string

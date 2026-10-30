@@ -19,8 +19,6 @@ export interface ObservacaoRascunho {
   recorte: 'total' | 'categoria'
   classificacao: string
   categoria: string
-  /** Vazio quando a fonte não informa CNAE. */
-  codigoCnae: string
   referenciaTipo: TipoReferencia | ''
   ano: string
   mes: string
@@ -41,7 +39,6 @@ export type CampoObservacao =
   | 'temas'
   | 'territorio'
   | 'categoria'
-  | 'codigoCnae'
   | 'referenciaTipo'
   | 'ano'
   | 'mes'
@@ -60,7 +57,6 @@ export const ORDEM_CAMPOS: CampoObservacao[] = [
   'temas',
   'territorio',
   'categoria',
-  'codigoCnae',
   'referenciaTipo',
   'ano',
   'mes',
@@ -88,7 +84,6 @@ export function rascunhoVazio(base?: Partial<ObservacaoRascunho>): ObservacaoRas
     recorte: 'total',
     classificacao: '',
     categoria: '',
-    codigoCnae: '',
     referenciaTipo: '',
     ano: '',
     mes: '',
@@ -207,9 +202,8 @@ export function validarObservacao(
     entrada: {
       indicadorCodigo: r.indicador,
       territorioCodigo: r.territorio,
+      // O CNAE de um recorte vem do catálogo da categoria.
       categoriaCodigo: r.recorte === 'categoria' ? r.categoria : null,
-      // CNAE só quando a fonte o informa; nunca deduzido da categoria.
-      codigoCnae: r.codigoCnae || null,
       referencia,
       valor: valor.valor,
       unidadeCodigo: r.unidade,
@@ -231,7 +225,6 @@ const CAMPOS_API: Record<string, CampoObservacao> = {
   indicador_codigo: 'indicador',
   territorio_codigo: 'territorio',
   categoria_codigo: 'categoria',
-  codigo_cnae: 'codigoCnae',
   referencia: 'referenciaTipo',
   valor: 'valor',
   unidade_codigo: 'unidade',

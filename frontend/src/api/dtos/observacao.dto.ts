@@ -57,6 +57,7 @@ export interface ObservacaoPublicaResponseDto {
   indicador: ItemCatalogoDto
   territorio: TerritorioDto
   categoria: CategoriaDto | null
+  /** CNAE do recorte (da observação ou da categoria); nulo quando a fonte não o informa. */
   codigo_cnae: string | null
   referencia: ReferenciaResponseDto
   /** Decimal exato, como recebido. */
@@ -75,10 +76,35 @@ export interface ObservacaoAdminResponseDto extends ObservacaoPublicaResponseDto
   status: StatusObservacaoDto
   divulgacao_bloqueada: boolean
   motivo_bloqueio: string | null
+  /** Quem publicou; uma correção não o substitui. */
   publicado_por: number | null
   publicado_em: string | null
-  /** Origem na planilha (aba, célula, valor_xml…) ou registro administrativo (origem, usuario_id…). */
+  /** Origem na planilha (aba, célula, valor_xml…) ou cadastro administrativo (origem, usuario_id…). */
   proveniencias: Record<string, unknown>[]
+}
+
+export type EventoHistoricoDto = 'cadastro' | 'correcao' | 'publicacao' | 'despublicacao' | 'bloqueio' | 'desbloqueio'
+
+export interface HistoricoResponseDto {
+  evento: EventoHistoricoDto
+  usuario_id: number | null
+  registrado_em: string
+  /** correcao: anterior, novo, estava_publicada; bloqueio: motivo; desbloqueio: motivo_anterior… */
+  detalhes: Record<string, unknown>
+}
+
+/** Detalhe e resposta das ações administrativas; a listagem não traz o histórico. */
+export interface ObservacaoAdminDetalheResponseDto extends ObservacaoAdminResponseDto {
+  /** Ações administrativas, da mais antiga à mais recente. */
+  historico: HistoricoResponseDto[]
+}
+
+export interface PaginaObservacoesAdminResponseDto {
+  itens: ObservacaoAdminResponseDto[]
+  /** Total de observações que atendem aos filtros. */
+  total: number
+  limite: number
+  deslocamento: number
 }
 
 export interface ReferenciaRequestDto {
@@ -92,8 +118,8 @@ export interface ReferenciaRequestDto {
 export interface ObservacaoCreateRequestDto {
   indicador_codigo: string
   territorio_codigo: string
+  /** O CNAE do recorte vem da categoria: a API recusa campos fora do contrato. */
   categoria_codigo: string | null
-  codigo_cnae: string | null
   referencia: ReferenciaRequestDto
   /** Decimal em texto, sem limite de casas nem notação científica. */
   valor: string
@@ -123,11 +149,16 @@ export interface ObservacoesQueryDto {
   referencia_tipo?: TipoReferenciaDto[]
   /** Referências de um único ano; não inclui acumulados. */
   ano?: number
+  /** Referências que começam neste ano ou depois. */
   ano_inicio?: number
+  /** Referências que terminam neste ano ou antes. */
   ano_fim?: number
 }
 
 export interface ObservacoesAdminQueryDto extends ObservacoesQueryDto {
   status?: StatusObservacaoDto
   divulgacao_bloqueada?: boolean
+  /** Itens por página: padrão 200, máximo 1000. */
+  limite?: number
+  deslocamento?: number
 }

@@ -97,8 +97,8 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
 | `/contribua` | Formulários externos confirmados (D6) | estático (`features/public/canais.ts`) |
 | `/sobre` | Cadastur, FNRH, SRI e fontes de dados (D6) | estático + API: `/observacoes/catalogos` (fontes com dados publicados) |
 | `/admin/login` | Login da área administrativa (D1) | API: `/auth/login`, `/auth/me` |
-| `/admin/observacoes` | Observações da M6, filtros e publicação (D4) | API: `/admin/observacoes`, `/observacoes/catalogos` |
-| `/admin/observacoes/nova` | Cadastro de observação (D4) | API: catálogos + `/cnaes` + `POST /admin/observacoes` |
+| `/admin/observacoes` | Observações da M6, filtros e publicação (D4) | API: `/admin/observacoes` (paginada), `/admin/observacoes/catalogos` |
+| `/admin/observacoes/nova` | Cadastro de observação (D4) | API: `/admin/observacoes/catalogos` + `POST /admin/observacoes` |
 | `/admin/observacoes/$observacaoId` | Correção, publicação e bloqueio (D4) | API: `/admin/observacoes/{id}` (+ ações) e `/observacoes/{id}` |
 | `/admin/lancamentos` | Lançamentos anteriores, filtro por situação e publicação (D2) | API: `/admin/indicadores` |
 | `/admin/lancamentos/novo` | Cadastro de lançamento (D2) | API: catálogos + `POST /admin/indicadores` |
@@ -116,12 +116,14 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
   CNAE (só para tipos por setor) antes de enviar; erros da API aparecem no topo e nos campos. Tipos e CNAEs vêm dos
   catálogos da API.
 - Observações (D4): o formulário segue o contrato da V5/V6. Indicador, território, categoria, unidade, fonte e temas
-  vêm de `/observacoes/catalogos`; a categoria da fonte é separada do CNAE, que é opcional. A referência é anual,
+  vêm de `/admin/observacoes/catalogos`, que inclui itens ainda sem dado publicado. O CNAE de um recorte vem do
+  catálogo da categoria; o cadastro não envia CNAE. A referência é anual,
   mensal, acumulada, levantamento ou retrato, sem ano preenchido de antemão. O valor é texto decimal sem limite de
   casas (`lib/decimal.ts`): a validação aplica `inteira`/`maximo` da unidade, e a edição mostra o valor exato.
   Observação com divulgação bloqueada não pode ser publicada; o motivo aparece na tela e a API responde 422.
-- O detalhe da observação lê `/observacoes/{id}` depois de cada alteração para mostrar o que a consulta pública já
-  devolve.
+- A listagem é paginada pela API (30 por vez em "Mostrar mais"). O detalhe mostra a proveniência e o histórico das
+  ações administrativas (`historico`) e lê `/observacoes/{id}` depois de cada alteração para mostrar o que a
+  consulta pública já devolve.
 - Para testar localmente, crie a conta com `python -m scripts.criar_admin` (veja `backend/README.md`).
 
 ## Rotas simuladas (mocks)

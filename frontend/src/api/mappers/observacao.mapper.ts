@@ -2,11 +2,14 @@ import type {
   CatalogosResponseDto,
   CategoriaDto,
   FonteDto,
+  HistoricoResponseDto,
+  ObservacaoAdminDetalheResponseDto,
   ObservacaoAdminResponseDto,
   ObservacaoCreateRequestDto,
   ObservacaoPublicaResponseDto,
   ObservacaoUpdateRequestDto,
   ObservacoesAdminQueryDto,
+  PaginaObservacoesAdminResponseDto,
   ReferenciaResponseDto,
   UnidadeDto,
 } from '@/api/dtos'
@@ -17,11 +20,15 @@ import type {
   Fonte,
   Observacao,
   ObservacaoAdmin,
+  ObservacaoAdminDetalhe,
   ObservacaoCorrecao,
   ObservacaoEntrada,
   ObservacoesAdminFiltro,
+  PaginaObservacoesAdmin,
+  Paginacao,
   Proveniencia,
   ReferenciaRotulada,
+  RegistroHistorico,
   Unidade,
 } from '@/models'
 import { toDataLocal } from './relatorio.mapper'
@@ -67,6 +74,8 @@ const toReferencia = (dto: ReferenciaResponseDto): ReferenciaRotulada => ({
 })
 
 const texto = (valor: unknown) => (valor == null ? null : String(valor))
+const objeto = (valor: unknown) =>
+  valor && typeof valor === 'object' && !Array.isArray(valor) ? (valor as Record<string, unknown>) : null
 
 function toProveniencia(dto: Record<string, unknown>): Proveniencia {
   if (typeof dto.aba === 'string') {
@@ -85,7 +94,7 @@ function toProveniencia(dto: Record<string, unknown>): Proveniencia {
     origem: String(dto.origem ?? 'desconhecida'),
     usuarioId: typeof dto.usuario_id === 'number' ? dto.usuario_id : null,
     registradoEm: typeof dto.registrado_em === 'string' ? new Date(dto.registrado_em) : null,
-    anterior: dto.anterior && typeof dto.anterior === 'object' ? (dto.anterior as Record<string, unknown>) : null,
+    anterior: objeto(dto.anterior),
   }
 }
 
@@ -117,11 +126,37 @@ export const toObservacaoAdmin = (dto: ObservacaoAdminResponseDto): ObservacaoAd
   proveniencias: dto.proveniencias.map(toProveniencia),
 })
 
+function toRegistroHistorico(dto: HistoricoResponseDto): RegistroHistorico {
+  const { anterior, novo, motivo, motivo_anterior, estava_publicada, publicado_em } = dto.detalhes
+  const motivoRegistrado = motivo ?? motivo_anterior
+  return {
+    evento: dto.evento,
+    usuarioId: dto.usuario_id,
+    registradoEm: new Date(dto.registrado_em),
+    anterior: objeto(anterior),
+    novo: objeto(novo),
+    motivo: typeof motivoRegistrado === 'string' ? motivoRegistrado : null,
+    estavaPublicada: estava_publicada === true,
+    publicadoEm: typeof publicado_em === 'string' ? new Date(publicado_em) : null,
+  }
+}
+
+export const toObservacaoAdminDetalhe = (dto: ObservacaoAdminDetalheResponseDto): ObservacaoAdminDetalhe => ({
+  ...toObservacaoAdmin(dto),
+  historico: dto.historico.map(toRegistroHistorico),
+})
+
+export const toPaginaObservacoesAdmin = (dto: PaginaObservacoesAdminResponseDto): PaginaObservacoesAdmin => ({
+  itens: dto.itens.map(toObservacaoAdmin),
+  total: dto.total,
+  limite: dto.limite,
+  deslocamento: dto.deslocamento,
+})
+
 export const toObservacaoCreateDto = (entrada: ObservacaoEntrada): ObservacaoCreateRequestDto => ({
   indicador_codigo: entrada.indicadorCodigo,
   territorio_codigo: entrada.territorioCodigo,
   categoria_codigo: entrada.categoriaCodigo,
-  codigo_cnae: entrada.codigoCnae,
   referencia: {
     tipo: entrada.referencia.tipo,
     ano_inicio: entrada.referencia.anoInicio,
@@ -143,7 +178,7 @@ export const toObservacaoUpdateDto = (correcao: ObservacaoCorrecao): ObservacaoU
   notas: correcao.notas,
 })
 
-export const toObservacoesAdminQueryDto = (filtro: ObservacoesAdminFiltro): ObservacoesAdminQueryDto => ({
+export const toObservacoesAdminQueryDto = (filtro: ObservacoesAdminFiltro, pagina?: Paginacao): ObservacoesAdminQueryDto => ({
   tema: filtro.temas,
   indicador: filtro.indicadores,
   territorio: filtro.territorios,
@@ -154,4 +189,6 @@ export const toObservacoesAdminQueryDto = (filtro: ObservacoesAdminFiltro): Obse
   ano_fim: filtro.anoFim,
   status: filtro.status,
   divulgacao_bloqueada: filtro.divulgacaoBloqueada,
+  limite: pagina?.limite,
+  deslocamento: pagina?.deslocamento,
 })

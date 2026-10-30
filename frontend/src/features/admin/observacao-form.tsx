@@ -29,7 +29,7 @@ import { arredondarDecimal } from '@/lib/decimal'
 import { formatValorObservacao } from '@/lib/format'
 import { mesLongo } from '@/lib/periodo'
 import { TIPOS_REFERENCIA } from '@/lib/referencia'
-import type { Catalogos, Cnae, ObservacaoAdmin, ObservacaoEntrada, Qualificador, TipoReferencia, Unidade } from '@/models'
+import type { Catalogos, ObservacaoAdmin, ObservacaoEntrada, Qualificador, TipoReferencia, Unidade } from '@/models'
 import { useObservacoesAdmin } from '@/queries/admin-observacao.queries'
 import {
   classificacoesPara,
@@ -53,14 +53,12 @@ import {
 } from './observacao-validacao'
 
 const MESES = Array.from({ length: 12 }, (_, i) => i + 1)
-const SEM_CNAE = 'sem-cnae'
 
 const IDS: Record<CampoObservacao, string> = {
   indicador: 'indicador',
   temas: 'temas',
   territorio: 'territorio',
   categoria: 'categoria',
-  codigoCnae: 'cnae',
   referenciaTipo: 'referencia',
   ano: 'ano',
   mes: 'mes',
@@ -76,7 +74,6 @@ const IDS: Record<CampoObservacao, string> = {
 interface ObservacaoFormProps {
   inicial: ObservacaoRascunho
   catalogos: Catalogos
-  cnaes: Cnae[]
   salvando: boolean
   /** Erro da última tentativa de salvar (validação da API, duplicidade, rede). */
   erro: Error | null
@@ -85,7 +82,7 @@ interface ObservacaoFormProps {
   onSalvar: (entrada: ObservacaoEntrada, publicar: boolean, rascunho: ObservacaoRascunho) => void
 }
 
-export function ObservacaoForm({ inicial, catalogos, cnaes, salvando, erro, conflito, onSalvar }: ObservacaoFormProps) {
+export function ObservacaoForm({ inicial, catalogos, salvando, erro, conflito, onSalvar }: ObservacaoFormProps) {
   const [r, setRascunho] = React.useState(inicial)
   const [erros, setErros] = React.useState<ErrosObservacao>({})
   const [publicarAoSalvar, setPublicarAoSalvar] = React.useState(false)
@@ -211,8 +208,8 @@ export function ObservacaoForm({ inicial, catalogos, cnaes, salvando, erro, conf
         <CardHeader>
           <CardTitle>Território e recorte</CardTitle>
           <CardDescription>
-            A categoria é o recorte recebido da fonte (setor Sebrae, porte, hospedagem…). O CNAE é uma classificação
-            separada e opcional.
+            A categoria é o recorte recebido da fonte (setor Sebrae, porte, hospedagem…). Quando o recorte tem CNAE,
+            ele vem do catálogo da categoria.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
@@ -261,28 +258,6 @@ export function ObservacaoForm({ inicial, catalogos, cnaes, salvando, erro, conf
               onCategoria={(valor) => alterar('categoria', valor)}
             />
           ) : null}
-
-          <FormField
-            label="CNAE (opcional)"
-            labelVariant="field"
-            htmlFor={IDS.codigoCnae}
-            error={erros.codigoCnae}
-            hint="Somente quando a fonte informa o código. Nunca deduza o CNAE a partir da categoria."
-          >
-            <Select value={r.codigoCnae || SEM_CNAE} onValueChange={(valor) => alterar('codigoCnae', valor === SEM_CNAE ? '' : valor)}>
-              <SelectTrigger id={IDS.codigoCnae} {...invalido('codigoCnae')}>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value={SEM_CNAE}>Sem CNAE</SelectItem>
-                {cnaes.map((cnae) => (
-                  <SelectItem key={cnae.codigo} value={cnae.codigo}>
-                    {cnae.codigo} · {cnae.nome}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </FormField>
         </CardContent>
       </Card>
 
@@ -525,6 +500,7 @@ function SeletorCategoria({ catalogos, indicador, classificacao, categoria, erro
     { rotulo: 'Recortes de outros indicadores', itens: outras },
   ]
   const categorias = catalogos.categorias.filter((c) => c.classificacao === classificacao)
+  const cnae = categorias.find((c) => c.codigo === categoria)?.codigoCnae
 
   return (
     <div className="grid gap-4 sm:grid-cols-2">
@@ -549,7 +525,13 @@ function SeletorCategoria({ catalogos, indicador, classificacao, categoria, erro
           </SelectContent>
         </Select>
       </FormField>
-      <FormField label="Categoria" labelVariant="field" htmlFor={IDS.categoria} error={erro}>
+      <FormField
+        label="Categoria"
+        labelVariant="field"
+        htmlFor={IDS.categoria}
+        error={erro}
+        hint={cnae ? `CNAE ${cnae}, do catálogo da categoria.` : undefined}
+      >
         <Select value={categoria} onValueChange={onCategoria} disabled={!classificacao}>
           <SelectTrigger id={IDS.categoria} aria-invalid={!!erro} aria-describedby={`${IDS.categoria}-message`}>
             <SelectValue placeholder={classificacao ? 'Selecione a categoria' : 'Escolha a classificação antes'} />
@@ -593,8 +575,9 @@ function PerfilIndicador({
     )
   }
 
-  const perfil = perfilDoIndicador(existentes.data)
-  if (!perfil.total) {
+  const perfil = perfilDoIndicador(existentes.data.itens)
+  const total = existentes.data.total
+  if (!total) {
     return (
       <p className="rounded-lg bg-canvas p-4 text-[13px] text-ink-muted">
         Nenhuma observação deste indicador foi cadastrada ainda. Confira unidade e temas na fonte.
@@ -609,7 +592,8 @@ function PerfilIndicador({
       <div className="flex items-start gap-2">
         <Lightbulb aria-hidden className="mt-0.5 size-4 shrink-0 text-brand-purple" />
         <p>
-          {perfil.total} {perfil.total === 1 ? 'observação cadastrada' : 'observações cadastradas'}. Unidade:{' '}
+          {total.toLocaleString('pt-BR')} {total === 1 ? 'observação cadastrada' : 'observações cadastradas'}
+          {perfil.total < total ? ` (sugestão a partir de ${perfil.total.toLocaleString('pt-BR')})` : ''}. Unidade:{' '}
           <strong className="font-semibold text-ink">{perfil.unidades.map((u) => u.nome).join(', ')}</strong>
           {temasUnicos ? (
             <>

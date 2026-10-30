@@ -1,7 +1,6 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
 import { ObservacaoPage } from '@/features/admin/observacao-page'
-import { observacaoAdminQueryOptions } from '@/queries/admin-observacao.queries'
-import { catalogosObservacoesQueryOptions } from '@/queries/observacao.queries'
+import { catalogosAdminQueryOptions, observacaoAdminQueryOptions } from '@/queries/admin-observacao.queries'
 
 export const Route = createFileRoute('/admin/_autenticado/observacoes/$observacaoId')({
   params: {
@@ -14,7 +13,7 @@ export const Route = createFileRoute('/admin/_autenticado/observacoes/$observaca
   },
   loader: ({ context: { queryClient }, params }) => {
     void queryClient.prefetchQuery(observacaoAdminQueryOptions(params.observacaoId))
-    void queryClient.prefetchQuery(catalogosObservacoesQueryOptions)
+    void queryClient.prefetchQuery(catalogosAdminQueryOptions)
   },
   component: function ObservacaoRoute() {
     return <ObservacaoPage id={Route.useParams().observacaoId} />

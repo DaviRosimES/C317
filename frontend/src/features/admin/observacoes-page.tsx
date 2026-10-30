@@ -23,15 +23,13 @@ import { TIPOS_REFERENCIA } from '@/lib/referencia'
 import type { ObservacoesSearch, SituacaoObservacao as Situacao } from '@/lib/schemas'
 import { cn } from '@/lib/utils'
 import type { Catalogos, ObservacaoAdmin, ObservacoesAdminFiltro } from '@/models'
-import { useObservacoesAdmin } from '@/queries/admin-observacao.queries'
-import { useCatalogosObservacoes } from '@/queries/observacao.queries'
+import { useCatalogosAdmin, useObservacoesAdminPaginas } from '@/queries/admin-observacao.queries'
 import { AdminContainer, AdminPageHeader } from './admin-layout'
 import { DialogoPublicar } from './observacao-acoes'
 import { SituacaoObservacao, descreverRecorte, valorExato } from './observacao-resumo'
 import { ANO_INVALIDO, lerAno } from './observacao-validacao'
 
 const TODAS = 'todas'
-const POR_PAGINA = 30
 
 const SITUACOES: { valor: Situacao | typeof TODAS; rotulo: string }[] = [
   { valor: TODAS, rotulo: 'Todas' },
@@ -60,18 +58,16 @@ export function filtroDasObservacoes(search: ObservacoesSearch): ObservacoesAdmi
 
 export function ObservacoesPage({ search }: { search: ObservacoesSearch }) {
   const navigate = useNavigate()
-  const catalogos = useCatalogosObservacoes()
-  const observacoes = useObservacoesAdmin(filtroDasObservacoes(search))
-  const [quantidade, setQuantidade] = React.useState(POR_PAGINA)
+  const catalogos = useCatalogosAdmin()
+  // Páginas do servidor; "Mostrar mais" busca a seguinte.
+  const observacoes = useObservacoesAdminPaginas(filtroDasObservacoes(search))
   const [confirmando, setConfirmando] = React.useState<ObservacaoAdmin | null>(null)
   const [publicada, setPublicada] = React.useState<ObservacaoAdmin | null>(null)
 
-  const buscar = (novo: ObservacoesSearch) => {
-    setQuantidade(POR_PAGINA)
-    void navigate({ to: '/admin/observacoes', search: novo })
-  }
+  const buscar = (novo: ObservacoesSearch) => void navigate({ to: '/admin/observacoes', search: novo })
 
-  const visiveis = observacoes.data?.slice(0, quantidade) ?? []
+  const visiveis = observacoes.data?.pages.flatMap((pagina) => pagina.itens) ?? []
+  const total = observacoes.data?.pages[0]?.total ?? 0
   const filtrosAtivos = Object.entries(search).some(([chave, valor]) => chave !== 'situacao' && valor !== undefined)
 
   return (
@@ -138,15 +134,19 @@ export function ObservacoesPage({ search }: { search: ObservacoesSearch }) {
         </Alert>
       )}
 
-      <section aria-live="polite" className={cn('flex flex-col gap-3', observacoes.isFetching && 'opacity-70')}>
+      <section
+        aria-live="polite"
+        className={cn('flex flex-col gap-3', observacoes.isFetching && !observacoes.isFetchingNextPage && 'opacity-70')}
+      >
         {observacoes.isPending ? (
           Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-28 rounded-2xl" />)
-        ) : observacoes.error ? (
-          <EmptyState title="Não foi possível carregar as observações" description={observacoes.error.message} />
-        ) : observacoes.data.length ? (
+        ) : !observacoes.data ? (
+          // Sem nenhuma página; uma falha em "Mostrar mais" mantém as já carregadas.
+          <EmptyState title="Não foi possível carregar as observações" description={observacoes.error?.message} />
+        ) : total ? (
           <>
             <p className="text-[13px] text-ink-muted">
-              {observacoes.data.length === 1 ? '1 observação' : `${observacoes.data.length.toLocaleString('pt-BR')} observações`}
+              {total === 1 ? '1 observação' : `${total.toLocaleString('pt-BR')} observações`}
             </p>
             {visiveis.map((o) => (
               <ListRow
@@ -181,10 +181,23 @@ export function ObservacoesPage({ search }: { search: ObservacoesSearch }) {
                 }
               />
             ))}
-            {observacoes.data.length > quantidade ? (
-              <Button variant="secondary" className="self-center" onClick={() => setQuantidade((atual) => atual + POR_PAGINA)}>
-                Mostrar mais ({(observacoes.data.length - quantidade).toLocaleString('pt-BR')} restantes)
+            {observacoes.hasNextPage ? (
+              <Button
+                variant="secondary"
+                className="self-center"
+                disabled={observacoes.isFetchingNextPage}
+                onClick={() => void observacoes.fetchNextPage()}
+              >
+                {observacoes.isFetchingNextPage
+                  ? 'Carregando…'
+                  : `Mostrar mais (${(total - visiveis.length).toLocaleString('pt-BR')} restantes)`}
               </Button>
+            ) : null}
+            {observacoes.isFetchNextPageError ? (
+              <Alert variant="danger">
+                <AlertCircle aria-hidden />
+                <p>Não foi possível carregar mais observações: {observacoes.error?.message}</p>
+              </Alert>
             ) : null}
           </>
         ) : (

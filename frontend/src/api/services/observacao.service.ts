@@ -7,7 +7,7 @@ const URL = '/observacoes'
 
 /** Consulta pública das observações da M6: somente publicadas e sem bloqueio de divulgação. */
 export const observacaoService = {
-  /** Temas, indicadores, categorias, territórios, unidades e fontes, lidos do banco. */
+  /** Itens de catálogo usados por observações publicadas; nada só de rascunho ou bloqueado. */
   async catalogos(): Promise<Catalogos> {
     const { data } = await http.get<CatalogosResponseDto>(`${URL}/catalogos`)
     return toCatalogos(data)

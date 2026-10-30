@@ -3,17 +3,14 @@ import { Link } from '@tanstack/react-router'
 import { AlertCircle, CheckCircle2, FileClock } from 'lucide-react'
 import { Alert, Button, Card, CardContent, EmptyState, Skeleton } from '@/components/ui'
 import type { ObservacaoAdmin, ObservacaoEntrada } from '@/models'
-import { useCriarObservacao, useObservacoesAdmin, usePublicarObservacao } from '@/queries/admin-observacao.queries'
-import { useCnaes } from '@/queries/consulta.queries'
-import { useCatalogosObservacoes } from '@/queries/observacao.queries'
+import { useCatalogosAdmin, useCriarObservacao, useObservacoesAdmin, usePublicarObservacao } from '@/queries/admin-observacao.queries'
 import { AdminContainer, AdminPageHeader } from './admin-layout'
 import { ObservacaoForm } from './observacao-form'
 import { ConsultaPublicaObservacao, FichaObservacao } from './observacao-resumo'
 import { ehConflito, mesmaIdentidade, rascunhoDoLote, rascunhoVazio, type ObservacaoRascunho } from './observacao-validacao'
 
 export function NovaObservacaoPage() {
-  const catalogos = useCatalogosObservacoes()
-  const cnaes = useCnaes()
+  const catalogos = useCatalogosAdmin()
   const criar = useCriarObservacao()
   const publicar = usePublicarObservacao()
   const [entrada, setEntrada] = React.useState<ObservacaoEntrada | null>(null)
@@ -35,7 +32,7 @@ export function NovaObservacaoPage() {
       : {},
     duplicada,
   )
-  const conflito = duplicada && entrada ? existentes.data?.find((o) => mesmaIdentidade(o, entrada)) : undefined
+  const conflito = duplicada && entrada ? existentes.data?.itens.find((o) => mesmaIdentidade(o, entrada)) : undefined
 
   async function salvar(dados: ObservacaoEntrada, publicarAgora: boolean, rascunho: ObservacaoRascunho) {
     setEntrada(dados)
@@ -62,9 +59,9 @@ export function NovaObservacaoPage() {
         title="Nova observação"
         description="Cadastre um valor pronto com indicador, território, recorte, referência, unidade e fonte. Publique para exibi-lo na consulta pública."
       />
-      {catalogos.error || cnaes.error ? (
-        <EmptyState title="Não foi possível carregar os catálogos" description={(catalogos.error ?? cnaes.error)?.message} />
-      ) : catalogos.isPending || cnaes.isPending ? (
+      {catalogos.error ? (
+        <EmptyState title="Não foi possível carregar os catálogos" description={catalogos.error.message} />
+      ) : catalogos.isPending ? (
         <div className="flex flex-col gap-5">
           <Skeleton className="h-56 rounded-2xl" />
           <Skeleton className="h-56 rounded-2xl" />
@@ -84,7 +81,6 @@ export function NovaObservacaoPage() {
           key={formulario.chave}
           inicial={formulario.inicial}
           catalogos={catalogos.data}
-          cnaes={cnaes.data}
           salvando={criar.isPending || publicar.isPending}
           erro={criar.error}
           conflito={conflito}
