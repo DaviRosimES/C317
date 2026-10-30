@@ -14,11 +14,6 @@ ValorDecimal = Annotated[
     Field(description="Decimal não negativo em texto, com a precisão original (ex.: \"0.0328478422252442\")."),
 ]
 Codigo = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=200)]
-CodigoCnae = Annotated[
-    str,
-    StringConstraints(strip_whitespace=True, pattern=r"^[0-9]{4}-[0-9]/[0-9]{2}$"),
-    Field(description="Subclasse CNAE, classificação própria e opcional; nunca inferida da categoria."),
-]
 Nota = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=2000)]
 
 
@@ -105,7 +100,9 @@ class ObservacaoPublicaResponse(BaseModel):
     indicador: ItemCatalogo
     territorio: Territorio
     categoria: Categoria | None = Field(description="Recorte da fonte; nulo para o total.")
-    codigo_cnae: str | None = Field(description="CNAE, separado da categoria; nulo quando não informado.")
+    codigo_cnae: str | None = Field(
+        description="CNAE do recorte (da observação ou da categoria); nulo quando a fonte não o informa."
+    )
     referencia: ReferenciaResponse
     valor: str = Field(description="Decimal exato, como recebido.")
     valor_exibicao: str = Field(description="Arredondado meio para cima nas casas_exibicao da unidade.")
@@ -121,9 +118,39 @@ class ObservacaoAdminResponse(ObservacaoPublicaResponse):
     status: StatusObservacao
     divulgacao_bloqueada: bool
     motivo_bloqueio: str | None
-    publicado_por: int | None
+    publicado_por: int | None = Field(description="Quem publicou; uma correção não o substitui.")
     publicado_em: datetime | None
     proveniencias: list[dict]
+
+
+EventoHistorico = Literal[
+    "cadastro", "correcao", "publicacao", "despublicacao", "bloqueio", "desbloqueio"
+]
+
+
+class HistoricoResponse(BaseModel):
+    evento: EventoHistorico
+    usuario_id: int | None
+    registrado_em: datetime
+    detalhes: dict
+
+
+class ObservacaoAdminDetalheResponse(ObservacaoAdminResponse):
+    historico: list[HistoricoResponse] = Field(description="Ações administrativas, da mais antiga à mais recente.")
+
+
+class PaginaObservacoesPublicas(BaseModel):
+    itens: list[ObservacaoPublicaResponse]
+    total: int = Field(description="Total de observações que atendem aos filtros.")
+    limite: int
+    deslocamento: int
+
+
+class PaginaObservacoesAdmin(BaseModel):
+    itens: list[ObservacaoAdminResponse]
+    total: int
+    limite: int
+    deslocamento: int
 
 
 class ReferenciaRequest(BaseModel):
@@ -149,16 +176,19 @@ class ReferenciaRequest(BaseModel):
 
 
 class ObservacaoCreate(BaseModel):
-    """Cadastro administrativo de uma observação completa; entra como rascunho."""
+    """Cadastro administrativo de uma observação completa; entra como rascunho.
+
+    O CNAE de um recorte pertence à categoria (catálogo); campos desconhecidos são recusados.
+    """
 
     model_config = ConfigDict(
+        extra="forbid",
         json_schema_extra={
             "examples": [
                 {
                     "indicador_codigo": "i_…",
                     "territorio_codigo": "t_santa_rita_do_sapucai_…",
                     "categoria_codigo": None,
-                    "codigo_cnae": None,
                     "referencia": {"tipo": "anual", "ano_inicio": 2025, "ano_fim": 2025},
                     "valor": "12",
                     "unidade_codigo": "u_…",
@@ -168,13 +198,12 @@ class ObservacaoCreate(BaseModel):
                     "notas": [],
                 }
             ]
-        }
+        },
     )
 
     indicador_codigo: Codigo
     territorio_codigo: Codigo
     categoria_codigo: Codigo | None = None
-    codigo_cnae: CodigoCnae | None = None
     referencia: ReferenciaRequest
     valor: ValorDecimal
     unidade_codigo: Codigo
@@ -186,6 +215,8 @@ class ObservacaoCreate(BaseModel):
 
 class ObservacaoUpdate(BaseModel):
     """Correção dos campos que não fazem parte da identidade da observação."""
+
+    model_config = ConfigDict(extra="forbid")
 
     valor: ValorDecimal | None = None
     qualificador: Qualificador | None = None

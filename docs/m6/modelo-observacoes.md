@@ -1,6 +1,6 @@
 # Modelo das observações da M6
 
-Implementação da V5 ([#31](https://github.com/DaviRosimES/C317/issues/31)) sobre o contrato `c317.m6.v1` da G4 ([requisitos e contrato](requisitos-e-contrato.md)). A revisão `e3b8d41f6a27` sucede `c5e1f7a3b902` e incorpora a [proposta de persistência](contrato-importacao.sql) com as colunas que `scripts.carregar_m6` exige. Por isso o carregador funciona sem alteração.
+Implementação da V5 ([#31](https://github.com/DaviRosimES/C317/issues/31)) sobre o contrato `c317.m6.v1` da G4 ([requisitos e contrato](requisitos-e-contrato.md)). A revisão `e3b8d41f6a27` sucede `c5e1f7a3b902` (a `f4c9a2d7e815` acrescenta o histórico) e incorpora a [proposta de persistência](contrato-importacao.sql) com as colunas que `scripts.carregar_m6` exige. Por isso o carregador funciona sem alteração.
 
 As tabelas anteriores (`indicadores`, `tipos_indicadores`, `setores`/CNAE, `relatorios` etc.) não mudam. Os lançamentos antigos continuam consultáveis pelas rotas atuais. As observações da M6 ficam em tabelas próprias e serão expostas pela V6.
 
@@ -11,6 +11,7 @@ As tabelas anteriores (`indicadores`, `tipos_indicadores`, `setores`/CNAE, `rela
 | `catalogos_m6` | Temas, indicadores, categorias, territórios, unidades e fontes, cada item como JSONB indexado por `(tipo, codigo)` |
 | `observacoes_m6` | Uma linha por observação: o JSON do contrato em `conteudo`, o decimal exato em `valor`, o estado de publicação e colunas geradas a partir do JSON |
 | `cargas_m6` | Histórico das cargas, por hash do pacote |
+| `historico_observacoes_m6` | Ações administrativas (cadastro, correção, publicação, despublicação, bloqueio, desbloqueio), com usuário, data e detalhes. Fica fora de `conteudo`, para que repetir a carga não acuse conflito. |
 
 As colunas geradas (`indicador_codigo`, `categoria_codigo`, `territorio_codigo`, `unidade_codigo`, `fonte_codigo`, `qualificador`, `referencia_tipo`, `ano_inicio`, `ano_fim`, `mes`) são calculadas pelo banco a partir de `conteudo`. Ninguém as grava diretamente. Elas existem para a identidade, as restrições e os filtros da V6.
 
@@ -32,6 +33,8 @@ As regras valem para qualquer forma de escrita: carregador, API ou SQL manual.
 | Publicação | `status = 'publicado'` exige `publicado_por` e `publicado_em` e é impossível com `divulgacao_bloqueada`. O bloqueio exige `motivo_bloqueio` (por exemplo, amostra insuficiente). |
 
 Registros novos entram como `rascunho`, inclusive os da carga. A publicação cabe ao fluxo administrativo da V6.
+
+O CNAE de um recorte pertence à categoria do catálogo (`categorias.codigo_cnae`). A identidade não inclui `codigo_cnae`; por isso o cadastro pela API não aceita o campo solto, e dois CNAEs para o mesmo recorte são duas categorias.
 
 ## Unidades
 

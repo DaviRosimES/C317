@@ -38,6 +38,12 @@ jobs:
         working-directory: backend
       - run: python -m pytest -q
         working-directory: backend
+      # A V4 depende de Depends(scope="function"); confere a versão mínima fixada.
+      - name: Regressão da V4 com a versão mínima do FastAPI
+        run: |
+          python -m pip install "fastapi==0.142.1"
+          python -m pytest -q tests/test_confirmacao_transacao.py
+        working-directory: backend
 
   frontend:
     runs-on: ubuntu-latest
