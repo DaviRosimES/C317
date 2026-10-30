@@ -48,7 +48,7 @@ export function descreverUnidade(unidade: Unidade) {
   return `${numero} · ${limite} · ${casas}`
 }
 
-export function agruparPor<T>(itens: T[], chave: (item: T) => string) {
+function agruparPor<T>(itens: T[], chave: (item: T) => string) {
   const grupos = new Map<string, T[]>()
   for (const item of itens) grupos.set(chave(item), [...(grupos.get(chave(item)) ?? []), item])
   return grupos

@@ -28,6 +28,7 @@ import { useCatalogosObservacoes } from '@/queries/observacao.queries'
 import { AdminContainer, AdminPageHeader } from './admin-layout'
 import { DialogoPublicar } from './observacao-acoes'
 import { SituacaoObservacao, descreverRecorte, valorExato } from './observacao-resumo'
+import { ANO_INVALIDO, lerAno } from './observacao-validacao'
 
 const TODAS = 'todas'
 const POR_PAGINA = 30
@@ -234,12 +235,12 @@ function FiltrosObservacoes({
 
   function aplicar(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    const texto = ano.trim()
-    if (texto && (!/^\d{4}$/.test(texto) || Number(texto) < 1900 || Number(texto) > 2100)) {
-      setErroAno('Informe um ano entre 1900 e 2100.')
+    const lido = ano.trim() ? lerAno(ano) : undefined
+    if (lido === null) {
+      setErroAno(ANO_INVALIDO)
       return
     }
-    onAplicar({ ...rascunho, ano: texto ? Number(texto) : undefined })
+    onAplicar({ ...rascunho, ano: lido })
   }
 
   return (

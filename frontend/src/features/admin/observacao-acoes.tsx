@@ -209,29 +209,26 @@ function DialogoBloquear({ observacao, aberto, onFechar }: DialogoProps) {
   const [motivo, setMotivo] = React.useState('')
   const [erro, setErro] = React.useState<string>()
 
+  // Cancelar, Esc ou bloquear: o próximo bloqueio começa sem o motivo anterior.
+  function fechar() {
+    bloquear.reset()
+    setMotivo('')
+    setErro(undefined)
+    onFechar()
+  }
+
   function confirmar() {
     const texto = motivo.trim()
     if (!texto) return setErro('Informe o motivo do bloqueio; ele é exibido a quem tentar publicar.')
     if (texto.length > MOTIVO_MAX) return setErro('O motivo pode ter até 500 caracteres.')
-    bloquear.mutate(
-      { id: observacao.id, motivo: texto },
-      {
-        onSuccess: () => {
-          setMotivo('')
-          onFechar()
-        },
-      },
-    )
+    bloquear.mutate({ id: observacao.id, motivo: texto }, { onSuccess: fechar })
   }
 
   return (
     <Dialog
       open={aberto}
       onOpenChange={(valor) => {
-        if (valor) return
-        bloquear.reset()
-        setErro(undefined)
-        onFechar()
+        if (!valor) fechar()
       }}
     >
       <DialogContent>

@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { TIPOS_REFERENCIA } from './referencia'
 
 export const dashboardSearchSchema = z.object({
   ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
@@ -46,7 +47,7 @@ export const observacoesSearchSchema = z.object({
   tema: z.string().min(1).optional().catch(undefined),
   indicador: z.string().min(1).optional().catch(undefined),
   territorio: z.string().min(1).optional().catch(undefined),
-  referencia: z.enum(['anual', 'mensal', 'acumulada', 'levantamento', 'retrato']).optional().catch(undefined),
+  referencia: z.enum(TIPOS_REFERENCIA.map((item) => item.tipo)).optional().catch(undefined),
   ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
 })
 export type ObservacoesSearch = z.infer<typeof observacoesSearchSchema>

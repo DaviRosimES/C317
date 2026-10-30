@@ -32,13 +32,13 @@ import { TIPOS_REFERENCIA } from '@/lib/referencia'
 import type { Catalogos, Cnae, ObservacaoAdmin, ObservacaoEntrada, Qualificador, TipoReferencia, Unidade } from '@/models'
 import { useObservacoesAdmin } from '@/queries/admin-observacao.queries'
 import {
-  agruparPor,
   classificacoesPara,
   descreverUnidade,
   indicadorDaClassificacao,
   perfilDoIndicador,
   rotuloClassificacao,
   rotuloTipoTerritorio,
+  territoriosPorTipo,
 } from './observacao-catalogo'
 import { LinksFonte } from './observacao-resumo'
 import {
@@ -222,7 +222,7 @@ export function ObservacaoForm({ inicial, catalogos, cnaes, salvando, erro, conf
                 <SelectValue placeholder="Selecione o município, a região ou a base" />
               </SelectTrigger>
               <SelectContent>
-                {[...agruparPor(catalogos.territorios, (t) => t.tipo)].map(([tipo, territorios]) => (
+                {[...territoriosPorTipo(catalogos.territorios)].map(([tipo, territorios]) => (
                   <SelectGroup key={tipo}>
                     <SelectLabel>{rotuloTipoTerritorio(tipo)}</SelectLabel>
                     {territorios.map((t) => (
@@ -578,7 +578,20 @@ function PerfilIndicador({
   const existentes = useObservacoesAdmin({ indicadores: [indicador] })
   // Ao trocar de indicador, o dado anterior fica como placeholder: não sugerir a unidade de outro indicador.
   if (existentes.isPending || existentes.isPlaceholderData) return <Skeleton className="h-16 rounded-lg" />
-  if (existentes.error) return null
+  if (existentes.error) {
+    return (
+      <Alert variant="warning">
+        <AlertCircle aria-hidden />
+        <div className="flex flex-col items-start gap-2">
+          <p>Não foi possível carregar as sugestões de unidade e temas: {existentes.error.message}</p>
+          <p className="text-[13px] text-ink-muted">Sem elas, confira unidade e temas na fonte.</p>
+          <Button type="button" variant="secondary" size="sm" disabled={existentes.isFetching} onClick={() => void existentes.refetch()}>
+            {existentes.isFetching ? 'Tentando…' : 'Tentar de novo'}
+          </Button>
+        </div>
+      </Alert>
+    )
+  }
 
   const perfil = perfilDoIndicador(existentes.data)
   if (!perfil.total) {

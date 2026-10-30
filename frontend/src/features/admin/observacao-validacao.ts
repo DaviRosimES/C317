@@ -73,7 +73,11 @@ export const ORDEM_CAMPOS: CampoObservacao[] = [
   'notas',
 ]
 
+/** Limite de cada nota na API (`Nota`), no cadastro e na correção. */
 const NOTA_MAX = 2000
+
+export const erroDasNotas = (notas: string[]) =>
+  notas.some((nota) => nota.length > NOTA_MAX) ? 'Cada nota pode ter até 2.000 caracteres.' : undefined
 
 /** Sem ano ou mês preenchido de antemão: a referência precisa vir da fonte. */
 export function rascunhoVazio(base?: Partial<ObservacaoRascunho>): ObservacaoRascunho {
@@ -100,17 +104,14 @@ export function rascunhoVazio(base?: Partial<ObservacaoRascunho>): ObservacaoRas
   }
 }
 
-/** Mantém fonte, território, referência, unidade e temas para cadastrar outra observação do mesmo lote. */
+/**
+ * Mantém fonte, território, unidade e temas para cadastrar outra observação do mesmo lote.
+ * A referência volta vazia: cada valor precisa ter a sua confirmada na fonte.
+ */
 export const rascunhoDoLote = (anterior: ObservacaoRascunho): ObservacaoRascunho =>
   rascunhoVazio({
     temas: anterior.temas,
     territorio: anterior.territorio,
-    referenciaTipo: anterior.referenciaTipo,
-    ano: anterior.ano,
-    mes: anterior.mes,
-    anoInicio: anterior.anoInicio,
-    anoFim: anterior.anoFim,
-    dataExtracao: anterior.dataExtracao,
     unidade: anterior.unidade,
     fonte: anterior.fonte,
   })
@@ -126,12 +127,13 @@ export function validarValor(texto: string, unidade: Unidade | undefined): { val
   return lido
 }
 
-function lerAno(texto: string) {
+/** Ano de 1900 a 2100, como na API; `null` quando o texto não é um ano válido. */
+export function lerAno(texto: string) {
   const ano = Number(texto.trim())
   return /^\d{4}$/.test(texto.trim()) && ano >= 1900 && ano <= 2100 ? ano : null
 }
 
-const ANO_INVALIDO = 'Informe um ano entre 1900 e 2100.'
+export const ANO_INVALIDO = 'Informe um ano entre 1900 e 2100.'
 
 function validarReferencia(r: ObservacaoRascunho, erros: ErrosObservacao): Referencia | null {
   switch (r.referenciaTipo) {
@@ -197,7 +199,8 @@ export function validarObservacao(
   if (!catalogos.fontes.some((f) => f.codigo === r.fonte)) erros.fonte = 'Selecione a fonte do valor.'
 
   const notas = lerNotas(r.notas)
-  if (notas.some((nota) => nota.length > NOTA_MAX)) erros.notas = 'Cada nota pode ter até 2.000 caracteres.'
+  const erroNotas = erroDasNotas(notas)
+  if (erroNotas) erros.notas = erroNotas
 
   if (!referencia || 'erro' in valor || Object.keys(erros).length) return { erros }
   return {

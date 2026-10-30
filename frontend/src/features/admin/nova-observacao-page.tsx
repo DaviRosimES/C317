@@ -48,7 +48,7 @@ export function NovaObservacaoPage() {
   }
 
   function cadastrarOutra() {
-    // Observações costumam chegar em lote da mesma fonte, território e referência.
+    // Observações costumam chegar em lote da mesma fonte e território; a referência é informada de novo.
     const anterior = ultimoRascunho.current
     setFormulario((atual) => ({ chave: atual.chave + 1, inicial: anterior ? rascunhoDoLote(anterior) : rascunhoVazio() }))
     setSalva(null)

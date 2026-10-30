@@ -1,5 +1,4 @@
-import type { Referencia, TipoReferencia } from '@/models/observacao'
-import { mesCurto } from './periodo'
+import type { TipoReferencia } from '@/models/observacao'
 
 /** Tipos do contrato c317.m6.v1; não existe tipo para período desconhecido. */
 export const TIPOS_REFERENCIA: { tipo: TipoReferencia; rotulo: string; descricao: string }[] = [
@@ -28,20 +27,3 @@ export const TIPOS_REFERENCIA: { tipo: TipoReferencia; rotulo: string; descricao
 
 export const rotuloTipoReferencia = (tipo: TipoReferencia) =>
   TIPOS_REFERENCIA.find((item) => item.tipo === tipo)?.rotulo ?? tipo
-
-/** Prévia do rótulo que a API devolverá (`referencia.rotulo`). */
-export function rotuloReferencia(referencia: Referencia) {
-  const { tipo, anoInicio, anoFim, mes, dataExtracao } = referencia
-  switch (tipo) {
-    case 'mensal':
-      return `${mesCurto(mes ?? 0).toLowerCase()}/${anoInicio}`
-    case 'acumulada':
-      return `${anoInicio}–${anoFim} (acumulado)`
-    case 'levantamento':
-      return anoInicio === anoFim ? String(anoInicio) : `${anoInicio} e ${anoFim}`
-    case 'retrato':
-      return `${anoInicio} (extração ${dataExtracao?.toLocaleDateString('pt-BR') ?? '?'})`
-    default:
-      return String(anoInicio)
-  }
-}

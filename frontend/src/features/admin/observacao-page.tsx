@@ -26,7 +26,7 @@ import { useCatalogosObservacoes } from '@/queries/observacao.queries'
 import { AdminContainer, AdminPageHeader } from './admin-layout'
 import { AcoesPublicacao } from './observacao-acoes'
 import { ConferenciaPublicacao, ConsultaPublicaObservacao, FichaObservacao, SituacaoObservacao, descreverRecorte } from './observacao-resumo'
-import { lerNotas, validarValor } from './observacao-validacao'
+import { erroDasNotas, lerNotas, validarValor } from './observacao-validacao'
 
 export function ObservacaoPage({ id }: { id: string }) {
   const observacao = useObservacaoAdmin(id)
@@ -82,7 +82,8 @@ export function ObservacaoPage({ id }: { id: string }) {
               <FichaObservacao observacao={o} indicadores={catalogos.data.indicadores} />
             </CardContent>
           </Card>
-          <CorrecaoObservacao observacao={o} />
+          {/* Outra observação começa uma correção nova, sem o texto digitado na anterior. */}
+          <CorrecaoObservacao key={o.id} observacao={o} />
           <Historico proveniencias={o.proveniencias} />
         </div>
 
@@ -107,12 +108,21 @@ export function ObservacaoPage({ id }: { id: string }) {
   )
 }
 
+interface Edicao {
+  valor?: string
+  qualificador?: Qualificador
+  notas?: string
+}
+
 function CorrecaoObservacao({ observacao: o }: { observacao: ObservacaoAdmin }) {
   const corrigir = useCorrigirObservacao()
+  // Só os campos alterados aqui; os demais acompanham a observação carregada, inclusive a correção
+  // de outro administrador, e não voltam ao valor antigo ao salvar.
+  const [edicao, setEdicao] = React.useState<Edicao>({})
   // O campo mostra o valor exato recebido, sem arredondamento.
-  const [valor, setValor] = React.useState(decimalParaCampo(o.valor))
-  const [qualificador, setQualificador] = React.useState<Qualificador>(o.qualificador)
-  const [notas, setNotas] = React.useState(o.notas.join('\n'))
+  const valor = edicao.valor ?? decimalParaCampo(o.valor)
+  const qualificador = edicao.qualificador ?? o.qualificador
+  const notas = edicao.notas ?? o.notas.join('\n')
   const [erros, setErros] = React.useState<{ valor?: string; notas?: string }>({})
   const [aviso, setAviso] = React.useState<'salva' | 'sem-alteracao' | null>(null)
 
@@ -123,7 +133,8 @@ function CorrecaoObservacao({ observacao: o }: { observacao: ObservacaoAdmin }) 
     const novasNotas = lerNotas(notas)
     const novosErros: typeof erros = {}
     if ('erro' in lido) novosErros.valor = lido.erro
-    if (novasNotas.some((nota) => nota.length > 2000)) novosErros.notas = 'Cada nota pode ter até 2.000 caracteres.'
+    const erroNotas = erroDasNotas(novasNotas)
+    if (erroNotas) novosErros.notas = erroNotas
     setErros(novosErros)
     if ('erro' in lido || novosErros.notas) {
       document.getElementById(novosErros.valor ? 'correcao-valor' : 'correcao-notas')?.focus()
@@ -138,7 +149,15 @@ function CorrecaoObservacao({ observacao: o }: { observacao: ObservacaoAdmin }) 
       setAviso('sem-alteracao')
       return
     }
-    corrigir.mutate({ id: o.id, correcao }, { onSuccess: () => setAviso('salva') })
+    corrigir.mutate(
+      { id: o.id, correcao },
+      {
+        onSuccess: () => {
+          setEdicao({})
+          setAviso('salva')
+        },
+      },
+    )
   }
 
   const limpar = () => {
@@ -184,7 +203,7 @@ function CorrecaoObservacao({ observacao: o }: { observacao: ObservacaoAdmin }) 
             aria-label="Qualificador"
             value={qualificador}
             onValueChange={(novo) => {
-              setQualificador(novo as Qualificador)
+              setEdicao((atual) => ({ ...atual, qualificador: novo as Qualificador }))
               limpar()
             }}
           >
@@ -205,7 +224,7 @@ function CorrecaoObservacao({ observacao: o }: { observacao: ObservacaoAdmin }) 
               autoComplete="off"
               value={valor}
               onChange={(event) => {
-                setValor(event.target.value)
+                setEdicao((atual) => ({ ...atual, valor: event.target.value }))
                 setErros((atuais) => ({ ...atuais, valor: undefined }))
                 limpar()
               }}
@@ -224,7 +243,7 @@ function CorrecaoObservacao({ observacao: o }: { observacao: ObservacaoAdmin }) 
               id="correcao-notas"
               value={notas}
               onChange={(event) => {
-                setNotas(event.target.value)
+                setEdicao((atual) => ({ ...atual, notas: event.target.value }))
                 setErros((atuais) => ({ ...atuais, notas: undefined }))
                 limpar()
               }}

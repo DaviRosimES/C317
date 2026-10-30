@@ -193,9 +193,10 @@ export function ConsultaPublicaObservacao({ id }: { id: string }) {
           <p className="text-sm text-danger">Não foi possível consultar: {publica.error.message}</p>
         ) : (
           <div className="flex flex-col gap-1 text-sm">
-            <span className="flex items-center gap-2 font-medium text-ink">
+            <span className="flex flex-wrap items-center gap-2 font-medium text-ink">
               <CircleCheck aria-hidden className="size-4 text-success" />
               Visível
+              {publica.data.demonstracao ? <DemoBadge /> : null}
             </span>
             <span className="text-lg font-bold tabular-nums text-ink">
               {formatValorObservacao(publica.data.valorExibicao, publica.data.unidade, publica.data.qualificador)}
