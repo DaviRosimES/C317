@@ -10,6 +10,7 @@ const NAV = [
   { to: '/indicadores', label: 'Indicadores' },
   { to: '/relatorios', label: 'Relatórios' },
   { to: '/inventario', label: 'Inventário' },
+  { to: '/contribua', label: 'Contribua' },
   { to: '/sobre', label: 'Sobre' },
 ] as const
 
@@ -31,7 +32,7 @@ function NavLinks({ onNavigate, className }: { onNavigate?: () => void; classNam
             <>
               {item.label}
               {isActive ? (
-                <span aria-hidden className="absolute inset-x-3 -bottom-[17px] hidden h-[3px] rounded-full bg-brand-purple md:block" />
+                <span aria-hidden className="absolute inset-x-3 -bottom-[17px] hidden h-[3px] rounded-full bg-brand-purple lg:block" />
               ) : null}
             </>
           )}
@@ -47,7 +48,8 @@ function PublicHeader() {
     <header className="sticky top-0 z-40 border-b border-line bg-surface">
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-4 px-4 md:px-16">
         <Brand />
-        <NavLinks className="hidden items-center gap-4 md:flex" />
+        {/* Seis itens e o botão da área administrativa só cabem em uma linha a partir de lg. */}
+        <NavLinks className="hidden items-center gap-4 lg:flex" />
         <div className="flex items-center gap-2">
           <Button asChild variant="secondary" className="hidden sm:inline-flex">
             <Link to="/admin/login">Área administrativa</Link>
@@ -55,7 +57,7 @@ function PublicHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="lg:hidden"
             aria-label={open ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={open}
             onClick={() => setOpen((value) => !value)}
@@ -65,7 +67,7 @@ function PublicHeader() {
         </div>
       </div>
       {open ? (
-        <div className="border-t border-line px-4 pb-4 md:hidden">
+        <div className="border-t border-line px-4 pb-4 lg:hidden">
           <NavLinks onNavigate={() => setOpen(false)} className="flex flex-col py-2" />
           <Button asChild variant="secondary" className="w-full">
             <Link to="/admin/login" onClick={() => setOpen(false)}>

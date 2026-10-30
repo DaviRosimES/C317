@@ -23,6 +23,10 @@ class RelatorioService:
         relatorio = self.relatorios.get_publicado(relatorio_id)
         if relatorio is None:
             raise NaoEncontradoError("Relatório não encontrado.")
+        if relatorio.arquivo_url is None:
+            raise NaoEncontradoError(
+                "Este relatório não tem PDF na API; acesse-o pelo link externo informado."
+            )
         pasta = settings.relatorios_dir.resolve()
         caminho = (pasta / relatorio.arquivo_url).resolve()
         if (

@@ -10,7 +10,11 @@ router = APIRouter(prefix="/relatorios", tags=["Relatórios"])
 
 @router.get("", response_model=list[RelatorioPublicoResponse])
 def listar(connection: DbConnection) -> list[RelatorioPublicoResponse]:
-    """Relatórios publicados, do mais recente para o mais antigo; lista vazia se não houver."""
+    """Relatórios publicados, do mais recente para o mais antigo; lista vazia se não houver.
+
+    Os sem data de publicação conhecida ficam no fim. `link_externo` indica um documento
+    acessado fora da API; nesse caso não há PDF em /relatorios/{id}/arquivo.
+    """
     return RelatorioService(connection).listar()
 
 
@@ -19,7 +23,7 @@ def listar(connection: DbConnection) -> list[RelatorioPublicoResponse]:
     response_class=FileResponse,
     responses={
         200: {"content": {"application/pdf": {}}, "description": "PDF do relatório."},
-        404: {"description": "Relatório inexistente, não publicado ou sem arquivo."},
+        404: {"description": "Relatório inexistente, não publicado, sem arquivo ou só com link externo."},
     },
 )
 def baixar(relatorio_id: int, connection: DbConnection) -> FileResponse:

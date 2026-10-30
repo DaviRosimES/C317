@@ -1,0 +1,27 @@
+{
+  "descricao": "Relatórios do Observatório com acesso conferido. Itens pendentes ou excluídos ficam em docs/m6/controle-documentos-e-canais.md, não aqui.",
+  "relatorios": [
+    {
+      "titulo": "Análise, pesquisa e avaliação da Festa de Santa Rita 2024",
+      "numero": "001/2024",
+      "tipo": "relatorio_tecnico",
+      "fonte": "Observatório do Turismo de Santa Rita do Sapucaí – SMCELT, Prefeitura Municipal de Santa Rita do Sapucaí",
+      "data_publicacao": "2024-11-08",
+      "ano": 2024,
+      "mes": null,
+      "link_externo": "https://drive.google.com/open?id=13EO8-Qg_5OLmpuezfwsPaFnHBgBeNu0l",
+      "acesso_conferido_em": "2026-10-28"
+    },
+    {
+      "titulo": "Impacto Turístico HackTown 2025",
+      "numero": "004/2025",
+      "tipo": "relatorio_tecnico",
+      "fonte": "Observatório do Turismo de Santa Rita do Sapucaí – SMCELT, Prefeitura Municipal de Santa Rita do Sapucaí",
+      "data_publicacao": "2025-11-07",
+      "ano": 2025,
+      "mes": null,
+      "link_externo": "https://drive.google.com/open?id=1OiVuPbT2qKs_KpocGyBZ2SbdxA-9Gyhr",
+      "acesso_conferido_em": "2026-10-28"
+    }
+  ]
+}

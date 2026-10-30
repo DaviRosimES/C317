@@ -95,7 +95,22 @@ O fluxo é sempre `routes` → `features` → `queries` → `services` → `api/
   sessão ativa e papel `admin`, senão redireciona para `/admin/login?redirect=…&motivo=…`.
 - O token fica em `api/http/sessao.ts` (localStorage, com prazo de `expires_in`). O cliente HTTP anexa o
   `Authorization` e, em um 401 com token, encerra a sessão; `useFimDaSessao` leva ao login e limpa o cache.
-- Mutations administrativas invalidam também `consultaKeys.all`, pois publicar muda a consulta pública.
+- Mutations administrativas invalidam também `consultaKeys.all`, pois publicar muda a consulta pública; as de
+  observações invalidam ainda `observacaoKeys.all`.
+- Observações da M6 (`/admin/observacoes`) são a tela principal; `/admin/lancamentos` mantém o modelo anterior.
+  O `valor` das observações continua **texto** no model (decimal exato, sem limite de casas): use `lib/decimal.ts`
+  para validar/comparar e `formatDecimal`/`formatValorObservacao` para exibir; nunca converta para `number` na edição.
+  O mesmo vale para não preencher ano/mês de antemão: referência só a confirmada pela fonte.
+- Bloqueio de divulgação é decisão explícita com motivo (ex.: amostra insuficiente da pesquisa), nunca automático por
+  valor pequeno.
+
+### Relatórios e canais públicos
+
+- Relatórios têm um destino: PDF da API ou `link_externo` (abre em nova aba com o domínio visível). Número, tipo,
+  data e referência nulos não são exibidos nem inventados.
+- `/contribua` lista só formulários com link recebido e acesso conferido (`features/public/canais.ts`); canais
+  pendentes não aparecem nem como "em preparação". O registro da conferência fica em
+  `docs/m6/controle-documentos-e-canais.md`.
 
 ## Back-end
 
