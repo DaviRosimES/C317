@@ -333,7 +333,11 @@ function ResumoTipo({ tipo }: { tipo: TipoIndicador }) {
           {UNIDADES[tipo.unidade]}
         </Badge>
         <Badge variant="neutral" className="bg-surface">
-          {tipo.escopo === 'cnae' ? 'Por setor (CNAE)' : 'Total municipal'}
+          {tipo.escopo === 'cnae'
+            ? 'Por setor (CNAE)'
+            : tipo.escopo === 'municipal'
+              ? 'Total municipal'
+              : `Escopo não reconhecido (${tipo.escopoOriginal})`}
         </Badge>
         {tipo.provisorio ? <Badge variant="warning">Definição provisória</Badge> : null}
       </div>

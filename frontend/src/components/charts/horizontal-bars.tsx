@@ -16,7 +16,7 @@ export function HorizontalBars({ data, className }: { data: HorizontalBarDatum[]
     <ul className={cn('flex flex-col gap-4', className)}>
       {data.map((datum, index) => (
         <li key={datum.key} className="grid grid-cols-[minmax(0,9rem)_1fr_auto] items-center gap-3 text-[13px]" title={datum.title}>
-          <span className={cn('truncate text-ink-muted', datum.destaque && 'font-semibold text-ink')}>{datum.label}</span>
+          <span className={cn('line-clamp-2 break-words text-ink-muted', datum.destaque && 'font-semibold text-ink')}>{datum.label}</span>
           <span className="h-2.5 overflow-hidden rounded-full bg-canvas">
             <span
               className="block h-full rounded-full"

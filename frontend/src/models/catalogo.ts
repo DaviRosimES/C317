@@ -1,5 +1,5 @@
 export type UnidadeIndicador = 'quantidade' | 'percentual' | 'outra'
-export type EscopoIndicador = 'municipal' | 'cnae' | 'estabelecimento'
+export type EscopoIndicador = 'municipal' | 'cnae' | 'estabelecimento' | 'desconhecido'
 
 export interface Cnae {
   id: number
@@ -15,7 +15,9 @@ export interface TipoIndicador {
   nome: string
   descricao: string
   unidade: UnidadeIndicador
+  unidadeOriginal: string
   escopo: EscopoIndicador
+  escopoOriginal: string
   fonteReferencia: string | null
   provisorio: boolean
 }

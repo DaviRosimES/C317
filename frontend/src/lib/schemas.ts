@@ -3,20 +3,29 @@ import { TIPOS_REFERENCIA } from './referencia'
 
 export const dashboardSearchSchema = z.object({
   ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
+  mes: z.coerce.number().int().min(1).max(12).optional().catch(undefined),
   cnae: z.string().optional().catch(undefined),
 })
 export type DashboardSearch = z.infer<typeof dashboardSearchSchema>
 
-export const temasIndicadores = ['visao-geral', 'hospedagem', 'empresas', 'empregos', 'visitantes'] as const
-export type TemaIndicador = (typeof temasIndicadores)[number]
+const codigoCatalogo = z.string().min(1).max(200)
 
-export const indicadoresSearchSchema = z.object({
-  tema: z.enum(temasIndicadores).catch('visao-geral'),
-  de: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
-  ate: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
-  cnae: z.string().optional().catch(undefined),
+export const consultaSearchSchema = z.object({
+  tema: codigoCatalogo.optional().catch(undefined),
+  territorio: codigoCatalogo.optional().catch(undefined),
+  ref: z
+    .string()
+    .regex(/^(tipo:[a-z_]+|[a-z_]+:\d{4}-\d{4}(-\d{2})?)$/)
+    .optional()
+    .catch(undefined),
+  categoria: codigoCatalogo.optional().catch(undefined),
+  cnae: z
+    .string()
+    .regex(/^[0-9]{4}-[0-9]\/[0-9]{2}$/)
+    .optional()
+    .catch(undefined),
 })
-export type IndicadoresSearch = z.infer<typeof indicadoresSearchSchema>
+export type ConsultaSearch = z.infer<typeof consultaSearchSchema>
 
 export const motivosLogin = ['expirada', 'saiu', 'sem-permissao'] as const
 export type MotivoLogin = (typeof motivosLogin)[number]

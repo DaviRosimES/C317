@@ -23,16 +23,16 @@ export function descreverRecorte(lancamento: Lancamento, cnaes: Cnae[] | undefin
 export function LinksConsultaPublica({ lancamento }: { lancamento: Lancamento }) {
   return (
     <>
-      {lancamento.periodo.mes !== null ? (
-        <Button asChild variant="secondary">
-          <Link to="/" search={{ ano: lancamento.periodo.ano, cnae: lancamento.codigoCnae ?? undefined }}>
-            Ver no dashboard
-          </Link>
-        </Button>
-      ) : null}
       <Button asChild variant="secondary">
-        <Link to="/indicadores" search={{ tema: 'visao-geral', cnae: lancamento.codigoCnae ?? undefined }}>
-          Ver em indicadores
+        <Link
+          to="/"
+          search={{
+            ano: lancamento.periodo.ano,
+            mes: lancamento.periodo.mes ?? undefined,
+            cnae: lancamento.codigoCnae ?? undefined,
+          }}
+        >
+          Ver no dashboard
         </Link>
       </Button>
     </>

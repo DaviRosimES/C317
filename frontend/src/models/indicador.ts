@@ -6,6 +6,7 @@ export interface Indicador {
   tipo: string
   nome: string
   unidade: UnidadeIndicador
+  unidadeOriginal: string
   escopo: string
   valor: number
   periodo: Periodo

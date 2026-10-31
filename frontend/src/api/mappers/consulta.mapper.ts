@@ -19,7 +19,7 @@ export const toUnidade = (unidade: string): UnidadeIndicador =>
   unidade === 'quantidade' || unidade === 'percentual' ? unidade : 'outra'
 
 export const toEscopo = (escopo: string): EscopoIndicador =>
-  escopo === 'cnae' || escopo === 'estabelecimento' ? escopo : 'municipal'
+  escopo === 'municipal' || escopo === 'cnae' || escopo === 'estabelecimento' ? escopo : 'desconhecido'
 
 export const toCnae = (dto: CnaeResponseDto): Cnae => ({ ...dto })
 
@@ -28,7 +28,9 @@ export const toTipoIndicador = (dto: TipoIndicadorResponseDto): TipoIndicador =>
   nome: dto.nome,
   descricao: dto.descricao,
   unidade: toUnidade(dto.unidade),
+  unidadeOriginal: dto.unidade,
   escopo: toEscopo(dto.escopo),
+  escopoOriginal: dto.escopo,
   fonteReferencia: dto.fonte_referencia,
   provisorio: dto.provisorio,
 })
