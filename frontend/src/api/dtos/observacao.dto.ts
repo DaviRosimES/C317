@@ -146,6 +146,8 @@ export interface ObservacoesQueryDto {
   indicador?: string[]
   territorio?: string[]
   categoria?: string[]
+  classificacao?: string[]
+  codigo_cnae?: string[]
   referencia_tipo?: TipoReferenciaDto[]
   /** Referências de um único ano; não inclui acumulados. */
   ano?: number
@@ -153,12 +155,20 @@ export interface ObservacoesQueryDto {
   ano_inicio?: number
   /** Referências que terminam neste ano ou antes. */
   ano_fim?: number
+  mes?: number
+  /** Itens por página: padrão 200, máximo 1000. */
+  limite?: number
+  deslocamento?: number
+}
+
+export interface PaginaObservacoesPublicasResponseDto {
+  itens: ObservacaoPublicaResponseDto[]
+  total: number
+  limite: number
+  deslocamento: number
 }
 
 export interface ObservacoesAdminQueryDto extends ObservacoesQueryDto {
   status?: StatusObservacaoDto
   divulgacao_bloqueada?: boolean
-  /** Itens por página: padrão 200, máximo 1000. */
-  limite?: number
-  deslocamento?: number
 }

@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react'
-import { Ban, CircleCheck, CircleDashed, ExternalLink, Info } from 'lucide-react'
+import { Ban, CircleCheck, CircleDashed, Info } from 'lucide-react'
 import { ApiError } from '@/api/http/api-error'
-import { Badge, Card, CardContent, CardDescription, CardHeader, CardTitle, DemoBadge, Skeleton } from '@/components/ui'
-import { dominioDoLink, formatValorObservacao } from '@/lib/format'
+import { Badge, Card, CardContent, CardDescription, CardHeader, CardTitle, DemoBadge, Skeleton, SourceLinks } from '@/components/ui'
+import { formatValorObservacao } from '@/lib/format'
 import { rotuloTipoReferencia } from '@/lib/referencia'
 import { cn } from '@/lib/utils'
 import type { Fonte, ItemCatalogo, Observacao, ObservacaoAdmin } from '@/models'
@@ -30,26 +30,7 @@ export const valorExato = (o: Observacao) => formatValorObservacao(o.valor, o.un
 export const descreverRecorte = (o: Observacao) => (o.categoria ? o.categoria.nome : 'Total (sem recorte)')
 
 export function LinksFonte({ fonte, className }: { fonte: Fonte; className?: string }) {
-  if (!fonte.links.length) {
-    return <p className={cn('text-xs text-ink-subtle', className)}>Sem link: a fonte é identificada pelo nome do documento.</p>
-  }
-  return (
-    <ul className={cn('flex flex-col gap-1', className)}>
-      {fonte.links.map((link) => (
-        <li key={link} className="min-w-0">
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex max-w-full items-center gap-1 text-xs font-medium text-brand-purple underline-offset-4 hover:underline"
-          >
-            <ExternalLink aria-hidden className="size-3 shrink-0" />
-            <span className="truncate">{dominioDoLink(link)}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  )
+  return <SourceLinks links={fonte.links} className={className} />
 }
 
 export function Item({ termo, className, children }: { termo: string; className?: string; children: ReactNode }) {

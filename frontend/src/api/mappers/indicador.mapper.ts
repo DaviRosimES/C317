@@ -7,6 +7,7 @@ export const toIndicador = (dto: IndicadorPublicoResponseDto): Indicador => ({
   tipo: dto.tipo,
   nome: dto.nome,
   unidade: toUnidade(dto.unidade),
+  unidadeOriginal: dto.unidade,
   escopo: dto.escopo,
   valor: Number(dto.valor),
   periodo: { ano: dto.ano, mes: dto.mes },

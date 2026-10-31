@@ -90,8 +90,8 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
 
 | Rota | Tela (Figma) | Dados |
 | --- | --- | --- |
-| `/` | Public / Dashboard | API: `/periodos`, `/cnaes`, `/tipos-indicadores`, `/indicadores` |
-| `/indicadores` | Public / Indicators | API: catálogos + `/indicadores` + `/rotas` |
+| `/` | Public / Dashboard (modelo anterior, base fictícia) | API: `/periodos`, `/cnaes`, `/tipos-indicadores`, `/indicadores`, `/rotas` |
+| `/indicadores` | Consulta da M6 por tema, cidade, referência e categoria de origem (J5/J6) | API: `/observacoes/catalogos` + `/observacoes` |
 | `/relatorios` | Relatórios (D3, D5) | API: `/relatorios`; download em `/relatorios/{id}/arquivo` ou link externo sinalizado |
 | `/inventario` | Public / Inventário Turístico | simulado |
 | `/contribua` | Formulários externos confirmados (D6) | estático (`features/public/canais.ts`) |
@@ -142,5 +142,19 @@ navegador, repassando todo o resto para a API real.
 - Todo valor/gráfico mostra a fonte; valores com `demonstracao` recebem o selo "Dado fictício".
 - Períodos anuais e mensais têm rótulos distintos (`formatPeriodo`), e o filtro de CNAE avisa que não altera
   totais municipais.
-- CNAEs e tipos de indicador vêm da API; os temas da página de indicadores (`features/public/temas.ts`) só agrupam
-  códigos e ignoram os que não existirem no catálogo.
+- CNAEs e tipos de indicador vêm da API; o Dashboard monta cards e gráficos a partir dos tipos com valores.
+- Um escopo ou uma unidade desconhecidos da V3 não viram "total municipal": o escopo fica `desconhecido` e é
+  sinalizado; a unidade aparece pelo nome recebido.
+
+## Consulta da M6 (`/indicadores`)
+
+- Temas, cidades, referências e categorias saem do catálogo e das observações publicadas; não há tela nem lista
+  por indicador. `lib/observacoes.ts` organiza cada indicador em série (≥ 3 referências anuais ou mensais do mesmo
+  território), comparativo entre cidades (uma referência por vez), recortes de origem e valores avulsos.
+- Séries só usam referências `anual`/`mensal`; acumulados aparecem com rótulo próprio ("72 no total 2000–2024
+  (acumulado)") e nunca como valor do último ano.
+- O filtro de categoria restringe só os recortes da mesma classificação; totais e outros indicadores continuam
+  visíveis com "Filtro de recorte não se aplica". O filtro de CNAE só aparece quando a fonte informou CNAE.
+- No comparativo, municípios do tema sem valor no indicador aparecem como indisponíveis; fontes diferentes são
+  mostradas linha a linha, sem soma.
+- Todo gráfico tem tabela equivalente ("Ver dados em tabela") e rola dentro do próprio card no celular.

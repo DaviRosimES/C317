@@ -133,6 +133,13 @@ export interface ObservacaoAdminDetalhe extends ObservacaoAdmin {
   historico: RegistroHistorico[]
 }
 
+export interface PaginaObservacoes {
+  itens: Observacao[]
+  total: number
+  limite: number
+  deslocamento: number
+}
+
 export interface PaginaObservacoesAdmin {
   itens: ObservacaoAdmin[]
   /** Total que atende aos filtros, além da página. */
@@ -172,10 +179,13 @@ export interface ObservacoesFiltro {
   indicadores?: string[]
   territorios?: string[]
   categorias?: string[]
+  classificacoes?: string[]
+  codigosCnae?: string[]
   referenciaTipos?: TipoReferencia[]
   ano?: number
   anoInicio?: number
   anoFim?: number
+  mes?: number
 }
 
 export interface ObservacoesAdminFiltro extends ObservacoesFiltro {

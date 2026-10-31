@@ -9,7 +9,9 @@ import type {
   ObservacaoPublicaResponseDto,
   ObservacaoUpdateRequestDto,
   ObservacoesAdminQueryDto,
+  ObservacoesQueryDto,
   PaginaObservacoesAdminResponseDto,
+  PaginaObservacoesPublicasResponseDto,
   ReferenciaResponseDto,
   UnidadeDto,
 } from '@/api/dtos'
@@ -24,6 +26,8 @@ import type {
   ObservacaoCorrecao,
   ObservacaoEntrada,
   ObservacoesAdminFiltro,
+  ObservacoesFiltro,
+  PaginaObservacoes,
   PaginaObservacoesAdmin,
   Paginacao,
   Proveniencia,
@@ -146,6 +150,13 @@ export const toObservacaoAdminDetalhe = (dto: ObservacaoAdminDetalheResponseDto)
   historico: dto.historico.map(toRegistroHistorico),
 })
 
+export const toPaginaObservacoes = (dto: PaginaObservacoesPublicasResponseDto): PaginaObservacoes => ({
+  itens: dto.itens.map(toObservacao),
+  total: dto.total,
+  limite: dto.limite,
+  deslocamento: dto.deslocamento,
+})
+
 export const toPaginaObservacoesAdmin = (dto: PaginaObservacoesAdminResponseDto): PaginaObservacoesAdmin => ({
   itens: dto.itens.map(toObservacaoAdmin),
   total: dto.total,
@@ -176,6 +187,22 @@ export const toObservacaoUpdateDto = (correcao: ObservacaoCorrecao): ObservacaoU
   valor: correcao.valor,
   qualificador: correcao.qualificador,
   notas: correcao.notas,
+})
+
+export const toObservacoesQueryDto = (filtro: ObservacoesFiltro, pagina?: Paginacao): ObservacoesQueryDto => ({
+  tema: filtro.temas,
+  indicador: filtro.indicadores,
+  territorio: filtro.territorios,
+  categoria: filtro.categorias,
+  classificacao: filtro.classificacoes,
+  codigo_cnae: filtro.codigosCnae,
+  referencia_tipo: filtro.referenciaTipos,
+  ano: filtro.ano,
+  ano_inicio: filtro.anoInicio,
+  ano_fim: filtro.anoFim,
+  mes: filtro.mes,
+  limite: pagina?.limite,
+  deslocamento: pagina?.deslocamento,
 })
 
 export const toObservacoesAdminQueryDto = (filtro: ObservacoesAdminFiltro, pagina?: Paginacao): ObservacoesAdminQueryDto => ({

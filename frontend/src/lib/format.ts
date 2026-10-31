@@ -16,8 +16,10 @@ export const formatNumber = (value: number) => numberFormatter.format(value)
 
 export const formatPercent = (value: number) => percentFormatter.format(value)
 
-export function formatValorIndicador(valor: number, unidade: UnidadeIndicador) {
-  return unidade === 'percentual' ? `${numberFormatter.format(valor)}%` : numberFormatter.format(valor)
+export function formatValorIndicador(valor: number, unidade: UnidadeIndicador, unidadeOriginal?: string) {
+  if (unidade === 'percentual') return `${numberFormatter.format(valor)}%`
+  if (unidade === 'outra' && unidadeOriginal) return `${numberFormatter.format(valor)} ${unidadeOriginal}`
+  return numberFormatter.format(valor)
 }
 
 export function formatVariacao(atual: number, anterior: number, unidade: UnidadeIndicador) {

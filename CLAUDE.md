@@ -88,6 +88,20 @@ O fluxo é sempre `routes` → `features` → `queries` → `services` → `api/
 - CNAEs, tipos de indicador, rotas e períodos vêm sempre da API (`/cnaes`, `/tipos-indicadores`, `/rotas`,
   `/periodos`); nunca crie enum/array fixo deles no front.
 - Rotas sem CNAEs mostram "Classificação dos CNAEs por rota em definição".
+- Escopo ou unidade desconhecidos da V3 não caem no total municipal (`toEscopo` → `desconhecido`); a tela sinaliza.
+
+### Consulta pública da M6 (`/indicadores`)
+
+- Lê `GET /observacoes` (todas as páginas, via `observacaoService.listarTodas`) e `/observacoes/catalogos`.
+  O Dashboard (`/`) continua no modelo anterior (V3).
+- Visões genéricas de `lib/observacoes.ts`: série, comparativo entre cidades, recortes e valores avulsos. Não crie
+  tela, card ou array fixo por indicador; um indicador novo do catálogo aparece sozinho.
+- Séries só com `anual`/`mensal`; acumulado, levantamento e retrato nunca entram como ponto de série nem se somam.
+  O comparativo usa uma referência por vez e lista como indisponíveis as cidades do tema sem valor.
+- Filtro de categoria/CNAE restringe só observações da mesma classificação (ou com CNAE); as demais ficam visíveis
+  com `ForaDoFiltro`. Filtros na URL (`consultaSearchSchema`); "Limpar filtros" mantém só o tema.
+- Exiba `valorExibicao` com a unidade (`valorTexto`); `Number(valor)` só para o comprimento das barras.
+- Razões por habitante são observações recebidas (com notas de método); não calcule novas razões no front.
 
 ### Área administrativa
 
