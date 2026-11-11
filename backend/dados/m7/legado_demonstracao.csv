@@ -1,0 +1,9 @@
+﻿codigo_legado;nome_legado;unidade_generica_legado;natureza;acao_prevista;origem_da_confirmacao
+empregos_formais;Empregos formais;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+numero_hoteis;Número de hotéis;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+numero_leitos;Número de leitos;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+empresas_ativas;Empresas ativas;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+ocupacao_media_hoteis;Ocupação média de hotéis;percentual;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+empregos_por_setor;Empregos por setor;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+empresas_por_setor;Empresas por setor;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"
+numero_patentes;Número de patentes;quantidade;demonstracao;"arquivar no legado; nao converter valores ficticios em dados reais";"fixture do repositorio; Gustavo confirmou que o painel antigo contem apenas demonstracao"

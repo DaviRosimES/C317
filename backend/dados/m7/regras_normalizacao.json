@@ -1,0 +1,1328 @@
+{
+  "agrupamento_global": {
+    "codigos_preservados": true,
+    "destino": "setores",
+    "nao_representa_cnae": true,
+    "origem": "catalogos_m6.temas"
+  },
+  "contrato": "c317.m7.g8.v2",
+  "origem_sha256": "e956c9350dbd4ca699b8803215413c23270daa5e4bfa5f7c4f594b969e9a3d8a",
+  "regras": [
+    {
+      "acoes": [
+        "contexto_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_pessoas_empregadas_nos_meios_de_hospedagem_8705121_5ee530c46f",
+      "indicador_destino_codigo": "i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32",
+      "indicador_origem_codigo": "i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "contexto_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_valor_medio_da_diaria_media_simples_1b3f2e9d5d_6_r_c64ec730ad",
+      "indicador_destino_codigo": "i_valor_medio_da_diaria_media_simples_1b3f2e9d5d",
+      "indicador_origem_codigo": "i_valor_medio_da_diaria_media_simples_1b3f2e9d5d",
+      "unidade_origem_codigo": "u_r_7273f4020a"
+    },
+    {
+      "acoes": [
+        "contexto_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_valor_medio_da_diaria_mediana_ccb872f608_6_respost_e353df5430",
+      "indicador_destino_codigo": "i_valor_medio_da_diaria_mediana_ccb872f608",
+      "indicador_origem_codigo": "i_valor_medio_da_diaria_mediana_ccb872f608",
+      "unidade_origem_codigo": "u_r_7273f4020a"
+    },
+    {
+      "acoes": [
+        "fonte_nao_e_categoria",
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_total_de_empresas_7b34083361_painel_ambiente_de_ne_93866c8ec7",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_total_de_empresas_7b34083361",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "identificar_metodo_populacao"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_populacao_682eff3322_censo_2022_73e5380f77",
+      "indicador_destino_codigo": "i_populacao_682eff3322",
+      "indicador_origem_codigo": "i_populacao_682eff3322",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "identificar_metodo_populacao"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_populacao_682eff3322_estimativa_painel_sebrae_c6ab53fdcf",
+      "indicador_destino_codigo": "i_populacao_estimada_painel_sebrae_9618f46ca0",
+      "indicador_origem_codigo": "i_populacao_682eff3322",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "identificar_subtotal_criativo",
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_grupo_cadastro_smcelt_economia_criativa_69b9f7bee4",
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_criativos_ativos_cadastrados_02a85b4460",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_agencias_agentes_e_guias_e118733054",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_agencias_agentes_e_guias_e118733054",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_arte_e_artesanato_d248f8789c",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_arte_e_artesanato_d248f8789c",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_criativos_ativos_cadastrados_02a85b4460",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_comercio_de_produtos_locais_98b8d94fe4",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_comercio_de_produtos_locais_98b8d94fe4",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_experiencias_cd45d2703f",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_experiencias_cd45d2703f",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_gastronomia_4e30a6df39",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_gastronomia_4e30a6df39",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_hospedagem_3ede31c0de",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_hospedagem_3ede31c0de",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_mobilidade_urbana_f6a9df833f",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_mobilidade_urbana_f6a9df833f",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_negocios_criativos_b389d3e7c1",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_negocios_criativos_b389d3e7c1",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_criativos_ativos_cadastrados_02a85b4460",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_organizacao_de_eventos_1030596639",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_organizacao_de_eventos_1030596639",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_criativos_ativos_cadastrados_02a85b4460",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_empreendimentos_ativos"
+      ],
+      "categoria_destino_codigo": "c_categoria_cadastro_smcelt_outros_fora_do_guia_95574dc222",
+      "categoria_origem_codigo": "c_categoria_cadastro_smcelt_outros_fora_do_guia_95574dc222",
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_por_categoria_79ac099547",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_porte_empresa_demais_c162d25b09",
+      "categoria_origem_codigo": "c_porte_empresa_demais_c162d25b09",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_porte_e2fde30564",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_porte_empresa_epp_empresa_de_pequeno_porte_4a0f41cf16",
+      "categoria_origem_codigo": "c_porte_empresa_epp_empresa_de_pequeno_porte_4a0f41cf16",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_porte_e2fde30564",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_porte_empresa_me_microempresa_af4b0ec29f",
+      "categoria_origem_codigo": "c_porte_empresa_me_microempresa_af4b0ec29f",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_porte_e2fde30564",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_porte_empresa_mei_362f6f9173",
+      "categoria_origem_codigo": "c_porte_empresa_mei_362f6f9173",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_porte_e2fde30564",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_alimentacao_fora_do_lar_4ec85f0652",
+      "categoria_origem_codigo": "c_segmento_sebrae_alimentacao_fora_do_lar_4ec85f0652",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_beleza_df30dd211d",
+      "categoria_origem_codigo": "c_segmento_sebrae_beleza_df30dd211d",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_comercio_de_alimentos_e_bebidas_0296afe9e5",
+      "categoria_origem_codigo": "c_segmento_sebrae_comercio_de_alimentos_e_bebidas_0296afe9e5",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_comercio_varejista_da_moda_76e7e30789",
+      "categoria_origem_codigo": "c_segmento_sebrae_comercio_varejista_da_moda_76e7e30789",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_cursos_livres_f2b675da12",
+      "categoria_origem_codigo": "c_segmento_sebrae_cursos_livres_f2b675da12",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_industria_de_eletroeletronicos_7211514f70",
+      "categoria_origem_codigo": "c_segmento_sebrae_industria_de_eletroeletronicos_7211514f70",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_servicos_de_construcao_a2fbee5f8f",
+      "categoria_origem_codigo": "c_segmento_sebrae_servicos_de_construcao_a2fbee5f8f",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_servicos_empresariais_1748bbcc8d",
+      "categoria_origem_codigo": "c_segmento_sebrae_servicos_empresariais_1748bbcc8d",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_segmento_sebrae_transporte_terrestre_170b9dccc0",
+      "categoria_origem_codigo": "c_segmento_sebrae_transporte_terrestre_170b9dccc0",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_empresas_por_segmento_sebrae_minas_3cc2522777",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_setor_sebrae_agropecuaria_7d488d9702",
+      "categoria_origem_codigo": "c_setor_sebrae_agropecuaria_7d488d9702",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_setor_4c264f64d2",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_setor_sebrae_comercio_7fed8124cb",
+      "categoria_origem_codigo": "c_setor_sebrae_comercio_7fed8124cb",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_setor_4c264f64d2",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_setor_sebrae_industria_1b53e70054",
+      "categoria_origem_codigo": "c_setor_sebrae_industria_1b53e70054",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_setor_4c264f64d2",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_estoque_empresas"
+      ],
+      "categoria_destino_codigo": "c_setor_sebrae_servicos_ba54538fb2",
+      "categoria_origem_codigo": "c_setor_sebrae_servicos_ba54538fb2",
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_por_setor_4c264f64d2",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [
+        "reunir_hospedagens"
+      ],
+      "categoria_destino_codigo": "c_zona_hospedagem_rural_6822cadf55",
+      "categoria_origem_codigo": "c_recorte_i_meios_de_hospedagem_por_zona_3a3165144f_rural_003a98ea9e",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_por_zona_3a3165144f",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "reunir_hospedagens"
+      ],
+      "categoria_destino_codigo": "c_zona_hospedagem_urbana_a23798a682",
+      "categoria_origem_codigo": "c_recorte_i_meios_de_hospedagem_por_zona_3a3165144f_urbana_69c809119d",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_por_zona_3a3165144f",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_avaliacao_geral_do_evento_2583c06e37_festa_de_sant_a81268ce11",
+      "indicador_destino_codigo": "i_avaliacao_geral_do_evento_2583c06e37",
+      "indicador_origem_codigo": "i_avaliacao_geral_do_evento_2583c06e37",
+      "unidade_origem_codigo": "u_nota_0_10_38a14f1594"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_participantes_estimados_1425961244_festa_de_santa__0a4d1f1290",
+      "indicador_destino_codigo": "i_participantes_estimados_1425961244",
+      "indicador_origem_codigo": "i_participantes_estimados_1425961244",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_permanencia_media_dos_turistas_9c00a676b4_festa_de_b1c926bfdd",
+      "indicador_destino_codigo": "i_permanencia_media_dos_turistas_9c00a676b4",
+      "indicador_origem_codigo": "i_permanencia_media_dos_turistas_9c00a676b4",
+      "unidade_origem_codigo": "u_dias_d470eac948"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_pessoas_que_passaram_pelo_evento_mais_de_c49441875_e473ffd52c",
+      "indicador_destino_codigo": "i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b",
+      "indicador_origem_codigo": "i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_pessoas_que_trabalharam_no_evento_mais_de_30255155_a84705d7eb",
+      "indicador_destino_codigo": "i_pessoas_que_trabalharam_no_evento_mais_de_3025515561",
+      "indicador_origem_codigo": "i_pessoas_que_trabalharam_no_evento_mais_de_3025515561",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_recursos_movimentados_na_economia_local_mais_de_64_6dcf33b69d",
+      "indicador_destino_codigo": "i_recursos_movimentados_na_economia_local_mais_de_64f0088e34",
+      "indicador_origem_codigo": "i_recursos_movimentados_na_economia_local_mais_de_64f0088e34",
+      "unidade_origem_codigo": "u_r_7273f4020a"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "categoria_origem_codigo": "c_recorte_i_turistas_estimados_f440ffca8b_festa_de_santa_rita__81842574ee",
+      "indicador_destino_codigo": "i_turistas_estimados_f440ffca8b",
+      "indicador_origem_codigo": "i_turistas_estimados_f440ffca8b",
+      "unidade_origem_codigo": "u_pessoas_4ee4c52930"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_hacktown_9c5198a4a0",
+      "categoria_origem_codigo": "c_recorte_i_avaliacao_geral_do_evento_2583c06e37_hacktown_2025_43b84e11a3",
+      "indicador_destino_codigo": "i_avaliacao_geral_do_evento_2583c06e37",
+      "indicador_origem_codigo": "i_avaliacao_geral_do_evento_2583c06e37",
+      "unidade_origem_codigo": "u_nota_0_10_38a14f1594"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_hacktown_9c5198a4a0",
+      "categoria_origem_codigo": "c_recorte_i_permanencia_media_dos_visitantes_957fbc2e4a_hackto_4cffdb026b",
+      "indicador_destino_codigo": "i_permanencia_media_dos_visitantes_957fbc2e4a",
+      "indicador_origem_codigo": "i_permanencia_media_dos_visitantes_957fbc2e4a",
+      "unidade_origem_codigo": "u_dias_d470eac948"
+    },
+    {
+      "acoes": [
+        "separar_evento_da_referencia"
+      ],
+      "categoria_destino_codigo": "c_evento_hacktown_9c5198a4a0",
+      "categoria_origem_codigo": "c_recorte_i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3_ha_ebdcb47a89",
+      "indicador_destino_codigo": "i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3",
+      "indicador_origem_codigo": "i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [
+        "separar_percentuais_eletroeletronicos"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_segmento_sebrae_micro_e_pequenas_empresas_mpe_a1f60a6cfe",
+      "indicador_destino_codigo": "i_participacao_de_mpe_no_segmento_de_eletroeletronicos_e3912b0745",
+      "indicador_origem_codigo": "i_industria_de_eletroeletronicos_segmento_sebrae_minas_5f837a052a",
+      "unidade_origem_codigo": "u_das_empresas_do_segmento_d6a40e7fdf"
+    },
+    {
+      "acoes": [
+        "separar_percentuais_eletroeletronicos"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_segmento_sebrae_participacao_no_total_de_empresas_c2a9a8cf55",
+      "indicador_destino_codigo": "i_participacao_de_eletroeletronicos_no_estoque_de_empresas_ae2bd04237",
+      "indicador_origem_codigo": "i_industria_de_eletroeletronicos_segmento_sebrae_minas_5f837a052a",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [
+        "separar_percentuais_eletroeletronicos"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_segmento_sebrae_pequenos_negocios_mei_me_e_epp_ea63de8d8d",
+      "indicador_destino_codigo": "i_participacao_de_pequenos_negocios_no_segmento_de_eletroeletr_cb559e06e9",
+      "indicador_origem_codigo": "i_industria_de_eletroeletronicos_segmento_sebrae_minas_5f837a052a",
+      "unidade_origem_codigo": "u_das_empresas_do_segmento_d6a40e7fdf"
+    },
+    {
+      "acoes": [
+        "territorio_e_referencia_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_8966786261",
+      "indicador_destino_codigo": "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "indicador_origem_codigo": "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "unidade_origem_codigo": "u_concessoes_por_mil_hab_7ce36aac56"
+    },
+    {
+      "acoes": [
+        "territorio_e_referencia_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_concessao_de_patentes_de_invencao_por_mil_habitant_cce9851259",
+      "indicador_destino_codigo": "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "indicador_origem_codigo": "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "unidade_origem_codigo": "u_concessoes_por_mil_hab_7ce36aac56"
+    },
+    {
+      "acoes": [
+        "territorio_e_referencia_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_0ee60c0967",
+      "indicador_destino_codigo": "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "indicador_origem_codigo": "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "unidade_origem_codigo": "u_depositos_por_mil_hab_845ff4cf83"
+    },
+    {
+      "acoes": [
+        "territorio_e_referencia_fora_da_categoria"
+      ],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": "c_recorte_i_deposito_de_patentes_de_invencao_por_mil_habitante_122129e361",
+      "indicador_destino_codigo": "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "indicador_origem_codigo": "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "unidade_origem_codigo": "u_depositos_por_mil_hab_845ff4cf83"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_autodeclaracao_cadastur_nao_696594dc64",
+      "categoria_origem_codigo": "c_recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a_c781f3bd88",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_autodeclaracao_cadastur_sim_7fe0af8a8f",
+      "categoria_origem_codigo": "c_recorte_i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a_31d86720b7",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_cama_e_cafe_6ad2455d3d",
+      "categoria_origem_codigo": "c_categoria_hospedagem_cama_e_cafe_6ad2455d3d",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_flat_apart_hotel_c0ef718e3f",
+      "categoria_origem_codigo": "c_categoria_hospedagem_flat_apart_hotel_c0ef718e3f",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_hotel_c324b678a9",
+      "categoria_origem_codigo": "c_categoria_hospedagem_hotel_c324b678a9",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_hotel_fazenda_639813e87f",
+      "categoria_origem_codigo": "c_categoria_hospedagem_hotel_fazenda_639813e87f",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_hotel_historico_ba3b390634",
+      "categoria_origem_codigo": "c_categoria_hospedagem_hotel_historico_ba3b390634",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_outros_574519762b",
+      "categoria_origem_codigo": "c_categoria_hospedagem_outros_574519762b",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_pousada_119d97a37b",
+      "categoria_origem_codigo": "c_categoria_hospedagem_pousada_119d97a37b",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_categoria_hospedagem_resort_a2440e52f7",
+      "categoria_origem_codigo": "c_categoria_hospedagem_resort_a2440e52f7",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_envio_boh_enviam_e35b4293eb",
+      "categoria_origem_codigo": "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_f111942a33",
+      "indicador_destino_codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "indicador_origem_codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_envio_boh_nao_enviam_e6a3c536ee",
+      "categoria_origem_codigo": "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_fc6b298439",
+      "indicador_destino_codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "indicador_origem_codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_envio_boh_nao_sabem_o_que_e_1411b78d28",
+      "categoria_origem_codigo": "c_recorte_i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9_7b4e7b7d6f",
+      "indicador_destino_codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "indicador_origem_codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_faixa_etaria_hospedes_16_a_24_anos_a88ea2041a",
+      "categoria_origem_codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_b59d5061f4",
+      "indicador_destino_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "indicador_origem_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_faixa_etaria_hospedes_25_a_34_anos_85c70a42fa",
+      "categoria_origem_codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_e0eb6277f8",
+      "indicador_destino_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "indicador_origem_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_faixa_etaria_hospedes_35_a_44_anos_c4092fae77",
+      "categoria_origem_codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_353604cd0a",
+      "indicador_destino_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "indicador_origem_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_faixa_etaria_hospedes_45_a_54_anos_d79568849b",
+      "categoria_origem_codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_7b99ad92eb",
+      "indicador_destino_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "indicador_origem_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_faixa_etaria_hospedes_55_a_64_anos_f5c9f11eec",
+      "categoria_origem_codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_cb785dd568",
+      "indicador_destino_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "indicador_origem_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_faixa_etaria_hospedes_65_anos_ou_mais_927c7f5fa3",
+      "categoria_origem_codigo": "c_recorte_i_principais_faixas_etarias_dos_hospedes_quantos_emp_3947c1954d",
+      "indicador_destino_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "indicador_origem_codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_abril_697a5a2fda",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_abril_697a5a2fda",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_abril_697a5a2fda",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_abril_697a5a2fda",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_agosto_5b46302f47",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_agosto_5b46302f47",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_agosto_5b46302f47",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_agosto_5b46302f47",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_dezembro_ec39e23a7b",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_dezembro_ec39e23a7b",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_dezembro_ec39e23a7b",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_dezembro_ec39e23a7b",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_fevereiro_8e0c38fddb",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_fevereiro_8e0c38fddb",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_fevereiro_8e0c38fddb",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_fevereiro_8e0c38fddb",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_janeiro_181d6bf102",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_janeiro_181d6bf102",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_janeiro_181d6bf102",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_janeiro_181d6bf102",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_julho_bc131786ab",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_julho_bc131786ab",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_julho_bc131786ab",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_julho_bc131786ab",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_junho_a8ae5a8868",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_junho_a8ae5a8868",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_junho_a8ae5a8868",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_junho_a8ae5a8868",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_maio_b450eee3cf",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_maio_b450eee3cf",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_maio_b450eee3cf",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_maio_b450eee3cf",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_marco_59dbb27974",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_marco_59dbb27974",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_marco_59dbb27974",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_marco_59dbb27974",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_novembro_9f8675f851",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_novembro_9f8675f851",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_novembro_9f8675f851",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_novembro_9f8675f851",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_outubro_a039dc091f",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_outubro_a039dc091f",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_outubro_a039dc091f",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_outubro_a039dc091f",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_setembro_c4fa6fa517",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_setembro_c4fa6fa517",
+      "indicador_destino_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "indicador_origem_codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_mes_citado_em_questionario_setembro_c4fa6fa517",
+      "categoria_origem_codigo": "c_mes_citado_em_questionario_setembro_c4fa6fa517",
+      "indicador_destino_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "indicador_origem_codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_procedencia_hospedes_entorno_regional_edc8b2fce9",
+      "categoria_origem_codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_73b9ff58ac",
+      "indicador_destino_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "indicador_origem_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_procedencia_hospedes_internacional_2b93b23014",
+      "categoria_origem_codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_1639b36fe0",
+      "indicador_destino_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "indicador_origem_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_procedencia_hospedes_municipal_7d0ad921f9",
+      "categoria_origem_codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_d8bde4c4bf",
+      "indicador_destino_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "indicador_origem_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_procedencia_hospedes_nacional_0ad9637c79",
+      "categoria_origem_codigo": "c_recorte_i_procedencia_dos_hospedes_quantos_empreendimentos_r_83213e4ea8",
+      "indicador_destino_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "indicador_origem_codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_amostra_total_412cd3dd59",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_amostra_to_241bd660af",
+      "indicador_destino_codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "indicador_origem_codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_amostra_total_412cd3dd59",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_amostra_tota_013afe1056",
+      "indicador_destino_codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "indicador_origem_codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_amostra_total_412cd3dd59",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_amostra_tot_112ebd2ee9",
+      "indicador_destino_codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "indicador_origem_codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_amostra_total_412cd3dd59",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_amostra_t_da01ef776c",
+      "indicador_destino_codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "indicador_origem_codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_moradores_ad535c7f5e",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_moradores_0dcf0e395f",
+      "indicador_destino_codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "indicador_origem_codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_moradores_ad535c7f5e",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_moradores_210f5beb2e",
+      "indicador_destino_codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "indicador_origem_codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_moradores_ad535c7f5e",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_moradores_5ee3c39cac",
+      "indicador_destino_codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "indicador_origem_codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_moradores_ad535c7f5e",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_moradores_24b5735ea1",
+      "indicador_destino_codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "indicador_origem_codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_moradores_ad535c7f5e",
+      "categoria_origem_codigo": "c_recorte_i_gasto_medio_per_capita_23127ba6c9_hacktown_2025_mo_041174d02e",
+      "indicador_destino_codigo": "i_gasto_medio_per_capita_23127ba6c9",
+      "indicador_origem_codigo": "i_gasto_medio_per_capita_23127ba6c9",
+      "unidade_origem_codigo": "u_r_7273f4020a"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_visitantes_9f2693b03c",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_acolhedora_fc339b5db8_visitantes_3dba23ee72",
+      "indicador_destino_codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "indicador_origem_codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_visitantes_9f2693b03c",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_criativa_8db8f2a67b_visitantes_1784af7c42",
+      "indicador_destino_codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "indicador_origem_codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_visitantes_9f2693b03c",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_inovadora_1a409d5f2a_visitantes_4b9f8b246a",
+      "indicador_destino_codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "indicador_origem_codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_visitantes_9f2693b03c",
+      "categoria_origem_codigo": "c_recorte_i_cidade_vista_como_inspiradora_a047aed078_visitante_0345342ae0",
+      "indicador_destino_codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "indicador_origem_codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "unidade_origem_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_publico_pesquisa_visitantes_9f2693b03c",
+      "categoria_origem_codigo": "c_recorte_i_gasto_medio_per_capita_23127ba6c9_hacktown_2025_vi_5bde3d58e4",
+      "indicador_destino_codigo": "i_gasto_medio_per_capita_23127ba6c9",
+      "indicador_origem_codigo": "i_gasto_medio_per_capita_23127ba6c9",
+      "unidade_origem_codigo": "u_r_7273f4020a"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_resposta_acessibilidade_nao_tem_0e06138f8c",
+      "categoria_origem_codigo": "c_recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8_bf3445b595",
+      "indicador_destino_codigo": "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "indicador_origem_codigo": "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_resposta_acessibilidade_tem_956890c6bb",
+      "categoria_origem_codigo": "c_recorte_i_acessibilidade_para_pessoas_com_deficiencia_e4eda8_63f5a2d330",
+      "indicador_destino_codigo": "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "indicador_origem_codigo": "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_resposta_atendimento_bilingue_nao_tem_b9cec160a3",
+      "categoria_origem_codigo": "c_recorte_i_atendimento_bilingue_85bd5fa09b_nao_tem_442a1df4f0",
+      "indicador_destino_codigo": "i_atendimento_bilingue_85bd5fa09b",
+      "indicador_origem_codigo": "i_atendimento_bilingue_85bd5fa09b",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_resposta_atendimento_bilingue_tem_8e6efa4fef",
+      "categoria_origem_codigo": "c_recorte_i_atendimento_bilingue_85bd5fa09b_tem_766880a1db",
+      "indicador_destino_codigo": "i_atendimento_bilingue_85bd5fa09b",
+      "indicador_origem_codigo": "i_atendimento_bilingue_85bd5fa09b",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_resposta_cnpj_ativo_sim_b5b7fbe378",
+      "categoria_origem_codigo": "c_recorte_i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea_sim_c24845b204",
+      "indicador_destino_codigo": "i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_tipo_hospedagem_visitante_airbnb_26aab5f9e1",
+      "categoria_origem_codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_1d39faa0ae",
+      "indicador_destino_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "indicador_origem_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_tipo_hospedagem_visitante_camping_21771d53b4",
+      "categoria_origem_codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_0a54a4ed76",
+      "indicador_destino_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "indicador_origem_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_tipo_hospedagem_visitante_casa_de_amigos_parentes_e99d3708e0",
+      "categoria_origem_codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_b398ea6c38",
+      "indicador_destino_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "indicador_origem_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_tipo_hospedagem_visitante_casa_propria_ou_alugada_86d01b0f8a",
+      "categoria_origem_codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_8d5aeda025",
+      "indicador_destino_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "indicador_origem_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": "c_tipo_hospedagem_visitante_hoteis_e_pousadas_2d15ec2e1a",
+      "categoria_origem_codigo": "c_recorte_i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30_e9746e335f",
+      "indicador_destino_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "indicador_origem_codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_area_territorial_9b62248501",
+      "indicador_origem_codigo": "i_area_territorial_9b62248501",
+      "unidade_origem_codigo": "u_km2_b443e9bd17"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_atividades_economicas_cnae_cadastradas_no_municipio_232f732270",
+      "indicador_origem_codigo": "i_atividades_economicas_cnae_cadastradas_no_municipio_232f732270",
+      "unidade_origem_codigo": "u_atividades_3675217490"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_concessoes_de_certificados_de_adicao_de_invencao_ca_2af495a653",
+      "indicador_origem_codigo": "i_concessoes_de_certificados_de_adicao_de_invencao_ca_2af495a653",
+      "unidade_origem_codigo": "u_patentes_b87194e2d8"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_concessoes_de_modelos_de_utilidade_mu_8791a31437",
+      "indicador_origem_codigo": "i_concessoes_de_modelos_de_utilidade_mu_8791a31437",
+      "unidade_origem_codigo": "u_patentes_b87194e2d8"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_concessoes_de_patentes_de_invencao_pi_a86b296483",
+      "indicador_origem_codigo": "i_concessoes_de_patentes_de_invencao_pi_a86b296483",
+      "unidade_origem_codigo": "u_patentes_b87194e2d8"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_densidade_demografica_6ebdeedca2",
+      "indicador_origem_codigo": "i_densidade_demografica_6ebdeedca2",
+      "unidade_origem_codigo": "u_hab_km2_71336da493"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_densidade_do_estoque_empresarial_ea9e6dce73",
+      "indicador_origem_codigo": "i_densidade_do_estoque_empresarial_ea9e6dce73",
+      "unidade_origem_codigo": "u_empresas_por_mil_habitantes_43d605d0a0"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_depositos_de_certificados_de_adicao_de_invencao_ca_d8cfb94ab3",
+      "indicador_origem_codigo": "i_depositos_de_certificados_de_adicao_de_invencao_ca_d8cfb94ab3",
+      "unidade_origem_codigo": "u_patentes_b87194e2d8"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_depositos_de_modelos_de_utilidade_mu_ef610bc798",
+      "indicador_origem_codigo": "i_depositos_de_modelos_de_utilidade_mu_ef610bc798",
+      "unidade_origem_codigo": "u_patentes_b87194e2d8"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_depositos_de_patentes_de_invencao_pi_1bc517ff0d",
+      "indicador_origem_codigo": "i_depositos_de_patentes_de_invencao_pi_1bc517ff0d",
+      "unidade_origem_codigo": "u_patentes_b87194e2d8"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_eletroeletronicos_como_parte_da_industria_e468521b66",
+      "indicador_origem_codigo": "i_eletroeletronicos_como_parte_da_industria_e468521b66",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "indicador_origem_codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_estoque_de_empresas_f3c074802c",
+      "indicador_origem_codigo": "i_estoque_de_empresas_f3c074802c",
+      "unidade_origem_codigo": "u_empresas_df51a73104"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_idade_mediana_4ac2297a62",
+      "indicador_origem_codigo": "i_idade_mediana_4ac2297a62",
+      "unidade_origem_codigo": "u_anos_82ffe5a409"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_ideb_anos_finais_do_ensino_fundamental_rede_publica_e669247a95",
+      "indicador_origem_codigo": "i_ideb_anos_finais_do_ensino_fundamental_rede_publica_e669247a95",
+      "unidade_origem_codigo": "u_nota_108ffcf2ca"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_de_conectividade_das_telecomunicacoes_e_internet_6d95e9e3da",
+      "indicador_origem_codigo": "i_indice_de_conectividade_das_telecomunicacoes_e_internet_6d95e9e3da",
+      "unidade_origem_codigo": "u_indice_0_a_100_bbd701a27d"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_de_densidade_empresarial_28456e6aa5",
+      "indicador_origem_codigo": "i_indice_de_densidade_empresarial_28456e6aa5",
+      "unidade_origem_codigo": "u_indice_0_a_1_6198755964"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_de_empregabilidade_23b6d390ef",
+      "indicador_origem_codigo": "i_indice_de_empregabilidade_23b6d390ef",
+      "unidade_origem_codigo": "u_indice_0_a_1_6198755964"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_de_infraestrutura_de_saude_06fba1b03e",
+      "indicador_origem_codigo": "i_indice_de_infraestrutura_de_saude_06fba1b03e",
+      "unidade_origem_codigo": "u_indice_0_a_1_6198755964"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_de_riqueza_9f99949b50",
+      "indicador_origem_codigo": "i_indice_de_riqueza_9f99949b50",
+      "unidade_origem_codigo": "u_indice_0_a_1_6198755964"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_de_vulnerabilidade_social_a5db68d13b",
+      "indicador_origem_codigo": "i_indice_de_vulnerabilidade_social_a5db68d13b",
+      "unidade_origem_codigo": "u_indice_0_a_1_6198755964"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_indice_sebrae_de_desenvolvimento_economico_local_isdel_5a1e3db7b1",
+      "indicador_origem_codigo": "i_indice_sebrae_de_desenvolvimento_economico_local_isdel_5a1e3db7b1",
+      "unidade_origem_codigo": "u_indice_0_a_1_6198755964"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_industria_como_parte_de_todas_as_empresas_75f92f2ece",
+      "indicador_origem_codigo": "i_industria_como_parte_de_todas_as_empresas_75f92f2ece",
+      "unidade_origem_codigo": "u__bbf3f11cb5"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "indicador_origem_codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "unidade_origem_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_pib_per_capita_8a9c11bc2b",
+      "indicador_origem_codigo": "i_pib_per_capita_8a9c11bc2b",
+      "unidade_origem_codigo": "u_r_7273f4020a"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_startups_em_processo_de_incubacao_5c2feffd82",
+      "indicador_origem_codigo": "i_startups_em_processo_de_incubacao_5c2feffd82",
+      "unidade_origem_codigo": "u_startups_eef5aa92dc"
+    },
+    {
+      "acoes": [],
+      "categoria_destino_codigo": null,
+      "categoria_origem_codigo": null,
+      "indicador_destino_codigo": "i_unidades_habitacionais_uhs_9e78642e0f",
+      "indicador_origem_codigo": "i_unidades_habitacionais_uhs_9e78642e0f",
+      "unidade_origem_codigo": "u_uhs_2397787f6e"
+    }
+  ]
+}

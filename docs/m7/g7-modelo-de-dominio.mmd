@@ -1,0 +1,44 @@
+classDiagram
+    class Indicador {
+        codigo
+        nome
+        definicao
+        unidade
+        tiposReferenciaPermitidos
+        aceitaSemCategoria
+        arquivado
+    }
+    class DadoIndicador {
+        id
+        valorDecimal
+        qualificador
+        status
+        arquivado
+        divulgacaoBloqueada
+        notas
+    }
+    class Referencia {
+        tipo
+        anoInicio
+        anoFim
+        mes
+        dataExtracao
+    }
+    class Relatorio {
+        id
+        titulo
+        fonte
+        status
+        arquivado
+    }
+    Indicador "1" --> "0..*" DadoIndicador : possui
+    Unidade "1" <-- "0..*" Indicador : mede em
+    Setor "1..*" -- "0..*" Indicador : organiza
+    Classificacao "0..*" -- "0..*" Indicador : aceita
+    Classificacao "1" --> "0..*" Categoria : agrupa
+    Categoria "0..1" <-- "0..*" DadoIndicador : recorta
+    DadoIndicador "1" *-- "1" Referencia : refere-se a
+    Fonte "1" <-- "0..*" DadoIndicador : informa
+    Territorio "1" <-- "0..*" DadoIndicador : abrange
+    DadoIndicador "1" *-- "0..*" OrigemDado : localiza na fonte
+    Relatorio "1" *-- "0..1" ArquivoPDF : anexa
