@@ -29,6 +29,11 @@ seis setores e 67 associações. Esta reorganização documental não o altera. 
 esse contrato por troca de arquivos; adaptar carga, persistência e API antes de integrar os consumidores.
 Conferir o estado atual da aplicação antes de afirmar que o modelo novo já está implementado.
 
+Para a Milestone 7, `docs/m7/` (01 a 03 e `CONTEXTO-PARA-IAS.md`) é a referência normativa e
+`backend/dados/m7/` o pacote `c317.m7.g8.v2`. Definições de indicadores e catálogos (V7) ficam em
+`indicadores_definicoes` e tabelas associadas; contrato em `docs/m7/contrato-api-definicoes.md`. Códigos de
+catálogo são gerados uma vez (`app/core/codigos.py`) e nunca recalculados ao renomear.
+
 ## Comandos
 
 Front-end (pnpm, a partir da raiz):

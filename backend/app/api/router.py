@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 
 from app.api.routes import (
+    admin_definicoes,
     admin_indicadores,
     admin_observacoes,
     auth,
@@ -18,3 +19,5 @@ api_router.include_router(relatorios.router)
 api_router.include_router(auth.router)
 api_router.include_router(admin_indicadores.router)
 api_router.include_router(admin_observacoes.router)
+api_router.include_router(admin_definicoes.definicoes)
+api_router.include_router(admin_definicoes.catalogos)

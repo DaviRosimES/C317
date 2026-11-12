@@ -286,3 +286,10 @@ Administração (token de admin):
 - Toda ação administrativa (cadastro, correção, publicação, despublicação,
   bloqueio, desbloqueio) entra em `historico_observacoes_m6`, fora do `conteudo`:
   repetir a carga do pacote não vira conflito por causa delas.
+
+## Definições de indicadores e catálogos (V7)
+
+Rotas administrativas em `/api/v1/admin/definicoes-indicadores` (cadastrar, consultar,
+corrigir, arquivar e restaurar) e `/api/v1/admin/catalogos` (setores e unidades somente
+leitura; fontes, classificações e categorias com cadastro e correção). Contrato completo,
+validações e erros: [contrato HTTP da V7](../docs/m7/contrato-api-definicoes.md).
