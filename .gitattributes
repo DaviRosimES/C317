@@ -4,3 +4,6 @@
 backend/dados/m6/*.json -text
 backend/dados/m6/*.jsonl -text
 backend/dados/m6/*.csv -text
+
+# O manifesto da M7 também verifica README e os demais arquivos do pacote.
+backend/dados/m7/** -text

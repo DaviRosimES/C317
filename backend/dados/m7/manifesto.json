@@ -1,0 +1,75 @@
+{
+  "arquivos_sha256": {
+    "README.md": "b74e1c86ada5130388d4a436882420b482bb590839532700625956da51019033",
+    "catalogos.json": "5978b117a3308d863bbdd45a0d0dde8c3859a48718874604198e66b94b4a6c47",
+    "dados_indicadores.jsonl": "22de0578cea0f55e572b32163d0ea9a48bfa8819b181428c6709d22a40d6b414",
+    "dicionario_indicadores.csv": "2457121252925517e616d1c38a7fb25e8da73118d28a25d169557d97493be347",
+    "exclusoes.csv": "cba2c8c315b38acc17894cda41bba9cb32341539ff38618964b32e8c840ac089",
+    "legado_demonstracao.csv": "bfc0d8e42763c501e3028ad5189d7518b147c3f164a6e857ded51764caa33033",
+    "mapeamento_m6_m7.csv": "73c5dec6ad990a3459b25c32cbfaf0065d7af0bc29aa2105527e059e62af2e45",
+    "regras_normalizacao.json": "1d37437f1ec6c9198bca8719476a2609da6beaaf242bd8a72cb32e144217553d",
+    "retirados_por_abrangencia.csv": "acb39b8144f287b2f3df07abeda00d08faab393b6f8fd8725cb3b964251e8011",
+    "setores_indicadores.csv": "2803410eba0c0dd3175e2d10777ab0e1c0936948abd89caba0693b6f2eb6423a"
+  },
+  "associacoes_indicador_setor": 67,
+  "categorias_destino": 80,
+  "checagens": {
+    "aplicado_no_banco": false,
+    "duplicatas_destino": 0,
+    "fontes_preservadas": true,
+    "ids_preservados": true,
+    "qualificadores_preservados": true,
+    "referencias_preservadas": true,
+    "territorios_preservados": true,
+    "valores_decimais_preservados": true
+  },
+  "ciclo_de_vida": {
+    "existentes": "nos 303 dados municipais, preservar publicação, arquivo e bloqueio do banco pelo identificador estável; não usar o pacote como reset de estados",
+    "fora_do_escopo": "não importar os 925 dados não municipais; arquivar os identificadores listados em retirados_por_abrangencia.csv caso já existam no banco",
+    "novos": "rascunho, ativo e não bloqueado, salvo restrição substantiva da fonte"
+  },
+  "classificacoes_destino": 18,
+  "consulta_global": {
+    "ordem": "Setor e Ano/Periodo -> indicadores com dados elegiveis -> recortes locais",
+    "periodo_em": "dado.referencia",
+    "setor_em": "indicador.setores",
+    "setor_nao_integra_identidade_do_dado": true
+  },
+  "contrato": "c317.m7.g8.v2",
+  "dados_com_cnae": 0,
+  "dados_destino": 303,
+  "dados_origem": 1228,
+  "dados_outras_abrangencias": 0,
+  "dados_retirados_por_abrangencia": 925,
+  "dados_santa_rita": 303,
+  "escopo": "somente municipio de Santa Rita do Sapucai",
+  "exclusoes_origem_preservadas": 119,
+  "indicadores_com_dados_santa_rita": 61,
+  "indicadores_destino": 61,
+  "indicadores_multissetoriais": 6,
+  "indicadores_origem": 76,
+  "legado": {
+    "banco_ao_vivo_inventariado": false,
+    "fixture_sha256": "588c2c0697e66dd71e4f3fe5a3d50731b42505648305db5e7c26933649a8e09c",
+    "migracao_executada": false,
+    "natureza_confirmada_por_gustavo": "apenas demonstracao",
+    "tipos_no_fixture": 8,
+    "valores_no_fixture": 25
+  },
+  "origem": {
+    "arquivo": "_Indicadores_OT_SRS_.xlsx",
+    "arquivos_m6_sha256": {
+      "catalogos.json": "2a452d7e2ffc320a44b3d5f7aad2643a465ffcac45e3087d5fe65f33a27f3f63",
+      "manifesto.json": "669029015f1663aa36854f49152bf2de075c72085204a358fb568e0e9a3d6940",
+      "observacoes.jsonl": "474026308c05e8da467d5a180a4115c2cbb8419361633c342d7f9eb95d2d37bf",
+      "perfil_origem.json": "f1a6a696465bf21bc9b1c0b5d2c788382d5ebc87cd82a4194fd6d835c1e12000",
+      "triagem.csv": "1e458beebdd7dad06464a85538a2f645ee000dd5ccdff4d422129ac2853ce777"
+    },
+    "pacote": "c317.m6.v1",
+    "sha256": "e956c9350dbd4ca699b8803215413c23270daa5e4bfa5f7c4f594b969e9a3d8a"
+  },
+  "por_territorio": {
+    "Santa Rita do Sapucaí": 303
+  },
+  "setores_destino": 6
+}

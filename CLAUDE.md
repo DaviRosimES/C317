@@ -11,6 +11,24 @@ Para a Milestone 6, `docs/m6/requisitos-e-contrato.md` registra as decisões atu
 são o foco; CNAE é secundário. `docs/m6/modelo-observacoes.md` descreve as tabelas `*_m6` (V5) e as regras que
 o banco garante; a consulta integrada depende da API V6. Não grave as colunas geradas de `observacoes_m6`.
 
+Para as correções da etapa de Testes, `docs/m7/README.md` apresenta a documentação aprovada, revisão 3:
+`01-estrutura-e-dicionario.md` define o modelo; `02-dados-e-integracao.md` descreve os arquivos e valores;
+`03-fluxos-de-uso.md` define navegação, consulta, CRUD e critérios. `docs/m7/CONTEXTO-PARA-IAS.md`
+resume as regras para as IAs da equipe. Os documentos antigos G7–G9/guia e seus rascunhos de tarefas
+estão preservados como histórico e foram substituídos por essa organização. As nove tarefas atuais estão em `docs/m7/tarefas-equipe.md`, com links das issues publicadas;
+a aprovação dos requisitos e a criação das issues não significam implementação concluída.
+
+Setor e Ano/Período são os únicos filtros gerais e precedem a lista: Setor vem de `indicador.setores`,
+período da referência completa dos dados. Fonte/classificação/categoria são recortes locais no detalhe.
+Reaproveitar Tema como Setor, sem duplicar dimensões. Cada indicador tem uma unidade; novos dados e
+relatórios começam em rascunho, a edição confirmada de publicado atualiza o público e arquivo/restauração
+preserva estados e bloqueios, inclusive quando o indicador-pai é arquivado.
+
+O pacote `backend/dados/m7/`, contrato `c317.m7.g8.v2`, contém 61 indicadores, 303 dados municipais,
+seis setores e 67 associações. Esta reorganização documental não o altera. O carregador da M6 não aceita
+esse contrato por troca de arquivos; adaptar carga, persistência e API antes de integrar os consumidores.
+Conferir o estado atual da aplicação antes de afirmar que o modelo novo já está implementado.
+
 ## Comandos
 
 Front-end (pnpm, a partir da raiz):

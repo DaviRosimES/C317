@@ -1,0 +1,1835 @@
+{
+  "categorias": {
+    "c_autodeclaracao_cadastur_nao_696594dc64": {
+      "classificacao": "autodeclaracao_cadastur",
+      "codigo": "c_autodeclaracao_cadastur_nao_696594dc64",
+      "codigo_cnae": null,
+      "nome": "Não"
+    },
+    "c_autodeclaracao_cadastur_sim_7fe0af8a8f": {
+      "classificacao": "autodeclaracao_cadastur",
+      "codigo": "c_autodeclaracao_cadastur_sim_7fe0af8a8f",
+      "codigo_cnae": null,
+      "nome": "Sim"
+    },
+    "c_categoria_cadastro_smcelt_agencias_agentes_e_guias_e118733054": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_agencias_agentes_e_guias_e118733054",
+      "codigo_cnae": null,
+      "nome": "Agências, agentes e guias"
+    },
+    "c_categoria_cadastro_smcelt_arte_e_artesanato_d248f8789c": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_arte_e_artesanato_d248f8789c",
+      "codigo_cnae": null,
+      "nome": "Arte e artesanato"
+    },
+    "c_categoria_cadastro_smcelt_comercio_de_produtos_locais_98b8d94fe4": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_comercio_de_produtos_locais_98b8d94fe4",
+      "codigo_cnae": null,
+      "nome": "Comércio de produtos locais"
+    },
+    "c_categoria_cadastro_smcelt_experiencias_cd45d2703f": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_experiencias_cd45d2703f",
+      "codigo_cnae": null,
+      "nome": "Experiências"
+    },
+    "c_categoria_cadastro_smcelt_gastronomia_4e30a6df39": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_gastronomia_4e30a6df39",
+      "codigo_cnae": null,
+      "nome": "Gastronomia"
+    },
+    "c_categoria_cadastro_smcelt_hospedagem_3ede31c0de": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_hospedagem_3ede31c0de",
+      "codigo_cnae": null,
+      "nome": "Hospedagem"
+    },
+    "c_categoria_cadastro_smcelt_mobilidade_urbana_f6a9df833f": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_mobilidade_urbana_f6a9df833f",
+      "codigo_cnae": null,
+      "nome": "Mobilidade urbana"
+    },
+    "c_categoria_cadastro_smcelt_negocios_criativos_b389d3e7c1": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_negocios_criativos_b389d3e7c1",
+      "codigo_cnae": null,
+      "nome": "Negócios criativos"
+    },
+    "c_categoria_cadastro_smcelt_organizacao_de_eventos_1030596639": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_organizacao_de_eventos_1030596639",
+      "codigo_cnae": null,
+      "nome": "Organização de eventos"
+    },
+    "c_categoria_cadastro_smcelt_outros_fora_do_guia_95574dc222": {
+      "classificacao": "categoria_cadastro_smcelt",
+      "codigo": "c_categoria_cadastro_smcelt_outros_fora_do_guia_95574dc222",
+      "codigo_cnae": null,
+      "nome": "Outros (fora do Guia)"
+    },
+    "c_categoria_hospedagem_cama_e_cafe_6ad2455d3d": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_cama_e_cafe_6ad2455d3d",
+      "codigo_cnae": null,
+      "nome": "Cama e café"
+    },
+    "c_categoria_hospedagem_flat_apart_hotel_c0ef718e3f": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_flat_apart_hotel_c0ef718e3f",
+      "codigo_cnae": null,
+      "nome": "Flat/apart-hotel"
+    },
+    "c_categoria_hospedagem_hotel_c324b678a9": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_hotel_c324b678a9",
+      "codigo_cnae": null,
+      "nome": "Hotel"
+    },
+    "c_categoria_hospedagem_hotel_fazenda_639813e87f": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_hotel_fazenda_639813e87f",
+      "codigo_cnae": null,
+      "nome": "Hotel fazenda"
+    },
+    "c_categoria_hospedagem_hotel_historico_ba3b390634": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_hotel_historico_ba3b390634",
+      "codigo_cnae": null,
+      "nome": "Hotel histórico"
+    },
+    "c_categoria_hospedagem_outros_574519762b": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_outros_574519762b",
+      "codigo_cnae": null,
+      "nome": "Outros"
+    },
+    "c_categoria_hospedagem_pousada_119d97a37b": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_pousada_119d97a37b",
+      "codigo_cnae": null,
+      "nome": "Pousada"
+    },
+    "c_categoria_hospedagem_resort_a2440e52f7": {
+      "classificacao": "categoria_hospedagem",
+      "codigo": "c_categoria_hospedagem_resort_a2440e52f7",
+      "codigo_cnae": null,
+      "nome": "Resort"
+    },
+    "c_envio_boh_enviam_e35b4293eb": {
+      "classificacao": "envio_boh",
+      "codigo": "c_envio_boh_enviam_e35b4293eb",
+      "codigo_cnae": null,
+      "nome": "Enviam"
+    },
+    "c_envio_boh_nao_enviam_e6a3c536ee": {
+      "classificacao": "envio_boh",
+      "codigo": "c_envio_boh_nao_enviam_e6a3c536ee",
+      "codigo_cnae": null,
+      "nome": "Não enviam"
+    },
+    "c_envio_boh_nao_sabem_o_que_e_1411b78d28": {
+      "classificacao": "envio_boh",
+      "codigo": "c_envio_boh_nao_sabem_o_que_e_1411b78d28",
+      "codigo_cnae": null,
+      "nome": "Não sabem o que é"
+    },
+    "c_evento_festa_de_santa_rita_38ad8d71f6": {
+      "classificacao": "evento",
+      "codigo": "c_evento_festa_de_santa_rita_38ad8d71f6",
+      "codigo_cnae": null,
+      "nome": "Festa de Santa Rita"
+    },
+    "c_evento_hacktown_9c5198a4a0": {
+      "classificacao": "evento",
+      "codigo": "c_evento_hacktown_9c5198a4a0",
+      "codigo_cnae": null,
+      "nome": "HackTown"
+    },
+    "c_faixa_etaria_hospedes_16_a_24_anos_a88ea2041a": {
+      "classificacao": "faixa_etaria_hospedes",
+      "codigo": "c_faixa_etaria_hospedes_16_a_24_anos_a88ea2041a",
+      "codigo_cnae": null,
+      "nome": "16 a 24 anos"
+    },
+    "c_faixa_etaria_hospedes_25_a_34_anos_85c70a42fa": {
+      "classificacao": "faixa_etaria_hospedes",
+      "codigo": "c_faixa_etaria_hospedes_25_a_34_anos_85c70a42fa",
+      "codigo_cnae": null,
+      "nome": "25 a 34 anos"
+    },
+    "c_faixa_etaria_hospedes_35_a_44_anos_c4092fae77": {
+      "classificacao": "faixa_etaria_hospedes",
+      "codigo": "c_faixa_etaria_hospedes_35_a_44_anos_c4092fae77",
+      "codigo_cnae": null,
+      "nome": "35 a 44 anos"
+    },
+    "c_faixa_etaria_hospedes_45_a_54_anos_d79568849b": {
+      "classificacao": "faixa_etaria_hospedes",
+      "codigo": "c_faixa_etaria_hospedes_45_a_54_anos_d79568849b",
+      "codigo_cnae": null,
+      "nome": "45 a 54 anos"
+    },
+    "c_faixa_etaria_hospedes_55_a_64_anos_f5c9f11eec": {
+      "classificacao": "faixa_etaria_hospedes",
+      "codigo": "c_faixa_etaria_hospedes_55_a_64_anos_f5c9f11eec",
+      "codigo_cnae": null,
+      "nome": "55 a 64 anos"
+    },
+    "c_faixa_etaria_hospedes_65_anos_ou_mais_927c7f5fa3": {
+      "classificacao": "faixa_etaria_hospedes",
+      "codigo": "c_faixa_etaria_hospedes_65_anos_ou_mais_927c7f5fa3",
+      "codigo_cnae": null,
+      "nome": "65 anos ou mais"
+    },
+    "c_grupo_cadastro_smcelt_economia_criativa_69b9f7bee4": {
+      "classificacao": "grupo_cadastro_smcelt",
+      "codigo": "c_grupo_cadastro_smcelt_economia_criativa_69b9f7bee4",
+      "codigo_cnae": null,
+      "nome": "Economia criativa"
+    },
+    "c_mes_citado_em_questionario_abril_697a5a2fda": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_abril_697a5a2fda",
+      "codigo_cnae": null,
+      "nome": "Abril"
+    },
+    "c_mes_citado_em_questionario_agosto_5b46302f47": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_agosto_5b46302f47",
+      "codigo_cnae": null,
+      "nome": "Agosto"
+    },
+    "c_mes_citado_em_questionario_dezembro_ec39e23a7b": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_dezembro_ec39e23a7b",
+      "codigo_cnae": null,
+      "nome": "Dezembro"
+    },
+    "c_mes_citado_em_questionario_fevereiro_8e0c38fddb": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_fevereiro_8e0c38fddb",
+      "codigo_cnae": null,
+      "nome": "Fevereiro"
+    },
+    "c_mes_citado_em_questionario_janeiro_181d6bf102": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_janeiro_181d6bf102",
+      "codigo_cnae": null,
+      "nome": "Janeiro"
+    },
+    "c_mes_citado_em_questionario_julho_bc131786ab": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_julho_bc131786ab",
+      "codigo_cnae": null,
+      "nome": "Julho"
+    },
+    "c_mes_citado_em_questionario_junho_a8ae5a8868": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_junho_a8ae5a8868",
+      "codigo_cnae": null,
+      "nome": "Junho"
+    },
+    "c_mes_citado_em_questionario_maio_b450eee3cf": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_maio_b450eee3cf",
+      "codigo_cnae": null,
+      "nome": "Maio"
+    },
+    "c_mes_citado_em_questionario_marco_59dbb27974": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_marco_59dbb27974",
+      "codigo_cnae": null,
+      "nome": "Março"
+    },
+    "c_mes_citado_em_questionario_novembro_9f8675f851": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_novembro_9f8675f851",
+      "codigo_cnae": null,
+      "nome": "Novembro"
+    },
+    "c_mes_citado_em_questionario_outubro_a039dc091f": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_outubro_a039dc091f",
+      "codigo_cnae": null,
+      "nome": "Outubro"
+    },
+    "c_mes_citado_em_questionario_setembro_c4fa6fa517": {
+      "classificacao": "mes_citado_em_questionario",
+      "codigo": "c_mes_citado_em_questionario_setembro_c4fa6fa517",
+      "codigo_cnae": null,
+      "nome": "Setembro"
+    },
+    "c_porte_empresa_demais_c162d25b09": {
+      "classificacao": "porte_empresa",
+      "codigo": "c_porte_empresa_demais_c162d25b09",
+      "codigo_cnae": null,
+      "nome": "Demais"
+    },
+    "c_porte_empresa_epp_empresa_de_pequeno_porte_4a0f41cf16": {
+      "classificacao": "porte_empresa",
+      "codigo": "c_porte_empresa_epp_empresa_de_pequeno_porte_4a0f41cf16",
+      "codigo_cnae": null,
+      "nome": "EPP (empresa de pequeno porte)"
+    },
+    "c_porte_empresa_me_microempresa_af4b0ec29f": {
+      "classificacao": "porte_empresa",
+      "codigo": "c_porte_empresa_me_microempresa_af4b0ec29f",
+      "codigo_cnae": null,
+      "nome": "ME (microempresa)"
+    },
+    "c_porte_empresa_mei_362f6f9173": {
+      "classificacao": "porte_empresa",
+      "codigo": "c_porte_empresa_mei_362f6f9173",
+      "codigo_cnae": null,
+      "nome": "MEI"
+    },
+    "c_procedencia_hospedes_entorno_regional_edc8b2fce9": {
+      "classificacao": "procedencia_hospedes",
+      "codigo": "c_procedencia_hospedes_entorno_regional_edc8b2fce9",
+      "codigo_cnae": null,
+      "nome": "Entorno regional"
+    },
+    "c_procedencia_hospedes_internacional_2b93b23014": {
+      "classificacao": "procedencia_hospedes",
+      "codigo": "c_procedencia_hospedes_internacional_2b93b23014",
+      "codigo_cnae": null,
+      "nome": "Internacional"
+    },
+    "c_procedencia_hospedes_municipal_7d0ad921f9": {
+      "classificacao": "procedencia_hospedes",
+      "codigo": "c_procedencia_hospedes_municipal_7d0ad921f9",
+      "codigo_cnae": null,
+      "nome": "Municipal"
+    },
+    "c_procedencia_hospedes_nacional_0ad9637c79": {
+      "classificacao": "procedencia_hospedes",
+      "codigo": "c_procedencia_hospedes_nacional_0ad9637c79",
+      "codigo_cnae": null,
+      "nome": "Nacional"
+    },
+    "c_publico_pesquisa_amostra_total_412cd3dd59": {
+      "classificacao": "publico_pesquisa",
+      "codigo": "c_publico_pesquisa_amostra_total_412cd3dd59",
+      "codigo_cnae": null,
+      "nome": "Amostra total"
+    },
+    "c_publico_pesquisa_moradores_ad535c7f5e": {
+      "classificacao": "publico_pesquisa",
+      "codigo": "c_publico_pesquisa_moradores_ad535c7f5e",
+      "codigo_cnae": null,
+      "nome": "Moradores"
+    },
+    "c_publico_pesquisa_visitantes_9f2693b03c": {
+      "classificacao": "publico_pesquisa",
+      "codigo": "c_publico_pesquisa_visitantes_9f2693b03c",
+      "codigo_cnae": null,
+      "nome": "Visitantes"
+    },
+    "c_resposta_acessibilidade_nao_tem_0e06138f8c": {
+      "classificacao": "resposta_acessibilidade",
+      "codigo": "c_resposta_acessibilidade_nao_tem_0e06138f8c",
+      "codigo_cnae": null,
+      "nome": "Não têm"
+    },
+    "c_resposta_acessibilidade_tem_956890c6bb": {
+      "classificacao": "resposta_acessibilidade",
+      "codigo": "c_resposta_acessibilidade_tem_956890c6bb",
+      "codigo_cnae": null,
+      "nome": "Têm"
+    },
+    "c_resposta_atendimento_bilingue_nao_tem_b9cec160a3": {
+      "classificacao": "resposta_atendimento_bilingue",
+      "codigo": "c_resposta_atendimento_bilingue_nao_tem_b9cec160a3",
+      "codigo_cnae": null,
+      "nome": "Não têm"
+    },
+    "c_resposta_atendimento_bilingue_tem_8e6efa4fef": {
+      "classificacao": "resposta_atendimento_bilingue",
+      "codigo": "c_resposta_atendimento_bilingue_tem_8e6efa4fef",
+      "codigo_cnae": null,
+      "nome": "Têm"
+    },
+    "c_resposta_cnpj_ativo_sim_b5b7fbe378": {
+      "classificacao": "resposta_cnpj_ativo",
+      "codigo": "c_resposta_cnpj_ativo_sim_b5b7fbe378",
+      "codigo_cnae": null,
+      "nome": "Sim"
+    },
+    "c_segmento_sebrae_alimentacao_fora_do_lar_4ec85f0652": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_alimentacao_fora_do_lar_4ec85f0652",
+      "codigo_cnae": null,
+      "nome": "Alimentação fora do lar"
+    },
+    "c_segmento_sebrae_beleza_df30dd211d": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_beleza_df30dd211d",
+      "codigo_cnae": null,
+      "nome": "Beleza"
+    },
+    "c_segmento_sebrae_comercio_de_alimentos_e_bebidas_0296afe9e5": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_comercio_de_alimentos_e_bebidas_0296afe9e5",
+      "codigo_cnae": null,
+      "nome": "Comércio de alimentos e bebidas"
+    },
+    "c_segmento_sebrae_comercio_varejista_da_moda_76e7e30789": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_comercio_varejista_da_moda_76e7e30789",
+      "codigo_cnae": null,
+      "nome": "Comércio varejista da moda"
+    },
+    "c_segmento_sebrae_cursos_livres_f2b675da12": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_cursos_livres_f2b675da12",
+      "codigo_cnae": null,
+      "nome": "Cursos livres"
+    },
+    "c_segmento_sebrae_industria_de_eletroeletronicos_7211514f70": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_industria_de_eletroeletronicos_7211514f70",
+      "codigo_cnae": null,
+      "nome": "Indústria de eletroeletrônicos"
+    },
+    "c_segmento_sebrae_servicos_de_construcao_a2fbee5f8f": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_servicos_de_construcao_a2fbee5f8f",
+      "codigo_cnae": null,
+      "nome": "Serviços de construção"
+    },
+    "c_segmento_sebrae_servicos_empresariais_1748bbcc8d": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_servicos_empresariais_1748bbcc8d",
+      "codigo_cnae": null,
+      "nome": "Serviços empresariais"
+    },
+    "c_segmento_sebrae_transporte_terrestre_170b9dccc0": {
+      "classificacao": "segmento_sebrae",
+      "codigo": "c_segmento_sebrae_transporte_terrestre_170b9dccc0",
+      "codigo_cnae": null,
+      "nome": "Transporte terrestre"
+    },
+    "c_setor_sebrae_agropecuaria_7d488d9702": {
+      "classificacao": "setor_sebrae",
+      "codigo": "c_setor_sebrae_agropecuaria_7d488d9702",
+      "codigo_cnae": null,
+      "nome": "Agropecuária"
+    },
+    "c_setor_sebrae_comercio_7fed8124cb": {
+      "classificacao": "setor_sebrae",
+      "codigo": "c_setor_sebrae_comercio_7fed8124cb",
+      "codigo_cnae": null,
+      "nome": "Comércio"
+    },
+    "c_setor_sebrae_industria_1b53e70054": {
+      "classificacao": "setor_sebrae",
+      "codigo": "c_setor_sebrae_industria_1b53e70054",
+      "codigo_cnae": null,
+      "nome": "Indústria"
+    },
+    "c_setor_sebrae_servicos_ba54538fb2": {
+      "classificacao": "setor_sebrae",
+      "codigo": "c_setor_sebrae_servicos_ba54538fb2",
+      "codigo_cnae": null,
+      "nome": "Serviços"
+    },
+    "c_tipo_hospedagem_visitante_airbnb_26aab5f9e1": {
+      "classificacao": "tipo_hospedagem_visitante",
+      "codigo": "c_tipo_hospedagem_visitante_airbnb_26aab5f9e1",
+      "codigo_cnae": null,
+      "nome": "Airbnb"
+    },
+    "c_tipo_hospedagem_visitante_camping_21771d53b4": {
+      "classificacao": "tipo_hospedagem_visitante",
+      "codigo": "c_tipo_hospedagem_visitante_camping_21771d53b4",
+      "codigo_cnae": null,
+      "nome": "Camping"
+    },
+    "c_tipo_hospedagem_visitante_casa_de_amigos_parentes_e99d3708e0": {
+      "classificacao": "tipo_hospedagem_visitante",
+      "codigo": "c_tipo_hospedagem_visitante_casa_de_amigos_parentes_e99d3708e0",
+      "codigo_cnae": null,
+      "nome": "Casa de amigos/parentes"
+    },
+    "c_tipo_hospedagem_visitante_casa_propria_ou_alugada_86d01b0f8a": {
+      "classificacao": "tipo_hospedagem_visitante",
+      "codigo": "c_tipo_hospedagem_visitante_casa_propria_ou_alugada_86d01b0f8a",
+      "codigo_cnae": null,
+      "nome": "Casa própria ou alugada"
+    },
+    "c_tipo_hospedagem_visitante_hoteis_e_pousadas_2d15ec2e1a": {
+      "classificacao": "tipo_hospedagem_visitante",
+      "codigo": "c_tipo_hospedagem_visitante_hoteis_e_pousadas_2d15ec2e1a",
+      "codigo_cnae": null,
+      "nome": "Hotéis e pousadas"
+    },
+    "c_zona_hospedagem_rural_6822cadf55": {
+      "classificacao": "zona_hospedagem",
+      "codigo": "c_zona_hospedagem_rural_6822cadf55",
+      "codigo_cnae": null,
+      "nome": "Rural"
+    },
+    "c_zona_hospedagem_urbana_a23798a682": {
+      "classificacao": "zona_hospedagem",
+      "codigo": "c_zona_hospedagem_urbana_a23798a682",
+      "codigo_cnae": null,
+      "nome": "Urbana"
+    }
+  },
+  "classificacoes": {
+    "autodeclaracao_cadastur": {
+      "codigo": "autodeclaracao_cadastur",
+      "nome": "Autodeclaração de Cadastur"
+    },
+    "categoria_cadastro_smcelt": {
+      "codigo": "categoria_cadastro_smcelt",
+      "nome": "Categoria do cadastro SMCELT"
+    },
+    "categoria_hospedagem": {
+      "codigo": "categoria_hospedagem",
+      "nome": "Categoria de hospedagem"
+    },
+    "envio_boh": {
+      "codigo": "envio_boh",
+      "nome": "Resposta sobre envio do BOH"
+    },
+    "evento": {
+      "codigo": "evento",
+      "nome": "Evento"
+    },
+    "faixa_etaria_hospedes": {
+      "codigo": "faixa_etaria_hospedes",
+      "nome": "Faixa etária citada"
+    },
+    "grupo_cadastro_smcelt": {
+      "codigo": "grupo_cadastro_smcelt",
+      "nome": "Grupo do cadastro SMCELT"
+    },
+    "mes_citado_em_questionario": {
+      "codigo": "mes_citado_em_questionario",
+      "nome": "Mês citado no questionário"
+    },
+    "porte_empresa": {
+      "codigo": "porte_empresa",
+      "nome": "Porte da empresa"
+    },
+    "procedencia_hospedes": {
+      "codigo": "procedencia_hospedes",
+      "nome": "Procedência dos hóspedes"
+    },
+    "publico_pesquisa": {
+      "codigo": "publico_pesquisa",
+      "nome": "Público da pesquisa"
+    },
+    "resposta_acessibilidade": {
+      "codigo": "resposta_acessibilidade",
+      "nome": "Resposta sobre acessibilidade"
+    },
+    "resposta_atendimento_bilingue": {
+      "codigo": "resposta_atendimento_bilingue",
+      "nome": "Resposta sobre atendimento bilíngue"
+    },
+    "resposta_cnpj_ativo": {
+      "codigo": "resposta_cnpj_ativo",
+      "nome": "Autodeclaração de CNPJ ativo"
+    },
+    "segmento_sebrae": {
+      "codigo": "segmento_sebrae",
+      "nome": "Segmento Sebrae Minas"
+    },
+    "setor_sebrae": {
+      "codigo": "setor_sebrae",
+      "nome": "Setor econômico (Sebrae)"
+    },
+    "tipo_hospedagem_visitante": {
+      "codigo": "tipo_hospedagem_visitante",
+      "nome": "Tipo de hospedagem usado"
+    },
+    "zona_hospedagem": {
+      "codigo": "zona_hospedagem",
+      "nome": "Zona de localização da hospedagem"
+    }
+  },
+  "fontes": {
+    "f_cadastro_de_meios_de_hospedagem_2024_formulario_google_da_sm_8bbfaa255f": {
+      "codigo": "f_cadastro_de_meios_de_hospedagem_2024_formulario_google_da_sm_8bbfaa255f",
+      "links": [
+        "https://forms.gle/82ef7PG85ZCKuqFZ9"
+      ],
+      "nome": "Cadastro de meios de hospedagem 2024 (formulário Google da SMCELT, respostas de jun e jul de 2024)"
+    },
+    "f_calculo_do_observatorio_com_inpi_e_ibge_49692de607": {
+      "codigo": "f_calculo_do_observatorio_com_inpi_e_ibge_49692de607",
+      "links": [],
+      "nome": "Cálculo do Observatório com INPI e IBGE"
+    },
+    "f_formulario_google_coleta_espontanea_complemento_via_econodat_5486cfac58": {
+      "codigo": "f_formulario_google_coleta_espontanea_complemento_via_econodat_5486cfac58",
+      "links": [
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7U9_EOTCUmjcDdRjQJ3JYe5FukQ7F5a1m6iUJb4JvSePvyV-pOrM3xTcgDW3mZ-zX9RSKqhlkLOvC/pubhtml?gid=939101547&single=true"
+      ],
+      "nome": "Formulário Google (coleta espontânea) + complemento via Econodata"
+    },
+    "f_formularios_de_cadastro_de_negocios_turisticos_e_criativos_d_54c0df646e": {
+      "codigo": "f_formularios_de_cadastro_de_negocios_turisticos_e_criativos_d_54c0df646e",
+      "links": [],
+      "nome": "Formulários de cadastro de negócios turísticos e criativos da SMCELT (respostas de 2022 e 2023), cruzados e sem repetições pelo Observatório"
+    },
+    "f_ibge_cidades_perfil_do_municipio_codigo_3159605_9a237135e8": {
+      "codigo": "f_ibge_cidades_perfil_do_municipio_codigo_3159605_9a237135e8",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ],
+      "nome": "IBGE Cidades – perfil do município (código 3159605)"
+    },
+    "f_ibge_cidades_perfil_do_municipio_codigo_3159605_ibge_e_orgao_1b7069847d": {
+      "codigo": "f_ibge_cidades_perfil_do_municipio_codigo_3159605_ibge_e_orgao_1b7069847d",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ],
+      "nome": "IBGE Cidades – perfil do município (código 3159605) (IBGE e órgãos estaduais de estatística)"
+    },
+    "f_ibge_cidades_perfil_do_municipio_codigo_3159605_inep_8d989203de": {
+      "codigo": "f_ibge_cidades_perfil_do_municipio_codigo_3159605_inep_8d989203de",
+      "links": [
+        "https://cidades.ibge.gov.br/brasil/mg/santa-rita-do-sapucai/panorama"
+      ],
+      "nome": "IBGE Cidades – perfil do município (código 3159605) (INEP)"
+    },
+    "f_inatel_startups_e_incubadora_municipal_c497834463": {
+      "codigo": "f_inatel_startups_e_incubadora_municipal_c497834463",
+      "links": [],
+      "nome": "Inatel Startups e Incubadora Municipal"
+    },
+    "f_inpi_anuario_estatistico_de_propriedade_industrial_patentes__669dad4929": {
+      "codigo": "f_inpi_anuario_estatistico_de_propriedade_industrial_patentes__669dad4929",
+      "links": [
+        "https://www.gov.br/inpi/pt-br/inpi-data/dados-e-series-temporais/tabelas-completas-dos-indicadores-de-pi"
+      ],
+      "nome": "INPI – Anuário Estatístico de Propriedade Industrial (patentes), 2000–2024"
+    },
+    "f_painel_inteligencia_sebrae_ambiente_de_negocios_em_minas_ger_21f5351a37": {
+      "codigo": "f_painel_inteligencia_sebrae_ambiente_de_negocios_em_minas_ger_21f5351a37",
+      "links": [
+        "https://datasebrae.com.br"
+      ],
+      "nome": "Painel Inteligência Sebrae – Ambiente de Negócios em Minas Gerais (Raio-X Municipal)"
+    },
+    "f_painel_inteligencia_sebrae_mapa_sebrae_de_empresas_no_brasil_69ecd72ebb": {
+      "codigo": "f_painel_inteligencia_sebrae_mapa_sebrae_de_empresas_no_brasil_69ecd72ebb",
+      "links": [
+        "https://datasebrae.com.br"
+      ],
+      "nome": "Painel Inteligência Sebrae – Mapa Sebrae de Empresas no Brasil (dados até 13/09/2026)"
+    },
+    "f_peca_festa_de_santa_rita_em_numeros_publicada_em_11_06_2025_490bb01f24": {
+      "codigo": "f_peca_festa_de_santa_rita_em_numeros_publicada_em_11_06_2025_490bb01f24",
+      "links": [
+        "https://drive.google.com/open?id=1zODjUZjcK8OX9B2qqimcn627N73jo5H2"
+      ],
+      "nome": "Peça 'Festa de Santa Rita em números' (publicada em 11/06/2025)"
+    },
+    "f_relatorio_ot_no_001_2024_festa_de_santa_rita_2024_f22d0a48f2": {
+      "codigo": "f_relatorio_ot_no_001_2024_festa_de_santa_rita_2024_f22d0a48f2",
+      "links": [
+        "https://drive.google.com/open?id=13EO8-Qg_5OLmpuezfwsPaFnHBgBeNu0l"
+      ],
+      "nome": "Relatório OT nº 001/2024 – Festa de Santa Rita 2024"
+    },
+    "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_2259d85bb5": {
+      "codigo": "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_2259d85bb5",
+      "links": [
+        "https://drive.google.com/open?id=1OiVuPbT2qKs_KpocGyBZ2SbdxA-9Gyhr"
+      ],
+      "nome": "Relatório OT nº 004/2025 – Impacto Turístico HackTown 2025"
+    },
+    "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_sec_d2e1f26742": {
+      "codigo": "f_relatorio_ot_no_004_2025_impacto_turistico_hacktown_2025_sec_d2e1f26742",
+      "links": [
+        "https://drive.google.com/open?id=1OiVuPbT2qKs_KpocGyBZ2SbdxA-9Gyhr"
+      ],
+      "nome": "Relatório OT nº 004/2025 – Impacto Turístico HackTown 2025 (seção 7.2, Percepção geral sobre a cidade)"
+    }
+  },
+  "indicadores": {
+    "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "resposta_acessibilidade"
+      ],
+      "codigo": "i_acessibilidade_para_pessoas_com_deficiencia_e4eda8a17c",
+      "definicao": "Quantidade de meios de hospedagem que declararam ter ou não acessibilidade para pessoas com deficiência no questionário recebido.",
+      "nome": "Acessibilidade para pessoas com deficiência",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_area_territorial_9b62248501": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_area_territorial_9b62248501",
+      "definicao": "Área territorial do município, em quilômetros quadrados, informada na fonte recebida.",
+      "nome": "Área territorial",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_km2_b443e9bd17"
+    },
+    "i_atendimento_bilingue_85bd5fa09b": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "resposta_atendimento_bilingue"
+      ],
+      "codigo": "i_atendimento_bilingue_85bd5fa09b",
+      "definicao": "Quantidade de meios de hospedagem que declararam oferecer ou não atendimento bilíngue no questionário recebido.",
+      "nome": "Atendimento bilíngue",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_atividades_economicas_cnae_cadastradas_no_municipio_232f732270": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_atividades_economicas_cnae_cadastradas_no_municipio_232f732270",
+      "definicao": "Quantidade de atividades econômicas cadastradas informada pelo painel recebido. A contagem não fornece uma lista de códigos CNAE.",
+      "nome": "Atividades econômicas (CNAE) cadastradas no município",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_atividades_3675217490"
+    },
+    "i_avaliacao_geral_do_evento_2583c06e37": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_avaliacao_geral_do_evento_2583c06e37",
+      "definicao": "Nota de avaliação geral do evento, na escala de 0 a 10 informada na pesquisa. Cada evento e fonte conserva sua própria avaliação.",
+      "nome": "Avaliação geral do evento",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_nota_0_10_38a14f1594"
+    },
+    "i_cidade_vista_como_acolhedora_fc339b5db8": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "publico_pesquisa"
+      ],
+      "codigo": "i_cidade_vista_como_acolhedora_fc339b5db8",
+      "definicao": "Percentual dos entrevistados que associaram a cidade ao atributo Acolhedora, por público da pesquisa recebida.",
+      "nome": "Cidade vista como: Acolhedora",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_economia_criativa_ca3ef6a61b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    "i_cidade_vista_como_criativa_8db8f2a67b": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "publico_pesquisa"
+      ],
+      "codigo": "i_cidade_vista_como_criativa_8db8f2a67b",
+      "definicao": "Percentual dos entrevistados que associaram a cidade ao atributo Criativa, por público da pesquisa recebida.",
+      "nome": "Cidade vista como: Criativa",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_economia_criativa_ca3ef6a61b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    "i_cidade_vista_como_inovadora_1a409d5f2a": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "publico_pesquisa"
+      ],
+      "codigo": "i_cidade_vista_como_inovadora_1a409d5f2a",
+      "definicao": "Percentual dos entrevistados que associaram a cidade ao atributo Inovadora, por público da pesquisa recebida.",
+      "nome": "Cidade vista como: Inovadora",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_economia_criativa_ca3ef6a61b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    "i_cidade_vista_como_inspiradora_a047aed078": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "publico_pesquisa"
+      ],
+      "codigo": "i_cidade_vista_como_inspiradora_a047aed078",
+      "definicao": "Percentual dos entrevistados que associaram a cidade ao atributo Inspiradora, por público da pesquisa recebida.",
+      "nome": "Cidade vista como: Inspiradora",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_economia_criativa_ca3ef6a61b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_dos_entrevistados_d2d9128f71"
+    },
+    "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_concessao_de_patentes_de_invencao_por_mil_habitantes_c674cdcdb4",
+      "definicao": "Razão de concessões de patentes de invenção (PI) por mil habitantes já fornecida pelo Observatório, com referência acumulada e fontes INPI/IBGE informadas. Não recalcular com outra população.",
+      "nome": "Concessão de patentes de invenção por mil habitantes",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada"
+      ],
+      "unidade_codigo": "u_concessoes_por_mil_hab_7ce36aac56"
+    },
+    "i_concessoes_de_certificados_de_adicao_de_invencao_ca_2af495a653": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_concessoes_de_certificados_de_adicao_de_invencao_ca_2af495a653",
+      "definicao": "Quantidade de concessões de certificados de adição de invenção (CA) na série INPI recebida, pela cidade do primeiro depositante residente.",
+      "nome": "Concessões de certificados de adição de invenção (CA)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815",
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada",
+        "anual"
+      ],
+      "unidade_codigo": "u_patentes_b87194e2d8"
+    },
+    "i_concessoes_de_modelos_de_utilidade_mu_8791a31437": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_concessoes_de_modelos_de_utilidade_mu_8791a31437",
+      "definicao": "Quantidade de concessões de modelos de utilidade (MU) na série INPI recebida, pela cidade do primeiro depositante residente.",
+      "nome": "Concessões de modelos de utilidade (MU)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815",
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada",
+        "anual"
+      ],
+      "unidade_codigo": "u_patentes_b87194e2d8"
+    },
+    "i_concessoes_de_patentes_de_invencao_pi_a86b296483": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_concessoes_de_patentes_de_invencao_pi_a86b296483",
+      "definicao": "Quantidade de concessões de patentes de invenção (PI) na série INPI recebida, pela cidade do primeiro depositante residente.",
+      "nome": "Concessões de patentes de invenção (PI)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815",
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada",
+        "anual"
+      ],
+      "unidade_codigo": "u_patentes_b87194e2d8"
+    },
+    "i_densidade_demografica_6ebdeedca2": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_densidade_demografica_6ebdeedca2",
+      "definicao": "Quantidade de habitantes por quilômetro quadrado informada na fonte recebida, com sua referência temporal própria.",
+      "nome": "Densidade demográfica",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_hab_km2_71336da493"
+    },
+    "i_densidade_do_estoque_empresarial_ea9e6dce73": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_densidade_do_estoque_empresarial_ea9e6dce73",
+      "definicao": "Quantidade de empresas por mil habitantes informada no painel recebido. Não recalcular utilizando a população de outra fonte ou referência.",
+      "nome": "Densidade do estoque empresarial",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empresas_por_mil_habitantes_43d605d0a0"
+    },
+    "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_deposito_de_patentes_de_invencao_por_mil_habitantes_88b7f15963",
+      "definicao": "Razão de depósitos de patentes de invenção (PI) por mil habitantes já fornecida pelo Observatório, com referência acumulada e fontes INPI/IBGE informadas. Não recalcular com outra população.",
+      "nome": "Depósito de patentes de invenção por mil habitantes",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada"
+      ],
+      "unidade_codigo": "u_depositos_por_mil_hab_845ff4cf83"
+    },
+    "i_depositos_de_certificados_de_adicao_de_invencao_ca_d8cfb94ab3": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_depositos_de_certificados_de_adicao_de_invencao_ca_d8cfb94ab3",
+      "definicao": "Quantidade de depósitos de certificados de adição de invenção (CA) na série INPI recebida, pela cidade do primeiro depositante residente.",
+      "nome": "Depósitos de certificados de adição de invenção (CA)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada",
+        "anual"
+      ],
+      "unidade_codigo": "u_patentes_b87194e2d8"
+    },
+    "i_depositos_de_modelos_de_utilidade_mu_ef610bc798": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_depositos_de_modelos_de_utilidade_mu_ef610bc798",
+      "definicao": "Quantidade de depósitos de modelos de utilidade (MU) na série INPI recebida, pela cidade do primeiro depositante residente.",
+      "nome": "Depósitos de modelos de utilidade (MU)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada",
+        "anual"
+      ],
+      "unidade_codigo": "u_patentes_b87194e2d8"
+    },
+    "i_depositos_de_patentes_de_invencao_pi_1bc517ff0d": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_depositos_de_patentes_de_invencao_pi_1bc517ff0d",
+      "definicao": "Quantidade de depósitos de patentes de invenção (PI) na série INPI recebida, pela cidade do primeiro depositante residente.",
+      "nome": "Depósitos de patentes de invenção (PI)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "acumulada",
+        "anual"
+      ],
+      "unidade_codigo": "u_patentes_b87194e2d8"
+    },
+    "i_eletroeletronicos_como_parte_da_industria_e468521b66": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_eletroeletronicos_como_parte_da_industria_e468521b66",
+      "definicao": "Participação percentual das empresas do segmento de eletroeletrônicos no conjunto de empresas da indústria, conforme o painel recebido.",
+      "nome": "Eletroeletrônicos como parte da indústria",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_vale_da_eletronica_c1bb36b60f"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u__bbf3f11cb5"
+    },
+    "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [
+        "categoria_cadastro_smcelt",
+        "grupo_cadastro_smcelt"
+      ],
+      "codigo": "i_empreendimentos_ativos_em_santa_rita_do_sapucai_7f1de9c97e",
+      "definicao": "Quantidade de empreendimentos ativos locais na base cadastral de negócios turísticos e criativos recebida da SMCELT, sem repetições. A cobertura é a base recebida, não um censo de todas as empresas.",
+      "nome": "Empreendimentos ativos em Santa Rita do Sapucaí",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_economia_criativa_ca3ef6a61b",
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "levantamento"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "envio_boh"
+      ],
+      "codigo": "i_envio_do_boletim_de_ocupacao_hoteleira_boh_ac2f1e9c5f",
+      "definicao": "Quantidade de meios de hospedagem por resposta sobre o envio do BOH: enviam, não enviam ou não sabem o que é.",
+      "nome": "Envio do Boletim de Ocupação Hoteleira (BOH)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_estoque_de_empresas_f3c074802c": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [
+        "porte_empresa",
+        "segmento_sebrae",
+        "setor_sebrae"
+      ],
+      "codigo": "i_estoque_de_empresas_f3c074802c",
+      "definicao": "Quantidade de empresas no estoque empresarial informado na fonte recebida. Edições e fontes diferentes mantêm seus valores separados.",
+      "nome": "Estoque de empresas",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815",
+        "tema_vale_da_eletronica_c1bb36b60f"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empresas_df51a73104"
+    },
+    "i_gasto_medio_per_capita_23127ba6c9": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "publico_pesquisa"
+      ],
+      "codigo": "i_gasto_medio_per_capita_23127ba6c9",
+      "definicao": "Gasto médio por pessoa informado na pesquisa do evento, mantendo a distinção entre moradores e visitantes.",
+      "nome": "Gasto médio per capita",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_r_7273f4020a"
+    },
+    "i_idade_mediana_4ac2297a62": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_idade_mediana_4ac2297a62",
+      "definicao": "Idade que divide a população considerada pela fonte em duas metades, conforme a referência recebida. Não representa idade média.",
+      "nome": "Idade mediana",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_anos_82ffe5a409"
+    },
+    "i_ideb_anos_finais_do_ensino_fundamental_rede_publica_e669247a95": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_ideb_anos_finais_do_ensino_fundamental_rede_publica_e669247a95",
+      "definicao": "Resultado do IDEB dos anos finais do ensino fundamental da rede pública, conforme a referência e a fonte recebidas.",
+      "nome": "IDEB – anos finais do ensino fundamental (rede pública)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_nota_108ffcf2ca"
+    },
+    "i_indice_de_conectividade_das_telecomunicacoes_e_internet_6d95e9e3da": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_de_conectividade_das_telecomunicacoes_e_internet_6d95e9e3da",
+      "definicao": "Resultado do índice de conectividade informado no painel recebido, na escala de 0 a 100. Não confundir com percentual de pessoas conectadas.",
+      "nome": "Índice de conectividade das telecomunicações e internet",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_100_bbd701a27d"
+    },
+    "i_indice_de_densidade_empresarial_28456e6aa5": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_de_densidade_empresarial_28456e6aa5",
+      "definicao": "Resultado do índice de densidade empresarial do painel recebido, na escala de 0 a 1. Não confundir com empresas por mil habitantes.",
+      "nome": "Índice de densidade empresarial",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_1_6198755964"
+    },
+    "i_indice_de_empregabilidade_23b6d390ef": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_de_empregabilidade_23b6d390ef",
+      "definicao": "Resultado do índice de empregabilidade do painel recebido, na escala de 0 a 1. Não representa quantidade de empregos.",
+      "nome": "Índice de empregabilidade",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_1_6198755964"
+    },
+    "i_indice_de_infraestrutura_de_saude_06fba1b03e": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_de_infraestrutura_de_saude_06fba1b03e",
+      "definicao": "Resultado do índice de infraestrutura de saúde do painel recebido, na escala de 0 a 1.",
+      "nome": "Índice de infraestrutura de saúde",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_1_6198755964"
+    },
+    "i_indice_de_riqueza_9f99949b50": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_de_riqueza_9f99949b50",
+      "definicao": "Resultado do índice de riqueza do painel recebido, na escala de 0 a 1. Não representa valor monetário.",
+      "nome": "Índice de riqueza",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_1_6198755964"
+    },
+    "i_indice_de_vulnerabilidade_social_a5db68d13b": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_de_vulnerabilidade_social_a5db68d13b",
+      "definicao": "Resultado do índice de vulnerabilidade social do painel recebido, na escala de 0 a 1, preservando o significado da fonte.",
+      "nome": "Índice de vulnerabilidade social",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_1_6198755964"
+    },
+    "i_indice_sebrae_de_desenvolvimento_economico_local_isdel_5a1e3db7b1": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_indice_sebrae_de_desenvolvimento_economico_local_isdel_5a1e3db7b1",
+      "definicao": "Resultado do ISDEL informado pelo painel Sebrae, na escala de 0 a 1 recebida. Não converter para percentual.",
+      "nome": "Índice Sebrae de Desenvolvimento Econômico Local (ISDEL)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_indice_0_a_1_6198755964"
+    },
+    "i_industria_como_parte_de_todas_as_empresas_75f92f2ece": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_industria_como_parte_de_todas_as_empresas_75f92f2ece",
+      "definicao": "Participação percentual das empresas da indústria no estoque total de empresas, conforme o painel recebido.",
+      "nome": "Indústria como parte de todas as empresas",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_vale_da_eletronica_c1bb36b60f"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u__bbf3f11cb5"
+    },
+    "i_meios_de_hospedagem_10d688bcf7": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [
+        "categoria_hospedagem",
+        "zona_hospedagem"
+      ],
+      "codigo": "i_meios_de_hospedagem_10d688bcf7",
+      "definicao": "Quantidade de meios de hospedagem cadastrados na base recebida, no total e nos recortes informados. Não representa censo de todos os estabelecimentos municipais.",
+      "nome": "Meios de hospedagem cadastrados",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "resposta_cnpj_ativo"
+      ],
+      "codigo": "i_meios_de_hospedagem_com_cnpj_ativo_9ad97045ea",
+      "definicao": "Quantidade de meios de hospedagem que informaram CNPJ ativo no questionário recebido.",
+      "nome": "Meios de hospedagem com CNPJ ativo",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "autodeclaracao_cadastur"
+      ],
+      "codigo": "i_meios_de_hospedagem_que_dizem_estar_no_cadastur_9a268dacfd",
+      "definicao": "Quantidade de meios de hospedagem por autodeclaração de cadastro no Cadastur. Não equivale à verificação no cadastro federal.",
+      "nome": "Meios de hospedagem que dizem estar no Cadastur",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "mes_citado_em_questionario"
+      ],
+      "codigo": "i_meses_de_maior_fluxo_de_hospedes_quantos_empreendimentos_cit_e557577a73",
+      "definicao": "Quantidade de estabelecimentos que citaram cada mês como de maior fluxo no questionário recebido. São respostas de uma pesquisa anual e podem admitir múltiplas escolhas.",
+      "nome": "Meses de MAIOR fluxo de hóspedes (quantos empreendimentos citam)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "mes_citado_em_questionario"
+      ],
+      "codigo": "i_meses_de_menor_fluxo_de_hospedes_quantos_empreendimentos_cit_d482d7eac1",
+      "definicao": "Quantidade de estabelecimentos que citaram cada mês como de menor fluxo no questionário recebido. São respostas de uma pesquisa anual e podem admitir múltiplas escolhas.",
+      "nome": "Meses de MENOR fluxo de hóspedes (quantos empreendimentos citam)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_participacao_de_eletroeletronicos_no_estoque_de_empresas_ae2bd04237": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_participacao_de_eletroeletronicos_no_estoque_de_empresas_ae2bd04237",
+      "definicao": "Participação percentual do segmento de eletroeletrônicos no estoque total de empresas, conforme a fonte recebida.",
+      "nome": "Participação de eletroeletrônicos no estoque de empresas",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_vale_da_eletronica_c1bb36b60f"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u__bbf3f11cb5"
+    },
+    "i_participacao_de_mpe_no_segmento_de_eletroeletronicos_e3912b0745": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_participacao_de_mpe_no_segmento_de_eletroeletronicos_e3912b0745",
+      "definicao": "Participação percentual de micro e pequenas empresas (MPE) no segmento de eletroeletrônicos, conforme a fonte recebida. Não equiparar MPE a pequenos negócios incluindo MEI.",
+      "nome": "Participação de MPE no segmento de eletroeletrônicos",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_vale_da_eletronica_c1bb36b60f"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_das_empresas_do_segmento_d6a40e7fdf"
+    },
+    "i_participacao_de_pequenos_negocios_no_segmento_de_eletroeletr_cb559e06e9": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_participacao_de_pequenos_negocios_no_segmento_de_eletroeletr_cb559e06e9",
+      "definicao": "Participação percentual de MEI, ME e EPP no segmento de eletroeletrônicos, conforme a fonte recebida.",
+      "nome": "Participação de pequenos negócios no segmento de eletroeletrônicos",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_vale_da_eletronica_c1bb36b60f"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_das_empresas_do_segmento_d6a40e7fdf"
+    },
+    "i_participantes_estimados_1425961244": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_participantes_estimados_1425961244",
+      "definicao": "Estimativa de participantes do evento informada na pesquisa recebida, com a cobertura e o método dessa pesquisa.",
+      "nome": "Participantes estimados",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_permanencia_media_dos_turistas_9c00a676b4": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_permanencia_media_dos_turistas_9c00a676b4",
+      "definicao": "Permanência média, em dias, dos turistas considerados na pesquisa do evento recebida.",
+      "nome": "Permanência média dos turistas",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_dias_d470eac948"
+    },
+    "i_permanencia_media_dos_visitantes_957fbc2e4a": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_permanencia_media_dos_visitantes_957fbc2e4a",
+      "definicao": "Permanência média, em dias, dos visitantes considerados na pesquisa do evento recebida.",
+      "nome": "Permanência média dos visitantes",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_dias_d470eac948"
+    },
+    "i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_pessoas_empregadas_nos_meios_de_hospedagem_8705121b32",
+      "definicao": "Quantidade de pessoas empregadas informada pelos meios de hospedagem respondentes. Preservar a cobertura da coleta; não equivale ao emprego formal total do município.",
+      "nome": "Pessoas empregadas nos meios de hospedagem",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_pessoas_que_passaram_pelo_evento_mais_de_c49441875b",
+      "definicao": "Limite inferior informado para a quantidade de pessoas que passaram pelo evento. O qualificador maior_que acompanha o valor.",
+      "nome": "Pessoas que passaram pelo evento (mais de)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_pessoas_que_trabalharam_no_evento_mais_de_3025515561": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_pessoas_que_trabalharam_no_evento_mais_de_3025515561",
+      "definicao": "Limite inferior informado para a quantidade de pessoas que trabalharam no evento. O qualificador maior_que acompanha o valor.",
+      "nome": "Pessoas que trabalharam no evento (mais de)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_pib_per_capita_8a9c11bc2b": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_pib_per_capita_8a9c11bc2b",
+      "definicao": "Valor do produto interno bruto por habitante informado na fonte recebida, com a referência temporal do PIB.",
+      "nome": "PIB per capita",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_r_7273f4020a"
+    },
+    "i_populacao_682eff3322": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_populacao_682eff3322",
+      "definicao": "População residente no Censo recebido, identificada por município e referência censitária. Não substituir pela estimativa de outra edição.",
+      "nome": "População residente (Censo)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815",
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_populacao_estimada_painel_sebrae_9618f46ca0": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_populacao_estimada_painel_sebrae_9618f46ca0",
+      "definicao": "Estimativa populacional apresentada no painel Sebrae recebido, com sua própria referência temporal. É medida distinta da contagem censitária.",
+      "nome": "População estimada (painel Sebrae)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_dados_gerais_a37c845815"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "faixa_etaria_hospedes"
+      ],
+      "codigo": "i_principais_faixas_etarias_dos_hospedes_quantos_empreendiment_60416c4aa3",
+      "definicao": "Quantidade de meios de hospedagem que citaram cada faixa etária entre seus hóspedes no questionário recebido. Não é contagem individual de hóspedes.",
+      "nome": "Principais faixas etárias dos hóspedes (quantos empreendimentos citam)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "procedencia_hospedes"
+      ],
+      "codigo": "i_procedencia_dos_hospedes_quantos_empreendimentos_recebem_52868f60a8",
+      "definicao": "Quantidade de meios de hospedagem que declararam receber hóspedes de cada procedência. Não é quantidade de turistas, e as procedências podem admitir múltiplas respostas.",
+      "nome": "Procedência dos hóspedes (quantos empreendimentos recebem)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_empreendimentos_51fbb9f121"
+    },
+    "i_recursos_movimentados_na_economia_local_mais_de_64f0088e34": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_recursos_movimentados_na_economia_local_mais_de_64f0088e34",
+      "definicao": "Limite inferior informado para os recursos movimentados na economia local durante o evento. Não confundir com arrecadação pública.",
+      "nome": "Recursos movimentados na economia local (mais de)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_r_7273f4020a"
+    },
+    "i_startups_em_processo_de_incubacao_5c2feffd82": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_startups_em_processo_de_incubacao_5c2feffd82",
+      "definicao": "Quantidade de startups em processo de incubação informada na base recebida, com a referência e a cobertura da fonte.",
+      "nome": "Startups em processo de incubação",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_pesquisa_e_inovacao_2ce6883d18"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_startups_eef5aa92dc"
+    },
+    "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "tipo_hospedagem_visitante"
+      ],
+      "codigo": "i_tipo_de_hospedagem_usado_pelos_visitantes_39efea30ad",
+      "definicao": "Percentual dos visitantes que pernoitaram, por tipo de hospedagem usado no evento, conforme a pesquisa recebida.",
+      "nome": "Tipo de hospedagem usado pelos visitantes",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u__bbf3f11cb5"
+    },
+    "i_turistas_estimados_f440ffca8b": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_turistas_estimados_f440ffca8b",
+      "definicao": "Estimativa de turistas do evento informada na pesquisa recebida, preservando sua definição de turista e cobertura.",
+      "nome": "Turistas estimados",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_pessoas_4ee4c52930"
+    },
+    "i_unidades_habitacionais_uhs_9e78642e0f": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_unidades_habitacionais_uhs_9e78642e0f",
+      "definicao": "Quantidade de unidades habitacionais informadas na base recebida. Preservar o número de respondentes e as ressalvas sobre imóveis de temporada; não é contagem de leitos ou hotéis.",
+      "nome": "Unidades habitacionais (UHs) informadas",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_uhs_2397787f6e"
+    },
+    "i_valor_medio_da_diaria_media_simples_1b3f2e9d5d": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_valor_medio_da_diaria_media_simples_1b3f2e9d5d",
+      "definicao": "Média simples dos valores de diária no conjunto de respostas definido pela fonte. É medida distinta da mediana e não deve ser recalculada com outra amostra.",
+      "nome": "Diária informada (média simples)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_r_7273f4020a"
+    },
+    "i_valor_medio_da_diaria_mediana_ccb872f608": {
+      "aceita_sem_categoria": true,
+      "classificacoes_permitidas": [],
+      "codigo": "i_valor_medio_da_diaria_mediana_ccb872f608",
+      "definicao": "Mediana dos valores de diária no conjunto de respostas definido pela fonte. É medida distinta da média simples e não deve ser recalculada com outra amostra.",
+      "nome": "Diária informada (mediana)",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_turismo_f09ebc929b"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u_r_7273f4020a"
+    },
+    "i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3": {
+      "aceita_sem_categoria": false,
+      "classificacoes_permitidas": [
+        "evento"
+      ],
+      "codigo": "i_visitantes_que_pernoitaram_na_cidade_e4f88f71c3",
+      "definicao": "Percentual dos visitantes da pesquisa do evento que pernoitaram na cidade, conforme a fonte recebida.",
+      "nome": "Visitantes que pernoitaram na cidade",
+      "nota_metodologica": "Valores consolidados recebidos. Preservar fonte, referência e notas de cada dado; não somar totais com recortes, recortes de classificações diferentes ou períodos.",
+      "setores": [
+        "tema_eventos_752769b1d4"
+      ],
+      "tipos_referencia_permitidos": [
+        "anual"
+      ],
+      "unidade_codigo": "u__bbf3f11cb5"
+    }
+  },
+  "setores": {
+    "tema_dados_gerais_a37c845815": {
+      "codigo": "tema_dados_gerais_a37c845815",
+      "nome": "Dados gerais"
+    },
+    "tema_economia_criativa_ca3ef6a61b": {
+      "codigo": "tema_economia_criativa_ca3ef6a61b",
+      "nome": "Economia criativa"
+    },
+    "tema_eventos_752769b1d4": {
+      "codigo": "tema_eventos_752769b1d4",
+      "nome": "Eventos"
+    },
+    "tema_pesquisa_e_inovacao_2ce6883d18": {
+      "codigo": "tema_pesquisa_e_inovacao_2ce6883d18",
+      "nome": "Pesquisa e inovação"
+    },
+    "tema_turismo_f09ebc929b": {
+      "codigo": "tema_turismo_f09ebc929b",
+      "nome": "Turismo"
+    },
+    "tema_vale_da_eletronica_c1bb36b60f": {
+      "codigo": "tema_vale_da_eletronica_c1bb36b60f",
+      "nome": "Vale da Eletrônica"
+    }
+  },
+  "territorios": {
+    "t_santa_rita_do_sapucai_831ff035c3": {
+      "codigo": "t_santa_rita_do_sapucai_831ff035c3",
+      "nome": "Santa Rita do Sapucaí",
+      "tipo": "municipio"
+    }
+  },
+  "unidades": {
+    "u__bbf3f11cb5": {
+      "casas_exibicao": 2,
+      "codigo": "u__bbf3f11cb5",
+      "inteira": false,
+      "maximo": 100,
+      "nome": "%"
+    },
+    "u_anos_82ffe5a409": {
+      "casas_exibicao": 2,
+      "codigo": "u_anos_82ffe5a409",
+      "inteira": false,
+      "maximo": null,
+      "nome": "anos"
+    },
+    "u_atividades_3675217490": {
+      "casas_exibicao": 0,
+      "codigo": "u_atividades_3675217490",
+      "inteira": true,
+      "maximo": null,
+      "nome": "atividades"
+    },
+    "u_concessoes_por_mil_hab_7ce36aac56": {
+      "casas_exibicao": 2,
+      "codigo": "u_concessoes_por_mil_hab_7ce36aac56",
+      "inteira": false,
+      "maximo": null,
+      "nome": "concessões por mil hab."
+    },
+    "u_das_empresas_do_segmento_d6a40e7fdf": {
+      "casas_exibicao": 2,
+      "codigo": "u_das_empresas_do_segmento_d6a40e7fdf",
+      "inteira": false,
+      "maximo": 100,
+      "nome": "% das empresas do segmento"
+    },
+    "u_depositos_por_mil_hab_845ff4cf83": {
+      "casas_exibicao": 2,
+      "codigo": "u_depositos_por_mil_hab_845ff4cf83",
+      "inteira": false,
+      "maximo": null,
+      "nome": "depósitos por mil hab."
+    },
+    "u_dias_d470eac948": {
+      "casas_exibicao": 2,
+      "codigo": "u_dias_d470eac948",
+      "inteira": false,
+      "maximo": null,
+      "nome": "dias"
+    },
+    "u_dos_entrevistados_d2d9128f71": {
+      "casas_exibicao": 2,
+      "codigo": "u_dos_entrevistados_d2d9128f71",
+      "inteira": false,
+      "maximo": 100,
+      "nome": "% dos entrevistados"
+    },
+    "u_empreendimentos_51fbb9f121": {
+      "casas_exibicao": 0,
+      "codigo": "u_empreendimentos_51fbb9f121",
+      "inteira": true,
+      "maximo": null,
+      "nome": "empreendimentos"
+    },
+    "u_empresas_df51a73104": {
+      "casas_exibicao": 0,
+      "codigo": "u_empresas_df51a73104",
+      "inteira": true,
+      "maximo": null,
+      "nome": "empresas"
+    },
+    "u_empresas_por_mil_habitantes_43d605d0a0": {
+      "casas_exibicao": 2,
+      "codigo": "u_empresas_por_mil_habitantes_43d605d0a0",
+      "inteira": false,
+      "maximo": null,
+      "nome": "empresas por mil habitantes"
+    },
+    "u_hab_km2_71336da493": {
+      "casas_exibicao": 2,
+      "codigo": "u_hab_km2_71336da493",
+      "inteira": false,
+      "maximo": null,
+      "nome": "hab/km²"
+    },
+    "u_indice_0_a_100_bbd701a27d": {
+      "casas_exibicao": 2,
+      "codigo": "u_indice_0_a_100_bbd701a27d",
+      "inteira": false,
+      "maximo": 100,
+      "nome": "índice (0 a 100)"
+    },
+    "u_indice_0_a_1_6198755964": {
+      "casas_exibicao": 2,
+      "codigo": "u_indice_0_a_1_6198755964",
+      "inteira": false,
+      "maximo": 1,
+      "nome": "índice (0 a 1)"
+    },
+    "u_km2_b443e9bd17": {
+      "casas_exibicao": 2,
+      "codigo": "u_km2_b443e9bd17",
+      "inteira": false,
+      "maximo": null,
+      "nome": "km²"
+    },
+    "u_nota_0_10_38a14f1594": {
+      "casas_exibicao": 2,
+      "codigo": "u_nota_0_10_38a14f1594",
+      "inteira": false,
+      "maximo": 10,
+      "nome": "nota 0–10"
+    },
+    "u_nota_108ffcf2ca": {
+      "casas_exibicao": 2,
+      "codigo": "u_nota_108ffcf2ca",
+      "inteira": false,
+      "maximo": 10,
+      "nome": "nota"
+    },
+    "u_patentes_b87194e2d8": {
+      "casas_exibicao": 0,
+      "codigo": "u_patentes_b87194e2d8",
+      "inteira": true,
+      "maximo": null,
+      "nome": "patentes"
+    },
+    "u_pessoas_4ee4c52930": {
+      "casas_exibicao": 0,
+      "codigo": "u_pessoas_4ee4c52930",
+      "inteira": true,
+      "maximo": null,
+      "nome": "pessoas"
+    },
+    "u_r_7273f4020a": {
+      "casas_exibicao": 2,
+      "codigo": "u_r_7273f4020a",
+      "inteira": false,
+      "maximo": null,
+      "nome": "R$"
+    },
+    "u_startups_eef5aa92dc": {
+      "casas_exibicao": 0,
+      "codigo": "u_startups_eef5aa92dc",
+      "inteira": true,
+      "maximo": null,
+      "nome": "startups"
+    },
+    "u_uhs_2397787f6e": {
+      "casas_exibicao": 0,
+      "codigo": "u_uhs_2397787f6e",
+      "inteira": true,
+      "maximo": null,
+      "nome": "UHs"
+    }
+  }
+}
