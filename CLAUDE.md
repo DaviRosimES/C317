@@ -32,7 +32,9 @@ Conferir o estado atual da aplicação antes de afirmar que o modelo novo já es
 Para a Milestone 7, `docs/m7/` (01 a 03 e `CONTEXTO-PARA-IAS.md`) é a referência normativa e
 `backend/dados/m7/` o pacote `c317.m7.g8.v2`. Definições de indicadores e catálogos (V7) ficam em
 `indicadores_definicoes` e tabelas associadas; contrato em `docs/m7/contrato-api-definicoes.md`. Códigos de
-catálogo são gerados uma vez (`app/core/codigos.py`) e nunca recalculados ao renomear.
+catálogo são gerados uma vez (`app/core/codigos.py`) e nunca recalculados ao renomear. Relatórios (V8): administração
+por PDF em `/admin/relatorios`, contrato em `docs/m7/contrato-api-relatorios.md`; PDFs enviados ficam em
+`arquivos/relatorios/enviados/` (fora do git).
 
 ## Comandos
 

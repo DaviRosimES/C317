@@ -16,6 +16,8 @@ class Settings:
     auth_token_expire_minutes: int = int(os.getenv("AUTH_TOKEN_EXPIRE_MINUTES", "60"))
     # Pasta dos PDFs; `relatorios.arquivo_url` guarda o caminho relativo a ela.
     relatorios_dir: Path = BACKEND_DIR / os.getenv("RELATORIOS_DIR", "arquivos/relatorios")
+    # Tamanho máximo de um PDF enviado pela administração; informado em /admin/relatorios/limites.
+    relatorios_tamanho_maximo: int = int(os.getenv("RELATORIOS_TAMANHO_MAXIMO_MB", "20")) * 1024 * 1024
     cors_origins: list[str] = [
         origem.strip()
         for origem in os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
