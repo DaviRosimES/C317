@@ -35,6 +35,10 @@ Para a Milestone 7, `docs/m7/` (01 a 03 e `CONTEXTO-PARA-IAS.md`) é a referênc
 catálogo são gerados uma vez (`app/core/codigos.py`) e nunca recalculados ao renomear. Relatórios (V8): administração
 por PDF em `/admin/relatorios`, contrato em `docs/m7/contrato-api-relatorios.md`; PDFs enviados ficam em
 `arquivos/relatorios/enviados/` (fora do git).
+Dados do indicador (V9) ficam em `dados_indicadores` (carga `python -m scripts.carregar_m7`, simulação por
+padrão); admin em `/admin/dados-indicadores` e consulta pública em `/consulta` (Setor + Ano/Período), contrato em
+`docs/m7/contrato-api-dados-e-consulta.md`. A elegibilidade pública fica em `ELEGIVEL`
+(`dado_indicador_repository.py`); `/observacoes` (M6) segue até a migração das telas.
 
 ## Comandos
 

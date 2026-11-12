@@ -106,6 +106,7 @@ class ConsultaPublicaRepository:
                     FROM periodos p
                     JOIN indicadores i ON i.periodo_id = p.id
                     WHERE i.status = 'publicado' AND i.estabelecimento_id IS NULL
+                      AND NOT EXISTS(SELECT 1 FROM tipos_indicadores ta WHERE ta.codigo = i.tipo AND ta.arquivado)
                     ORDER BY p.ano DESC, p.mes DESC NULLS FIRST
                     """
                 )
@@ -113,7 +114,8 @@ class ConsultaPublicaRepository:
         )
 
     def listar_indicadores(self, filtros: dict) -> list[Row]:
-        condicoes = ["i.status = 'publicado'", "i.estabelecimento_id IS NULL"]
+        # Tipos de demonstração arquivados pela carga da M7 saem da consulta pública.
+        condicoes = ["i.status = 'publicado'", "i.estabelecimento_id IS NULL", "NOT EXISTS(SELECT 1 FROM tipos_indicadores ta WHERE ta.codigo = i.tipo AND ta.arquivado)"]
         if filtros.get("tipos"):
             condicoes.append("i.tipo = ANY(:tipos)")
         if filtros.get("cnaes"):

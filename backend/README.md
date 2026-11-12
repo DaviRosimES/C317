@@ -292,3 +292,40 @@ Rotas administrativas em `/api/v1/admin/definicoes-indicadores` (cadastrar, cons
 corrigir, arquivar e restaurar) e `/api/v1/admin/catalogos` (setores e unidades somente
 leitura; fontes, classificações e categorias com cadastro e correção). Contrato completo,
 validações e erros: [contrato HTTP da V7](../docs/m7/contrato-api-definicoes.md).
+
+## Dados do indicador e consulta (V9)
+
+Os dados do pacote `c317.m7.g8.v2` (`backend/dados/m7/`) ficam em `dados_indicadores`, ligados às
+definições e aos catálogos da V7. Contrato HTTP da administração (`/api/v1/admin/dados-indicadores`)
+e da consulta pública por Setor e Ano/Período (`/api/v1/consulta`):
+[contrato da V9](../docs/m7/contrato-api-dados-e-consulta.md).
+
+### Carga do pacote
+
+Dentro de `backend/`, depois de `python -m alembic upgrade head`:
+
+```bash
+python -m scripts.carregar_m7             # simulação: confere o pacote e o banco, não grava nada
+python -m scripts.carregar_m7 --aplicar   # grava tudo em uma única transação
+```
+
+O pacote é validado antes de qualquer acesso ao banco: contrato, hashes do manifesto, contagens,
+vínculos, unidades, referências, decimais e identidade. O resumo em JSON separa catálogos,
+indicadores e dados em `inserir`, `existentes` e `conflitos`. Ele também traz os arquivamentos
+previstos e as 119 exclusões respeitadas.
+
+- **Estados:** os dados que já existiam na M6 herdam status, arquivamento e bloqueio de
+  `observacoes_m6` pelo id (`estados_preservados_da_m6`). Dados novos entram em rascunho. O
+  pacote nunca publica nada; a publicação é feita pela administração.
+- **Reexecução:** não duplica nada e não reinicia estados; os dados viram `existentes`.
+- **Conflitos:** quando o banco diverge do pacote (por exemplo, um valor já corrigido), a
+  aplicação é recusada sem gravar. `--manter-banco` é a resolução explícita: mantém a versão do
+  banco nos itens em conflito e aplica o restante.
+- **Fora do escopo:** os 925 dados não municipais não são importados. Os que existirem em
+  `observacoes_m6` são arquivados, sem exclusão.
+- **Demonstração antiga:** os oito tipos fictícios do legado (`tipos_indicadores`) são arquivados,
+  sem conversão nem exclusão. Um tipo com lançamento sem marca de demonstração vira conflito.
+
+Para conferir a consulta como no exemplo da documentação (Economia criativa + 2025 anual = 4
+indicadores; Turismo + 2024 anual = 14), é preciso publicar os dados pela administração. A
+suíte de testes faz essa simulação em transação revertida.

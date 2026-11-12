@@ -15,6 +15,8 @@ from app.core.security import create_access_token, hash_password  # noqa: E402
 from app.main import app  # noqa: E402
 from app.repositories.usuario_repository import UsuarioRepository  # noqa: E402
 from scripts.carregar_m6 import aplicar  # noqa: E402
+from scripts.carregar_m7 import aplicar as aplicar_m7, planejar as planejar_m7  # noqa: E402
+from scripts.m7.pacote import ler as ler_pacote_m7  # noqa: E402
 from scripts.m6.contrato import carregar_pacote  # noqa: E402
 
 SENHA = "senha-de-teste-123"
@@ -91,6 +93,7 @@ def carregado(db, psycopg, pacote):
 
 PACOTE_M7 = Path(__file__).resolve().parents[1] / "dados" / "m7"
 TABELAS_M7 = (
+    "dados_indicadores",
     "indicador_classificacoes",
     "indicador_setores",
     "indicadores_definicoes",
@@ -168,3 +171,22 @@ def definicoes_m7(db, m7_vazio, catalogos_m7):
     """As 61 definições e os catálogos do pacote, inseridos na transação do teste."""
     inserir_catalogos_m7(db, catalogos_m7)
     return catalogos_m7
+
+
+@pytest.fixture(scope="session")
+def pacote_m7():
+    """Pacote c317.m7.g8.v2 validado uma vez por sessão (hashes, contagens e vínculos)."""
+    return ler_pacote_m7(PACOTE_M7)
+
+
+@pytest.fixture
+def dados_m7(db, definicoes_m7, m6_vazio, pacote_m7):
+    """Carga da M7 sobre definições já existentes e M6 vazia: 303 dados novos em rascunho."""
+    return aplicar_m7(db, planejar_m7(db, pacote_m7))
+
+
+@pytest.fixture
+def publicados_m7(db, dados_m7):
+    """Simulação do pacote com todos os dados publicados (a publicação real é da administração)."""
+    db.execute(text("UPDATE dados_indicadores SET status = 'publicado'"))
+    return dados_m7

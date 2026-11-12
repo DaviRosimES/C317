@@ -194,7 +194,7 @@ def test_edicao_invalida(client, admin_headers, definicoes_m7, corpo):
     ],
 )
 def test_alteracao_que_invalida_dados_e_recusada(
-    client, admin_headers, carregado, definicoes_m7, indicador, alteracao, trecho
+    client, admin_headers, dados_m7, definicoes_m7, indicador, alteracao, trecho
 ):
     resposta = corrigir(client, admin_headers, indicador, alteracao)
     assert resposta.status_code == 409, resposta.text
@@ -203,13 +203,13 @@ def test_alteracao_que_invalida_dados_e_recusada(
     assert trecho in detalhe
 
 
-def test_correcao_descritiva_com_dados_vinculados(client, admin_headers, carregado, definicoes_m7):
+def test_correcao_descritiva_com_dados_vinculados(client, admin_headers, dados_m7, definicoes_m7):
     resposta = corrigir(client, admin_headers, ACOLHEDORA, {"definicao": "Texto revisado da definição."})
     assert resposta.status_code == 200, resposta.text
     assert resposta.json()["total_dados"] > 0
 
 
-def test_ampliar_compatibilidades_e_permitido(client, admin_headers, carregado, definicoes_m7):
+def test_ampliar_compatibilidades_e_permitido(client, admin_headers, dados_m7, definicoes_m7):
     corpo = corrigir(
         client, admin_headers, PI_DEPOSITOS, {"tipos_referencia_permitidos": ["anual", "acumulada", "mensal"]}
     ).json()
@@ -219,8 +219,10 @@ def test_ampliar_compatibilidades_e_permitido(client, admin_headers, carregado, 
 # Arquivamento
 
 
-def test_arquivar_e_restaurar(client, db, admin_headers, carregado, definicoes_m7):
-    estados = text("SELECT status, count(*) FROM observacoes_m6 WHERE indicador_codigo = :c GROUP BY status")
+def test_arquivar_e_restaurar(client, db, admin_headers, dados_m7, definicoes_m7):
+    estados = text(
+        "SELECT status, arquivado, count(*) FROM dados_indicadores WHERE indicador_codigo = :c GROUP BY 1, 2"
+    )
     antes = db.execute(estados, {"c": PI_DEPOSITOS}).all()
 
     arquivado = client.post(f"{DEFINICOES}/{PI_DEPOSITOS}/arquivar", headers=admin_headers).json()
@@ -317,7 +319,7 @@ def test_cadastro_de_classificacao_e_categoria(client, admin_headers, novo):
     assert definicao.json()["classificacoes_permitidas"] == [{"codigo": classificacao["codigo"], "nome": "Faixa de renda"}]
 
 
-def test_categoria_em_uso_preserva_o_significado(client, admin_headers, carregado, definicoes_m7):
+def test_categoria_em_uso_preserva_o_significado(client, admin_headers, dados_m7, definicoes_m7):
     hotel = next(
         c for c, item in definicoes_m7["categorias"].items()
         if item["nome"] == "Hotel" and item["classificacao"] == "categoria_hospedagem"

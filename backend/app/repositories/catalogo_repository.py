@@ -8,7 +8,8 @@ class CatalogoRepository:
 
     def get_tipo(self, codigo: str) -> Row | None:
         return self.connection.execute(
-            text("SELECT codigo, unidade, escopo FROM tipos_indicadores WHERE codigo = :codigo"),
+            # Tipo arquivado (demonstração antiga) não recebe novos lançamentos.
+            text("SELECT codigo, unidade, escopo FROM tipos_indicadores WHERE codigo = :codigo AND NOT arquivado"),
             {"codigo": codigo},
         ).one_or_none()
 
@@ -49,7 +50,7 @@ class CatalogoRepository:
                 text(
                     """
                     SELECT codigo, nome, descricao, unidade, escopo, fonte_referencia, provisorio
-                    FROM tipos_indicadores ORDER BY nome
+                    FROM tipos_indicadores WHERE NOT arquivado ORDER BY nome
                     """
                 )
             )

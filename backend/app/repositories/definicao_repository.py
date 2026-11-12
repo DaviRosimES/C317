@@ -28,7 +28,7 @@ _DEFINICAO = """
                FROM indicador_classificacoes i JOIN classificacoes c ON c.codigo = i.classificacao_codigo
                WHERE i.indicador_codigo = d.codigo
            ), '[]') AS classificacoes_permitidas,
-           (SELECT count(*) FROM observacoes_m6 o WHERE o.indicador_codigo = d.codigo) AS total_dados
+           (SELECT count(*) FROM dados_indicadores o WHERE o.indicador_codigo = d.codigo) AS total_dados
     FROM indicadores_definicoes d
     JOIN unidades u ON u.codigo = d.unidade_codigo
 """
@@ -51,7 +51,9 @@ class DefinicaoRepository:
 
     def codigo_em_dados(self, indicador_codigo: str) -> bool:
         return self._executar(
-            "SELECT EXISTS(SELECT 1 FROM observacoes_m6 WHERE indicador_codigo = :codigo)",
+            # Códigos da M6 também ficam reservados: um dado antigo pode ainda apontar para eles.
+            "SELECT EXISTS(SELECT 1 FROM dados_indicadores WHERE indicador_codigo = :codigo) "
+            "OR EXISTS(SELECT 1 FROM observacoes_m6 WHERE indicador_codigo = :codigo)",
             {"codigo": indicador_codigo},
         ).scalar_one()
 
@@ -82,7 +84,7 @@ class DefinicaoRepository:
                 """
                 SELECT u.codigo, u.nome, u.inteira, u.maximo, u.casas_exibicao,
                        EXISTS(SELECT 1 FROM indicadores_definicoes d WHERE d.unidade_codigo = u.codigo)
-                       OR EXISTS(SELECT 1 FROM observacoes_m6 o WHERE o.unidade_codigo = u.codigo) AS em_uso
+                       AS em_uso
                 FROM unidades u ORDER BY u.nome
                 """
             )
@@ -93,7 +95,7 @@ class DefinicaoRepository:
             self._executar(
                 """
                 SELECT f.codigo, f.nome, f.links,
-                       EXISTS(SELECT 1 FROM observacoes_m6 o WHERE o.fonte_codigo = f.codigo) AS em_uso
+                       EXISTS(SELECT 1 FROM dados_indicadores o WHERE o.fonte_codigo = f.codigo) AS em_uso
                 FROM fontes f
                 WHERE CAST(:codigo AS text) IS NULL OR f.codigo = :codigo
                 ORDER BY f.nome
@@ -109,7 +111,7 @@ class DefinicaoRepository:
                 SELECT c.codigo, c.nome,
                        EXISTS(SELECT 1 FROM indicador_classificacoes i
                               WHERE i.classificacao_codigo = c.codigo)
-                       OR EXISTS(SELECT 1 FROM categorias k JOIN observacoes_m6 o
+                       OR EXISTS(SELECT 1 FROM categorias k JOIN dados_indicadores o
                                    ON o.categoria_codigo = k.codigo
                                  WHERE k.classificacao_codigo = c.codigo) AS em_uso
                 FROM classificacoes c
@@ -125,7 +127,7 @@ class DefinicaoRepository:
             self._executar(
                 """
                 SELECT k.codigo, k.nome, k.classificacao_codigo, k.codigo_cnae,
-                       EXISTS(SELECT 1 FROM observacoes_m6 o WHERE o.categoria_codigo = k.codigo) AS em_uso
+                       EXISTS(SELECT 1 FROM dados_indicadores o WHERE o.categoria_codigo = k.codigo) AS em_uso
                 FROM categorias k
                 WHERE CAST(:codigo AS text) IS NULL OR k.codigo = :codigo
                 ORDER BY k.classificacao_codigo, k.nome
@@ -269,17 +271,20 @@ class DefinicaoRepository:
         )
 
     def vinculos(self, codigo: str) -> list[Row]:
-        """Dados vinculados ao código (qualquer estado), agrupados pelo que a definição restringe."""
+        """Dados vinculados ao código (qualquer estado), agrupados pelo que a definição restringe.
+
+        A unidade do dado é a da definição; trocar a unidade com dados existentes é um problema.
+        """
         return list(
             self._executar(
                 """
-                SELECT o.unidade_codigo, o.referencia_tipo,
+                SELECT i.unidade_codigo, o.referencia_tipo,
                        o.categoria_codigo IS NULL AS sem_categoria,
-                       COALESCE(k.classificacao_codigo, m.conteudo->>'classificacao') AS classificacao,
+                       k.classificacao_codigo AS classificacao,
                        count(*) AS quantidade
-                FROM observacoes_m6 o
+                FROM dados_indicadores o
+                JOIN indicadores_definicoes i ON i.codigo = o.indicador_codigo
                 LEFT JOIN categorias k ON k.codigo = o.categoria_codigo
-                LEFT JOIN catalogos_m6 m ON m.tipo = 'categorias' AND m.codigo = o.categoria_codigo
                 WHERE o.indicador_codigo = :codigo
                 GROUP BY 1, 2, 3, 4
                 """,
