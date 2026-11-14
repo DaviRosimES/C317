@@ -203,7 +203,8 @@ export function validarCampos(
   const erros: ErrosDado = {}
 
   let categoriaCodigo: string | null = null
-  if (r.recorte === 'sem' && definicao.aceitaSemCategoria) {
+  const soTotal = definicao.aceitaSemCategoria && !definicao.classificacoesPermitidas.length
+  if ((r.recorte === 'sem' || soTotal) && definicao.aceitaSemCategoria) {
     categoriaCodigo = null
   } else if (r.recorte === 'categoria' || !definicao.aceitaSemCategoria) {
     const categoria = catalogos.categorias.find((c) => c.codigo === r.categoria)

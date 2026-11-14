@@ -82,9 +82,9 @@ export function CamposDado({ r, definicao, catalogos, erros, desabilitado, onAlt
   const fonte = catalogos.fontes.find((f) => f.codigo === r.fonte)
   const tipos = TIPOS_REFERENCIA.filter((t) => definicao.tiposReferenciaPermitidos.includes(t.tipo))
 
-  // Se a definição exige categoria, não existe "sem categoria".
-  const recorte = definicao.aceitaSemCategoria ? r.recorte : 'categoria'
+  // Se a definição exige categoria, não existe "sem categoria"; sem classificações, só existe o total.
   const classificacoes = definicao.classificacoesPermitidas
+  const recorte = !definicao.aceitaSemCategoria ? 'categoria' : classificacoes.length ? r.recorte : 'sem'
   const categorias = catalogos.categorias.filter((c) => c.classificacaoCodigo === r.classificacao)
   const categoriaAtual = categorias.find((c) => c.codigo === r.categoria)
 
@@ -105,7 +105,11 @@ export function CamposDado({ r, definicao, catalogos, erros, desabilitado, onAlt
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
-          {definicao.aceitaSemCategoria ? (
+          {definicao.aceitaSemCategoria && !classificacoes.length ? (
+            <p className="text-[13px] text-ink-muted">
+              Este indicador não tem classificações: o valor é o total informado pela fonte, sem categoria.
+            </p>
+          ) : definicao.aceitaSemCategoria ? (
             <fieldset className="flex flex-col gap-2">
               <legend className="mb-1.5 text-xs font-medium text-ink-muted">Recorte do valor</legend>
               <FilterChips

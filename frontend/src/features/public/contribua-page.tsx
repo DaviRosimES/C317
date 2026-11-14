@@ -97,7 +97,7 @@ export function ContribuaPage() {
           <p className="mt-2 text-[13px] text-ink-muted">
             Esta plataforma não recebe as respostas automaticamente e não tem integração com o Cadastur ou o FNRH Digital.
           </p>
-          <Button asChild variant="link" className="mt-2 h-auto px-0">
+          <Button asChild variant="link" className="mt-2 h-auto shrink whitespace-normal px-0 text-left">
             <Link to="/sobre">Orientações sobre Cadastur e FNRH Digital</Link>
           </Button>
         </div>
