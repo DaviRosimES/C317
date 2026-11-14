@@ -95,14 +95,17 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
 | `/relatorios` | Relatórios (D3, D5) | API: `/relatorios`; download em `/relatorios/{id}/arquivo` ou link externo sinalizado |
 | `/inventario` | Public / Inventário Turístico | simulado |
 | `/contribua` | Formulários externos confirmados (D6) | estático (`features/public/canais.ts`) |
-| `/sobre` | Cadastur, FNRH, SRI e fontes de dados (D6) | estático + API: `/observacoes/catalogos` (fontes com dados publicados) |
+| `/sobre` | Observatório, setores, leitura dos dados, fontes e orientações secundárias (D9) | estático + API: `/consulta/fontes` (fontes dos dados elegíveis) |
 | `/admin/login` | Login da área administrativa (D1) | API: `/auth/login`, `/auth/me` |
-| `/admin/observacoes` | Observações da M6, filtros e publicação (D4) | API: `/admin/observacoes` (paginada), `/admin/observacoes/catalogos` |
-| `/admin/observacoes/nova` | Cadastro de observação (D4) | API: `/admin/observacoes/catalogos` + `POST /admin/observacoes` |
-| `/admin/observacoes/$observacaoId` | Correção, publicação e bloqueio (D4) | API: `/admin/observacoes/{id}` (+ ações) e `/observacoes/{id}` |
-| `/admin/lancamentos` | Lançamentos anteriores, filtro por situação e publicação (D2) | API: `/admin/indicadores` |
-| `/admin/lancamentos/novo` | Cadastro de lançamento (D2) | API: catálogos + `POST /admin/indicadores` |
-| `/admin/lancamentos/$lancamentoId` | Correção de lançamento (D2) | API: `PATCH /admin/indicadores/{id}` |
+| `/admin/indicadores` | Definições: listagem por situação, setor e nome (D7) | API: `/admin/definicoes-indicadores`, `/admin/catalogos` |
+| `/admin/indicadores/novo` | Cadastro da definição (D7) | API: `POST /admin/definicoes-indicadores`; classificação nova em `/admin/catalogos/classificacoes` |
+| `/admin/indicadores/$codigo` | Detalhe, correção, arquivar e restaurar (D7) | API: `/admin/definicoes-indicadores/{codigo}` (+ ações) |
+| `/admin/dados` | Dados do indicador por indicador, status e situação (D7) | API: `/admin/dados-indicadores` |
+| `/admin/dados/novo` | Cadastro de dado em rascunho (`?indicador=`) (D7) | API: definição + catálogos; `POST /admin/dados-indicadores` |
+| `/admin/dados/$dadoId` | Correção, publicação, arquivo e bloqueio do dado (D7) | API: `/admin/dados-indicadores/{id}` (+ ações) |
+| `/admin/relatorios` | Relatórios por situação e status (D8) | API: `/admin/relatorios` |
+| `/admin/relatorios/novo` | Cadastro com envio de PDF (D8) | API: `/admin/relatorios/limites`, `POST /admin/relatorios` (multipart) |
+| `/admin/relatorios/$relatorioId` | Metadados, troca de PDF, publicação e arquivo (D8) | API: `/admin/relatorios/{id}` (+ `/arquivo` e ações) |
 
 ## Área administrativa
 
@@ -112,18 +115,16 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
 - O token fica no `localStorage` (`src/api/http/sessao.ts`) com o prazo informado pela API (`expires_in`). A sessão
   termina ao sair, quando o prazo vence (inclusive com a tela aberta), quando a API recusa o token (401) ou quando
   outra aba sai da conta; nesses casos a interface volta ao login com um aviso.
-- O formulário valida tipo, período, valor (inteiro não negativo para quantidades; 0 a 100 para percentuais), fonte e
-  CNAE (só para tipos por setor) antes de enviar; erros da API aparecem no topo e nos campos. Tipos e CNAEs vêm dos
-  catálogos da API.
-- Observações (D4): o formulário segue o contrato da V5/V6. Indicador, território, categoria, unidade, fonte e temas
-  vêm de `/admin/observacoes/catalogos`, que inclui itens ainda sem dado publicado. O CNAE de um recorte vem do
-  catálogo da categoria; o cadastro não envia CNAE. A referência é anual,
-  mensal, acumulada, levantamento ou retrato, sem ano preenchido de antemão. O valor é texto decimal sem limite de
-  casas (`lib/decimal.ts`): a validação aplica `inteira`/`maximo` da unidade, e a edição mostra o valor exato.
-  Observação com divulgação bloqueada não pode ser publicada; o motivo aparece na tela e a API responde 422.
-- A listagem é paginada pela API (30 por vez em "Mostrar mais"). O detalhe mostra a proveniência e o histórico das
-  ações administrativas (`historico`) e lê `/observacoes/{id}` depois de cada alteração para mostrar o que a
-  consulta pública já devolve.
+- Indicadores (D7): a definição tem uma unidade, um ou mais setores, os tipos de referência e as classificações
+  permitidas e a opção de dado sem categoria. O código é gerado pela API. A correção envia só o que mudou; a API
+  recusa (409, com os vínculos) o que invalidaria dados existentes. Arquivar oculta os dados sem mudar o estado deles.
+- Dados do indicador (D7): substituem Observações e Lançamentos. Unidade, setores e município vêm da definição; o
+  formulário oferece só os tipos de referência e as classificações dela, sem ano preenchido de antemão. O valor é
+  texto decimal (`lib/decimal.ts`). Todo dado novo é rascunho; publicar, corrigir um publicado, arquivar e bloquear
+  pedem confirmação. A duplicidade (409) leva ao dado existente. Não há histórico nem autoria.
+- Relatórios (D8): cadastro por PDF, sem campo de URL; o limite vem de `/admin/relatorios/limites`. Uma troca de PDF
+  com falha mantém o arquivo vigente. Links externos de relatórios legados continuam como estão.
+- Fonte, classificação e categoria novas são cadastradas em diálogos dentro dos formulários.
 - Para testar localmente, crie a conta com `python -m scripts.criar_admin` (veja `backend/README.md`).
 
 ## Rotas simuladas (mocks)
