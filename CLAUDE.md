@@ -138,12 +138,21 @@ O fluxo é sempre `routes` → `features` → `queries` → `services` → `api/
   sessão ativa e papel `admin`, senão redireciona para `/admin/login?redirect=…&motivo=…`.
 - O token fica em `api/http/sessao.ts` (localStorage, com prazo de `expires_in`). O cliente HTTP anexa o
   `Authorization` e, em um 401 com token, encerra a sessão; `useFimDaSessao` leva ao login e limpa o cache.
+  As query keys administrativas começam por `adminKeys.all` (`['admin', …]`) para serem descartadas no logout.
+- Três áreas (D7/D8): Indicadores (`/admin/indicadores`, definições e catálogos da V7), Dados do indicador
+  (`/admin/dados`, V9; substituiu Observações e Lançamentos) e Relatórios (`/admin/relatorios`, PDF da V8).
+  Textos de apoio aprovados ficam em `features/admin/textos.ts`; use-os sem reescrever. Status (rascunho/publicado)
+  e arquivamento são independentes (`SituacaoBadges`); arquivado só oferece Restaurar. Não há histórico nem autoria.
 - Mutations administrativas invalidam também `consultaKeys.all`, pois publicar muda a consulta pública; as de
-  observações invalidam ainda `observacaoKeys.all`.
-- Observações da M6 (`/admin/observacoes`) são a tela principal; `/admin/lancamentos` mantém o modelo anterior.
-  O `valor` das observações continua **texto** no model (decimal exato, sem limite de casas): use `lib/decimal.ts`
-  para validar/comparar e `formatDecimal`/`formatValorObservacao` para exibir; nunca converta para `number` na edição.
-  O mesmo vale para não preencher ano/mês de antemão: referência só a confirmada pela fonte.
+  dados invalidam ainda `observacaoKeys.all` e as de relatórios `relatorioKeys.all`.
+- O `valor` do dado é **texto** no model (decimal exato, sem limite de casas): use `lib/decimal.ts` para
+  validar/comparar e `formatDecimal`/`formatValorObservacao` para exibir; nunca converta para `number` na edição.
+  O mesmo vale para não preencher ano/mês de antemão: referência só a confirmada pela fonte. Unidade, setores e
+  município vêm da definição; o formulário do dado só oferece os tipos de referência e as classificações dela.
+- Fonte, classificação e categoria novas entram pelos diálogos de `catalogo-dialogos.tsx` (o submit chama
+  `stopPropagation`, pois o React propaga eventos do portal ao formulário da página).
+- Upload de PDF: passe `Content-Type: multipart/form-data` na requisição; com o padrão JSON do cliente o axios
+  converteria o `FormData` em JSON. O download administrativo exige token, então é baixado como blob.
 - Bloqueio de divulgação é decisão explícita com motivo (ex.: amostra insuficiente da pesquisa), nunca automático por
   valor pequeno.
 

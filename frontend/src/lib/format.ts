@@ -1,5 +1,5 @@
 import type { UnidadeIndicador } from '@/models/catalogo'
-import type { Qualificador } from '@/models/observacao'
+import type { Qualificador, Unidade } from '@/models/observacao'
 
 const numberFormatter = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 })
 const percentFormatter = new Intl.NumberFormat('pt-BR', {
@@ -41,6 +41,12 @@ export function formatRelativo(date: Date, now = new Date()) {
   return relativeFormatter.format(dias, 'day')
 }
 
+/** "2026-10-08" → 8 de outubro no fuso local (new Date("2026-10-08") seria meia-noite UTC, ainda dia 7 no Brasil). */
+export function toDataLocal(iso: string) {
+  const [ano, mes, dia] = iso.split('-').map(Number)
+  return new Date(ano, mes - 1, dia)
+}
+
 /** Data local → "2026-10-08" (atributo dateTime e contratos da API). */
 export const toDataIso = (data: Date) =>
   `${data.getFullYear()}-${String(data.getMonth() + 1).padStart(2, '0')}-${String(data.getDate()).padStart(2, '0')}`
@@ -71,4 +77,14 @@ export function dominioDoLink(link: string) {
   } catch {
     return link
   }
+}
+
+/** "Contagem inteira · de 0 a 100 · exibido com 1 casa": o que a unidade herdada exige do valor. */
+export function descreverUnidade(unidade: Unidade) {
+  const numero = unidade.inteira ? 'Número inteiro' : 'Aceita decimais'
+  const limite = unidade.maximo === null ? 'sem máximo' : `de 0 a ${String(unidade.maximo).replace('.', ',')}`
+  const casas = unidade.casasExibicao
+    ? `exibido com ${unidade.casasExibicao} ${unidade.casasExibicao === 1 ? 'casa' : 'casas'}`
+    : 'exibido sem casas decimais'
+  return `${numero} · ${limite} · ${casas}`
 }

@@ -1,5 +1,4 @@
 import { z } from 'zod'
-import { TIPOS_REFERENCIA } from './referencia'
 
 export const dashboardSearchSchema = z.object({
   ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
@@ -42,21 +41,35 @@ export const loginSearchSchema = z.object({
 })
 export type LoginSearch = z.infer<typeof loginSearchSchema>
 
-export const lancamentosSearchSchema = z.object({
-  status: z.enum(['rascunho', 'publicado']).optional().catch(undefined),
-})
-export type LancamentosSearch = z.infer<typeof lancamentosSearchSchema>
+/** Arquivamento é separado do status: listagens administrativas filtram ativos, arquivados ou todos. */
+export const situacoesArquivo = ['ativos', 'arquivados', 'todos'] as const
+const statusPublicacao = ['rascunho', 'publicado'] as const
 
-export const situacoesObservacao = ['rascunho', 'publicado', 'bloqueada'] as const
-export type SituacaoObservacao = (typeof situacoesObservacao)[number]
-
-/** Filtros da listagem administrativa de observações; os códigos vêm do catálogo da API. */
-export const observacoesSearchSchema = z.object({
-  situacao: z.enum(situacoesObservacao).optional().catch(undefined),
-  tema: z.string().min(1).optional().catch(undefined),
+/** Filtros da listagem de Dados do indicador; o código do indicador vem da API. */
+export const dadosSearchSchema = z.object({
   indicador: z.string().min(1).optional().catch(undefined),
-  territorio: z.string().min(1).optional().catch(undefined),
-  referencia: z.enum(TIPOS_REFERENCIA.map((item) => item.tipo)).optional().catch(undefined),
-  ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
+  situacao: z.enum(situacoesArquivo).optional().catch(undefined),
+  status: z.enum(statusPublicacao).optional().catch(undefined),
 })
-export type ObservacoesSearch = z.infer<typeof observacoesSearchSchema>
+export type DadosSearch = z.infer<typeof dadosSearchSchema>
+
+/** Indicador pré-selecionado ao cadastrar um dado (`/admin/dados/novo?indicador=`). */
+export const novoDadoSearchSchema = z.object({
+  indicador: z.string().min(1).optional().catch(undefined),
+})
+export type NovoDadoSearch = z.infer<typeof novoDadoSearchSchema>
+
+/** Filtros da listagem administrativa de indicadores; o setor é um código do catálogo da API. */
+export const definicoesSearchSchema = z.object({
+  situacao: z.enum(situacoesArquivo).optional().catch(undefined),
+  setor: z.string().min(1).optional().catch(undefined),
+  busca: z.string().trim().min(1).max(300).optional().catch(undefined),
+})
+export type DefinicoesSearch = z.infer<typeof definicoesSearchSchema>
+
+/** Filtros da listagem administrativa de relatórios. */
+export const relatoriosAdminSearchSchema = z.object({
+  situacao: z.enum(situacoesArquivo).optional().catch(undefined),
+  status: z.enum(statusPublicacao).optional().catch(undefined),
+})
+export type RelatoriosAdminSearch = z.infer<typeof relatoriosAdminSearchSchema>

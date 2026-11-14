@@ -21,7 +21,7 @@ export const TIPOS_REFERENCIA: { tipo: TipoReferencia; rotulo: string; descricao
   {
     tipo: 'retrato',
     rotulo: 'Retrato',
-    descricao: 'Extração datada de uma base (ex.: Lattes em 04/10/2026); não é série anual.',
+    descricao: 'Extração datada de uma base (ex.: consulta a um cadastro em 04/10/2026); não é série anual.',
   },
 ]
 

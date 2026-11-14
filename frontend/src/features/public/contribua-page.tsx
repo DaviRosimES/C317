@@ -14,8 +14,8 @@ const ETAPAS = [
     texto: 'A equipe confere e consolida as respostas. Não há importação automática para o site.',
   },
   {
-    titulo: 'Publicação de resultados agregados',
-    texto: 'Somente totais e percentuais consolidados são publicados aqui, sempre com fonte e referência.',
+    titulo: 'Publicação de resultados',
+    texto: 'Somente resultados conferidos e publicados pela equipe aparecem na consulta, sempre com fonte e referência.',
   },
 ]
 
@@ -97,8 +97,8 @@ export function ContribuaPage() {
           <p className="mt-2 text-[13px] text-ink-muted">
             Esta plataforma não recebe as respostas automaticamente e não tem integração com o Cadastur ou o FNRH Digital.
           </p>
-          <Button asChild variant="link" className="mt-2 h-auto px-0">
-            <Link to="/sobre">Orientações sobre Cadastur e FNRH</Link>
+          <Button asChild variant="link" className="mt-2 h-auto shrink whitespace-normal px-0 text-left">
+            <Link to="/sobre">Orientações sobre Cadastur e FNRH Digital</Link>
           </Button>
         </div>
       </Card>

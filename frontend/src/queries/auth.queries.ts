@@ -2,7 +2,7 @@ import * as React from 'react'
 import { queryOptions, useMutation, useQueryClient } from '@tanstack/react-query'
 import { PAPEL_ADMIN, authService } from '@/api/services/auth.service'
 import type { MotivoFimSessao, Usuario } from '@/models'
-import { lancamentoKeys } from './lancamento.queries'
+import { adminKeys } from './admin.keys'
 
 export const authKeys = {
   all: ['auth'] as const,
@@ -46,7 +46,7 @@ export function useFimDaSessao(aoEncerrar: (motivo: MotivoFimSessao) => void | P
         // Limpa após sair das telas administrativas, para que elas não refaçam consultas sem token.
         void Promise.resolve(callback.current(motivo)).finally(() => {
           queryClient.removeQueries({ queryKey: authKeys.all })
-          queryClient.removeQueries({ queryKey: lancamentoKeys.all })
+          queryClient.removeQueries({ queryKey: adminKeys.all })
         })
       }),
     [queryClient],
