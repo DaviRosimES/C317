@@ -60,3 +60,10 @@ export const observacoesSearchSchema = z.object({
   ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
 })
 export type ObservacoesSearch = z.infer<typeof observacoesSearchSchema>
+
+/** Filtros da listagem administrativa de relatórios. */
+export const relatoriosAdminSearchSchema = z.object({
+  situacao: z.enum(['ativos', 'arquivados', 'todos']).optional().catch(undefined),
+  status: z.enum(['rascunho', 'publicado']).optional().catch(undefined),
+})
+export type RelatoriosAdminSearch = z.infer<typeof relatoriosAdminSearchSchema>

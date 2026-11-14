@@ -25,6 +25,9 @@ import { Route as AdminAutenticadoLancamentosNovoRouteImport } from './routes/ad
 import { Route as AdminAutenticadoObservacoesIndexRouteImport } from './routes/admin/_autenticado/observacoes/index'
 import { Route as AdminAutenticadoObservacoesObservacaoIdRouteImport } from './routes/admin/_autenticado/observacoes/$observacaoId'
 import { Route as AdminAutenticadoObservacoesNovaRouteImport } from './routes/admin/_autenticado/observacoes/nova'
+import { Route as AdminAutenticadoRelatoriosIndexRouteImport } from './routes/admin/_autenticado/relatorios/index'
+import { Route as AdminAutenticadoRelatoriosRelatorioIdRouteImport } from './routes/admin/_autenticado/relatorios/$relatorioId'
+import { Route as AdminAutenticadoRelatoriosNovoRouteImport } from './routes/admin/_autenticado/relatorios/novo'
 
 const PublicRoute = PublicRouteImport.update({
   id: '/_public',
@@ -111,6 +114,24 @@ const AdminAutenticadoObservacoesNovaRoute =
     path: '/observacoes/nova',
     getParentRoute: () => AdminAutenticadoRoute,
   } as any)
+const AdminAutenticadoRelatoriosIndexRoute =
+  AdminAutenticadoRelatoriosIndexRouteImport.update({
+    id: '/relatorios/',
+    path: '/relatorios/',
+    getParentRoute: () => AdminAutenticadoRoute,
+  } as any)
+const AdminAutenticadoRelatoriosRelatorioIdRoute =
+  AdminAutenticadoRelatoriosRelatorioIdRouteImport.update({
+    id: '/relatorios/$relatorioId',
+    path: '/relatorios/$relatorioId',
+    getParentRoute: () => AdminAutenticadoRoute,
+  } as any)
+const AdminAutenticadoRelatoriosNovoRoute =
+  AdminAutenticadoRelatoriosNovoRouteImport.update({
+    id: '/relatorios/novo',
+    path: '/relatorios/novo',
+    getParentRoute: () => AdminAutenticadoRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof PublicIndexRoute
@@ -126,8 +147,11 @@ export interface FileRoutesByFullPath {
   '/admin/lancamentos/novo': typeof AdminAutenticadoLancamentosNovoRoute
   '/admin/observacoes/$observacaoId': typeof AdminAutenticadoObservacoesObservacaoIdRoute
   '/admin/observacoes/nova': typeof AdminAutenticadoObservacoesNovaRoute
+  '/admin/relatorios/$relatorioId': typeof AdminAutenticadoRelatoriosRelatorioIdRoute
+  '/admin/relatorios/novo': typeof AdminAutenticadoRelatoriosNovoRoute
   '/admin/lancamentos/': typeof AdminAutenticadoLancamentosIndexRoute
   '/admin/observacoes/': typeof AdminAutenticadoObservacoesIndexRoute
+  '/admin/relatorios/': typeof AdminAutenticadoRelatoriosIndexRoute
 }
 export interface FileRoutesByTo {
   '/contribua': typeof PublicContribuaRoute
@@ -142,8 +166,11 @@ export interface FileRoutesByTo {
   '/admin/lancamentos/novo': typeof AdminAutenticadoLancamentosNovoRoute
   '/admin/observacoes/$observacaoId': typeof AdminAutenticadoObservacoesObservacaoIdRoute
   '/admin/observacoes/nova': typeof AdminAutenticadoObservacoesNovaRoute
+  '/admin/relatorios/$relatorioId': typeof AdminAutenticadoRelatoriosRelatorioIdRoute
+  '/admin/relatorios/novo': typeof AdminAutenticadoRelatoriosNovoRoute
   '/admin/lancamentos': typeof AdminAutenticadoLancamentosIndexRoute
   '/admin/observacoes': typeof AdminAutenticadoObservacoesIndexRoute
+  '/admin/relatorios': typeof AdminAutenticadoRelatoriosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -161,8 +188,11 @@ export interface FileRoutesById {
   '/admin/_autenticado/lancamentos/novo': typeof AdminAutenticadoLancamentosNovoRoute
   '/admin/_autenticado/observacoes/$observacaoId': typeof AdminAutenticadoObservacoesObservacaoIdRoute
   '/admin/_autenticado/observacoes/nova': typeof AdminAutenticadoObservacoesNovaRoute
+  '/admin/_autenticado/relatorios/$relatorioId': typeof AdminAutenticadoRelatoriosRelatorioIdRoute
+  '/admin/_autenticado/relatorios/novo': typeof AdminAutenticadoRelatoriosNovoRoute
   '/admin/_autenticado/lancamentos/': typeof AdminAutenticadoLancamentosIndexRoute
   '/admin/_autenticado/observacoes/': typeof AdminAutenticadoObservacoesIndexRoute
+  '/admin/_autenticado/relatorios/': typeof AdminAutenticadoRelatoriosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -180,8 +210,11 @@ export interface FileRouteTypes {
     | '/admin/lancamentos/novo'
     | '/admin/observacoes/$observacaoId'
     | '/admin/observacoes/nova'
+    | '/admin/relatorios/$relatorioId'
+    | '/admin/relatorios/novo'
     | '/admin/lancamentos/'
     | '/admin/observacoes/'
+    | '/admin/relatorios/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/contribua'
@@ -196,8 +229,11 @@ export interface FileRouteTypes {
     | '/admin/lancamentos/novo'
     | '/admin/observacoes/$observacaoId'
     | '/admin/observacoes/nova'
+    | '/admin/relatorios/$relatorioId'
+    | '/admin/relatorios/novo'
     | '/admin/lancamentos'
     | '/admin/observacoes'
+    | '/admin/relatorios'
   id:
     | '__root__'
     | '/_public'
@@ -214,8 +250,11 @@ export interface FileRouteTypes {
     | '/admin/_autenticado/lancamentos/novo'
     | '/admin/_autenticado/observacoes/$observacaoId'
     | '/admin/_autenticado/observacoes/nova'
+    | '/admin/_autenticado/relatorios/$relatorioId'
+    | '/admin/_autenticado/relatorios/novo'
     | '/admin/_autenticado/lancamentos/'
     | '/admin/_autenticado/observacoes/'
+    | '/admin/_autenticado/relatorios/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -338,6 +377,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminAutenticadoObservacoesNovaRouteImport
       parentRoute: typeof AdminAutenticadoRoute
     }
+    '/admin/_autenticado/relatorios/': {
+      id: '/admin/_autenticado/relatorios/'
+      path: '/relatorios'
+      fullPath: '/admin/relatorios/'
+      preLoaderRoute: typeof AdminAutenticadoRelatoriosIndexRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
+    '/admin/_autenticado/relatorios/$relatorioId': {
+      id: '/admin/_autenticado/relatorios/$relatorioId'
+      path: '/relatorios/$relatorioId'
+      fullPath: '/admin/relatorios/$relatorioId'
+      preLoaderRoute: typeof AdminAutenticadoRelatoriosRelatorioIdRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
+    '/admin/_autenticado/relatorios/novo': {
+      id: '/admin/_autenticado/relatorios/novo'
+      path: '/relatorios/novo'
+      fullPath: '/admin/relatorios/novo'
+      preLoaderRoute: typeof AdminAutenticadoRelatoriosNovoRouteImport
+      parentRoute: typeof AdminAutenticadoRoute
+    }
   }
 }
 
@@ -368,8 +428,11 @@ interface AdminAutenticadoRouteChildren {
   AdminAutenticadoLancamentosNovoRoute: typeof AdminAutenticadoLancamentosNovoRoute
   AdminAutenticadoObservacoesObservacaoIdRoute: typeof AdminAutenticadoObservacoesObservacaoIdRoute
   AdminAutenticadoObservacoesNovaRoute: typeof AdminAutenticadoObservacoesNovaRoute
+  AdminAutenticadoRelatoriosRelatorioIdRoute: typeof AdminAutenticadoRelatoriosRelatorioIdRoute
+  AdminAutenticadoRelatoriosNovoRoute: typeof AdminAutenticadoRelatoriosNovoRoute
   AdminAutenticadoLancamentosIndexRoute: typeof AdminAutenticadoLancamentosIndexRoute
   AdminAutenticadoObservacoesIndexRoute: typeof AdminAutenticadoObservacoesIndexRoute
+  AdminAutenticadoRelatoriosIndexRoute: typeof AdminAutenticadoRelatoriosIndexRoute
 }
 
 const AdminAutenticadoRouteChildren: AdminAutenticadoRouteChildren = {
@@ -380,8 +443,12 @@ const AdminAutenticadoRouteChildren: AdminAutenticadoRouteChildren = {
   AdminAutenticadoObservacoesObservacaoIdRoute:
     AdminAutenticadoObservacoesObservacaoIdRoute,
   AdminAutenticadoObservacoesNovaRoute: AdminAutenticadoObservacoesNovaRoute,
+  AdminAutenticadoRelatoriosRelatorioIdRoute:
+    AdminAutenticadoRelatoriosRelatorioIdRoute,
+  AdminAutenticadoRelatoriosNovoRoute: AdminAutenticadoRelatoriosNovoRoute,
   AdminAutenticadoLancamentosIndexRoute: AdminAutenticadoLancamentosIndexRoute,
   AdminAutenticadoObservacoesIndexRoute: AdminAutenticadoObservacoesIndexRoute,
+  AdminAutenticadoRelatoriosIndexRoute: AdminAutenticadoRelatoriosIndexRoute,
 }
 
 const AdminAutenticadoRouteWithChildren =
