@@ -87,6 +87,18 @@ export function DefinicaoPage({ codigo, criado = false }: { codigo: string; cria
         }
         actions={
           <>
+            <Button asChild variant="secondary">
+              <Link to="/admin/dados" search={{ indicador: d.codigo, situacao: 'todos' }}>
+                Ver dados
+              </Link>
+            </Button>
+            {!d.arquivado ? (
+              <Button asChild variant="secondary">
+                <Link to="/admin/dados/novo" search={{ indicador: d.codigo }}>
+                  Adicionar dado
+                </Link>
+              </Button>
+            ) : null}
             {!d.arquivado && !editando ? (
               <Button
                 variant="secondary"

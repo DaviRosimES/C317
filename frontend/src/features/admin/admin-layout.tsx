@@ -1,14 +1,17 @@
 import * as React from 'react'
 import { Link, Outlet, useLocation, useNavigate } from '@tanstack/react-router'
-import { Database, Globe, LogOut } from 'lucide-react'
+import { Database, FileText, Globe, LogOut, Ruler } from 'lucide-react'
 import { Button } from '@/components/ui'
 import { cn } from '@/lib/utils'
 import type { Usuario } from '@/models'
 import { useFimDaSessao, useSair } from '@/queries/auth.queries'
 
+/** Uma entrada por área; o item fica ativo também no cadastro e no detalhe da área. */
 const NAV = [
-  { to: '/admin/dados', label: 'Dados do indicador', icon: Database },
-  { to: '/', label: 'Portal público', icon: Globe },
+  { to: '/admin/indicadores', label: 'Indicadores', icon: Ruler, exact: false },
+  { to: '/admin/dados', label: 'Dados do indicador', icon: Database, exact: false },
+  { to: '/admin/relatorios', label: 'Relatórios', icon: FileText, exact: false },
+  { to: '/', label: 'Portal público', icon: Globe, exact: true },
 ] as const
 
 const navLinkClass =
@@ -47,8 +50,8 @@ export function AdminLayout({ usuario }: { usuario: Usuario }) {
         </div>
 
         <nav aria-label="Área administrativa" className="flex flex-wrap gap-1 px-3 pb-3 md:flex-col md:flex-nowrap md:pb-5">
-          {NAV.map(({ to, label, icon: Icon }) => (
-            <Link key={to} to={to} activeOptions={{ exact: true, includeSearch: false }} className={navLinkClass}>
+          {NAV.map(({ to, label, icon: Icon, exact }) => (
+            <Link key={to} to={to} activeOptions={{ exact, includeSearch: false }} className={navLinkClass}>
               <Icon aria-hidden />
               {label}
             </Link>

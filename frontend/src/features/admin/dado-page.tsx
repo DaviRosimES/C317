@@ -78,6 +78,13 @@ export function DadoPage({ id }: { id: string }) {
             <SituacaoDado dado={d} />
           </span>
         }
+        actions={
+          <Button asChild variant="secondary">
+            <Link to="/admin/indicadores/$codigo" params={{ codigo: d.indicador.codigo }}>
+              Ver indicador
+            </Link>
+          </Button>
+        }
       />
 
       {d.indicador.arquivado ? (
