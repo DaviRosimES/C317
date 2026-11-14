@@ -24,6 +24,10 @@ class ConflitoError(ErroDominio):
     status_code = 409
 
 
+class ArquivoGrandeDemaisError(ErroDominio):
+    status_code = 413
+
+
 def registrar_handlers(app: FastAPI) -> None:
     @app.exception_handler(ErroDominio)
     async def erro_dominio(_: Request, erro: ErroDominio) -> JSONResponse:

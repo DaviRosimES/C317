@@ -7,8 +7,9 @@ _COLUNAS = """
     id, valor, conteudo, status, demonstracao, divulgacao_bloqueada, motivo_bloqueio,
     publicado_por, publicado_em
 """
-# Visível ao público somente o que foi publicado e não está bloqueado.
-_PUBLICAS = "status = 'publicado' AND NOT divulgacao_bloqueada"
+# Visível ao público somente o que foi publicado, não está bloqueado nem arquivado (a carga da
+# M7 arquiva os dados não municipais).
+_PUBLICAS = "status = 'publicado' AND NOT divulgacao_bloqueada AND NOT arquivado"
 
 # Filtros -> condição SQL sobre as colunas geradas da V5.
 _FILTROS = {

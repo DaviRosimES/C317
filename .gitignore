@@ -6,3 +6,6 @@ __pycache__/
 .venv-m6/
 backend/.venv-m6/
 backend/.execucao-m6/
+
+# PDFs enviados pela administração de relatórios
+backend/arquivos/relatorios/enviados/
