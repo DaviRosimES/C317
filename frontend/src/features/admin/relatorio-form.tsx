@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { AlertCircle } from 'lucide-react'
 import { ApiError } from '@/api/http/api-error'
-import { toDataLocal } from '@/api/mappers/relatorio.mapper'
 import {
   Alert,
   Button,
@@ -13,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui'
-import { toDataIso } from '@/lib/format'
+import { toDataIso, toDataLocal } from '@/lib/format'
 import { mesLongo } from '@/lib/periodo'
 import type { LimitesRelatorio, RelatorioAdmin, RelatorioCorrecao, RelatorioEntrada, TipoRelatorio } from '@/models'
 

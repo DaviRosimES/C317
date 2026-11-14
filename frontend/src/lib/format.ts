@@ -41,6 +41,12 @@ export function formatRelativo(date: Date, now = new Date()) {
   return relativeFormatter.format(dias, 'day')
 }
 
+/** "2026-10-08" → 8 de outubro no fuso local (new Date("2026-10-08") seria meia-noite UTC, ainda dia 7 no Brasil). */
+export function toDataLocal(iso: string) {
+  const [ano, mes, dia] = iso.split('-').map(Number)
+  return new Date(ano, mes - 1, dia)
+}
+
 /** Data local → "2026-10-08" (atributo dateTime e contratos da API). */
 export const toDataIso = (data: Date) =>
   `${data.getFullYear()}-${String(data.getMonth() + 1).padStart(2, '0')}-${String(data.getDate()).padStart(2, '0')}`

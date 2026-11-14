@@ -5,7 +5,7 @@ import type {
   RelatorioUpdateRequestDto,
   RelatoriosAdminQueryDto,
 } from '@/api/dtos'
-import { dominioDoLink, toDataIso } from '@/lib/format'
+import { dominioDoLink, toDataIso, toDataLocal } from '@/lib/format'
 import type {
   LimitesRelatorio,
   Relatorio,
@@ -15,11 +15,7 @@ import type {
   RelatoriosAdminFiltro,
 } from '@/models'
 
-/** "2026-10-08" → 8 de outubro no fuso local (new Date("2026-10-08") seria meia-noite UTC, ainda dia 7 no Brasil). */
-export function toDataLocal(iso: string) {
-  const [ano, mes, dia] = iso.split('-').map(Number)
-  return new Date(ano, mes - 1, dia)
-}
+export { toDataLocal } from '@/lib/format'
 
 /** `urlArquivo` é o download da API, usado somente quando o relatório não tem link externo. */
 export const toRelatorio = (dto: RelatorioPublicoResponseDto, urlArquivo: string): Relatorio => ({
