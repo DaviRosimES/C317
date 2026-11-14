@@ -201,6 +201,8 @@ function EdicaoRelatorio({ relatorio }: { relatorio: RelatorioAdmin }) {
           setSalvo(true)
           setPendente(null)
         },
+        // Fecha a confirmação sem limpar o erro: o formulário o mostra nos campos e mantém a edição.
+        onError: () => setPendente(null),
       },
     )
   }
@@ -248,12 +250,6 @@ function EdicaoRelatorio({ relatorio }: { relatorio: RelatorioAdmin }) {
             <DialogTitle>Salvar alterações no relatório publicado?</DialogTitle>
             <DialogDescription>{TEXTOS_ADMIN.edicaoPublicada}</DialogDescription>
           </DialogHeader>
-          {corrigir.error ? (
-            <Alert variant="danger">
-              <AlertCircle aria-hidden />
-              <p>{corrigir.error.message}</p>
-            </Alert>
-          ) : null}
           <DialogFooter>
             <DialogClose asChild>
               <Button variant="secondary">Cancelar</Button>
@@ -276,13 +272,11 @@ function SubstituirPdf({ relatorio }: { relatorio: RelatorioAdmin }) {
   const [concluido, setConcluido] = React.useState<RelatorioAdmin | null>(null)
   // Recria o seletor após o envio para limpar o arquivo escolhido.
   const [seletor, setSeletor] = React.useState(0)
+  const [confirmando, setConfirmando] = React.useState(false)
   const publicado = relatorio.status === 'publicado'
 
   function enviar() {
-    const invalido = validarArquivo(arquivo, limites.data)
-    setErro(invalido)
-    setConcluido(null)
-    if (invalido || !arquivo) return
+    if (!arquivo) return
     substituir.mutate(
       { id: relatorio.id, arquivo },
       {
@@ -291,8 +285,20 @@ function SubstituirPdf({ relatorio }: { relatorio: RelatorioAdmin }) {
           setArquivo(null)
           setSeletor((n) => n + 1)
         },
+        onSettled: () => setConfirmando(false),
       },
     )
+  }
+
+  // Num publicado, o novo PDF vale na consulta pública na hora: confirma antes de enviar.
+  function validarEEnviar() {
+    const invalido = validarArquivo(arquivo, limites.data)
+    setErro(invalido)
+    setConcluido(null)
+    substituir.reset()
+    if (invalido || !arquivo) return
+    if (publicado) setConfirmando(true)
+    else enviar()
   }
 
   return (
@@ -331,14 +337,34 @@ function SubstituirPdf({ relatorio }: { relatorio: RelatorioAdmin }) {
           onChange={(f) => {
             setArquivo(f)
             setErro(undefined)
+            setConcluido(null)
+            substituir.reset()
           }}
           erro={erro}
           disabled={substituir.isPending}
         />
-        <Button className="self-start" disabled={substituir.isPending || !arquivo} onClick={enviar}>
+        <Button className="self-start" disabled={substituir.isPending || !arquivo} onClick={validarEEnviar}>
           {substituir.isPending ? 'Enviando…' : 'Substituir PDF'}
         </Button>
       </CardContent>
+
+      <Dialog open={confirmando} onOpenChange={(aberto) => (aberto ? undefined : setConfirmando(false))}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Substituir o PDF do relatório publicado?</DialogTitle>
+            <DialogDescription>{TEXTOS_ADMIN.edicaoPublicada}</DialogDescription>
+          </DialogHeader>
+          <p className="break-words text-sm text-ink">Novo arquivo: {arquivo?.name}</p>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="secondary">Cancelar</Button>
+            </DialogClose>
+            <Button disabled={substituir.isPending} onClick={enviar}>
+              {substituir.isPending ? 'Enviando…' : 'Confirmar e substituir'}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </Card>
   )
 }

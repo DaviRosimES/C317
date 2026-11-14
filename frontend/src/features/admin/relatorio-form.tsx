@@ -27,6 +27,10 @@ const NAO_INFORMADO = 'nao-informado'
 export type Campo = 'titulo' | 'fonte' | 'arquivo' | 'numero' | 'tipo' | 'data' | 'ano' | 'mes'
 export type ErrosRelatorio = Partial<Record<Campo, string>>
 
+/** Campo alterado deixa de mostrar o erro (local ou da API) até o próximo envio, que recalcula tudo. */
+const limparErros = (campos: string[]) => (atual: ErrosRelatorio) =>
+  Object.fromEntries([...Object.entries(atual), ...campos.map((campo) => [campo, undefined])]) as ErrosRelatorio
+
 /** Ordem visual dos campos: o foco vai para o primeiro com erro. */
 const ORDEM: Campo[] = ['titulo', 'fonte', 'arquivo', 'numero', 'tipo', 'data', 'ano', 'mes']
 const ID_CAMPO: Record<Campo, string> = {
@@ -359,11 +363,23 @@ export function RelatorioFormCadastro({
       <AlertaDeErro erro={erro} comCampos={comCamposDaApi} />
       <CamposMetadados
         valores={valores}
-        onChange={(parcial) => setValores((atual) => ({ ...atual, ...parcial }))}
+        onChange={(parcial) => {
+          setValores((atual) => ({ ...atual, ...parcial }))
+          setErrosLocais(limparErros(Object.keys(parcial)))
+        }}
         erros={{ ...erros, arquivo: undefined }}
         disabled={pendente}
       />
-      <SeletorPdf limites={limites} arquivo={arquivo} onChange={setArquivo} erro={erros.arquivo} disabled={pendente} />
+      <SeletorPdf
+        limites={limites}
+        arquivo={arquivo}
+        onChange={(novo) => {
+          setArquivo(novo)
+          setErrosLocais(limparErros(['arquivo']))
+        }}
+        erro={erros.arquivo}
+        disabled={pendente}
+      />
       <div className="flex flex-wrap gap-3">
         <Button type="submit" variant="gradient" disabled={pendente}>
           {pendente ? 'Enviando…' : 'Salvar rascunho'}
@@ -427,6 +443,7 @@ export function RelatorioFormEdicao({
         onChange={(parcial) => {
           setSemMudancas(false)
           setValores((atual) => ({ ...atual, ...parcial }))
+          setErrosLocais(limparErros(Object.keys(parcial)))
         }}
         erros={erros}
         disabled={pendente}

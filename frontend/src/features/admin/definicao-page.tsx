@@ -267,7 +267,7 @@ function EdicaoDefinicao({
       <DefinicaoForm
         inicial={inicial}
         catalogos={catalogos}
-        salvando={corrigir.isPending || publicados.isPending}
+        salvando={corrigir.isPending || publicados.isFetching}
         erro={corrigir.error}
         rotuloSalvar="Salvar alterações"
         cancelar={
@@ -280,8 +280,8 @@ function EdicaoDefinicao({
           setSemMudanca(Object.keys(correcao).length === 0)
           if (Object.keys(correcao).length === 0) return
           corrigir.reset()
-          // Sem a lista de dados publicados (falha ao consultar), confirma por precaução.
-          if (publicados.data?.length === 0) enviar(correcao)
+          // Confirma por precaução sem a lista atualizada de dados publicados (falha ou consulta em andamento).
+          if (publicados.data?.length === 0 && !publicados.isFetching) enviar(correcao)
           else setPendente(correcao)
         }}
       />

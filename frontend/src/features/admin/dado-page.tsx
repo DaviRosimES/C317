@@ -109,13 +109,16 @@ export function DadoPage({ id }: { id: string }) {
             </CardContent>
           </Card>
 
-          {d.arquivado ? (
+          {d.arquivado || d.indicador.arquivado ? (
+            // A API recusa corrigir dado arquivado ou de indicador arquivado (409).
             <Card>
               <CardHeader>
                 <CardTitle>Correção</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-ink-muted">Restaure o dado antes de editar.</p>
+                <p className="text-sm text-ink-muted">
+                  {d.arquivado ? 'Restaure o dado antes de editar.' : 'Restaure o indicador antes de editar os dados dele.'}
+                </p>
               </CardContent>
             </Card>
           ) : catalogos.data && definicao.data ? (

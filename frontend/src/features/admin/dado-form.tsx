@@ -59,7 +59,10 @@ export const IDS: Record<CampoDado, string> = {
 /** Leva o foco ao primeiro campo com erro, na ordem da tela. */
 export function focarPrimeiroErro(erros: ErrosDado) {
   const primeiro = ORDEM_CAMPOS.find((campo) => erros[campo])
-  if (primeiro) document.getElementById(IDS[primeiro])?.focus()
+  if (!primeiro) return
+  // Sem recorte escolhido, ainda não há seletor de categoria: o foco vai para a escolha do recorte.
+  const alvo = document.getElementById(IDS[primeiro]) ?? (primeiro === 'categoria' ? document.getElementById('dado-recorte') : null)
+  alvo?.focus()
 }
 
 interface CamposDadoProps {
@@ -110,7 +113,12 @@ export function CamposDado({ r, definicao, catalogos, erros, desabilitado, onAlt
               Este indicador não tem classificações: o valor é o total informado pela fonte, sem categoria.
             </p>
           ) : definicao.aceitaSemCategoria ? (
-            <fieldset className="flex flex-col gap-2">
+            <fieldset
+              id="dado-recorte"
+              tabIndex={-1}
+              aria-describedby={erros.categoria && recorte !== 'categoria' ? `${IDS.categoria}-message` : undefined}
+              className="flex flex-col gap-2 outline-none"
+            >
               <legend className="mb-1.5 text-xs font-medium text-ink-muted">Recorte do valor</legend>
               <FilterChips
                 aria-label="Recorte do valor"

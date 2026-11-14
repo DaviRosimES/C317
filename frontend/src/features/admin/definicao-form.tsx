@@ -282,8 +282,12 @@ export function DefinicaoForm({ inicial, catalogos, salvando, erro, rotuloSalvar
               id={IDS.aceitaSemCategoria}
               className="mt-0.5"
               checked={r.aceitaSemCategoria}
-              onCheckedChange={(marcado) => alterar('aceitaSemCategoria', marcado === true, 'classificacoes')}
-              aria-describedby={`${IDS.aceitaSemCategoria}-ajuda`}
+              onCheckedChange={(marcado) => {
+                alterar('aceitaSemCategoria', marcado === true, 'classificacoes')
+                setErros((atuais) => ({ ...atuais, aceitaSemCategoria: undefined }))
+              }}
+              aria-invalid={!!erros.aceitaSemCategoria}
+              aria-describedby={`${IDS.aceitaSemCategoria}-ajuda${erros.aceitaSemCategoria ? ` ${IDS.aceitaSemCategoria}-message` : ''}`}
             />
             <div className="min-w-0">
               <Label htmlFor={IDS.aceitaSemCategoria} variant="field" className="text-sm text-ink">
