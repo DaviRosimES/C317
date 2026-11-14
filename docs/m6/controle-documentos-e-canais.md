@@ -31,9 +31,9 @@ Para incluir um documento pendente depois que o acesso for liberado: conferir o 
 | Segundo formulário de hospedagem (ocupação mensal) | Não recebido | O link não está no material versionado. O cadastro informa que esse formulário é enviado diretamente aos estabelecimentos cadastrados. | Pendente: citado só como frequência, sem botão |
 | Startups e eventos | — | Formulários ainda a criar. | Omitidos |
 | Sugestões | — | Sem destino institucional confirmado. | Omitido, sem aviso público |
-| Cadastur | `https://cadastur.turismo.gov.br/` | Responde 200 (portal do Ministério do Turismo). | Em `/sobre` |
-| FNRH Digital | `https://www.gov.br/turismo/pt-br/assuntos/fnrh` | Redireciona para a página da Ficha Nacional de Registro de Hóspedes no gov.br. | Em `/sobre` |
-| SRI do Sul de Minas | Notícia da Agência Sebrae recebida no pacote da G4 | Responde 200. | Em `/sobre` |
-| Fontes de dados | `GET /observacoes/catalogos` | Lidas da API, somente as que têm dados publicados. | Em `/sobre` |
+| Cadastur | `https://cadastur.turismo.gov.br/` | Responde 200 (portal do Ministério do Turismo). | Em `/sobre`, na seção secundária de orientações (link externo oficial) |
+| FNRH Digital | `https://www.gov.br/turismo/pt-br/assuntos/fnrh` | Redireciona para a página da Ficha Nacional de Registro de Hóspedes no gov.br. | Em `/sobre`, na seção secundária de orientações (link externo oficial) |
+| SRI do Sul de Minas | Notícia da Agência Sebrae recebida no pacote da G4 | Responde 200. | Removido de `/sobre` (D9): a página promete comparações com outros municípios, fora do escopo atual. Link não publicado. |
+| Fontes de dados | `GET /consulta/fontes` (V9) | Lidas da API, somente as fontes com dados elegíveis de Santa Rita (publicados, não arquivados, não bloqueados). Quantidade de indicadores e links vêm da API. | Em `/sobre`, lista dinâmica (estados de carregamento, erro e vazio). Substitui a leitura de `/observacoes/catalogos`. |
 
 A interface explica que o envio é por formulário externo (Google Forms), que a plataforma não recebe as respostas automaticamente nem se integra ao Cadastur ou ao FNRH Digital, e que só resultados agregados são publicados. Também informa que respostas individuais, receitas e informações de hóspedes não são publicadas e que recortes abaixo do mínimo de respondentes exigido pela pesquisa não são divulgados.
