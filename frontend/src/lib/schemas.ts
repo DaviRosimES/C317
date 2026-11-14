@@ -60,3 +60,13 @@ export const observacoesSearchSchema = z.object({
   ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
 })
 export type ObservacoesSearch = z.infer<typeof observacoesSearchSchema>
+
+export const situacoesDefinicao = ['ativos', 'arquivados', 'todos'] as const
+
+/** Filtros da listagem administrativa de indicadores; o setor é um código do catálogo da API. */
+export const definicoesSearchSchema = z.object({
+  situacao: z.enum(situacoesDefinicao).optional().catch(undefined),
+  setor: z.string().min(1).optional().catch(undefined),
+  busca: z.string().trim().min(1).max(300).optional().catch(undefined),
+})
+export type DefinicoesSearch = z.infer<typeof definicoesSearchSchema>
