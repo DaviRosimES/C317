@@ -2,17 +2,30 @@ import type { ReactNode } from 'react'
 import { Link } from '@tanstack/react-router'
 import { ExternalLink } from 'lucide-react'
 import { PublicContainer, PublicPageHeader } from '@/components/layout/public-layout'
-import { Button, Card, EmptyState, Skeleton } from '@/components/ui'
+import { Button, EmptyState, Skeleton } from '@/components/ui'
 import { dominioDoLink } from '@/lib/format'
-import { useCatalogosObservacoes } from '@/queries/observacao.queries'
-import { ORIENTACOES, SRI_LINK } from './canais'
+import { useFontesPublicas } from '@/queries/fonte-consulta.queries'
+import { ORIENTACOES } from './canais'
 
-function LinkExterno({ href, children }: { href: string; children: ReactNode }) {
+const SETORES = [
+  { nome: 'Dados gerais', descricao: 'população, território, empresas, educação e indicadores econômicos.' },
+  { nome: 'Turismo', descricao: 'meios de hospedagem, unidades habitacionais informadas e empreendimentos cadastrados.' },
+  { nome: 'Economia criativa', descricao: 'cadastros de atividades criativas e percepção da cidade nas pesquisas recebidas.' },
+  { nome: 'Eventos', descricao: 'resultados das pesquisas do Observatório sobre eventos realizados no município.' },
+  {
+    nome: 'Pesquisa e inovação',
+    descricao: 'depósitos e concessões de patentes, com referências anuais e acumuladas.',
+  },
+  { nome: 'Vale da Eletrônica', descricao: 'dados sobre a indústria e o segmento de eletroeletrônicos.' },
+]
+
+function LinkExterno({ href, rotulo, children }: { href: string; rotulo: string; children: ReactNode }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noreferrer"
+      aria-label={`${rotulo}, abre em nova aba`}
       className="inline-flex max-w-full items-center gap-1 text-[13px] font-medium text-brand-purple underline-offset-4 hover:underline"
     >
       <ExternalLink aria-hidden className="size-3.5 shrink-0" />
@@ -21,24 +34,26 @@ function LinkExterno({ href, children }: { href: string; children: ReactNode }) 
   )
 }
 
-/** Fontes das observações publicadas, lidas do catálogo da API. */
-function FontesDeDados() {
-  const catalogos = useCatalogosObservacoes()
-  if (catalogos.isPending) return <Skeleton className="h-40 rounded-2xl" />
-  if (catalogos.error) return <EmptyState title="Não foi possível carregar as fontes" description={catalogos.error.message} />
+const rotuloIndicadores = (quantidade: number) => (quantidade === 1 ? '1 indicador' : `${quantidade} indicadores`)
 
-  const fontes = catalogos.data.fontes.filter((fonte) => fonte.comDadosPublicados)
-  if (!fontes.length) {
+/** Fontes dos dados publicados, lidas de GET /consulta/fontes (a API já aplica a elegibilidade). */
+function FontesDeDados() {
+  const fontes = useFontesPublicas()
+  if (fontes.isPending) return <Skeleton className="h-40 rounded-2xl" />
+  if (fontes.error) return <EmptyState title="Não foi possível carregar as fontes" description={fontes.error.message} />
+
+  if (!fontes.data.length) {
     return <EmptyState title="Nenhuma fonte com dados publicados" description="As fontes aparecem aqui quando a equipe publica os dados." />
   }
   return (
     <ul className="grid gap-3 md:grid-cols-2">
-      {fontes.map((fonte) => (
+      {fontes.data.map((fonte) => (
         <li key={fonte.codigo} className="flex flex-col gap-2 rounded-2xl border border-line bg-surface p-4">
-          <p className="break-words text-sm font-medium text-ink">{fonte.nome}</p>
+          <p className="break-words text-sm font-semibold text-ink">{fonte.nome}</p>
+          <p className="text-xs text-ink-muted">{rotuloIndicadores(fonte.indicadores)}</p>
           {fonte.links.length ? (
             fonte.links.map((link) => (
-              <LinkExterno key={link} href={link}>
+              <LinkExterno key={link} href={link} rotulo={`Fonte ${fonte.nome}: ${dominioDoLink(link)}`}>
                 {dominioDoLink(link)}
               </LinkExterno>
             ))
@@ -55,67 +70,112 @@ export function SobrePage() {
   return (
     <PublicContainer className="md:py-16">
       <PublicPageHeader
-        title="Regularização e informação para o setor"
-        description="Conteúdo institucional para apoiar hotéis, pousadas e demais estabelecimentos no acesso a informações oficiais, e as fontes dos dados publicados."
+        eyebrow="Sobre"
+        title="Observatório de Santa Rita do Sapucaí"
+        description="O Observatório reúne informações sobre Santa Rita do Sapucaí para apoiar a consulta e o conhecimento do município. Moradores, empreendedores, estudantes, pesquisadores e o poder público podem explorar indicadores e acessar relatórios das pesquisas disponíveis."
       />
 
-      <div className="grid gap-5 md:grid-cols-2">
-        {ORIENTACOES.map((item, i) => (
-          <Card key={item.titulo} className="flex flex-col gap-3 p-6">
-            <span aria-hidden className={`flex size-12 items-center justify-center rounded-lg text-base font-bold text-white ${item.cor}`}>
-              {item.sigla}
-            </span>
-            <h2 className="mt-3 text-xl font-bold text-ink">{item.titulo}</h2>
-            <p className="text-sm text-ink-muted">{item.resumo}</p>
-            <p className="text-[13px] text-ink-muted">{item.detalhe}</p>
-            <Button asChild variant={i === 0 ? 'gradient' : 'secondary'} className="mt-2 self-start">
-              <a href={item.href} target="_blank" rel="noreferrer">
-                Acessar orientação
-              </a>
-            </Button>
-          </Card>
-        ))}
-      </div>
-
-      <Card className="flex flex-col gap-3 p-6">
-        <h2 className="text-lg font-semibold text-ink">Sistema Regional de Inovação (SRI) do Sul de Minas</h2>
+      <section aria-labelledby="origem" className="flex flex-col gap-3">
+        <h2 id="origem" className="text-lg font-semibold text-ink">
+          Origem
+        </h2>
         <p className="text-sm text-ink-muted">
-          Parte dos indicadores de pesquisa e inovação é informada para o SRI do Sul de Minas e para outros municípios da
-          região, o que permite comparações com Santa Rita do Sapucaí. Esses valores aparecem como território próprio, com
-          fonte e referência, e não são somados aos do município.
+          A iniciativa teve origem no trabalho do Observatório do Turismo e ampliou sua organização para outros setores de
+          informação do município. A plataforma aproxima informações de diferentes fontes, preservando o contexto necessário
+          para compreender cada resultado.
         </p>
-        <LinkExterno href={SRI_LINK.href}>{SRI_LINK.rotulo}</LinkExterno>
-      </Card>
+      </section>
 
-      <section aria-labelledby="fontes-de-dados" className="flex flex-col gap-4">
-        <div className="flex flex-col gap-1">
-          <h2 id="fontes-de-dados" className="text-lg font-semibold text-ink">
-            Fontes de dados
+      <section aria-labelledby="setores" className="flex flex-col gap-4">
+        <h2 id="setores" className="text-lg font-semibold text-ink">
+          Setores do Observatório
+        </h2>
+        <ul className="grid gap-3 md:grid-cols-2">
+          {SETORES.map((setor) => (
+            <li key={setor.nome} className="rounded-2xl border border-line bg-surface p-4 text-sm text-ink-muted">
+              <strong className="font-semibold text-ink">{setor.nome}:</strong> {setor.descricao}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="como-ler" className="flex flex-col gap-3">
+        <h2 id="como-ler" className="text-lg font-semibold text-ink">
+          Como ler os dados
+        </h2>
+        <p className="text-sm text-ink-muted">
+          Os filtros Setor e Ano/Período mostram os indicadores que possuem dados disponíveis para sua seleção. Cada indicador
+          explica o que está sendo medido e sua unidade. Seus dados apresentam valores para uma referência, uma fonte e, quando
+          houver, uma categoria específica.
+        </p>
+        <p className="text-sm text-ink-muted">
+          Consulte a fonte, o período e as notas antes de comparar resultados. Uma pesquisa pode representar apenas seus
+          entrevistados ou os estabelecimentos que responderam ao levantamento. Um valor zero é diferente da ausência de
+          informação.
+        </p>
+      </section>
+
+      <section aria-labelledby="fontes" className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
+          <h2 id="fontes" className="text-lg font-semibold text-ink">
+            Fontes
           </h2>
           <p className="text-sm text-ink-muted">
-            Bases, pesquisas e documentos dos valores publicados. O Observatório recebe os valores prontos; a plataforma não
-            calcula indicadores nem se conecta automaticamente a essas bases.
+            Os dados são fornecidos em valores consolidados, a partir de bases institucionais, cadastros e pesquisas. Cada
+            resultado identifica sua fonte e apresenta um link quando ele está disponível.
           </p>
         </div>
         <FontesDeDados />
       </section>
 
-      <Card className="grid gap-6 p-6 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
-        <div>
-          <h2 className="text-lg font-semibold text-ink">Por que esta seção existe?</h2>
-          <p className="mt-3 text-sm text-ink-muted">
-            O Observatório também pode funcionar como ponto de apoio para a profissionalização do turismo local. Nesta fase, a
-            plataforma centraliza orientações e links oficiais, sem depender de integrações complexas.
+      <section aria-labelledby="instituicoes" className="flex flex-col gap-3">
+        <h2 id="instituicoes" className="text-lg font-semibold text-ink">
+          Instituições participantes
+        </h2>
+        <p className="text-sm text-ink-muted">
+          A iniciativa é da Prefeitura de Santa Rita do Sapucaí, por meio da Secretaria Municipal de Cultura, Esporte, Lazer e
+          Turismo (SMCELT), com desenvolvimento acadêmico de estudantes do Inatel no projeto HEIComp 2026.2. O conteúdo sobre o
+          Vale da Eletrônica conta com a contribuição da Secretaria de Ciência, Tecnologia e Desenvolvimento Econômico.
+        </p>
+      </section>
+
+      <section aria-labelledby="participacao" className="flex flex-col gap-3 rounded-2xl bg-canvas p-6">
+        <h2 id="participacao" className="text-lg font-semibold text-ink">
+          Participação
+        </h2>
+        <p className="text-sm text-ink-muted">
+          O conhecimento sobre a cidade pode crescer com a contribuição da comunidade. Conheça os canais disponíveis para
+          fornecer informações do seu empreendimento ao Observatório.
+        </p>
+        <Button asChild variant="primary" className="mt-1 self-start">
+          <Link to="/contribua">Conhecer os canais de contribuição</Link>
+        </Button>
+      </section>
+
+      <section aria-labelledby="orientacoes-hospedagem" className="flex flex-col gap-3 border-t border-line pt-6">
+        <div className="flex flex-col gap-1">
+          <h2 id="orientacoes-hospedagem" className="text-sm font-semibold text-ink-muted">
+            Orientações para meios de hospedagem
+          </h2>
+          <p className="text-xs text-ink-subtle">
+            Canais oficiais externos. A plataforma não tem integração com eles.
           </p>
         </div>
-        <div className="rounded-xl bg-canvas p-5">
-          <p className="text-[13px] font-semibold text-brand-purple">Responsável por um meio de hospedagem?</p>
-          <p className="mt-2 text-[13px] text-ink-muted">Veja os formulários do Observatório e como os dados são publicados.</p>
-          <Button asChild variant="link" className="mt-2 h-auto px-0">
-            <Link to="/contribua">Ir para Contribua</Link>
-          </Button>
-        </div>
-      </Card>
+        <ul className="divide-y divide-line rounded-xl border border-line">
+          {ORIENTACOES.map((item) => (
+            <li key={item.titulo} className="flex flex-col gap-1 p-4">
+              <p className="text-[13px] font-semibold text-ink">{item.titulo}</p>
+              <p className="text-xs text-ink-muted">{item.resumo}</p>
+              <p className="text-xs text-ink-muted">{item.detalhe}</p>
+              <div className="mt-1">
+                <LinkExterno href={item.href} rotulo={`${item.titulo}, site oficial`}>
+                  Acessar o site oficial
+                </LinkExterno>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
     </PublicContainer>
   )
 }
