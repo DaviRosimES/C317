@@ -146,7 +146,7 @@ export function DefinicaoPage({ codigo, criado = false }: { codigo: string; cria
       ) : (
         <Card>
           <CardHeader>
-            <CardTitle>Dados do indicador</CardTitle>
+            <CardTitle>Definição</CardTitle>
             <CardDescription>
               O código é gerado pelo sistema e não muda ao renomear. Nome, definição e nota podem ser corrigidos; unidade,
               tipos de referência e classificações em uso por dados não podem ser retirados.
@@ -336,7 +336,7 @@ function DialogoArquivar({ aberto, definicao, onFechar, onConcluido }: DialogoSi
             <Button variant="secondary">Cancelar</Button>
           </DialogClose>
           <Button
-            variant="gradient"
+            variant="primary"
             disabled={arquivar.isPending}
             onClick={() =>
               arquivar.mutate(definicao.codigo, {
@@ -380,7 +380,7 @@ function DialogoRestaurar({ aberto, definicao, onFechar, onConcluido }: DialogoS
             <Button variant="secondary">Cancelar</Button>
           </DialogClose>
           <Button
-            variant="gradient"
+            variant="primary"
             disabled={restaurar.isPending}
             onClick={() =>
               restaurar.mutate(definicao.codigo, {
