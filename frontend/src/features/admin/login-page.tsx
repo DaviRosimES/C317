@@ -48,7 +48,7 @@ export function LoginPage({ search }: { search: LoginSearch }) {
       return
     }
     entrar.mutate(resultado.data, {
-      onSuccess: () => void navigate({ href: search.redirect ?? '/admin/observacoes', replace: true }),
+      onSuccess: () => void navigate({ href: search.redirect ?? '/admin/dados', replace: true }),
       onError: () => setCredenciais((atual) => ({ ...atual, senha: '' })),
     })
   }

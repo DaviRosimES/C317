@@ -34,8 +34,8 @@ import {
 import { AdminContainer, AdminPageHeader } from './admin-layout'
 import { DefinicaoForm } from './definicao-form'
 import { correcaoDe, rascunhoDaDefinicao } from './definicao-validacao'
-import { descreverUnidade } from './observacao-catalogo'
-import { Item } from './observacao-resumo'
+import { descreverUnidade } from '@/lib/format'
+import { Item } from './ficha'
 import { TEXTOS_ADMIN } from './textos'
 
 const totalDados = (total: number) =>

@@ -34,7 +34,7 @@ import {
   type DefinicaoRascunho,
   type ErrosDefinicao,
 } from './definicao-validacao'
-import { descreverUnidade } from './observacao-catalogo'
+import { descreverUnidade } from '@/lib/format'
 
 interface DefinicaoFormProps {
   inicial: DefinicaoRascunho

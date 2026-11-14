@@ -3,7 +3,6 @@ import { queryOptions, useMutation, useQueryClient } from '@tanstack/react-query
 import { PAPEL_ADMIN, authService } from '@/api/services/auth.service'
 import type { MotivoFimSessao, Usuario } from '@/models'
 import { adminKeys } from './admin.keys'
-import { lancamentoKeys } from './lancamento.queries'
 
 export const authKeys = {
   all: ['auth'] as const,
@@ -48,7 +47,6 @@ export function useFimDaSessao(aoEncerrar: (motivo: MotivoFimSessao) => void | P
         void Promise.resolve(callback.current(motivo)).finally(() => {
           queryClient.removeQueries({ queryKey: authKeys.all })
           queryClient.removeQueries({ queryKey: adminKeys.all })
-          queryClient.removeQueries({ queryKey: lancamentoKeys.all })
         })
       }),
     [queryClient],
