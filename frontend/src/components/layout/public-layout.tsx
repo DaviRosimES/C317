@@ -6,10 +6,9 @@ import { cn } from '@/lib/utils'
 import { Brand } from './brand'
 
 const NAV = [
-  { to: '/', label: 'Dashboard' },
+  { to: '/', label: 'Início' },
   { to: '/indicadores', label: 'Indicadores' },
   { to: '/relatorios', label: 'Relatórios' },
-  { to: '/inventario', label: 'Inventário' },
   { to: '/contribua', label: 'Contribua' },
   { to: '/sobre', label: 'Sobre' },
 ] as const
@@ -48,7 +47,7 @@ function PublicHeader() {
     <header className="sticky top-0 z-40 border-b border-line bg-surface">
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-4 px-4 md:px-16">
         <Brand />
-        {/* Seis itens e o botão da área administrativa só cabem em uma linha a partir de lg. */}
+        {/* Cinco itens e o botão da área administrativa só cabem em uma linha a partir de lg. */}
         <NavLinks className="hidden items-center gap-4 lg:flex" />
         <div className="flex items-center gap-2">
           <Button asChild variant="secondary" className="hidden sm:inline-flex">

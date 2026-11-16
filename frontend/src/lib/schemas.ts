@@ -1,30 +1,32 @@
 import { z } from 'zod'
 
-export const dashboardSearchSchema = z.object({
-  ano: z.coerce.number().int().min(1900).max(2100).optional().catch(undefined),
-  mes: z.coerce.number().int().min(1).max(12).optional().catch(undefined),
-  cnae: z.string().optional().catch(undefined),
-})
-export type DashboardSearch = z.infer<typeof dashboardSearchSchema>
+/** Parâmetro da URL como texto: `?setor=123` chega como número e não pode ser descartado sem aviso. */
+const textoDaUrl = z.preprocess(
+  (valor) => (valor == null || valor === '' ? undefined : String(valor)),
+  z.string().trim().min(1).max(300).optional(),
+)
 
-const codigoCatalogo = z.string().min(1).max(200)
-
-export const consultaSearchSchema = z.object({
-  tema: codigoCatalogo.optional().catch(undefined),
-  territorio: codigoCatalogo.optional().catch(undefined),
-  ref: z
-    .string()
-    .regex(/^(tipo:[a-z_]+|[a-z_]+:\d{4}-\d{4}(-\d{2})?)$/)
-    .optional()
-    .catch(undefined),
-  categoria: codigoCatalogo.optional().catch(undefined),
-  cnae: z
-    .string()
-    .regex(/^[0-9]{4}-[0-9]\/[0-9]{2}$/)
-    .optional()
-    .catch(undefined),
+/**
+ * Consulta pública de Indicadores. Setor e Ano/Período são os únicos filtros gerais (códigos da API,
+ * validados pela página contra `/consulta/opcoes`); `indicador` é o detalhe aberto.
+ * Os parâmetros antigos (cidade, tema, recortes e filtros do Dashboard) são lidos só para serem retirados com aviso:
+ * não existe consulta de outra cidade.
+ */
+export const indicadoresSearchSchema = z.object({
+  setor: textoDaUrl.catch(undefined),
+  periodo: textoDaUrl.catch(undefined),
+  indicador: textoDaUrl.catch(undefined),
+  territorio: z.unknown().optional(),
+  tema: z.unknown().optional(),
+  ref: z.unknown().optional(),
+  categoria: z.unknown().optional(),
+  cnae: z.unknown().optional(),
+  ano: z.unknown().optional(),
+  mes: z.unknown().optional(),
 })
-export type ConsultaSearch = z.infer<typeof consultaSearchSchema>
+export type IndicadoresSearch = z.infer<typeof indicadoresSearchSchema>
+
+export const PARAMETROS_ANTIGOS = ['territorio', 'tema', 'ref', 'categoria', 'cnae', 'ano', 'mes'] as const
 
 export const motivosLogin = ['expirada', 'saiu', 'sem-permissao'] as const
 export type MotivoLogin = (typeof motivosLogin)[number]

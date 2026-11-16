@@ -20,7 +20,7 @@ export const Route = createRootRouteWithContext<RouterContext>()({
           Tentar novamente
         </Button>
         <Button asChild variant="secondary">
-          <Link to="/">Voltar ao dashboard</Link>
+          <Link to="/">Voltar ao início</Link>
         </Button>
       </div>
     </main>
@@ -29,7 +29,7 @@ export const Route = createRootRouteWithContext<RouterContext>()({
     <main className="mx-auto flex max-w-7xl flex-col items-start gap-4 px-6 py-16">
       <p className="text-sm text-ink-muted">Página não encontrada.</p>
       <Button asChild variant="secondary">
-        <Link to="/">Voltar ao dashboard</Link>
+        <Link to="/">Voltar ao início</Link>
       </Button>
     </main>
   ),
