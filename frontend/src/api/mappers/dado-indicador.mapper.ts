@@ -1,12 +1,23 @@
 import type {
+  CategoriaDoDadoResponseDto,
   DadoAdminResponseDto,
   DadoCreateRequestDto,
   DadoUpdateRequestDto,
   DadosAdminQueryDto,
   ReferenciaDadoRequestDto,
+  ReferenciaDadoResponseDto,
 } from '@/api/dtos'
 import { toDataIso } from '@/lib/format'
-import type { DadoCorrecao, DadoEntrada, DadoIndicadorAdmin, DadosAdminFiltro, OrigemDado, Referencia } from '@/models'
+import type {
+  CategoriaDoDado,
+  DadoCorrecao,
+  DadoEntrada,
+  DadoIndicadorAdmin,
+  DadosAdminFiltro,
+  OrigemDado,
+  Referencia,
+  ReferenciaDado,
+} from '@/models'
 import { toUnidadeResumo } from './definicao.mapper'
 import { toDataLocal } from './relatorio.mapper'
 
@@ -21,30 +32,32 @@ const toOrigem = (origem: Record<string, unknown>): OrigemDado => ({
   referenciaOriginal: texto(origem.referencia_original),
 })
 
+export const toCategoriaDoDado = (dto: CategoriaDoDadoResponseDto): CategoriaDoDado => ({
+  codigo: dto.codigo,
+  nome: dto.nome,
+  classificacaoCodigo: dto.classificacao_codigo,
+  classificacaoNome: dto.classificacao_nome,
+  codigoCnae: dto.codigo_cnae,
+})
+
+export const toReferenciaDado = (dto: ReferenciaDadoResponseDto): ReferenciaDado => ({
+  tipo: dto.tipo,
+  anoInicio: dto.ano_inicio,
+  anoFim: dto.ano_fim,
+  mes: dto.mes,
+  dataExtracao: dto.data_extracao ? toDataLocal(dto.data_extracao) : null,
+  chave: dto.chave,
+  rotulo: dto.rotulo,
+})
+
 export const toDadoIndicadorAdmin = (dto: DadoAdminResponseDto): DadoIndicadorAdmin => ({
   id: dto.id,
   indicador: dto.indicador,
   unidade: toUnidadeResumo(dto.unidade),
   territorio: dto.territorio,
-  categoria: dto.categoria
-    ? {
-        codigo: dto.categoria.codigo,
-        nome: dto.categoria.nome,
-        classificacaoCodigo: dto.categoria.classificacao_codigo,
-        classificacaoNome: dto.categoria.classificacao_nome,
-        codigoCnae: dto.categoria.codigo_cnae,
-      }
-    : null,
+  categoria: dto.categoria ? toCategoriaDoDado(dto.categoria) : null,
   fonte: dto.fonte,
-  referencia: {
-    tipo: dto.referencia.tipo,
-    anoInicio: dto.referencia.ano_inicio,
-    anoFim: dto.referencia.ano_fim,
-    mes: dto.referencia.mes,
-    dataExtracao: dto.referencia.data_extracao ? toDataLocal(dto.referencia.data_extracao) : null,
-    chave: dto.referencia.chave,
-    rotulo: dto.referencia.rotulo,
-  },
+  referencia: toReferenciaDado(dto.referencia),
   valor: dto.valor,
   qualificador: dto.qualificador,
   notas: dto.notas,

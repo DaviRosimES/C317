@@ -1,13 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { IndicadoresPage } from '@/features/public/indicadores-page'
-import { consultaSearchSchema } from '@/lib/schemas'
-import { catalogosObservacoesQueryOptions, observacoesQueryOptions } from '@/queries/observacao.queries'
+import { IndicadoresPage } from '@/features/public/indicadores/indicadores-page'
+import { indicadoresSearchSchema } from '@/lib/schemas'
+import { opcoesConsultaQueryOptions } from '@/queries/consulta-indicadores.queries'
 
 export const Route = createFileRoute('/_public/indicadores')({
-  validateSearch: consultaSearchSchema,
+  validateSearch: indicadoresSearchSchema,
   loader: ({ context: { queryClient } }) => {
-    void queryClient.prefetchQuery(catalogosObservacoesQueryOptions)
-    void queryClient.prefetchQuery(observacoesQueryOptions({}))
+    void queryClient.prefetchQuery(opcoesConsultaQueryOptions())
   },
   component: function IndicadoresRoute() {
     return <IndicadoresPage search={Route.useSearch()} />

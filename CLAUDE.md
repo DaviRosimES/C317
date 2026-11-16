@@ -38,7 +38,7 @@ por PDF em `/admin/relatorios`, contrato em `docs/m7/contrato-api-relatorios.md`
 Dados do indicador (V9) ficam em `dados_indicadores` (carga `python -m scripts.carregar_m7`, simulação por
 padrão); admin em `/admin/dados-indicadores` e consulta pública em `/consulta` (Setor + Ano/Período), contrato em
 `docs/m7/contrato-api-dados-e-consulta.md`. A elegibilidade pública fica em `ELEGIVEL`
-(`dado_indicador_repository.py`); `/observacoes` (M6) segue até a migração das telas.
+(`dado_indicador_repository.py`); a consulta pública já usa a V9 e `/observacoes` (M6) segue só na API.
 
 ## Comandos
 
@@ -106,31 +106,28 @@ O fluxo é sempre `routes` → `features` → `queries` → `services` → `api/
 - Estados de carregamento (`Skeleton`), erro e vazio (`EmptyState`) são obrigatórios em toda consulta.
 - `Link` do TanStack Router só aceita rotas existentes; o item ativo usa `data-status="active"`.
 
-### Regras de exibição de indicadores (G1)
+### Início e consulta pública (`/` e `/indicadores`)
 
-- Ausência de lançamento = "Sem dados para o período" (`EmptyState`), nunca `0`. Um `0` publicado é exibido como zero.
-- Não somar estoques (empresas, leitos, empregos) entre meses; use o último valor (`lib/indicadores.ts`).
-- Não somar totais municipais com recortes por CNAE nem distribuir totais entre CNAEs.
-- Todo valor ou gráfico exibe período e fonte (`SourceNote`); `demonstracao: true` recebe `DemoBadge` ("Dado fictício").
-- Períodos mensais e anuais têm rótulos distintos (`formatPeriodo`); percentuais vêm de 0 a 100 (`formatValorIndicador`).
-- O filtro de CNAE não se aplica a totais municipais e a interface avisa isso (`AvisoFiltroCnae`).
-- CNAEs, tipos de indicador, rotas e períodos vêm sempre da API (`/cnaes`, `/tipos-indicadores`, `/rotas`,
-  `/periodos`); nunca crie enum/array fixo deles no front.
-- Rotas sem CNAEs mostram "Classificação dos CNAEs por rota em definição".
-- Escopo ou unidade desconhecidos da V3 não caem no total municipal (`toEscopo` → `desconhecido`); a tela sinaliza.
-
-### Consulta pública da M6 (`/indicadores`)
-
-- Lê `GET /observacoes` (todas as páginas, via `observacaoService.listarTodas`) e `/observacoes/catalogos`.
-  O Dashboard (`/`) continua no modelo anterior (V3).
-- Visões genéricas de `lib/observacoes.ts`: série, comparativo entre cidades, recortes e valores avulsos. Não crie
-  tela, card ou array fixo por indicador; um indicador novo do catálogo aparece sozinho.
-- Séries só com `anual`/`mensal`; acumulado, levantamento e retrato nunca entram como ponto de série nem se somam.
-  O comparativo usa uma referência por vez e lista como indisponíveis as cidades do tema sem valor.
-- Filtro de categoria/CNAE restringe só observações da mesma classificação (ou com CNAE); as demais ficam visíveis
-  com `ForaDoFiltro`. Filtros na URL (`consultaSearchSchema`); "Limpar filtros" mantém só o tema.
-- Exiba `valorExibicao` com a unidade (`valorTexto`); `Number(valor)` só para o comprimento das barras.
-- Razões por habitante são observações recebidas (com notas de método); não calcule novas razões no front.
+- `/` é o Início institucional (textos aprovados de `docs/m7/03-fluxos-de-uso.md`, seção 7) com acessos a
+  Indicadores, Relatórios e Sobre. Não há Dashboard: `/dashboard` e os filtros antigos de `/` levam a `/indicadores`.
+  Inventário não aparece como funcionalidade pronta. Os textos dos seis setores ficam em `features/public/setores-observatorio.ts`.
+- `/indicadores` lê a V9: `GET /consulta/opcoes` e `GET /consulta/indicadores` (`consultaIndicadoresService`). Setor e
+  Ano/Período são os únicos filtros gerais, antes da lista, em rascunho até "Aplicar" e na URL (`indicadoresSearchSchema`).
+  A página confere `setor`/`periodo` com as opções da API e retira da URL, com aviso, valor desconhecido, período
+  incompatível com o setor e parâmetros antigos (cidade, tema, recortes); nunca troca por outra seleção nem consulta outra cidade.
+- Trocar o setor no rascunho limpa o período que não tem dados nele e avisa. O indicador aberto (`?indicador=`) que sai
+  da lista é fechado com aviso. Combinação sem dados mostra "Não há dados publicados para esta seleção." (nunca todos os dados).
+- Fonte, classificação e categoria são recortes locais do detalhe (estado do componente), só sobre os dados que passaram
+  nos filtros gerais; `normalizarRecorte` (`lib/consulta.ts`) limpa os incompatíveis ao trocar fonte ou filtros gerais.
+- Visões genéricas de `montarBlocos` (`lib/consulta.ts`), separadas por fonte: série só com 2+ referências `anual`/`mensal`
+  de um mesmo recorte; comparativo por categoria na mesma classificação, referência e fonte; o resto como valores avulsos.
+  Acumulado, levantamento e retrato nunca entram em série; totais, recortes, classificações e fontes nunca se somam.
+  Não crie tela, card ou array fixo por indicador, categoria ou fonte.
+- `valor` é o decimal exato: exiba com `textoDoValor` (arredonda só na exibição, nas `casasExibicao` da unidade; a tabela
+  mostra o valor recebido quando houver arredondamento). `Number(valor)` só para o tamanho de barras e colunas.
+- Todo gráfico tem tabela equivalente; todo valor mostra referência, recorte, fonte (com links) e notas. `0` é zero;
+  ausência de dado não vira `0`. `demonstracao: true` recebe `DemoBadge`.
+- `/observacoes` (M6) e as rotas V3 (`/cnaes`, `/indicadores` da API antiga) não são mais consumidos pelas telas públicas.
 
 ### Área administrativa
 

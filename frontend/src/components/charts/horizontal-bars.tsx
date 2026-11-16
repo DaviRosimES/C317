@@ -10,8 +10,9 @@ export interface HorizontalBarDatum {
   title?: string
 }
 
-export function HorizontalBars({ data, className }: { data: HorizontalBarDatum[]; className?: string }) {
-  const max = Math.max(...data.map((d) => d.valor), 0)
+/** `max` fixa a escala (ex.: 100 para percentuais); sem ele, a maior barra ocupa toda a largura. */
+export function HorizontalBars({ data, className, max: maxFixo }: { data: HorizontalBarDatum[]; className?: string; max?: number }) {
+  const max = Math.max(maxFixo ?? 0, ...data.map((d) => d.valor), 0)
   return (
     <ul className={cn('flex flex-col gap-4', className)}>
       {data.map((datum, index) => (

@@ -6,18 +6,7 @@ import { Button, EmptyState, Skeleton } from '@/components/ui'
 import { dominioDoLink } from '@/lib/format'
 import { useFontesPublicas } from '@/queries/fonte-consulta.queries'
 import { ORIENTACOES } from './canais'
-
-const SETORES = [
-  { nome: 'Dados gerais', descricao: 'população, território, empresas, educação e indicadores econômicos.' },
-  { nome: 'Turismo', descricao: 'meios de hospedagem, unidades habitacionais informadas e empreendimentos cadastrados.' },
-  { nome: 'Economia criativa', descricao: 'cadastros de atividades criativas e percepção da cidade nas pesquisas recebidas.' },
-  { nome: 'Eventos', descricao: 'resultados das pesquisas do Observatório sobre eventos realizados no município.' },
-  {
-    nome: 'Pesquisa e inovação',
-    descricao: 'depósitos e concessões de patentes, com referências anuais e acumuladas.',
-  },
-  { nome: 'Vale da Eletrônica', descricao: 'dados sobre a indústria e o segmento de eletroeletrônicos.' },
-]
+import { SETORES_DO_OBSERVATORIO } from './setores-observatorio'
 
 function LinkExterno({ href, rotulo, children }: { href: string; rotulo: string; children: ReactNode }) {
   return (
@@ -91,7 +80,7 @@ export function SobrePage() {
           Setores do Observatório
         </h2>
         <ul className="grid gap-3 md:grid-cols-2">
-          {SETORES.map((setor) => (
+          {SETORES_DO_OBSERVATORIO.map((setor) => (
             <li key={setor.nome} className="rounded-2xl border border-line bg-surface p-4 text-sm text-ink-muted">
               <strong className="font-semibold text-ink">{setor.nome}:</strong> {setor.descricao}
             </li>

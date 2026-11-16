@@ -1,17 +1,16 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { DashboardPage } from '@/features/public/dashboard-page'
-import { dashboardSearchSchema } from '@/lib/schemas'
-import { cnaesQueryOptions, periodosQueryOptions, rotasQueryOptions, tiposIndicadoresQueryOptions } from '@/queries/consulta.queries'
+import { createFileRoute, redirect } from '@tanstack/react-router'
+import { z } from 'zod'
+import { InicioPage } from '@/features/public/inicio-page'
+
+/** Filtros do antigo Dashboard (`/?ano=&mes=&cnae=`): a consulta agora fica em Indicadores. */
+const filtrosDoDashboard = z.object({ ano: z.unknown(), mes: z.unknown(), cnae: z.unknown() }).partial()
 
 export const Route = createFileRoute('/_public/')({
-  validateSearch: dashboardSearchSchema,
-  loader: ({ context: { queryClient } }) => {
-    void queryClient.prefetchQuery(periodosQueryOptions)
-    void queryClient.prefetchQuery(cnaesQueryOptions)
-    void queryClient.prefetchQuery(tiposIndicadoresQueryOptions)
-    void queryClient.prefetchQuery(rotasQueryOptions)
+  validateSearch: filtrosDoDashboard,
+  beforeLoad: ({ search }) => {
+    if (search.ano !== undefined || search.mes !== undefined || search.cnae !== undefined) {
+      throw redirect({ to: '/indicadores', replace: true })
+    }
   },
-  component: function DashboardRoute() {
-    return <DashboardPage search={Route.useSearch()} />
-  },
+  component: InicioPage,
 })

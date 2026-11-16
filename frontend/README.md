@@ -90,10 +90,9 @@ Fluxo: `routes` → `features` → `queries` → `services` → `http` (+ `mappe
 
 | Rota | Tela (Figma) | Dados |
 | --- | --- | --- |
-| `/` | Public / Dashboard (modelo anterior, base fictícia) | API: `/periodos`, `/cnaes`, `/tipos-indicadores`, `/indicadores`, `/rotas` |
-| `/indicadores` | Consulta da M6 por tema, cidade, referência e categoria de origem (J5/J6) | API: `/observacoes/catalogos` + `/observacoes` |
+| `/` | Início institucional com acessos a Indicadores, Relatórios e Sobre (J7) | estático |
+| `/indicadores` | Consulta por Setor e Ano/Período, lista e detalhe com recortes, gráficos e tabela (J8/J9) | API: `/consulta/opcoes` + `/consulta/indicadores` |
 | `/relatorios` | Relatórios (D3, D5) | API: `/relatorios`; download em `/relatorios/{id}/arquivo` ou link externo sinalizado |
-| `/inventario` | Public / Inventário Turístico | simulado |
 | `/contribua` | Formulários externos confirmados (D6) | estático (`features/public/canais.ts`) |
 | `/sobre` | Observatório, setores, leitura dos dados, fontes e orientações secundárias (D9) | estático + API: `/consulta/fontes` (fontes dos dados elegíveis) |
 | `/admin/login` | Login da área administrativa (D1) | API: `/auth/login`, `/auth/me` |
@@ -136,26 +135,14 @@ navegador, repassando todo o resto para a API real.
 - Quando o back implementar a rota, remova-a de `src/api/mocks/handlers.ts` — service, DTO e tela não mudam.
 - `VITE_API_MOCKS=false` desliga as simulações.
 
-## Regras de exibição de indicadores
+## Consulta de indicadores (`/indicadores`)
 
-- Ausência de registro aparece como "Sem dados para o período" (`EmptyState`); `0` publicado é exibido como zero.
-- Estoques (empresas, leitos, empregos) nunca são somados entre meses: usa-se o último valor (`src/lib/indicadores.ts`).
-- Todo valor/gráfico mostra a fonte; valores com `demonstracao` recebem o selo "Dado fictício".
-- Períodos anuais e mensais têm rótulos distintos (`formatPeriodo`), e o filtro de CNAE avisa que não altera
-  totais municipais.
-- CNAEs e tipos de indicador vêm da API; o Dashboard monta cards e gráficos a partir dos tipos com valores.
-- Um escopo ou uma unidade desconhecidos da V3 não viram "total municipal": o escopo fica `desconhecido` e é
-  sinalizado; a unidade aparece pelo nome recebido.
-
-## Consulta da M6 (`/indicadores`)
-
-- Temas, cidades, referências e categorias saem do catálogo e das observações publicadas; não há tela nem lista
-  por indicador. `lib/observacoes.ts` organiza cada indicador em série (≥ 3 referências anuais ou mensais do mesmo
-  território), comparativo entre cidades (uma referência por vez), recortes de origem e valores avulsos.
-- Séries só usam referências `anual`/`mensal`; acumulados aparecem com rótulo próprio ("72 no total 2000–2024
-  (acumulado)") e nunca como valor do último ano.
-- O filtro de categoria restringe só os recortes da mesma classificação; totais e outros indicadores continuam
-  visíveis com "Filtro de recorte não se aplica". O filtro de CNAE só aparece quando a fonte informou CNAE.
-- No comparativo, municípios do tema sem valor no indicador aparecem como indisponíveis; fontes diferentes são
-  mostradas linha a linha, sem soma.
-- Todo gráfico tem tabela equivalente ("Ver dados em tabela") e rola dentro do próprio card no celular.
+- `/dashboard` e os filtros antigos do Dashboard em `/` redirecionam para `/indicadores`; não há consulta concorrente.
+- Setor e Ano/Período vêm de `/consulta/opcoes` e ficam na URL (`?setor=&periodo=`), aplicados com "Aplicar". Os
+  períodos dependem do setor; um período incompatível volta para Todos com aviso. Valores desconhecidos e parâmetros
+  antigos (cidade, tema, recortes) são retirados da URL com aviso.
+- A lista mostra cada indicador uma vez; o detalhe (`?indicador=`) traz definição, unidade, setores, nota metodológica,
+  recortes locais (fonte, classificação, categoria) e as visões de `montarBlocos` (`src/lib/consulta.ts`): série
+  anual/mensal por fonte e recorte, comparativo por categoria e valores avulsos, sempre com tabela equivalente.
+- Ausência de dado não vira zero; `0` publicado aparece como zero. O decimal recebido é preservado e mostrado na tabela
+  quando a exibição arredonda.
